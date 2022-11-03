@@ -154,13 +154,7 @@ main .contact-form-wrapper form.contact-form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* justify-content: flex-end; */
-  /* align-items: flex-start; */
   padding: 24px;
-  /* gap: 24px; */
-}
-main .contact-form-wrapper form.contact-form .form-field {
-  /* height: 64px; */
 }
 main .contact-form-wrapper form.contact-form .form-field label {
   font-family: "Source Sans 3", sans-serif;
@@ -175,9 +169,52 @@ main .contact-form-wrapper form.contact-form .form-field input {
   width: 100%;
   height: 42px;
   margin-bottom: 16px;
+  border: 1px solid #050723;
+  background: #ffffff;
+  border-radius: 4px;
 }
-main .contact-form-wrapper form:nth-child(4) input {
-  /* margin-bottom: 8px; */
+main .contact-form-wrapper form.contact-form .form-field:nth-of-type(4) input {
+  margin-bottom: 8px;
+}
+main .contact-form-wrapper form.contact-form .form-checkbox {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+main .contact-form-wrapper form.contact-form .form-checkbox .checkbox {
+  content: "";
+  border: 0.1em solid #aba9a9;
+  border-radius: 2px;
+  display: inline-block;
+  width: 1.5em;
+  height: 1em;
+  align-self: center;
+}
+main .contact-form-wrapper form.contact-form .form-checkbox p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000030;
+}
+
+main .contact-form-wrapper form.contact-form a.button {
+  background-color: #324994;
+  text-decoration: none;
+  border-radius: 4px;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  width: 125px;
+  height: 36px;
+  color: #ffffff;
+  outline: none;
+  display: flex;
+  justify-content: center;
+}
+main .contact-form-wrapper form.contact-form a.button p {
+  align-self: center;
 }
 
 /* MAIN END */
