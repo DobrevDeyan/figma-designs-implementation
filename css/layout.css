@@ -21,6 +21,9 @@ body {
 main {
   width: 100%;
 }
+.container {
+  width: 1184px;
+}
 /* LAYOUT END*/
 
 /* HEADER START*/
@@ -74,19 +77,32 @@ main .hero-image {
   background-size: cover;
   position: relative;
 }
-main .hero-image .hero-image-button {
+main .hero-image a.hero-image-button {
   position: absolute;
   top: 58px;
-  left: 138px;
+  left: 128px;
+  height: 40px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 4px;
   padding: 8px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(6px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 4px;
+  text-decoration: none;
+  color: #000030;
 }
-main .hero-image .hero-image-button .arrow {
-  width: 24px;
+main .hero-image .hero-image-button ion-icon {
+  color: #000030;
+  font-size: 24px;
+}
+main .hero-image .hero-image-button p {
+  font-size: 1em;
   height: 24px;
-  
+  font-family: "Source Sans 3";
+  font-weight: 600;
 }
 main .hero-image .hero-image-title {
   line-height: 88px;
@@ -94,8 +110,41 @@ main .hero-image .hero-image-title {
   font-family: "Source Serif 4", serif;
   font-weight: 600;
   color: #ffffff;
-  font-style: normal;
   text-align: center;
   padding-top: 128px;
 }
 /* HERO IMAGE END*/
+
+/* FOOTER START*/
+footer {
+  background: #000030;
+  height: 236px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer ul {
+  list-style: none;
+}
+footer .left-footer-elements img.logo {
+  width: 170px;
+  height: 36px;
+  align-self: center;
+}
+footer .left-footer-elements {
+  display: flex;
+  flex-direction: column;
+}
+footer .left-footer-elements .social-handles {
+  display: flex;
+  flex-direction: row;
+}
+/* FOOTER END*/
