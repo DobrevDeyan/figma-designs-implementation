@@ -6,7 +6,7 @@ font-family: "Source Serif 4", serif; */
 
 /* LAYOUT START */
 body {
-  background-color: #e5e5e5;
+  background-color: #bebdbd;
   color: #ffffff;
   font-size: 1em;
 }
@@ -119,8 +119,67 @@ main .hero-image .hero-image-title {
 main .separator-background {
   height: 499px;
   display: block;
-  background-color: red;
+  background: #e5e5e5;
+  position: relative;
 }
+main .contact-form-wrapper {
+  background-color: #ffffff;
+  position: absolute;
+  height: 702px;
+  width: 1184px;
+  box-shadow: 0px -64px 64px rgba(19, 38, 99, 0.15);
+  border-radius: 64px 64px 0px 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .contact-form-wrapper h2 {
+  margin: 64px 0 40px 0;
+  color: #000030;
+  font-family: "Source Serif 4", serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+main .contact-form-wrapper form.contact-form {
+  height: 450px;
+  width: 384px;
+  background: #f1efef;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* justify-content: flex-end; */
+  /* align-items: flex-start; */
+  padding: 24px;
+  /* gap: 24px; */
+}
+main .contact-form-wrapper form.contact-form .form-field {
+  /* height: 64px; */
+}
+main .contact-form-wrapper form.contact-form .form-field label {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 14px;
+  color: #000030;
+  font-weight: 400;
+  margin-bottom: 2px;
+  line-height: 20px;
+  display: block;
+}
+main .contact-form-wrapper form.contact-form .form-field input {
+  width: 100%;
+  height: 42px;
+  margin-bottom: 16px;
+}
+main .contact-form-wrapper form:nth-child(4) input {
+  /* margin-bottom: 8px; */
+}
+
 /* MAIN END */
 
 /* FOOTER START*/
@@ -156,7 +215,6 @@ footer ul.left-footer-elements img.logo {
 footer ul.left-footer-elements {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   height: 100%;
   padding: 0;
 }
