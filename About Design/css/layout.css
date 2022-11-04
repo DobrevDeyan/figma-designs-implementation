@@ -210,7 +210,7 @@ main section .card h1 {
   color: #000030;
   flex: none;
   order: 0;
-  align-self: stretch;
+  /* align-self: stretch; */
   flex-grow: 0;
 }
 main section .card h2 {
@@ -220,7 +220,7 @@ main section .card h2 {
   color: #000030;
   flex: none;
   order: 1;
-  align-self: stretch;
+  /* align-self: stretch; */
   flex-grow: 0;
 }
 /* main section .cards .card:first-child {
