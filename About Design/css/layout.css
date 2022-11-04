@@ -166,12 +166,31 @@ main section p {
   font-size: 1em;
   color: #585655;
   line-height: 20px;
+  text-align: center;
+  margin-bottom: 44px;
 }
 main section .cards {
+  background: lightgray;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 24px;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+/* main section .cards > * {
+  flex: 0 0 48%;
+} */
 main section .cards .card {
+  min-width: 484px;
+  height: 217px;
+  padding: 16px;
 }
-main section .cards:first-child {
+main section .cards .card:first-child {
+  order: -1;
+  flex: 1 0 100%;
+  background: red;
 }
 main section .cards:last-child {
 }
