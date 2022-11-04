@@ -11,6 +11,7 @@ body {
   flex-direction: column;
   margin: 0 auto;
   align-items: center;
+  height: 100vh;
 }
 main {
   width: 100%;
@@ -70,16 +71,13 @@ header img.logo {
 main .hero-image {
   min-width: 100%;
   height: 559px;
-  background-image: url("../images/background_image.png");
+  background-image: url("../images/hero-about-page.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 main .hero-image a.hero-image-button {
-  /* position: absolute;
-  top: 58px;
-  left: 128px; */
   margin-top: 58px;
   height: 40px;
   display: inline-flex;
@@ -104,11 +102,11 @@ main .hero-image .hero-image-button p {
   font-family: "Source Sans 3";
   font-weight: 600;
 }
-main .hero-image .hero-image-title {
+main .hero-image h1 {
   line-height: 88px;
   font-size: 4em;
   font-family: "Source Serif 4", serif;
-  font-weight: 600;
+  font-weight: 700;
   color: #ffffff;
   text-align: center;
   /* padding-top: 128px; */
@@ -116,14 +114,6 @@ main .hero-image .hero-image-title {
 }
 /* HERO IMAGE END*/
 
-/* MAIN START */
-/* main .separator-background {
-  height: 499px;
-
-  display: block;
-  background: #e5e5e5;
-  position: relative;
-} */
 main .contact-form-wrapper {
   background: #ffffff;
   position: relative;
@@ -153,50 +143,7 @@ main .contact-form-wrapper form.contact-form {
   justify-content: space-around;
   padding: 24px;
 }
-main .contact-form-wrapper form.contact-form .form-field label {
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 14px;
-  color: #000030;
-  font-weight: 400;
-  margin-bottom: 2px;
-  line-height: 20px;
-  display: block;
-}
-main .contact-form-wrapper form.contact-form .form-field input {
-  width: 100%;
-  height: 42px;
-  margin-bottom: 16px;
-  border: 1px solid #050723;
-  background: #ffffff;
-  border-radius: 4px;
-}
-main .contact-form-wrapper form.contact-form .form-field:nth-of-type(4) input {
-  margin-bottom: 8px;
-}
-main .contact-form-wrapper form.contact-form .form-checkbox {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  margin-bottom: 24px;
-}
-main .contact-form-wrapper form.contact-form .form-checkbox .checkbox {
-  content: "";
-  border: 0.1em solid #aba9a9;
-  border-radius: 2px;
-  display: inline-block;
-  width: 1.5em;
-  height: 1em;
-  align-self: center;
-}
-main .contact-form-wrapper form.contact-form .form-checkbox p {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #000030;
-}
-
-main .contact-form-wrapper form.contact-form a.button {
+main a.button {
   background-color: #324994;
   text-decoration: none;
   border-radius: 4px;
@@ -210,7 +157,7 @@ main .contact-form-wrapper form.contact-form a.button {
   display: flex;
   justify-content: center;
 }
-main .contact-form-wrapper form.contact-form a.button p {
+main a.button p {
   align-self: center;
 }
 
@@ -226,6 +173,7 @@ footer {
   justify-content: center;
   margin-top: auto;
   color: #ffffff;
+  bottom: 0;
 }
 footer .container {
   display: flex;
