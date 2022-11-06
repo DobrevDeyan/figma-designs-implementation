@@ -11,18 +11,25 @@
     <div class="content-wrapper">
       <header>
         <div class="container">
-          <ul class="left-side-navigation">
-            <li>Жилищни обекти</li>
-            <li>Бизнес обекти</li>
-            <li>Ресурси</li>
-          </ul>
-          <img class="logo" src="./images/logo.png" alt="KomfortBrokersLogo" />
-          <ul class="right-side-navigation">
-            <li>Новини</li>
-            <li>За нас</li>
-            <li>Кариери</li>
-            <li>Контакти</li>
-          </ul>
+          <nav>
+            <ul>
+              <li><a href="#">Жилищни обекти</a></li>
+              <li><a href="#">Бизнес обекти</a></li>
+              <li><a href="#">Ресурси</a></li>
+            </ul>
+            <a href="#"
+              ><img
+                class="logo"
+                src="./images/logo.png"
+                alt="KomfortBrokersLogo"
+            /></a>
+            <ul>
+              <li><a href="#">Новини</a></li>
+              <li><a href="#">За нас</a></li>
+              <li><a href="#">Кариери</a></li>
+              <li><a href="#">Контакти</a></li>
+            </ul>
+          </nav>
         </div>
       </header>
       <main>
@@ -32,11 +39,11 @@
               <ion-icon name="arrow-back-outline"></ion-icon>
               <p>Назад</p>
             </a>
-            <h1 class="hero-image-title">Продавате имот?</h1>
+            <h3 class="hero-image-title">Продавате имот?</h3>
           </div>
         </div>
         <div class="contact-form-wrapper container">
-          <h2>Свържете се с нас</h2>
+          <h4>Свържете се с нас</h4>
           <form class="contact-form" action="#">
             <div class="form-field">
               <label for="">Име</label>
@@ -67,41 +74,46 @@
       </main>
       <footer>
         <div class="container">
-          <ul class="left-footer-elements">
-            <li>
-              <img
-                class="logo"
-                src="./images/logo.png"
-                alt="KomfortBrokersLogo"
-              />
-            </li>
-            <li class="copyright">Copyright &copy; All rights reserved.</li>
+          <div class="col-1">
+            <img
+              class="logo"
+              src="./images/logo.png"
+              alt="KomfortBrokersLogo"
+            />
+            <p class="copyright">Copyright &copy; All rights reserved.</p>
             <ul class="social-handles">
-              <li><ion-icon name="logo-facebook"></ion-icon></li>
-              <li><ion-icon name="logo-instagram"></ion-icon></li>
-              <li><ion-icon name="logo-linkedin"></ion-icon></li>
+              <li>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+              </li>
             </ul>
-          </ul>
-          <ul class="middle-footer-elements">
-            <ul>
-              <li>Жилищни обекти</li>
-              <li>Бизнес обекти</li>
-              <li>Ресурси</li>
-            </ul>
-            <ul>
-              <li>За нас</li>
-              <li>Кариери</li>
-              <li>Контакти</li>
-            </ul>
-          </ul>
-          <ul class="right-footer-elements">
-            <li>
+          </div>
+          <div class="col-2">
+            <div class="col-2-1">
+              <a href="#">Жилищни обекти</a>
+              <a href="#">Бизнес обекти</a>
+              <a href="#">Ресурси</a>
+            </div>
+            <div class="col-2-2">
+              <a href="#">Новини</a>
+              <a href="#">За нас</a>
+              <a href="#">Кариери</a>
+              <a href="#">Контакти</a>
+            </div>
+          </div>
+          <div class="col-3">
+            <p>
               гр.Варна, <br />
               бул. 8-ми Приморски полк &#8470;50
-            </li>
-            <li>052 600 458</li>
-            <li>info@komfortbrokers.com</li>
-          </ul>
+            </p>
+            <p>052 600 458</p>
+            <p>info@komfortbrokers.com</p>
+          </div>
         </div>
       </footer>
     </div>

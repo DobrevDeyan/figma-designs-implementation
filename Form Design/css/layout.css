@@ -2,18 +2,13 @@
 
 /* LAYOUT START */
 body {
-  background-color: #bebdbd;
+  background: #000030;
   color: #ffffff;
   font-size: 1em;
 }
 .content-wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  align-items: center;
-}
-main {
-  width: 100%;
 }
 .container {
   width: 1184px;
@@ -23,12 +18,10 @@ main {
 
 /* HEADER START*/
 header {
-  width: 100%;
+  /* width: 100%; */
   height: 80px;
   background-color: #000d58;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   border-bottom: 1px solid #ffffff;
   margin-bottom: -1px;
   font-family: "Source Sans 3", sans-serif;
@@ -37,27 +30,20 @@ header {
 }
 header .container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   justify-content: space-between;
 }
 header ul {
   list-style: none;
   display: flex;
-  flex-direction: row;
   align-self: center;
-  gap: 32px;
   padding: 0;
 }
-header ul.left-side-navigation li,
-header ul.right-side-navigation li {
+header ul li a,
+header ul li a {
+  margin: 0 16px;
   padding: 4px 8px;
-  line-height: 23px;
-}
-header ul.left-side-navigation li,
-header ul.right-side-navigation li {
-  padding: 4px 8px;
-  line-height: 23px;
+  text-decoration: none;
+  color: #ffffff;
 }
 header img.logo {
   width: 170px;
@@ -77,19 +63,13 @@ main .hero-image {
   position: relative;
 }
 main .hero-image a.hero-image-button {
-  /* position: absolute;
-  top: 58px;
-  left: 128px; */
   margin-top: 58px;
   height: 40px;
   display: inline-flex;
-  flex-direction: row;
   align-items: center;
-  gap: 4px;
   padding: 8px;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(6px);
-  /* Note: backdrop-filter has minimal browser support */
   border-radius: 4px;
   text-decoration: none;
   color: #000030;
@@ -111,19 +91,12 @@ main .hero-image .hero-image-title {
   font-weight: 600;
   color: #ffffff;
   text-align: center;
-  /* padding-top: 128px; */
   margin-top: 45px;
 }
 /* HERO IMAGE END*/
 
 /* MAIN START */
-/* main .separator-background {
-  height: 499px;
 
-  display: block;
-  background: #e5e5e5;
-  position: relative;
-} */
 main .contact-form-wrapper {
   background: #ffffff;
   position: relative;
@@ -136,7 +109,7 @@ main .contact-form-wrapper {
   align-items: center;
   flex-direction: column;
 }
-main .contact-form-wrapper h2 {
+main .contact-form-wrapper h3 {
   margin: 64px 0 40px 0;
   color: #000030;
   font-family: "Source Serif 4", serif;
@@ -219,17 +192,12 @@ main .contact-form-wrapper form.contact-form a.button p {
 /* FOOTER START*/
 footer {
   background: #000030;
-  height: 236px;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  margin-top: auto;
   color: #ffffff;
+  /* justify-content: center; */
+  /* margin-top: auto; */
 }
 footer .container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 70px;
@@ -240,33 +208,34 @@ footer ul {
   font-family: "Source Sans 3", sans-serif;
   font-weight: 600;
 }
-footer ul.left-footer-elements img.logo {
-  width: 170px;
-  height: 36px;
-  align-self: center;
-  margin-bottom: 8px;
-}
-footer ul.left-footer-elements {
+footer .col-1 {
   display: flex;
   flex-direction: column;
   height: 100%;
   padding: 0;
 }
-footer .container .copyright {
+footer .col-1 img.logo {
+  width: 170px;
+  height: 36px;
+  margin-bottom: 8px;
+}
+footer .col-1 p.copyright {
   margin-bottom: 35px;
   font-family: "Source Sans 3", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
 }
-footer .left-footer-elements .social-handles {
+footer .col-1 ul.social-handles {
   display: flex;
-  flex-direction: row;
   font-size: 20px;
-  gap: 28px;
   padding: 0;
 }
-footer ul.middle-footer-elements {
+footer .col-1 ul.social-handles li a {
+  margin-right: 24px;
+  color: #ffffff;
+}
+footer .col-2 {
   display: flex;
   flex-direction: row;
   gap: 58px;
@@ -275,20 +244,21 @@ footer ul.middle-footer-elements {
   line-height: 26px;
   font-size: 18px;
 }
-footer ul.middle-footer-elements ul {
+footer .col-2 {
   display: flex;
   padding: 0;
   flex-direction: column;
-  gap: 8px;
 }
-footer ul.right-footer-elements {
+footer .col-2-1,
+footer .col-2-2 {
+  display: flex;
+  flex-direction: colum;
+}
+footer .col-3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 0;
   height: 100%;
-  line-height: 23px;
-  font-size: 1em;
-  gap: 16px;
 }
 /* FOOTER END*/
