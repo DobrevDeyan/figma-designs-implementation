@@ -18,49 +18,50 @@ body {
 
 /* HEADER START*/
 header {
-  /* width: 100%; */
-  height: 80px;
   background-color: #000d58;
-  display: flex;
   border-bottom: 1px solid #ffffff;
   margin-bottom: -1px;
-  font-family: "Source Sans 3", sans-serif;
-  font-weight: 600;
   z-index: 999;
 }
-header .container {
+header nav {
+  height: 80px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-header ul {
+header nav ul {
   list-style: none;
   display: flex;
-  align-self: center;
   padding: 0;
 }
-header ul li a,
-header ul li a {
-  margin: 0 16px;
+header nav ul li {
   padding: 4px 8px;
+}
+header nav ul li:not(:first-child) {
+  margin-left: 32px;
+}
+header nav ul li a {
   text-decoration: none;
   color: #ffffff;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
 }
-header img.logo {
+header nav a img.logo {
   width: 170px;
   height: 36px;
-  align-self: center;
 }
 /* HEADER END*/
 
 /* HERO IMAGE START*/
-main .hero-image {
-  min-width: 100%;
+main img.hero-image {
+  width: 100%;
   height: 559px;
-  background-image: url("../images/background_image.png");
-  background-position: center;
+  /* background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   position: relative;
+  object-fit: cover;
+  object-position: center;
 }
 main .hero-image a.hero-image-button {
   margin-top: 58px;
@@ -137,7 +138,7 @@ main .contact-form-wrapper form.contact-form .form-field label {
 }
 main .contact-form-wrapper form.contact-form .form-field input {
   width: 100%;
-  height: 42px;
+  padding: 5px;
   margin-bottom: 16px;
   border: 1px solid #050723;
   background: #ffffff;
