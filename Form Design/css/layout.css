@@ -8,6 +8,7 @@ body {
 }
 .content-wrapper {
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
   background: #ffffff;
 }
@@ -105,6 +106,8 @@ main .hero-image-title {
 /* MAIN START */
 
 main .contact-form-wrapper {
+  max-width: 1184px;
+  width: 100%;
   background: #ffffff;
   position: relative;
   height: 702px;

@@ -2,7 +2,7 @@
 
 /* LAYOUT START */
 body {
-  background-color: #ffffff;
+  background: #000030;
   color: #ffffff;
   font-size: 1em;
 }
@@ -10,11 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  align-items: center;
-  height: 100vh;
-}
-main {
-  width: 100%;
+  background-color: #ffffff;
 }
 .container {
   width: 1184px;
@@ -24,43 +20,37 @@ main {
 
 /* HEADER START*/
 header {
-  width: 100%;
-  min-height: 80px;
-  background-color: #000d58;
-  display: flex;
-  justify-content: center;
+  background: #000d58;
   border-bottom: 1px solid #ffffff;
   margin-bottom: -1px;
-  font-family: "Source Sans 3", sans-serif;
-  font-weight: 600;
   z-index: 999;
 }
-header .container {
+header nav {
+  height: 80px;
   display: flex;
-  justify-content: center;
   justify-content: space-between;
+  align-items: center;
 }
-header ul {
+header nav ul {
   list-style: none;
   display: flex;
-  align-self: center;
-  gap: 32px;
   padding: 0;
 }
-header ul.left-side-navigation li,
-header ul.right-side-navigation li {
+header nav ul li {
   padding: 4px 8px;
-  line-height: 23px;
 }
-header ul.left-side-navigation li,
-header ul.right-side-navigation li {
-  padding: 4px 8px;
-  line-height: 23px;
+header nav ul li:not(:first-child) {
+  margin-left: 32px;
 }
-header img.logo {
+header nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+}
+header nav a img.logo {
   width: 170px;
   height: 36px;
-  align-self: center;
 }
 /* HEADER END*/
 
@@ -98,7 +88,7 @@ main .hero-image .hero-image-button p {
   font-family: "Source Sans 3";
   font-weight: 600;
 }
-main .hero-image h1 {
+main .hero-image h3 {
   line-height: 88px;
   font-size: 4em;
   font-family: "Source Serif 4", serif;
@@ -113,18 +103,17 @@ main .hero-image h1 {
 /* MAIN START */
 
 main .contact-form-wrapper {
-  background: #ffffff;
+  background-color: #ffffff;
   position: relative;
   height: 702px;
   margin-top: -180px;
   box-shadow: 0px -64px 64px rgba(19, 38, 99, 0.15);
   border-radius: 64px 64px 0px 0px;
-  z-index: 1000;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-main .contact-form-wrapper h2 {
+main .contact-form-wrapper h3 {
   margin: 64px 0 40px 0;
   color: #000030;
   font-family: "Source Serif 4", serif;
@@ -148,7 +137,7 @@ main section {
   flex-direction: column;
   align-items: center;
 }
-main section h2 {
+main section h3 {
   font-size: 2em;
   line-height: 32px;
   font-family: "Source Serif 4", serif;
@@ -185,33 +174,27 @@ main section .card {
   display: flex;
   align-items: flex-start;
 }
+main section .card .img-container {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+}
 main section .card img {
   width: 95px;
   height: 95px;
   border-radius: 50%;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
-main section .card h1 {
+main section .card h4 {
   font-family: "Source Serif 4", serif;
   font-weight: 700;
   font-size: 28px;
   color: #000030;
-  flex: none;
-  order: 0;
-  /* align-self: stretch; */
-  flex-grow: 0;
 }
-main section .card h2 {
+main section .card h5 {
   font-family: "Source Sans 3", sans-serif;
   font-weight: 600;
   font-size: 24px;
   color: #000030;
-  flex: none;
-  order: 1;
-  /* align-self: stretch; */
-  flex-grow: 0;
 }
 /* main section .cards .card:first-child {
 }
@@ -242,19 +225,12 @@ main section a.button p {
 /* FOOTER START*/
 footer {
   background: #000030;
-  height: 236px;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  margin-top: auto;
   color: #ffffff;
-  bottom: 0;
 }
 footer .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 70px;
   margin-top: 40px;
 }
@@ -263,53 +239,81 @@ footer ul {
   font-family: "Source Sans 3", sans-serif;
   font-weight: 600;
 }
-footer ul.left-footer-elements img.logo {
-  width: 170px;
-  height: 36px;
-  align-self: center;
-  margin-bottom: 8px;
-}
-footer ul.left-footer-elements {
+footer .col-1 {
   display: flex;
   flex-direction: column;
   height: 100%;
   padding: 0;
 }
-footer .container .copyright {
+footer .col-1 img.logo {
+  width: 170px;
+  height: 36px;
+  margin-bottom: 8px;
+}
+footer .col-1 p.copyright {
   margin-bottom: 35px;
   font-family: "Source Sans 3", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
 }
-footer .left-footer-elements .social-handles {
+footer .col-1 ul.social-handles {
   display: flex;
   font-size: 20px;
-  gap: 28px;
   padding: 0;
 }
-footer ul.middle-footer-elements {
+footer .col-1 ul.social-handles li a {
+  margin-right: 24px;
+  color: #ffffff;
+}
+footer .col-2 {
   display: flex;
+  flex-direction: row;
   gap: 58px;
   padding: 0;
   padding-bottom: 32px;
   line-height: 26px;
   font-size: 18px;
 }
-footer ul.middle-footer-elements ul {
+footer .col-2 {
   display: flex;
   padding: 0;
-  flex-direction: column;
-  gap: 8px;
 }
-footer ul.right-footer-elements {
+footer .col-2-1 a,
+footer .col-2-2 a {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+}
+footer .col-2-1 a:visited,
+footer .col-2-2 a:visited {
+  color: #ffffff;
+}
+footer .col-2-1,
+footer .col-2-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .container .col-2.col-2-1:nth-child(2) {
+  margin: 8px 0;
+}
+footer .col-3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 0;
   height: 100%;
-  line-height: 23px;
-  font-size: 1em;
-  gap: 16px;
+}
+footer .col-3 p {
+  font-size: 16px;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+}
+footer .col-3:nth-child(2) {
+  font-size: 16px;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
 }
 /* FOOTER END*/

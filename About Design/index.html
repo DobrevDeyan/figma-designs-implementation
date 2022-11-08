@@ -8,23 +8,29 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="content-wrapper">
-      <header>
-        <div class="container">
-          <ul class="left-side-navigation">
-            <li>Жилищни обекти</li>
-            <li>Бизнес обекти</li>
-            <li>Ресурси</li>
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#">Жилищни обекти</a></li>
+            <li><a href="#">Бизнес обекти</a></li>
+            <li><a href="#">Ресурси</a></li>
           </ul>
-          <img class="logo" src="./images/logo.png" alt="KomfortBrokersLogo" />
-          <ul class="right-side-navigation">
-            <li>Новини</li>
-            <li>За нас</li>
-            <li>Кариери</li>
-            <li>Контакти</li>
+          <a href="#"
+            ><img
+              class="logo"
+              src="./images/logo.png"
+              alt="KomfortBrokersLogo"
+          /></a>
+          <ul>
+            <li><a href="#">Новини</a></li>
+            <li><a href="#">За нас</a></li>
+            <li><a href="#">Кариери</a></li>
+            <li><a href="#">Контакти</a></li>
           </ul>
-        </div>
-      </header>
+        </nav>
+      </div>
+    </header>
       <main>
         <div class="hero-image">
           <div class="container">
@@ -32,11 +38,11 @@
               <ion-icon name="arrow-back-outline"></ion-icon>
               <p>Назад</p>
             </a>
-            <h1>За нас</h1>
+            <h3>За нас</h3>
           </div>
         </div>
         <section class="container">
-          <h2>Запознайте се с нашия екип</h2>
+          <h3>Запознайте се с нашия екип</h3>
           <p>
             <b>Специалистите на „Комфорт Брокърс“ ООД</b> имат необходимия опит
             и квалификация, в следствие, на които са на лице условия за ефикасно
@@ -53,12 +59,14 @@
           </div>
           <div class="cards">
             <div class="card">
-              <img
-                src="/About Design/images/profile.png"
-                alt="PersonalPicture"
-              />
-              <h1>Адриана Йовчева</h1>
-              <h2>Офис администратор</h2>
+              <div class="img-container">
+                <img
+                  src="/About Design/images/profile.png"
+                  alt="PersonalPicture"
+                />
+              </div>
+              <h4>Адриана Йовчева</h4>
+              <h5>Офис администратор</h5>
               <!-- <div class="email">
                 <ion-icon name="mail-outline"></ion-icon>
                 <a href="#">zkirova@komfortbrokers.com</a>
@@ -140,41 +148,45 @@
       </main>
       <footer>
         <div class="container">
-          <ul class="left-footer-elements">
-            <li>
-              <img
-                class="logo"
-                src="./images/logo.png"
-                alt="KomfortBrokersLogo"
-              />
-            </li>
-            <li class="copyright">Copyright &copy; All rights reserved.</li>
+          <div class="col-1">
+            <img
+              class="logo"
+              src="./images/logo.png"
+              alt="KomfortBrokersLogo"
+            />
+            <p class="copyright">Copyright &copy; All rights reserved.</p>
             <ul class="social-handles">
-              <li><ion-icon name="logo-facebook"></ion-icon></li>
-              <li><ion-icon name="logo-instagram"></ion-icon></li>
-              <li><ion-icon name="logo-linkedin"></ion-icon></li>
+              <li>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+              </li>
             </ul>
-          </ul>
-          <ul class="middle-footer-elements">
-            <ul>
-              <li>Жилищни обекти</li>
-              <li>Бизнес обекти</li>
-              <li>Ресурси</li>
-            </ul>
-            <ul>
-              <li>За нас</li>
-              <li>Кариери</li>
-              <li>Контакти</li>
-            </ul>
-          </ul>
-          <ul class="right-footer-elements">
-            <li>
+          </div>
+          <div class="col-2">
+            <div class="col-2-1">
+              <a href="#">Жилищни обекти</a>
+              <a href="#">Бизнес обекти</a>
+              <a href="#">Ресурси</a>
+            </div>
+            <div class="col-2-2">
+              <a href="#">За нас</a>
+              <a href="#">Кариери</a>
+              <a href="#">Контакти</a>
+            </div>
+          </div>
+          <div class="col-3">
+            <p>
               гр.Варна, <br />
               бул. 8-ми Приморски полк &#8470;50
-            </li>
-            <li>052 600 458</li>
-            <li>info@komfortbrokers.com</li>
-          </ul>
+            </p>
+            <p>052 600 458</p>
+            <p>info@komfortbrokers.com</p>
+          </div>
         </div>
       </footer>
     </div>
