@@ -111,7 +111,7 @@ main .contact-form-wrapper {
   background: #ffffff;
   position: relative;
   height: 702px;
-  margin-top: -180px;
+  margin-top: -220px;
   box-shadow: 0px -64px 64px rgba(19, 38, 99, 0.15);
   border-radius: 64px 64px 0px 0px;
   z-index: 1000;
@@ -351,7 +351,7 @@ footer .col-2-2 {
   flex-direction: column;
   justify-content: space-between;
 }
-footer .container .col-2.col-2-1:nth-child(2) {
+footer .col-2 a:nth-child(2) {
   margin: 8px 0;
 }
 footer .col-3 {
@@ -366,9 +366,7 @@ footer .col-3 p {
   font-family: "Source Sans 3", sans-serif;
   font-weight: 600;
 }
-footer .col-3:nth-child(2) {
-  font-size: 16px;
-  font-family: "Source Sans 3", sans-serif;
-  font-weight: 600;
+footer .col-3 p:nth-child(2) {
+  margin: 16px 0;
 }
 /* FOOTER END*/

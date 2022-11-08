@@ -83,6 +83,34 @@ main .hero-image .hero-image-button ion-icon {
   color: #000030;
   font-size: 24px;
 }
+
+main .about-us-form-wrapper {
+  max-width: 1184px;
+  width: 100%;
+  background: #ffffff;
+  position: relative;
+  height: 528px;
+  margin-top: -220px;
+  border-radius: 64px;
+  box-shadow: 0px -64px 64px rgba(19, 38, 99, 0.15);
+  z-index: 1000;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+}
+main .about-us-form-wrapper p.about-us-text {
+  font-family: "Inter", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #585655;
+  padding: 64px 300px;
+}
+main .about-us-form-wrapper p.about-us-text span {
+  font-family: "Source Sans 3";
+  font-weight: 700;
+  font-size: 16px;
+}
 main .hero-image .hero-image-button p {
   font-size: 1em;
   height: 24px;
@@ -96,7 +124,6 @@ main .hero-image h3 {
   font-weight: 700;
   color: #ffffff;
   text-align: center;
-  /* padding-top: 128px; */
   margin-top: 45px;
 }
 /* HERO IMAGE END*/
@@ -114,10 +141,10 @@ main section h3 {
   line-height: 32px;
   font-family: "Source Serif 4", serif;
   font-weight: 700;
-  margin: 24px 0;
+  margin: 40px 0 24px 0;
   color: #000030;
 }
-main section p {
+main section p.intro {
   font-family: "Source Sans 3", sans-serif;
   font-weight: 400;
   font-size: 1em;
@@ -204,12 +231,12 @@ main section a.button {
   font-family: "Source Sans 3", sans-serif;
   font-size: 1em;
   font-weight: 400;
-  width: 125px;
-  height: 36px;
   color: #ffffff;
-  outline: none;
   display: flex;
   justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 128px;
+  padding: 8px 32px;
 }
 main section a.button p {
   align-self: center;
@@ -293,7 +320,7 @@ footer .col-2-2 {
   flex-direction: column;
   justify-content: space-between;
 }
-footer .container .col-2.col-2-1:nth-child(2) {
+footer .col-2 a:nth-child(2) {
   margin: 8px 0;
 }
 footer .col-3 {
@@ -308,9 +335,7 @@ footer .col-3 p {
   font-family: "Source Sans 3", sans-serif;
   font-weight: 600;
 }
-footer .col-3:nth-child(2) {
-  font-size: 16px;
-  font-family: "Source Sans 3", sans-serif;
-  font-weight: 600;
+footer .col-3 p:nth-child(2) {
+  margin: 16px 0;
 }
 /* FOOTER END*/
