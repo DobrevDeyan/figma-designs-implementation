@@ -2,8 +2,8 @@
 
 /* LAYOUT START */
 body {
-  background: #000030;
   color: #ffffff;
+  background: #000030;
   font-size: 1em;
 }
 .content-wrapper {
@@ -16,6 +16,9 @@ body {
   width: 1184px;
   margin: 0 auto;
 }
+main {
+  background: #ffff;
+}
 /* LAYOUT END*/
 
 /* HEADER START*/
@@ -23,7 +26,6 @@ header {
   background: #000d58;
   border-bottom: 1px solid #ffffff;
   margin-bottom: -1px;
-  z-index: 999;
 }
 header nav {
   height: 80px;
@@ -73,7 +75,6 @@ main .hero-image a.hero-image-button {
   padding: 8px;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(6px);
-  /* Note: backdrop-filter has minimal browser support */
   border-radius: 4px;
   text-decoration: none;
   color: #000030;
@@ -101,35 +102,6 @@ main .hero-image h3 {
 /* HERO IMAGE END*/
 
 /* MAIN START */
-
-main .contact-form-wrapper {
-  background-color: #ffffff;
-  position: relative;
-  height: 702px;
-  margin-top: -180px;
-  box-shadow: 0px -64px 64px rgba(19, 38, 99, 0.15);
-  border-radius: 64px 64px 0px 0px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-main .contact-form-wrapper h3 {
-  margin: 64px 0 40px 0;
-  color: #000030;
-  font-family: "Source Serif 4", serif;
-  font-weight: 700;
-  font-size: 2em;
-}
-main .contact-form-wrapper form.contact-form {
-  height: 450px;
-  width: 384px;
-  background: #f1efef;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 24px;
-}
 
 /* SECTION TEAM INFO START */
 main section {
@@ -161,45 +133,70 @@ main section .cards {
   justify-content: center;
   flex-wrap: wrap;
 }
-main section .card-head {
-  margin-bottom: 24px;
-}
 main section .card {
   width: 484px;
-  height: 217px;
   padding: 16px;
-  margin: 24px;
+  margin: 16px;
   border: 1px solid #000d58;
   border-radius: 12px;
   display: flex;
-  align-items: flex-start;
 }
 main section .card .img-container {
   width: 95px;
   height: 95px;
   border-radius: 50%;
+  margin-right: 24px;
+}
+main section .card .data-container {
+  flex-grow: 1;
 }
 main section .card img {
-  width: 95px;
-  height: 95px;
   border-radius: 50%;
 }
 main section .card h4 {
   font-family: "Source Serif 4", serif;
   font-weight: 700;
+  align-self: stretch;
   font-size: 28px;
+  line-height: 38px;
   color: #000030;
+  margin-bottom: 4px;
 }
 main section .card h5 {
   font-family: "Source Sans 3", sans-serif;
   font-weight: 600;
   font-size: 24px;
-  color: #000030;
+  line-height: 24px;
+  color: #585655;
+  margin-bottom: 8px;
 }
-/* main section .cards .card:first-child {
+.info-box {
+  background: #f1efef;
+  border-radius: 4px;
+  display: flex;
+  height: 32px;
+  padding: 4px 8px;
 }
-main section .cards:last-child {
-} */
+.info-box ion-icon {
+  color: #324994;
+  align-self: center;
+  font-size: 18px;
+}
+.info-box a {
+  font-family: "Source Sans 3", serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #324994;
+  text-decoration: none;
+  margin-left: 10px;
+}
+main section .card .email {
+  margin-bottom: 8px;
+}
+main section .card .phone {
+  margin-bottom: 8px;
+}
 main section a.button {
   background-color: #324994;
   text-decoration: none;
