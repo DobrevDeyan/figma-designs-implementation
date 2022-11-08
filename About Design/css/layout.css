@@ -28,7 +28,6 @@ header {
   min-height: 80px;
   background-color: #000d58;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   border-bottom: 1px solid #ffffff;
   margin-bottom: -1px;
@@ -38,14 +37,12 @@ header {
 }
 header .container {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   justify-content: space-between;
 }
 header ul {
   list-style: none;
   display: flex;
-  flex-direction: row;
   align-self: center;
   gap: 32px;
   padding: 0;
@@ -81,7 +78,6 @@ main .hero-image a.hero-image-button {
   margin-top: 58px;
   height: 40px;
   display: inline-flex;
-  flex-direction: row;
   align-items: center;
   gap: 4px;
   padding: 8px;
@@ -173,14 +169,9 @@ main section .cards {
   width: 100%;
   height: 100%;
   display: flex;
-  gap: 24px;
-  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
 }
-/* main section .cards > * {
-  flex: 0 0 48%;
-} */
 main section .card-head {
   margin-bottom: 24px;
 }
@@ -188,11 +179,10 @@ main section .card {
   width: 484px;
   height: 217px;
   padding: 16px;
-  gap: 24px;
+  margin: 24px;
   border: 1px solid #000d58;
   border-radius: 12px;
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
 }
 main section .card img {
@@ -263,7 +253,6 @@ footer {
 }
 footer .container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 70px;
@@ -295,14 +284,12 @@ footer .container .copyright {
 }
 footer .left-footer-elements .social-handles {
   display: flex;
-  flex-direction: row;
   font-size: 20px;
   gap: 28px;
   padding: 0;
 }
 footer ul.middle-footer-elements {
   display: flex;
-  flex-direction: row;
   gap: 58px;
   padding: 0;
   padding-bottom: 32px;
