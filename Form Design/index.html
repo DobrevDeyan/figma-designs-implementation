@@ -33,20 +33,20 @@
         </div>
       </header>
       <main>
-        <!-- <div class="hero-image"> -->
-        <img
-          class="hero-image"
-          src="../Form Design/images/background_image.png"
-          alt=""
-        />
-        <div class="container">
-          <a href="#" class="hero-image-button">
-            <ion-icon name="arrow-back-outline"></ion-icon>
-            <p>Назад</p>
-          </a>
-          <h3 class="hero-image-title">Продавате имот?</h3>
+        <div class="hero-image-background">
+          <img
+            class="hero-image"
+            src="../Form Design/images/background_image.png"
+            alt=""
+          />
+          <div class="container">
+            <a href="#" class="hero-image-button">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+              <p>Назад</p>
+            </a>
+            <h3 class="hero-image-title">Продавате имот?</h3>
+          </div>
         </div>
-        <!-- </div> -->
         <div class="contact-form-wrapper container">
           <h4>Свържете се с нас</h4>
           <form class="contact-form" action="#">
@@ -67,7 +67,10 @@
               <input type="text" value="" />
             </div>
             <div class="form-checkbox">
-              <div class="checkbox"></div>
+              <div class="checkbox-container">
+                <input type="checkbox" class="checkbox" />
+                <span class="checkmark"></span>
+              </div>
               <p>
                 Съгласен/на съм предоставените от мен по-горе лични данни да
                 бъдат обработвани.
@@ -105,7 +108,6 @@
               <a href="#">Ресурси</a>
             </div>
             <div class="col-2-2">
-              <a href="#">Новини</a>
               <a href="#">За нас</a>
               <a href="#">Кариери</a>
               <a href="#">Контакти</a>

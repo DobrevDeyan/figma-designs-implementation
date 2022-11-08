@@ -9,6 +9,7 @@ body {
 .content-wrapper {
   display: flex;
   flex-direction: column;
+  background: #ffffff;
 }
 .container {
   width: 1184px;
@@ -53,21 +54,26 @@ header nav a img.logo {
 /* HEADER END*/
 
 /* HERO IMAGE START*/
-main img.hero-image {
+main .hero-image-background {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+main .container {
+  position: absolute;
+  top: 0;
+}
+main .hero-image-background img.hero-image {
   width: 100%;
   height: 559px;
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
   position: relative;
   object-fit: cover;
   object-position: center;
 }
-main .hero-image a.hero-image-button {
+main a.hero-image-button {
   margin-top: 58px;
-  height: 40px;
   display: inline-flex;
-  align-items: center;
   padding: 8px;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(6px);
@@ -75,17 +81,17 @@ main .hero-image a.hero-image-button {
   text-decoration: none;
   color: #000030;
 }
-main .hero-image .hero-image-button ion-icon {
+main .hero-image-button ion-icon {
   color: #000030;
   font-size: 24px;
 }
-main .hero-image .hero-image-button p {
+main .hero-image-button p {
   font-size: 1em;
   height: 24px;
   font-family: "Source Sans 3";
   font-weight: 600;
 }
-main .hero-image .hero-image-title {
+main .hero-image-title {
   line-height: 88px;
   font-size: 4em;
   font-family: "Source Serif 4", serif;
@@ -110,7 +116,7 @@ main .contact-form-wrapper {
   align-items: center;
   flex-direction: column;
 }
-main .contact-form-wrapper h3 {
+main .contact-form-wrapper h4 {
   margin: 64px 0 40px 0;
   color: #000030;
   font-family: "Source Serif 4", serif;
@@ -147,27 +153,105 @@ main .contact-form-wrapper form.contact-form .form-field input {
 main .contact-form-wrapper form.contact-form .form-field:nth-of-type(4) input {
   margin-bottom: 8px;
 }
+
+main .contact-form-wrapper form.contact-form .checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+main
+  .contact-form-wrapper
+  form.contact-form
+  .form-checkbox
+  .checkbox-container {
+  display: flex;
+  align-items: center;
+}
+main
+  .contact-form-wrapper
+  form.contact-form
+  .form-checkbox
+  .checkbox-container
+  .checkmark {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  z-index: 1000000;
+  border: 1px solid #aba9a9;
+  border-radius: 2px;
+}
+/* On mouse-over, add a grey background color */
+main
+  .contact-form-wrapper
+  form.contact-form
+  .form-checkbox
+  .checkbox-container:hover
+  input
+  ~ .checkmark {
+  background-color: #ccc;
+}
+/* When the checkbox is checked, add a blue background */
+main
+  .contact-form-wrapper
+  form.contact-form
+  .form-checkbox
+  .checkbox-container
+  input:checked
+  ~ .checkmark {
+  background-color: #2196f3;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+main
+  .contact-form-wrapper
+  form.contact-form
+  .form-checkbox
+  .checkbox-container
+  .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the checkmark when checked */
+main
+  .contact-form-wrapper
+  form.contact-form
+  .form-checkbox
+  .checkbox-container
+  input:checked
+  ~ .checkmark:after {
+  display: block;
+}
+/* Style the checkmark/indicator */
+main
+  .contact-form-wrapper
+  form.contact-form
+  .form-checkbox.checkbox-container
+  .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid red;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 main .contact-form-wrapper form.contact-form .form-checkbox {
   display: flex;
-  flex-direction: row;
-  gap: 8px;
+  justify-content: space-between;
   margin-bottom: 24px;
 }
-main .contact-form-wrapper form.contact-form .form-checkbox .checkbox {
-  content: "";
-  border: 0.1em solid #aba9a9;
-  border-radius: 2px;
-  display: inline-block;
-  width: 1.5em;
-  height: 1em;
-  align-self: center;
-}
+
 main .contact-form-wrapper form.contact-form .form-checkbox p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   color: #000030;
+  margin-left: 8px;
 }
 
 main .contact-form-wrapper form.contact-form a.button {
@@ -194,13 +278,11 @@ main .contact-form-wrapper form.contact-form a.button p {
 footer {
   background: #000030;
   color: #ffffff;
-  /* justify-content: center; */
-  /* margin-top: auto; */
 }
 footer .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 70px;
   margin-top: 40px;
 }
@@ -248,12 +330,26 @@ footer .col-2 {
 footer .col-2 {
   display: flex;
   padding: 0;
-  flex-direction: column;
+}
+footer .col-2-1 a,
+footer .col-2-2 a {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+}
+footer .col-2-1 a:visited,
+footer .col-2-2 a:visited {
+  color: #ffffff;
 }
 footer .col-2-1,
 footer .col-2-2 {
   display: flex;
-  flex-direction: colum;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .container .col-2.col-2-1:nth-child(2) {
+  margin: 8px 0;
 }
 footer .col-3 {
   display: flex;
@@ -261,5 +357,15 @@ footer .col-3 {
   justify-content: space-between;
   padding: 0;
   height: 100%;
+}
+footer .col-3 p {
+  font-size: 16px;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+}
+footer .col-3:nth-child(2) {
+  font-size: 16px;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
 }
 /* FOOTER END*/
