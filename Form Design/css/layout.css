@@ -14,6 +14,7 @@ body {
 }
 .container {
   max-width: 1184px;
+  width: 100%;
   margin: 0 auto;
 }
 /* LAYOUT END*/
@@ -26,7 +27,6 @@ header {
   z-index: 999;
 }
 header nav {
-  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,6 +35,7 @@ header nav ul {
   list-style: none;
   display: flex;
   padding: 0;
+  margin: 24px 0;
 }
 header nav ul li {
   padding: 4px 8px;
@@ -50,25 +51,21 @@ header nav ul li a {
 }
 header nav a img.logo {
   width: 170px;
-  height: 36px;
 }
 /* HEADER END*/
 
 /* HERO IMAGE START*/
 main .hero-image-background {
   width: 100%;
+  height: 559px;
   position: relative;
   display: flex;
   justify-content: center;
 }
-/* main .container {
-  position: absolute;
-  top: 0;
-} */
 main .hero-image-background img.hero-image {
   width: 100%;
-  height: 559px;
-  position: relative;
+  height: 100%;
+  position: absolute;
   object-fit: cover;
   object-position: center;
 }
@@ -156,99 +153,53 @@ main .contact-form-wrapper form.contact-form .form-field input {
 main .contact-form-wrapper form.contact-form .form-field:nth-of-type(4) input {
   margin-bottom: 8px;
 }
-
-main .contact-form-wrapper form.contact-form .checkbox {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+form.contact-form .checkbox {
+  display: none;
 }
-main
-  .contact-form-wrapper
-  form.contact-form
-  .form-checkbox
-  .checkbox-container {
+.checkbox-container {
   display: flex;
   align-items: center;
 }
-main
-  .contact-form-wrapper
-  form.contact-form
-  .form-checkbox
-  .checkbox-container
-  .checkmark {
+.checkbox-container .checkmark {
   display: inline-block;
   height: 16px;
   width: 16px;
   z-index: 1000000;
   border: 1px solid #aba9a9;
   border-radius: 2px;
+  position: relative;
 }
-/* On mouse-over, add a grey background color */
-main
-  .contact-form-wrapper
-  form.contact-form
-  .form-checkbox
-  .checkbox-container:hover
-  input
-  ~ .checkmark {
+.checkbox-container:hover input ~ .checkmark {
   background-color: #ccc;
 }
-/* When the checkbox is checked, add a blue background */
-main
-  .contact-form-wrapper
-  form.contact-form
-  .form-checkbox
-  .checkbox-container
-  input:checked
-  ~ .checkmark {
+/* input:checked ~ .checkmark {
   background-color: #2196f3;
-}
-/* Create the checkmark/indicator (hidden when not checked) */
-main
-  .contact-form-wrapper
-  form.contact-form
-  .form-checkbox
-  .checkbox-container
-  .checkmark:after {
+} */
+.checkbox-container .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
-/* Show the checkmark when checked */
-main
-  .contact-form-wrapper
-  form.contact-form
-  .form-checkbox
-  .checkbox-container
-  input:checked
-  ~ .checkmark:after {
+input:checked ~ .checkmark:after {
   display: block;
 }
-/* Style the checkmark/indicator */
-main
-  .contact-form-wrapper
-  form.contact-form
-  .form-checkbox.checkbox-container
-  .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
+.checkbox-container .checkmark:after {
+  left: 4px;
+  top: 1px;
+  width: 6px;
   height: 10px;
-  border: solid red;
+  border: solid black;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-main .contact-form-wrapper form.contact-form .form-checkbox {
+form.contact-form .form-checkbox {
   display: flex;
   justify-content: space-between;
   margin-bottom: 24px;
 }
-
-main .contact-form-wrapper form.contact-form .form-checkbox p {
+form.contact-form .form-checkbox p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -256,8 +207,7 @@ main .contact-form-wrapper form.contact-form .form-checkbox p {
   color: #000030;
   margin-left: 8px;
 }
-
-main .contact-form-wrapper form.contact-form a.button {
+form.contact-form a.button {
   background-color: #324994;
   text-decoration: none;
   border-radius: 4px;
@@ -324,7 +274,6 @@ footer .col-1 ul.social-handles li a {
 footer .col-2 {
   display: flex;
   flex-direction: row;
-  gap: 58px;
   padding: 0;
   padding-bottom: 32px;
   line-height: 26px;
@@ -340,6 +289,12 @@ footer .col-2-2 a {
   font-weight: 600;
   font-size: 18px;
   text-decoration: none;
+}
+footer .col-2-1 {
+  margin-right: 30px;
+}
+footer .col-2-2 {
+  margin-left: 30px;
 }
 footer .col-2-1 a:visited,
 footer .col-2-2 a:visited {

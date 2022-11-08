@@ -14,6 +14,7 @@ body {
 }
 .container {
   max-width: 1184px;
+  width: 100%;
   margin: 0 auto;
 }
 main {
@@ -27,7 +28,6 @@ header {
   border-bottom: 1px solid #ffffff;
 }
 header nav {
-  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,6 +36,7 @@ header nav ul {
   list-style: none;
   display: flex;
   padding: 0;
+  margin: 24px 0;
 }
 header nav ul li {
   padding: 4px 8px;
@@ -172,12 +173,19 @@ main section .card .img-container {
   height: 95px;
   border-radius: 50%;
   margin-right: 24px;
+  overflow: hidden;
 }
 main section .card .data-container {
   flex-grow: 1;
 }
 main section .card img {
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  /* flex-shrink: 0; */
 }
 main section .card h4 {
   font-family: "Source Serif 4", serif;
