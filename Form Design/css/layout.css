@@ -13,7 +13,7 @@ body {
   background: #ffffff;
 }
 .container {
-  width: 1184px;
+  max-width: 1184px;
   margin: 0 auto;
 }
 /* LAYOUT END*/
@@ -61,10 +61,10 @@ main .hero-image-background {
   display: flex;
   justify-content: center;
 }
-main .container {
+/* main .container {
   position: absolute;
   top: 0;
-}
+} */
 main .hero-image-background img.hero-image {
   width: 100%;
   height: 559px;
