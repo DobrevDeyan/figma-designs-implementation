@@ -365,6 +365,18 @@ header nav .hamburger {
     margin-right: 15px;
     font-size: 55px;
   }
+  main .hero-image a.hero-image-button {
+    display: none;
+  }
+  main .hero-image h3 {
+    margin-top: 0;
+    padding-top: 64px;
+  }
+  main .about-us-form-wrapper p.about-us-text {
+    padding: 24px;
+    box-shadow: 0px -10px 24px rgba(19, 38, 99, 0.1);
+    border-radius: 32px 32px 0px 0px;
+  }
 }
 
 /* @media only screen and (max-width: 960px) {
