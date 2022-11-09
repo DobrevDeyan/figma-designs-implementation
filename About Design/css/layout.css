@@ -116,6 +116,7 @@ main .hero-image .hero-image-button p {
   height: 24px;
   font-family: "Source Sans 3";
   font-weight: 600;
+  margin: 0;
 }
 main .hero-image h3 {
   line-height: 88px;
@@ -248,6 +249,7 @@ main section a.button {
 main section a.button p {
   align-self: center;
   color: #ffffff;
+  margin: 0;
 }
 /* SECTION TEAM INFO END */
 
@@ -270,79 +272,84 @@ footer ul {
   font-family: "Source Sans 3", sans-serif;
   font-weight: 600;
 }
-footer .col-1 {
+footer .column-1 {
   display: flex;
   flex-direction: column;
   height: 100%;
   padding: 0;
 }
-footer .col-1 img.logo {
+footer .column-1 img.logo {
   width: 170px;
   height: 36px;
   margin-bottom: 8px;
 }
-footer .col-1 p.copyright {
+footer .column-1 p.copyright {
   margin-bottom: 35px;
   font-family: "Source Sans 3", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
 }
-footer .col-1 ul.social-handles {
+footer .column-1 ul.social-handles {
   display: flex;
   font-size: 20px;
   padding: 0;
 }
-footer .col-1 ul.social-handles li a {
+footer .column-1 ul.social-handles li a {
   margin-right: 24px;
   color: #ffffff;
 }
-footer .col-2 {
+footer .column-2 {
   display: flex;
   flex-direction: row;
-  gap: 58px;
   padding: 0;
   padding-bottom: 32px;
   line-height: 26px;
   font-size: 18px;
 }
-footer .col-2 {
+footer .column-2 {
   display: flex;
   padding: 0;
 }
-footer .col-2-1 a,
-footer .col-2-2 a {
+footer .column-2-1 a,
+footer .column-2-2 a {
   font-family: "Source Sans 3", sans-serif;
   font-weight: 600;
   font-size: 18px;
   text-decoration: none;
 }
-footer .col-2-1 a:visited,
-footer .col-2-2 a:visited {
+footer .column-2-1 a:visited,
+footer .column-2-2 a:visited {
   color: #ffffff;
 }
-footer .col-2-1,
-footer .col-2-2 {
+footer .column-2-1,
+footer .column-2-2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-footer .col-2 a:nth-child(2) {
+footer .column-2-1 {
+  margin-right: 30px;
+}
+footer .column-2-2 {
+  margin-left: 30px;
+}
+footer .column-2 a:nth-child(2) {
   margin: 8px 0;
 }
-footer .col-3 {
+footer .column-3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 0;
   height: 100%;
 }
-footer .col-3 p {
+footer .column-3 p {
   font-size: 16px;
   font-family: "Source Sans 3", sans-serif;
   font-weight: 600;
 }
-footer .col-3 p:nth-child(2) {
+footer .column-3 p:nth-child(2) {
   margin: 16px 0;
 }
 
