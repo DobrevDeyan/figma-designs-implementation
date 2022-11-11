@@ -120,9 +120,9 @@
             <img src="../About Design/images/arrow-left.svg" alt="leftArrow" class="previous-arrow">
             <div class="dot"></div>
             <div class="dot"></div>
+            <!-- <div class="dot"></div>
             <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+            <div class="dot"></div> -->
             <img src="../About Design/images/arrow-right.svg" alt="rightArrow" class="next-arrow">
           </div>
         </div>
@@ -474,8 +474,10 @@
         $(function(){
             $('.banner-views').slick({
             appendArrows: $('.slider-block'),
+            appendDots: $('.dot'),
             prevArrow: '.previous-arrow',
-            nextArrow: '.next-arrow'
+            nextArrow: '.next-arrow',
+            dots: true,
             });
         });
     </script>
