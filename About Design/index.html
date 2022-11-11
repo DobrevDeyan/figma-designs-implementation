@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KomfortBrokers</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -70,13 +71,19 @@
               />
             </div>
             <div class="data-container">
-              <h4>Aнгел Панайотов</h4>
-              <h5>Управител</h5>
+              <h4>Дарина Димитрова</h4>
+              <h5>Брокер</h5>
             </div>
           </div>
           <p>Здравейте! Искам да споделя искрените си благодарности към упraвителя нa фирмата и към страхотния колектив за дадената ми възможност да се развивам тук. Всичко това заедно с професионалното отношение допринасят за спокойствието ми по време на работа!</p>
           <div class="slider-block">
-            <p>dadsadsd</p>
+            <img src="../About Design/images/arrow-left.svg" alt="leftArrow">
+            <div class="dot" style="background: white"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <img src="../About Design/images/arrow-right.svg" alt="rightArrow">
           </div>
         </div>
         <section class="container-wrap">
@@ -412,6 +419,9 @@
         </div>
       </footer>
     </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -420,5 +430,12 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.your-class').slick({
+            // setting-name: setting-value
+          });
+        });
+    </script>
   </body>
 </html>

@@ -208,6 +208,18 @@ main .hero-image h3 {
   color: #fbfaf8;
   margin-bottom: 8px;
 }
+.slider-block {
+  display: flex;
+  justify-content: space-between;
+  max-width: 280px;
+}
+.slider-block .dot {
+  align-self: center;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #aba9a9;
+}
 /* BANNER END */
 
 /* MAIN START */
@@ -464,9 +476,9 @@ header nav .hamburger {
   /* main section .card .img-container img {
     display: none;
   } */
-  /* .row {
+  .row {
     flex-direction: column;
-  } */
+  }
 }
 
 @media only screen and (max-width: 1024px) {
