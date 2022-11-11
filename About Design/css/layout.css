@@ -89,7 +89,7 @@ main .about-us-form-wrapper {
   background: #ffffff;
   position: relative;
   height: 528px;
-  margin-top: -220px;
+  margin-top: -120px;
   border-radius: 64px;
   box-shadow: 0px -64px 64px rgba(19, 38, 99, 0.15);
   z-index: 1000;
@@ -127,6 +127,38 @@ main .hero-image h3 {
   margin-top: 45px;
 }
 /* HERO IMAGE END*/
+
+/* BANNER START */
+.banner {
+  background: #000d58;
+  box-shadow: 0px -64px 64px rgba(19, 38, 99, 0.15);
+  border-radius: 64px 0px 0px 64px;
+  width: 716px;
+  height: 437px;
+  position: absolute;
+  right: 0;
+  top: 379px;
+  z-index: 9999;
+}
+.banner .img-container {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  margin-right: 24px;
+  overflow: hidden;
+}
+.banner .img-container img {
+  display: block;
+  width: 100%;
+  height: 140%;
+  object-fit: cover;
+  position: relative;
+  object-position: center;
+  flex-shrink: 0;
+  top: -35%;
+}
+
+/* BANNER END */
 
 /* MAIN START */
 
@@ -377,6 +409,15 @@ header nav .hamburger {
 }
 
 /* 1920 1440 1024 768 420 320 */
+
+@media only screen and (max-width: 1200px) {
+  /* main section .card .img-container img {
+    display: none;
+  } */
+  /* .row {
+    flex-direction: column;
+  } */
+}
 
 @media only screen and (max-width: 1024px) {
   header nav {
