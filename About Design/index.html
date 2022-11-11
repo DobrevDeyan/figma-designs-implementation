@@ -63,27 +63,67 @@
             <img class="quote" src="../About Design//images/Vector.svg" alt="quote">
             <img class="quote" src="../About Design//images/Vector.svg" alt="quote">
           </div>
-          <div class="profile-container">
-            <div class="img-container">
-              <img
-                src="/About Design/images/profile.png"
-                alt="PersonalPicture"
-              />
+          <div class="banner-views">
+            <div class="profile-container">
+              <div class="personal-details">
+                <div class="img-container">
+                  <img
+                    src="/About Design/images/profile.png"
+                    alt="PersonalPicture"
+                  />
+                </div>
+                <div class="data-container">
+                  <h4>Дарина Димитрова</h4>
+                  <h5>Брокер</h5>
+                </div>
+              </div>
+              <div class="personal-quote">
+                <p>Здравейте! Искам да споделя искрените си благодарности към упraвителя нa фирмата и към страхотния колектив за дадената ми възможност да се развивам тук. Всичко това заедно с професионалното отношение допринасят за спокойствието ми по време на работа!</p>
+              </div>
             </div>
-            <div class="data-container">
-              <h4>Дарина Димитрова</h4>
-              <h5>Брокер</h5>
+            <div class="profile-container">
+              <div class="personal-details">
+                <div class="img-container">
+                  <img
+                    src="/About Design/images/profile.png"
+                    alt="PersonalPicture"
+                  />
+                </div>
+                <div class="data-container">
+                  <h4>Иван Герогиев</h4>
+                  <h5>Брокер</h5>
+                </div>
+              </div>
+              <div class="personal-quote">
+                <p>Здравейте! Искам да споделя искрените си благодарности към упraвителя нa фирмата и към страхотния колектив за дадената ми възможност да се развивам тук. Всичко това заедно с професионалното отношение допринасят за спокойствието ми по време на работа!</p>
+              </div>
+            </div>
+            <div class="profile-container">
+              <div class="personal-details">
+                <div class="img-container">
+                  <img
+                    src="/About Design/images/profile.png"
+                    alt="PersonalPicture"
+                  />
+                </div>
+                <div class="data-container">
+                  <h4>Деян Герасимов</h4>
+                  <h5>Брокер</h5>
+                </div>
+              </div>
+              <div class="personal-quote">
+                <p>Здравейте! Искам да споделя искрените си благодарности към упraвителя нa фирмата и към страхотния колектив за дадената ми възможност да се развивам тук. Всичко това заедно с професионалното отношение допринасят за спокойствието ми по време на работа!</p>
+              </div>
             </div>
           </div>
-          <p>Здравейте! Искам да споделя искрените си благодарности към упraвителя нa фирмата и към страхотния колектив за дадената ми възможност да се развивам тук. Всичко това заедно с професионалното отношение допринасят за спокойствието ми по време на работа!</p>
           <div class="slider-block">
-            <img src="../About Design/images/arrow-left.svg" alt="leftArrow">
-            <div class="dot" style="background: white"></div>
+            <img src="../About Design/images/arrow-left.svg" alt="leftArrow" class="previous-arrow">
             <div class="dot"></div>
             <div class="dot"></div>
             <div class="dot"></div>
             <div class="dot"></div>
-            <img src="../About Design/images/arrow-right.svg" alt="rightArrow">
+            <div class="dot"></div>
+            <img src="../About Design/images/arrow-right.svg" alt="rightArrow" class="next-arrow">
           </div>
         </div>
         <section class="container-wrap">
@@ -431,10 +471,12 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <script type="text/javascript">
-        $(document).ready(function(){
-          $('.your-class').slick({
-            // setting-name: setting-value
-          });
+        $(function(){
+            $('.banner-views').slick({
+            appendArrows: $('.slider-block'),
+            prevArrow: '.previous-arrow',
+            nextArrow: '.next-arrow'
+            });
         });
     </script>
   </body>

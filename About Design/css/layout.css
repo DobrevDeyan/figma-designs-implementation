@@ -160,7 +160,6 @@ main .hero-image h3 {
   height: 95px;
   border-radius: 50%;
   margin-right: 16px;
-  margin-bottom: 16px;
   overflow: hidden;
   border: 2px solid #ffffff;
 }
@@ -176,10 +175,15 @@ main .hero-image h3 {
 }
 .banner .data-container {
   flex-grow: 1;
+  align-self: center;
 }
 .banner .profile-container {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+}
+.banner .personal-details {
+  display: flex;
+  margin-bottom: 16px;
 }
 .banner p {
   font-family: "Source Sans 3";
