@@ -161,7 +161,6 @@ main section p.intro {
   flex-wrap: wrap;
 } */
 main section .card {
-  /* max-width: 484px; */
   padding: 16px;
   margin: 16px;
   border: 1px solid #000d58;
@@ -176,17 +175,34 @@ main section .card .img-container {
   margin-right: 24px;
   overflow: hidden;
 }
+
+/* main .container-wrap .container .row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .container-wrap .container .row.display-flex > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+} */
+
 main section .card .data-container {
   flex-grow: 1;
 }
-main section .card img {
-  /* border-radius: 50%; */
+main section .card .data-container .phone img,
+main section .card .data-container .email img {
+  width: 16px;
+  height: 16px;
+  align-self: center;
+}
+main section .card .img-container img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 140%;
   object-fit: cover;
-  object-position: bottom;
+  position: relative;
+  object-position: center;
   flex-shrink: 0;
+  top: -35%;
 }
 main section .card h4 {
   font-family: "Source Serif 4", serif;
@@ -360,7 +376,9 @@ header nav .hamburger {
   display: none;
 }
 
-@media only screen and (max-width: 960px) {
+/* 1920 1440 1024 768 420 320 */
+
+@media only screen and (max-width: 1024px) {
   header nav {
     height: 100%;
   }
@@ -394,31 +412,9 @@ header nav .hamburger {
   }
 }
 
-/* @media only screen and (max-width: 960px) {
-  .logo-wrapper {
-    flex-grow: 1;
-  }
-  .hamburger {
-    display: block;
-    flex-grow: 1;
-  }
-  .top-nav.responsive {
-    order: 1;
-  }
-  .top-nav.responsive ul {
-    display: flex;
-    flex-direction: column;
-  }
-  .top-nav.responsive ul > li {
-    min-width: 90vw;
-  }
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-} */
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 420) {
+}
