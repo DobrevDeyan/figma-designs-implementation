@@ -577,15 +577,45 @@ header nav .hamburger {
     margin-top: 240px;
     font-size: 24px;
     line-height: 32px;
-    padding: 24px;
+    text-align: center;
+    padding: 0 24px;
   }
-  p.intro {
-    padding: 24px;
+  main section p.intro {
+    padding: 0 24px;
+    text-align: left;
+    margin-bottom: 8px;
   }
   main .about-us-form-wrapper p.about-us-text {
     padding: 24px;
     background: #ffffff;
     box-shadow: 0px -10px 24px rgba(19, 38, 99, 0.1);
     border-radius: 32px 32px 0px 0px;
+    text-align: left;
+  }
+  .card .data-container h4 {
+    font-size: 20px;
+  }
+  .card .data-container h5 {
+    font-size: 16px;
+  }
+  .data-container {
+    width: 100%;
+  }
+  footer .container-wrap {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  footer .column-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .column-2-1,
+  footer .column-2-2 {
+    text-align: center;
+    margin: 0;
+  }
+  .column-1 ul.social-handles {
+    padding: none;
   }
 }
