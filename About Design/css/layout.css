@@ -149,9 +149,6 @@ main .hero-image h3 {
   top: 32px;
   left: 30px;
 }
-.quote {
-  /* background: #8086ab !important; */
-}
 .banner .quote:first-of-type {
   margin-right: 8px;
 }
@@ -525,16 +522,24 @@ header nav .hamburger {
 
 /* 1920 1440 1024 768 420 320 */
 
-@media only screen and (max-width: 1200px) {
-  /* main section .card .img-container img {
-    display: none;
-  } */
+/* @media only screen and (max-width: 1200px) {
+ 
+} */
+
+@media only screen and (max-width: 1024px) {
   .row {
     flex-direction: column;
   }
+  .banner {
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 420px) {
   header nav {
     height: 100%;
   }
@@ -557,20 +562,30 @@ header nav .hamburger {
   main .hero-image a.hero-image-button {
     display: none;
   }
+  main .hero-image {
+    height: 278px;
+  }
+  main .about-us-form-wrapper {
+    margin-top: -82px;
+  }
   main .hero-image h3 {
+    font-size: 2em;
     margin-top: 0;
     padding-top: 64px;
   }
+  main section h3 {
+    margin-top: 240px;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 24px;
+  }
+  p.intro {
+    padding: 24px;
+  }
   main .about-us-form-wrapper p.about-us-text {
     padding: 24px;
+    background: #ffffff;
     box-shadow: 0px -10px 24px rgba(19, 38, 99, 0.1);
     border-radius: 32px 32px 0px 0px;
   }
-}
-
-@media only screen and (max-width: 992px) {
-}
-@media only screen and (max-width: 768px) {
-}
-@media only screen and (max-width: 420) {
 }
