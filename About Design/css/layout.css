@@ -460,12 +460,11 @@ footer .column-1 p.copyright {
   font-size: 14px;
   line-height: 20px;
 }
-footer .column-1 ul.social-handles {
+footer ul.social-handles {
   display: flex;
   font-size: 20px;
-  padding: 0;
 }
-footer .column-1 ul.social-handles li a {
+footer ul.social-handles li a {
   margin-right: 24px;
   color: #ffffff;
 }
@@ -531,11 +530,6 @@ header nav .hamburger {
 }
 
 /* 1920 1440 1024 768 420 320 */
-
-/* @media only screen and (max-width: 1200px) {
- 
-} */
-
 @media only screen and (max-width: 992px) {
   .row {
     flex-direction: column;
@@ -543,9 +537,6 @@ header nav .hamburger {
   .banner {
     display: none;
   }
-}
-
-@media only screen and (max-width: 992px) {
 }
 @media only screen and (max-width: 768px) {
   main .about-us-form-wrapper p.about-us-text {
@@ -559,7 +550,7 @@ header nav .hamburger {
     padding: 0 24px;
   }
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 576px) {
   header nav {
     height: 100%;
   }
@@ -634,19 +625,49 @@ header nav .hamburger {
   }
   footer .container-wrap {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    display: flex;
   }
   footer .column-2 {
     flex-direction: column;
     align-items: center;
   }
-  footer .column-2-1,
-  footer .column-2-2 {
-    text-align: center;
+  ul.social-handles {
+    padding-left: 40px;
+    order: 1;
+    margin-top: 42px;
+  }
+  footer .column-3 p:nth-child(2) {
+    margin-top: 0px;
+  }
+  footer .column-1,
+  footer .column-2,
+  footer .column-3 {
+    padding-left: 40px;
+    display: flex;
+    align-items: flex-start;
+  }
+  footer .column-3 p:last-child {
     margin: 0;
   }
-  .column-1 ul.social-handles {
-    padding: none;
+  footer .column-2-1,
+  footer .column-2-2 {
+    margin: 0px;
+    text-align: start;
+  }
+  footer .column-2-1 {
+    margin-bottom: 16px;
+  }
+  footer .column-2-1 a:nth-child(2),
+  footer .column-2-2 a:nth-child(2) {
+    margin: 16px 0;
+  }
+  footer .column-1 p.copyright {
+    margin: 0;
+  }
+  footer .column-1 {
+    margin-bottom: 40px;
+  }
+  footer .column-2 {
+    margin-bottom: 40px;
   }
 }
