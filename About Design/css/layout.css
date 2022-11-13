@@ -20,6 +20,7 @@ body {
 main {
   background: #ffff;
 }
+
 /* LAYOUT END*/
 
 /* HEADER START*/
@@ -310,7 +311,7 @@ main section .card {
   border: 1px solid #000d58;
   border-radius: 12px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 main section .card .img-container {
   width: 95px;
@@ -330,7 +331,16 @@ main .container-wrap .container .row.display-flex > [class*="col-"] {
 } */
 
 main section .card .data-container {
-  flex-grow: 1;
+  flex-grow: 2;
+}
+main section .card .data-container-2 {
+  display: flex;
+  margin-bottom: 16px;
+}
+main section .card .names {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 main section .card .data-container .phone img,
 main section .card .data-container .email img {
@@ -526,7 +536,7 @@ header nav .hamburger {
  
 } */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
   .row {
     flex-direction: column;
   }
@@ -538,6 +548,16 @@ header nav .hamburger {
 @media only screen and (max-width: 992px) {
 }
 @media only screen and (max-width: 768px) {
+  main .about-us-form-wrapper p.about-us-text {
+    padding: 48px;
+  }
+  main section h3 {
+    margin-top: 130px;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    padding: 0 24px;
+  }
 }
 @media only screen and (max-width: 420px) {
   header nav {
@@ -592,11 +612,22 @@ header nav .hamburger {
     border-radius: 32px 32px 0px 0px;
     text-align: left;
   }
-  .card .data-container h4 {
+  .card .data-container-2 {
+    display: flex;
+    margin-bottom: 8px;
+  }
+  .card .data-container-2 h4 {
     font-size: 20px;
   }
-  .card .data-container h5 {
+  .card .data-container-2 h5 {
     font-size: 16px;
+  }
+  main section .card .names {
+    display: flex;
+    flex-direction: column;
+  }
+  main section .card {
+    flex-direction: column;
   }
   .data-container {
     width: 100%;
