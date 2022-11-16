@@ -110,7 +110,8 @@ main .main-view {
   flex-direction: column;
   height: 100%;
 } */
-.main-view .columns div:nth-child(2) {
+
+.main-view .columns > div:nth-child(2) {
   margin-left: 18px;
 }
 

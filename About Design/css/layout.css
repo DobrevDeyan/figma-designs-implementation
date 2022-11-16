@@ -145,6 +145,7 @@ main .hero-image h3 {
   flex-direction: column;
 }
 .banner .double-quotes {
+  opacity: 0.5;
   display: flex;
   position: absolute;
   top: 32px;
@@ -253,7 +254,6 @@ main .hero-image h3 {
   list-style: none;
 }
 .slick-dots li:not(:first-child) {
-  /* margin: 0 0.25rem; */
   margin-left: 24px;
 }
 .slick-dots button {
@@ -298,13 +298,6 @@ main section p.intro {
   text-align: center;
   margin-bottom: 44px;
 }
-/* main section .cards {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-} */
 main section .card {
   padding: 16px;
   margin: 16px;
@@ -319,19 +312,11 @@ main section .card .img-container {
   border-radius: 50%;
   margin-right: 24px;
   overflow: hidden;
-}
-
-/* main .container-wrap .container .row.display-flex {
   display: flex;
-  flex-wrap: wrap;
+  flex-shrink: 0;
 }
-main .container-wrap .container .row.display-flex > [class*="col-"] {
-  display: flex;
-  flex-direction: column;
-} */
-
 main section .card .data-container {
-  flex-grow: 2;
+  flex-grow: 1;
 }
 main section .card .data-container-2 {
   display: flex;
@@ -342,6 +327,18 @@ main section .card .names {
   justify-content: center;
   flex-direction: column;
 }
+.hide {
+  visibility: hidden;
+}
+
+.col-container {
+  display: table; /* Make the container element behave like a table */
+  width: 100%; /* Set full-width to expand the whole page */
+}
+.col {
+  display: table-cell; /* Make elements inside the container behave like table cells */
+}
+
 main section .card .data-container .phone img,
 main section .card .data-container .email img {
   width: 16px;
@@ -355,7 +352,7 @@ main section .card .img-container img {
   object-fit: cover;
   position: relative;
   object-position: center;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   top: -35%;
 }
 main section .card h4 {
@@ -396,6 +393,21 @@ main section .card h5 {
   text-decoration: none;
   margin-left: 10px;
 }
+/* squish text from view  */
+/* .info-box > a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} */
+/* wrap text on new line  */
+.info-box > a {
+  /* white-space: wrap; */
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  word-break: break-all; 
+  overflow-wrap: break-word;
+}
+
 main section .card .email {
   margin-bottom: 8px;
 }
@@ -463,10 +475,23 @@ footer .column-1 p.copyright {
 footer ul.social-handles {
   display: flex;
   font-size: 20px;
+  padding: 0;
 }
 footer ul.social-handles li a {
-  margin-right: 24px;
+  margin-right: 28px;
   color: #ffffff;
+}
+footer ul.social-handles-responsive {
+  font-size: 20px;
+  padding: 0;
+  margin-top: 42px;
+}
+footer ul.social-handles-responsive li a {
+  margin-right: 28px;
+  color: #ffffff;
+}
+footer .social-handles-responsive {
+  display: none;
 }
 footer .column-2 {
   display: flex;
@@ -641,10 +666,13 @@ header nav .hamburger {
     flex-direction: column;
     align-items: center;
   }
-  ul.social-handles {
+  footer ul.social-handles {
     padding-left: 40px;
-    order: 1;
     margin-top: 42px;
+    display: none;
+  }
+  ul.social-handles-responsive {
+    display: flex;
   }
   footer .column-3 p:nth-child(2) {
     margin-top: 0px;
