@@ -376,8 +376,8 @@ main section .card h5 {
   background: #f1efef;
   border-radius: 4px;
   display: flex;
-  height: 32px;
   padding: 4px 8px;
+  line-height: 1;
 }
 .info-box ion-icon {
   color: #324994;
@@ -394,18 +394,17 @@ main section .card h5 {
   margin-left: 10px;
 }
 /* squish text from view  */
+
 /* .info-box > a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 } */
+
 /* wrap text on new line  */
 .info-box > a {
-  /* white-space: wrap; */
-  overflow: hidden;
-  /* text-overflow: ellipsis; */
-  word-break: break-all; 
-  overflow-wrap: break-word;
+  word-break: break-all;
+  /* overflow-wrap: break-word; */
 }
 
 main section .card .email {
@@ -641,9 +640,14 @@ header nav .hamburger {
   }
   .card .data-container-2 h4 {
     font-size: 20px;
+    line-height: 1;
+    margin-bottom: 8px;
+    word-break: break-all;
   }
   .card .data-container-2 h5 {
     font-size: 16px;
+    line-height: 1;
+    word-break: break-all;
   }
   main section .card .names {
     display: flex;
@@ -654,6 +658,9 @@ header nav .hamburger {
   }
   .data-container {
     width: 100%;
+  }
+  main section .card .img-container {
+    margin-right: 10px;
   }
   main {
     padding-bottom: 64px;
