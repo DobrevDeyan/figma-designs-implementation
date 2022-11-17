@@ -89,14 +89,13 @@ main .about-us-form-wrapper {
   width: 100%;
   background: #ffffff;
   position: relative;
-  height: 528px;
   margin-top: -120px;
   border-radius: 64px;
   box-shadow: 0px -64px 64px rgba(19, 38, 99, 0.15);
   z-index: 1000;
   display: flex;
-  align-self: center;
   flex-direction: column;
+  padding-top: 40px;
 }
 main .about-us-form-wrapper p.about-us-text {
   font-family: "Inter", serif;
@@ -104,7 +103,6 @@ main .about-us-form-wrapper p.about-us-text {
   font-size: 14px;
   line-height: 20px;
   color: #585655;
-  padding: 64px 260px;
 }
 main .about-us-form-wrapper p.about-us-text span {
   font-family: "Source Sans 3";
@@ -297,6 +295,7 @@ main section p.intro {
   line-height: 20px;
   text-align: center;
   margin-bottom: 44px;
+  padding: 16px;
 }
 main section .card {
   padding: 16px;
@@ -352,7 +351,6 @@ main section .card .img-container img {
   object-fit: cover;
   position: relative;
   object-position: center;
-  /* flex-shrink: 0; */
   top: -35%;
 }
 main section .card h4 {
@@ -404,9 +402,7 @@ main section .card h5 {
 /* wrap text on new line  */
 .info-box > a {
   word-break: break-all;
-  /* overflow-wrap: break-word; */
 }
-
 main section .card .email {
   margin-bottom: 8px;
 }
@@ -554,6 +550,7 @@ header nav .hamburger {
 }
 
 /* 1920 1440 1024 768 420 320 */
+
 @media only screen and (max-width: 992px) {
   .row {
     flex-direction: column;
@@ -562,17 +559,12 @@ header nav .hamburger {
     display: none;
   }
   main .about-us-form-wrapper p.about-us-text {
-    padding: 32px 100px;
     background: #ffffff;
-    box-shadow: 0px -10px 24px rgba(19, 38, 99, 0.1);
     border-radius: 32px 32px 0px 0px;
     text-align: left;
   }
 }
 @media only screen and (max-width: 768px) {
-  main .about-us-form-wrapper p.about-us-text {
-    padding: 32px 100px;
-  }
   main section h3 {
     margin-top: 130px;
     font-size: 24px;
@@ -616,14 +608,12 @@ header nav .hamburger {
     padding-top: 64px;
   }
   main section h3 {
-    margin-top: 240px;
     font-size: 24px;
     line-height: 32px;
     text-align: center;
     padding: 0 24px;
   }
   main section p.intro {
-    padding: 0 24px;
     text-align: left;
     margin-bottom: 8px;
   }
@@ -649,12 +639,15 @@ header nav .hamburger {
     line-height: 1;
     word-break: break-all;
   }
-  main section .card .names {
+  .card .names {
     display: flex;
     flex-direction: column;
   }
-  main section .card {
+  .card {
     flex-direction: column;
+  }
+  .card .info-box a {
+    font-size: 14px;
   }
   .data-container {
     width: 100%;
