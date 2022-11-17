@@ -105,11 +105,6 @@ main .main-view {
 .main-view .columns .col-xxl-6:nth-child(1) {
   margin-right: 18px;
 }
-/* .main-view .columns .col-xxl-6 {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-} */
 
 .main-view .columns > div:nth-child(2) {
   margin-left: 18px;
@@ -380,10 +375,23 @@ footer .column-1 p.copyright {
 footer ul.social-handles {
   display: flex;
   font-size: 20px;
+  padding: 0;
 }
 footer ul.social-handles li a {
-  margin-right: 24px;
+  margin-right: 28px;
   color: #ffffff;
+}
+footer ul.social-handles-responsive {
+  font-size: 20px;
+  padding: 0;
+  margin-top: 42px;
+}
+footer ul.social-handles-responsive li a {
+  margin-right: 28px;
+  color: #ffffff;
+}
+footer .social-handles-responsive {
+  display: none;
 }
 footer .column-2 {
   display: flex;
@@ -446,23 +454,52 @@ header nav .hamburger {
   display: none;
 }
 
-/* 1920 1440 1024 768 420 320 */
-
 @media only screen and (max-width: 992px) {
+  header nav ul {
+    padding: 0;
+    margin: 16px 0;
+  }
+  header nav ul li {
+    padding: 4px 6px;
+  }
+  header nav ul li:not(:first-child) {
+    margin-left: 16px;
+  }
+  header nav ul li a {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  footer .column-2-1 a,
+  footer .column-2-2 a {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  footer .column-3 p {
+    font-size: 14px;
+  }
+  main .about-us-form-wrapper {
+    padding-top: 0;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .banner {
+    display: none;
+  }
+  main .about-us-form-wrapper p.about-us-text {
+    align-self: center;
+    padding: 48px;
+  }
+  main section h3 {
+    margin-top: 80px;
+  }
 }
-@media only screen and (max-width: 768px) {
-}
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 767px) {
   header nav {
     height: 100%;
   }
   header nav ul {
     display: none;
-    animation: fadeIn linear 1s;
-    -webkit-animation: fadeIn linear 1s;
-    -moz-animation: fadeIn linear 1s;
-    -o-animation: fadeIn linear 1s;
-    -ms-animation: fadeIn linear 1s;
   }
   header nav a img.logo {
     margin: 16px 24px;
@@ -472,6 +509,84 @@ header nav .hamburger {
     margin-right: 15px;
     font-size: 55px;
   }
+  main .hero-image a.hero-image-button {
+    display: none;
+  }
+  main .hero-image {
+    height: 278px;
+  }
+  main .about-us-form-wrapper {
+    margin-top: -82px;
+    padding-top: 0;
+  }
+  main .hero-image h3 {
+    font-size: 2em;
+    margin-top: 0;
+    padding-top: 64px;
+  }
+  main section h3 {
+    margin-top: 40px;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    padding: 0 24px;
+  }
+  main section h3 {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    padding: 0 24px;
+  }
+  main section p.intro {
+    text-align: left;
+    margin-bottom: 8px;
+  }
+  main .about-us-form-wrapper p.about-us-text {
+    padding: 24px;
+    background: #ffffff;
+    box-shadow: 0px -10px 24px rgba(19, 38, 99, 0.1);
+    border-radius: 32px 32px 0px 0px;
+    text-align: left;
+  }
+  .card .data-container-2 {
+    display: flex;
+    margin-bottom: 8px;
+  }
+  .card .data-container-2 h4 {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 8px;
+    word-break: break-all;
+  }
+  .card .data-container-2 h5 {
+    font-size: 16px;
+    line-height: 1;
+    word-break: break-all;
+  }
+  .card .names {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .card .info-box a {
+    font-size: 14px;
+  }
+  .data-container {
+    width: 100%;
+  }
+  main section .card .img-container {
+    margin-right: 10px;
+  }
+  main {
+    padding-bottom: 64px;
+  }
+  footer a,
+  footer p {
+    font-weight: 400;
+    font-size: 14px;
+  }
   footer .container-wrap {
     flex-direction: column;
     display: flex;
@@ -480,10 +595,13 @@ header nav .hamburger {
     flex-direction: column;
     align-items: center;
   }
-  ul.social-handles {
+  footer ul.social-handles {
     padding-left: 40px;
-    order: 1;
     margin-top: 42px;
+    display: none;
+  }
+  ul.social-handles-responsive {
+    display: flex;
   }
   footer .column-3 p:nth-child(2) {
     margin-top: 0px;
