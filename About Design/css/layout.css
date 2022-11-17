@@ -560,9 +560,6 @@ header nav .hamburger {
   header nav ul li:not(:first-child) {
     margin-left: 16px;
   }
-  header nav a img.logo {
-    width: 120px;
-  }
   header nav ul li a {
     font-weight: 400;
     font-size: 14px;
