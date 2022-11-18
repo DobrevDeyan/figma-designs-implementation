@@ -53,7 +53,6 @@ header nav ul li a {
 }
 header nav a img.logo {
   width: 170px;
-  height: 36px;
 }
 /* HEADER END*/
 
@@ -72,7 +71,6 @@ main .hero-image a.hero-image-button {
   height: 40px;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
   padding: 8px;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(6px);
@@ -80,9 +78,13 @@ main .hero-image a.hero-image-button {
   text-decoration: none;
   color: #000030;
 }
+main .hero-image a.hero-image-button p {
+  margin: 0;
+}
 main .hero-image .hero-image-button ion-icon {
   color: #000030;
   font-size: 24px;
+  margin-right: 4px;
 }
 main .main-view {
   max-width: 1184px;
@@ -95,7 +97,6 @@ main .main-view {
   box-shadow: 0px -64px 64px rgba(19, 38, 99, 0.15);
   z-index: 1000;
   display: flex;
-  align-self: center;
   flex-direction: column;
   padding: 64px;
 }
@@ -105,7 +106,6 @@ main .main-view {
 .main-view .columns .col-xxl-6:nth-child(1) {
   margin-right: 18px;
 }
-
 .main-view .columns > div:nth-child(2) {
   margin-left: 18px;
 }
@@ -174,7 +174,6 @@ p.estate-information {
   font-size: 16px;
   line-height: 24px;
   color: #585655;
-  width: 510px;
 }
 .building-details {
   display: flex;
@@ -248,7 +247,7 @@ p.estate-information {
 }
 .card {
   padding: 16px;
-  margin: 16px;
+  margin-top: 24px;
   border: 1px solid #000d58;
   border-radius: 12px;
   display: flex;
@@ -336,6 +335,58 @@ p.estate-information {
 /* SECTION MAIN VIEW END */
 
 /* MAIN END */
+
+/* SECTION FILTER START */
+
+section.filter {
+}
+section.filter h3 {
+  font-family: "Source Serif 4";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000030;
+  margin-bottom: 13px;
+}
+section.filter p {
+  font-family: "Source Sans 3";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000030;
+  margin-bottom: 2px;
+}
+.filter-categories {
+  display: flex;
+  margin-bottom: 24px;
+}
+.filter-categories .category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  padding-right: 0;
+  background: #ffffff;
+  border: 1px solid #050723;
+  border-radius: 4px;
+  margin-right: 16px;
+  max-width: 284px;
+  cursor: pointer;
+}
+.category p {
+  font-family: "Source Sans 3";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #585655;
+  margin-right: 4px;
+}
+.category img {
+  width: 10px;
+  height: 5px;
+  margin-right: 16px;
+}
+/* SECTION FILTER END */
 
 /* FOOTER START*/
 footer {
