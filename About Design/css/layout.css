@@ -199,6 +199,7 @@ main .hero-image h3 {
   line-height: 33px;
   color: #fbfaf8;
   margin-bottom: 4px;
+  /* display: inline-block; */
 }
 .banner h5 {
   font-family: "Source Sans 3", sans-serif;
@@ -207,6 +208,7 @@ main .hero-image h3 {
   line-height: 20px;
   color: #fbfaf8;
   margin-bottom: 8px;
+  /* display: inline-block; */
 }
 .slider-block {
   display: flex;
@@ -330,13 +332,22 @@ main section .card .names {
   visibility: hidden;
 }
 
-.col-container {
-  display: table; /* Make the container element behave like a table */
-  width: 100%; /* Set full-width to expand the whole page */
+/* .col-container {
+  display: table;
+  width: 100%; 
 }
 .col {
-  display: table-cell; /* Make elements inside the container behave like table cells */
+  display: table-cell; 
+} */
+
+/* .row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
 }
+.row.display-flex > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+} */
 
 main section .card .data-container .phone img,
 main section .card .data-container .email img {
