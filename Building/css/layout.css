@@ -695,7 +695,8 @@ header nav .hamburger {
     margin-top: 80px;
   }
   .table-container {
-    /* overflow-x: scroll; */
+    display: flex;
+    overflow-x: auto;
   }
 }
 @media only screen and (max-width: 767px) {

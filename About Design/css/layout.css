@@ -301,11 +301,13 @@ main section p.intro {
 }
 main section .card {
   padding: 16px;
-  margin: 16px;
+  width: 100%;
+  /* margin: 16px; */
   border: 1px solid #000d58;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 16px;
 }
 main section .card .img-container {
   width: 95px;
@@ -339,7 +341,7 @@ main section .card .names {
 .col {
   display: table-cell; 
 } */
-
+/* /////// */
 /* .row.display-flex {
   display: flex;
   flex-wrap: wrap;
