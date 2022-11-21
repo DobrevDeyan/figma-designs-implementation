@@ -7,6 +7,7 @@
     <title>BUILDING</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="./lightbox2-2.11.3/src/css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -49,14 +50,38 @@
             <div class="columns">
               <div class="col-xxl-6">
                 <div class="img-container">
-                  <img src="./images/building-1.png" alt="building">
+                  <img src="./images/building-1.png" alt="building" class="background">
                   <a href="#" class="full-screen-button">
                     <img src="./images/full-screen-button-img.svg" alt="fullScreen">
                     <p>Цял екран</p>
                   </a>
                 </div>
-                <div class="slide-block">
-                  
+                <div class="slider-block">
+                  <img src="./images/arrow-left-slider.svg" alt="leftArrow" class="previous-arrow">
+                  <a href="./images/building-1.png" data-lightbox="image-1">
+                    <img src="./images/building-1.png" alt="building-1" class="unpkt" >
+                  </a>
+                  <a href="./images/building-5.png" data-lightbox="image-2">
+                    <img src="./images/building-5.png" alt="building-5" class="unpkt">
+                  </a>
+                  <a href="./images/building-2.png" data-lightbox="image-3">
+                    <img src="./images/building-2.png" alt="building-2" class="unpkt">
+                  </a>
+                  <a href="./images/building-3.png" data-lightbox="image-4">
+                    <img src="./images/building-3.png" alt="building-3" class="unpkt">
+                  </a>
+                  <a href="./images/building-4.png" data-lightbox="image-5">
+                    <img src="./images/building-4.png" alt="building-4" class="unpkt">
+                  </a>
+                  <a href="./images/building-5.png" data-lightbox="image-6" class="unpkt">
+                    <img src="./images/building-5.png" alt="building-5" class="unpkt">
+                  </a>
+                  <img src="./images/arrow-right-slider.svg" alt="rightArrow" class="next-arrow">
+                </div>
+                <div class="elements-panel-views">
+                  <div class="current-element-panel">
+                    
+                  </div>
                 </div>
               </div>
               <div class="col-xxl-6">
@@ -605,6 +630,7 @@
     </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./lightbox2-2.11.3/src/js/lightbox.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script
       type="module"
@@ -615,14 +641,22 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <script type="text/javascript">
-        $(function(){
-            $('.banner-views').slick({
-            appendArrows: $('.slider-block'),
-            appendDots: $('.dots'),
-            prevArrow: '.previous-arrow',
-            nextArrow: '.next-arrow',
-            dots: true,
-            });
+        $('.elements-panel-views').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: true,
+          asNavFor: '.slider-block'
+        });
+        $('.slider-block').slick({
+          appendArrows: $('.slider-block'),
+          prevArrow: '.previous-arrow',
+          nextArrow: '.next-arrow',
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          asNavFor: '.elements-panel-views',
+          centerMode: true,
+          focusOnSelect: true
         });
     </script>
   </body>
