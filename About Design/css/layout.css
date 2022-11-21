@@ -42,8 +42,12 @@ header nav ul {
 header nav ul li {
   padding: 4px 8px;
 }
-header nav ul li:not(:first-child) {
+header nav ul li {
   margin-left: 32px;
+}
+nav > ul:nth-child(1) > li:nth-child(1),
+nav > ul:nth-child(3) > li:nth-child(1) {
+  margin: 0;
 }
 header nav ul li a {
   text-decoration: none;
@@ -53,7 +57,6 @@ header nav ul li a {
 }
 header nav a img.logo {
   width: 170px;
-  height: 36px;
 }
 /* HEADER END*/
 
@@ -72,7 +75,6 @@ main .hero-image a.hero-image-button {
   height: 40px;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
   padding: 8px;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(6px);
@@ -83,6 +85,7 @@ main .hero-image a.hero-image-button {
 main .hero-image .hero-image-button ion-icon {
   color: #000030;
   font-size: 24px;
+  margin-right: 4px;
 }
 main .about-us-form-wrapper {
   max-width: 1184px;
@@ -132,13 +135,12 @@ main .hero-image h3 {
   background: #000d58;
   box-shadow: 0px -64px 64px rgba(19, 38, 99, 0.15);
   border-radius: 64px 0px 0px 64px;
-  width: 716px;
-  height: 437px;
+  width: 600px;
   position: absolute;
   right: 0;
   top: 379px;
   z-index: 9999;
-  padding: 80px;
+  padding: 80px 0px 80px 80px;
   display: flex;
   flex-direction: column;
 }
@@ -173,6 +175,8 @@ main .hero-image h3 {
 .banner .data-container {
   flex-grow: 1;
   align-self: center;
+  display: flex;
+  flex-direction: column;
 }
 .banner .profile-container {
   display: flex;
@@ -302,7 +306,6 @@ main section p.intro {
 main section .card {
   padding: 16px;
   width: 100%;
-  /* margin: 16px; */
   border: 1px solid #000d58;
   border-radius: 12px;
   display: flex;
@@ -320,6 +323,9 @@ main section .card .img-container {
 }
 main section .card .data-container {
   flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 main section .card .data-container-2 {
   display: flex;
@@ -330,27 +336,6 @@ main section .card .names {
   justify-content: center;
   flex-direction: column;
 }
-.hide {
-  visibility: hidden;
-}
-
-/* .col-container {
-  display: table;
-  width: 100%; 
-}
-.col {
-  display: table-cell; 
-} */
-/* /////// */
-/* .row.display-flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-.row.display-flex > [class*="col-"] {
-  display: flex;
-  flex-direction: column;
-} */
-
 main section .card .data-container .phone img,
 main section .card .data-container .email img {
   width: 16px;
