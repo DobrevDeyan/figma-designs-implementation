@@ -199,7 +199,7 @@ main .hero-image h3 {
   line-height: 33px;
   color: #fbfaf8;
   margin-bottom: 4px;
-  /* display: inline-block; */
+  display: inline-block;
 }
 .banner h5 {
   font-family: "Source Sans 3", sans-serif;
@@ -208,7 +208,7 @@ main .hero-image h3 {
   line-height: 20px;
   color: #fbfaf8;
   margin-bottom: 8px;
-  /* display: inline-block; */
+  display: inline-block;
 }
 .slider-block {
   display: flex;
