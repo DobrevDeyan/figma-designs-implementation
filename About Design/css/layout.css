@@ -309,9 +309,14 @@ main section .card {
   border: 1px solid #000d58;
   border-radius: 12px;
   display: flex;
-  flex-direction: column;
+
   margin-bottom: 16px;
+  flex-direction: row;
 }
+.col-xl-6 .card-head > div.data-container-2 {
+  flex-direction: row;
+}
+
 main section .card .img-container {
   width: 95px;
   height: 95px;
@@ -324,12 +329,13 @@ main section .card .img-container {
 main section .card .data-container {
   flex-grow: 1;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: column;
 }
 main section .card .data-container-2 {
   display: flex;
-  margin-bottom: 16px;
+  flex-direction: column;
+  flex-grow: 1;
 }
 main section .card .names {
   display: flex;
@@ -546,7 +552,115 @@ footer .column-3 p:nth-child(2) {
 header nav .hamburger {
   display: none;
 }
+.card-single-line {
+  display: none;
+}
 
+@media only screen and (max-width: 1200px) {
+  .col-xl-6 .card {
+    display: none;
+  }
+  .col-xl-6 .card-single-line {
+    display: block;
+  }
+  .card-single-line {
+    padding: 16px;
+    width: 100%;
+    border: 1px solid #000d58;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+  .card-single-line .img-container {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    margin-right: 24px;
+    overflow: hidden;
+    display: flex;
+    flex-shrink: 0;
+  }
+  .card-single-line .data-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .card-single-line .data-container-2 {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+  }
+  .card-single-line .names {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .card-single-line .data-container .phone img,
+  .card-single-line .data-container .email img {
+    width: 16px;
+    height: 16px;
+    align-self: center;
+  }
+  .card-single-line .img-container img {
+    display: block;
+    width: 100%;
+    height: 140%;
+    object-fit: cover;
+    position: relative;
+    object-position: center;
+    top: -35%;
+  }
+  .card-single-line h4 {
+    font-family: "Source Serif 4", serif;
+    font-weight: 700;
+    align-self: stretch;
+    font-size: 28px;
+    line-height: 38px;
+    color: #000030;
+    margin-bottom: 4px;
+  }
+  .card-single-line h5 {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #585655;
+    margin-bottom: 8px;
+  }
+  .data-container .info-box {
+    background: #f1efef;
+    border-radius: 4px;
+    display: flex;
+    padding: 4px 8px;
+    line-height: 1;
+  }
+  .card-single-line .info-box ion-icon {
+    color: #324994;
+    align-self: center;
+    font-size: 18px;
+  }
+  .card-single-line .info-box a {
+    font-family: "Source Sans 3", serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #324994;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  .card-single-line .email {
+    margin-bottom: 8px;
+  }
+  .card-single-line .phone {
+    margin-bottom: 8px;
+  }
+  .card-single-line .img-container {
+    margin-right: 10px;
+    margin-bottom: 8px;
+  }
+}
 @media only screen and (max-width: 992px) {
   header nav ul {
     padding: 0;
@@ -572,9 +686,6 @@ header nav .hamburger {
   }
   main .about-us-form-wrapper {
     padding-top: 0;
-  }
-  .row {
-    flex-direction: column;
   }
   .banner {
     display: none;
@@ -669,9 +780,43 @@ header nav .hamburger {
   .data-container {
     width: 100%;
   }
-  main section .card .img-container {
+  .card .img-container {
     margin-right: 10px;
   }
+
+  .card-single-line .data-container-2 {
+    display: flex;
+    margin-bottom: 8px;
+  }
+  .card-single-line .data-container-2 h4 {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 8px;
+    word-break: break-all;
+  }
+  .card-single-line .data-container-2 h5 {
+    font-size: 16px;
+    line-height: 1;
+    word-break: break-all;
+  }
+  .card-single-line .names {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-single-line {
+    flex-direction: column;
+  }
+  .card-single-line .info-box a {
+    font-size: 14px;
+  }
+  .card-single-line .data-container {
+    width: 100%;
+  }
+  .card-single-line .img-container {
+    margin-right: 10px;
+    margin-bottom: 8px;
+  }
+
   main {
     padding-bottom: 64px;
   }
