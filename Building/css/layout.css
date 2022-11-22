@@ -42,8 +42,12 @@ header nav ul {
 header nav ul li {
   padding: 4px 8px;
 }
-header nav ul li:not(:first-child) {
+header nav ul li {
   margin-left: 32px;
+}
+nav > ul:nth-child(1) > li:nth-child(1),
+nav > ul:nth-child(3) > li:nth-child(1) {
+  margin: 0;
 }
 header nav ul li a {
   text-decoration: none;
@@ -708,22 +712,12 @@ header nav .hamburger {
   main .about-us-form-wrapper {
     padding-top: 0;
   }
-  .row {
-    flex-direction: column;
-  }
-  .banner {
-    display: none;
-  }
   main .about-us-form-wrapper p.about-us-text {
     align-self: center;
     padding: 48px;
   }
   main section h3 {
     margin-top: 80px;
-  }
-  .table-container {
-    display: flex;
-    overflow-x: auto;
   }
 }
 @media only screen and (max-width: 767px) {
