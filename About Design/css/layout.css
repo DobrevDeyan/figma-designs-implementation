@@ -309,7 +309,6 @@ main section .card {
   border: 1px solid #000d58;
   border-radius: 12px;
   display: flex;
-
   margin-bottom: 16px;
   flex-direction: row;
 }
