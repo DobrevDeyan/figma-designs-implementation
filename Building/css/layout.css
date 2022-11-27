@@ -188,8 +188,11 @@ main .main-view {
   width: 16px !important;
   height: 16px !important;
 }
-.next-arrow,
-.previous-arrow {
+.slider-block {
+  position: relative;
+}
+.slider-block .next-arrow,
+.slider-block .previous-arrow {
   top: 50%;
   transform: translateY(-8px);
   position: absolute;
@@ -199,10 +202,16 @@ main .main-view {
   position: relative;
 }
 .previous-arrow {
-  /* left: 0 !important; */
+  left: 0 !important;
 }
 .next-arrow {
-  /* right: 0 !important; */
+  right: 0 !important;
+}
+.slick-arrow.slick-hidden {
+  top: 50%;
+  transform: translateY(-8px);
+  position: absolute;
+  display: block !important;
 }
 .slider-wrapper .slick-slide {
   width: 75px !important;
@@ -280,7 +289,12 @@ main .main-view {
   position: relative;
   object-position: center;
 }
+
+
 /* SLIDER VIEW END */
+
+
+
 
 /* RIGHT COLUMN */
 
