@@ -132,14 +132,14 @@
                   <div class="links">
                     <div class="map">
                       <img src="./images/map.svg" alt="mapsIcon" />
-                      <p>Виж на картата</p>
+                      <a href="#">Виж на картата</a>
                     </div>
                     <div class="download">
                       <img
                         src="./images/download.svg"
                         alt="downLoadPresentation"
                       />
-                      <p>Презентация</p>
+                      <a href="#">Презентация</a>
                     </div>
                   </div>
                 </div>
@@ -321,11 +321,21 @@
           <div class="row justify-content-start">
             <div class="filter-wrapper">
               <div class="category-wrapper col-xl-3">
-                <p class="category-name">Категория</p>
+                <label for="category-select">Категория</label>
+                <div class="select">
+                  <select name="category" id="category-select">
+                    <option value="Апартамент">Апартамент</option>
+                    <option value="Магазин">Магазин</option>
+                    <option value="Студио">Студио</option>
+                    <option value="Мезонет">Мезонет</option>
+                  </select>
+                </div>
+
+                <!-- <p class="category-name"></p>
                 <div class="category-box">
                   <p>Какво търсиш?</p>
                   <img src="./images/down-arrow.svg" alt="downArrow" />
-                </div>
+                </div> -->
               </div>
               <div class="category-wrapper col-xl-3">
                 <p class="category-name">Вид имот</p>
