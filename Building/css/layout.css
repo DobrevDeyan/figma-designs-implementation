@@ -16,6 +16,7 @@ body {
   max-width: 1184px;
   width: 100%;
   margin: 0 auto;
+  --bs-gutter-x: 0rem;
 }
 main {
   background: #ffffff;
@@ -629,11 +630,24 @@ select:focus + .focus {
 /* SECTION FILTER END */
 
 /* SECTION TABLE START */
-.table-container {
+table {
   border: 1px solid #e0e7ed;
   border-radius: 4px;
+  height: 100%;
+  table-layout: auto;
+  width: 100%;
+  display: table;
 }
-.table-container .col-1 p {
+table tr {
+  display: flex;
+  justify-content: space-between;
+}
+/* td,
+th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+} */
+table thead tr th p {
   margin: 0;
   font-family: "Source Sans 3";
   font-weight: 700;
@@ -641,12 +655,13 @@ select:focus + .focus {
   line-height: 150%;
   color: #333333;
 }
-.table-cell {
+table th {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px 10px;
   background: #f9f9f9;
+  width: 100%;
 }
 .table-cell-2 {
   display: flex;
@@ -686,12 +701,41 @@ select:focus + .focus {
   justify-content: space-around;
 }
 .cell-12 {
-  /* max-width: 97px; */
   display: flex;
   justify-content: space-between;
 }
 
 /* SECTION TABLE END */
+
+/* <div class="row justify-content-start">
+<div class="table-cell cell-1 col-1">
+</div>
+<div class="table-cell cell-2 col-1">
+</div>
+<div class="table-cell cell-3 col-1">
+</div>
+<div class="table-cell cell-4 col-1">
+</div>
+<div class="table-cell cell-5 col-1">
+</div>
+<div class="table-cell cell-6 col-1">
+  
+</div>
+<div class="table-cell cell-7 col-1">
+  
+</div>
+<div class="table-cell cell-8 col-1">
+  
+</div>
+<div class="table-cell cell-9 col-1">
+  
+</div>
+<div class="table-cell cell-10 col-1">
+  
+</div>
+<div class="table-cell cell-11 col-1"></div>
+<div class="table-cell cell-12 col-1"></div>
+</div> */
 
 /* FOOTER START*/
 footer {
