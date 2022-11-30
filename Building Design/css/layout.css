@@ -637,6 +637,7 @@ table {
   table-layout: auto;
   width: 100%;
   display: table;
+  /* padding-bottom: 80px; */
 }
 table tr {
   display: flex;
@@ -648,7 +649,7 @@ table thead {
 table tr th:nth-child(2) {
   max-width: 62px;
 }
-table tr th:nth-child(11){
+table tr th:nth-child(11) {
   min-width: 120px;
 }
 table tr th:nth-child(1),
@@ -678,26 +679,6 @@ table th {
   /* background: #f9f9f9; */
   width: 100%;
 }
-.table-cell-2 {
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18.5px 10px;
-  background: #ffffff;
-  max-height: 60px;
-}
-.table-container .container > div.row:nth-child(2) p,
-.table-container .container > div.row:nth-child(4) p,
-.table-container .container > div.row:nth-child(2) img,
-.table-container .container > div.row:nth-child(4) img {
-  opacity: 0.5;
-}
-.table-container .container > div.row:nth-child(2) .table-cell-2,
-.table-container .container > div.row:nth-child(4) .table-cell-2 {
-  background: #f3f3f3;
-}
-
 .background-sold {
   padding: 4px 8px;
   background: #ffdddb;
@@ -710,47 +691,8 @@ table th {
   border: 1px solid #27705f;
   border-radius: 8px;
 }
-.cell-11 {
-  min-width: 148px;
-  display: flex;
-  justify-content: space-around;
-}
-.cell-12 {
-  display: flex;
-  justify-content: space-between;
-}
 
 /* SECTION TABLE END */
-
-/* <div class="row justify-content-start">
-<div class="table-cell cell-1 col-1">
-</div>
-<div class="table-cell cell-2 col-1">
-</div>
-<div class="table-cell cell-3 col-1">
-</div>
-<div class="table-cell cell-4 col-1">
-</div>
-<div class="table-cell cell-5 col-1">
-</div>
-<div class="table-cell cell-6 col-1">
-  
-</div>
-<div class="table-cell cell-7 col-1">
-  
-</div>
-<div class="table-cell cell-8 col-1">
-  
-</div>
-<div class="table-cell cell-9 col-1">
-  
-</div>
-<div class="table-cell cell-10 col-1">
-  
-</div>
-<div class="table-cell cell-11 col-1"></div>
-<div class="table-cell cell-12 col-1"></div>
-</div> */
 
 /* FOOTER START*/
 footer {
@@ -826,9 +768,12 @@ footer .column-2-2 a {
   font-weight: 600;
   font-size: 18px;
   text-decoration: none;
+  color: #ffffff;
 }
-footer .column-2-1 a:visited,
-footer .column-2-2 a:visited {
+.column-2-1 a:visited,
+.column-2-2 a:visited,
+.column-2-1 a:hover,
+.column-2-2 a:hover {
   color: #ffffff;
 }
 footer .column-2-1,
