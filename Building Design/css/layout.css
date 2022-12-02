@@ -193,6 +193,7 @@ main .main-view {
 }
 .slider-block {
   position: relative;
+  /* display: flex; */
 }
 .slider-block .next-arrow,
 .slider-block .previous-arrow {
@@ -233,9 +234,15 @@ main .main-view {
 }
 .slider-wrapper > .slick-list {
   padding: 0 !important;
+  display: flex;
+  justify-content: space-between;
 }
 .slick-slide.slick-current {
   border-color: #000d58;
+}
+.slick-slider .slick-track {
+  display: flex !important;
+  /* justify-content: space-between !important; */
 }
 
 /* SLIDER END */
@@ -989,6 +996,14 @@ header nav .hamburger {
   .data-container {
     width: 100%;
   }
+  .slider-wrapper .slick-slide {
+    width: 68px !important;
+    height: 50px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 0;
+  }
+
   main section .card .img-container {
     margin-right: 10px;
   }
