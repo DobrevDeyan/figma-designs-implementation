@@ -108,15 +108,6 @@ main .main-view {
 .main-view .columns {
   display: flex;
 }
-/* .main-view .columns .col-xxl-6 {
-  max-width: 510px;
-} */
-/* .main-view .columns .col-xxl-6:nth-child(1) {
-  margin-right: 18px;
-}
-.main-view .columns > div:nth-child(2) {
-  margin-left: 18px;
-} */
 
 /* HERO IMAGE END*/
 
@@ -179,44 +170,41 @@ main .main-view {
 /* SLIDER START */
 .slider-wrapper {
   margin-top: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   margin-bottom: 40px;
   position: relative;
 }
-.slider-wrapper > img.previous-arrow,
+/* .slider-wrapper > img.previous-arrow,
 .slider-wrapper > img.next-arrow {
   position: absolute;
   width: 16px !important;
   height: 16px !important;
-}
-.slider-block {
+} */
+/* .slider-block {
   position: relative;
-  /* display: flex; */
-}
-.slider-block .next-arrow,
-.slider-block .previous-arrow {
+} */
+/* .next-arrow,
+.previous-arrow {
   top: 50%;
   transform: translateY(-8px);
   position: absolute;
   display: block !important;
-}
-.slider-wrapper {
-  position: relative;
-}
-.previous-arrow {
+} */
+/* .previous-arrow {
   left: 0 !important;
+  background: red;
+  cursor: pointer;
 }
 .next-arrow {
   right: 0 !important;
+  background: red;
+  cursor: pointer;
 }
 .slick-arrow.slick-hidden {
   top: 50%;
   transform: translateY(-8px);
   position: absolute;
   display: block !important;
-}
+} */
 .slider-wrapper .slick-slide {
   width: 75px !important;
   height: 50px;
@@ -224,7 +212,21 @@ main .main-view {
   border-radius: 4px;
   padding: 0;
 }
-.slider-wrapper .slick-slide .unpkt {
+.building-views .img-container {
+  width: 510px;
+  height: 380px;
+}
+.building-views .img-container .background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid #ffffff;
+}
+.building-views .img-container.slick-slide {
+  padding: 0;
+}
+.slider-img-box {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -232,18 +234,67 @@ main .main-view {
   border: 1px solid #ffffff;
   border-radius: 4px;
 }
-.slider-wrapper > .slick-list {
-  padding: 0 !important;
-  display: flex;
-  justify-content: space-between;
+.slider-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
 }
-.slick-slide.slick-current {
+.slick-prev,
+.slick-next {
+  bottom: 0;
+  z-index: 9999;
+  margin-bottom: -46px;
+  position: absolute;
+}
+.slick-prev {
+  left: 0;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+.slick-next {
+  right: 0;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+.slick-next {
+  background-image: url("../images/arrow-right-slider.svg");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.slick-prev {
+  background-image: url("../images/arrow-left-slider.svg");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+.slider-block .slick-slide.slick-current {
   border-color: #000d58;
 }
 .slick-slider .slick-track {
   display: flex !important;
-  /* justify-content: space-between !important; */
 }
+.slick-list {
+  padding: 0;
+}
+
+/* .slider-wrapper > .slick-list {
+  padding: 0 !important;
+  display: flex;
+  justify-content: space-between;
+} */
 
 /* SLIDER END */
 
@@ -419,7 +470,7 @@ p.estate-information {
   flex-direction: row;
   margin-top: 24px;
 }
-.card .img-container {
+.card .personal-img-container {
   width: 95px;
   height: 95px;
   border-radius: 50%;
@@ -450,7 +501,7 @@ p.estate-information {
   height: 16px;
   align-self: center;
 }
-.card .img-container img {
+.card .personal-img-container img {
   display: block;
   width: 100%;
   height: 140%;
@@ -996,15 +1047,7 @@ header nav .hamburger {
   .data-container {
     width: 100%;
   }
-  .slider-wrapper .slick-slide {
-    width: 68px !important;
-    height: 50px;
-    border: 1px solid #ffffff;
-    border-radius: 4px;
-    padding: 0;
-  }
-
-  main section .card .img-container {
+  main section .card .personal-img-container {
     margin-right: 10px;
   }
   main {
