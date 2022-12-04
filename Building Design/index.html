@@ -15,6 +15,12 @@
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
     <link href="./lightbox2-2.11.3/src/css/lightbox.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -140,20 +146,16 @@
                 </div>
               </div>
               <div class="slider-block">
-                <!-- <div class="slider-button">
-                  <img
-                    src="../About Design/images/arrow-left.svg"
-                    alt="leftArrow"
-                    class="previous-arrow"
-                  />
-                </div>
-                <div class="slider-button">
-                  <img
-                    src="../About Design/images/arrow-right.svg"
-                    alt="rightArrow"
-                    class="next-arrow"
-                  />
-                </div> -->
+                <img
+                  src="./images/arrow-left-slider.svg"
+                  alt="leftArrow"
+                  class="previous-arrow"
+                />
+                <img
+                  src="./images/arrow-right-slider.svg"
+                  alt="rightArrow"
+                  class="next-arrow"
+                />
                 <div class="slider-wrapper">
                   <div class="slider-img-box">
                     <img src="./images/building-1.png" alt="building-1" />
@@ -175,35 +177,63 @@
                   </div>
                 </div>
               </div>
-              <div class="elements-panel-views">
-                <div class="current-element-panel">
-                  <div class="row justify-content-between">
+              <div class="current-element-panel container">
+                <div class="row justify-content-between">
+                  <div class="col-sm-3 d-flex">
                     <div class="image-box">
                       <img src="./images/building-3.png" alt="building" />
+                      <div class="play-button-box">
+                        <img
+                          src="./images/play.svg"
+                          alt="playButton class"
+                          class="play"
+                        />
+                      </div>
                     </div>
+                  </div>
+                  <div class="col-sm-3 d-flex">
                     <div class="image-box">
                       <img src="./images/building-3.png" alt="building" />
+                      <div class="rotate-button-box">
+                        <img
+                          src="./images/rotate.svg"
+                          alt="playButton class"
+                          class="rotate"
+                        />
+                      </div>
                     </div>
-                    <div class="box"><p>Паркинг 3</p></div>
-                    <div class="box"><p>Паркинг 3</p></div>
                   </div>
-                  <div class="row justify-content-between">
-                    <div class="box"><p>Ситуация на сградата</p></div>
-                    <div class="box"><p>Паркинг 3</p></div>
-                    <div class="box"><p>Паркинг 3</p></div>
+                  <div class="col-sm-3 d-flex">
+                    <div class="box flex-grow-1"><p>Паркинг 3</p></div>
                   </div>
-                  <div class="links">
-                    <div class="map">
-                      <img src="./images/map.svg" alt="mapsIcon" />
-                      <a href="#">Виж на картата</a>
+                  <div class="col-sm-3 d-flex">
+                    <div class="box flex-grow-1"><p>Паркинг 3</p></div>
+                  </div>
+                </div>
+                <div class="row justify-content-between">
+                  <div class="col-sm-6 d-flex">
+                    <div class="box flex-grow-1">
+                      <p>Ситуация на сградата</p>
                     </div>
-                    <div class="download">
-                      <img
-                        src="./images/download.svg"
-                        alt="downLoadPresentation"
-                      />
-                      <a href="#">Презентация</a>
-                    </div>
+                  </div>
+                  <div class="col-sm-3 d-flex">
+                    <div class="box flex-grow-1"><p>Паркинг 3</p></div>
+                  </div>
+                  <div class="col-sm-3 d-flex">
+                    <div class="box flex-grow-1"><p>Паркинг 3</p></div>
+                  </div>
+                </div>
+                <div class="links">
+                  <div class="map">
+                    <img src="./images/map.svg" alt="mapsIcon" />
+                    <a href="#">Виж на картата</a>
+                  </div>
+                  <div class="download">
+                    <img
+                      src="./images/download.svg"
+                      alt="downLoadPresentation"
+                    />
+                    <a href="#">Презентация</a>
                   </div>
                 </div>
               </div>
@@ -289,6 +319,27 @@
                   </div>
                 </div>
               </div>
+              <div class="card-single-line">
+                <div class="data-container-2">
+                  <div class="img-container">
+                    <img src="./images/profile-pic.png" alt="PersonalPicture" />
+                  </div>
+                  <div class="names">
+                    <h4>Адриана Йовчева</h4>
+                    <h5>Офис администратор</h5>
+                  </div>
+                </div>
+                <div class="data-container">
+                  <div class="email info-box">
+                    <img src="./images/mail.svg" alt="emailIcon" />
+                    <a href="#">sgeorgieva@komfortbrokers.com</a>
+                  </div>
+                  <div class="phone info-box">
+                    <img src="./images/phone.svg" alt="phoneImage" />
+                    <a href="#">0886 514 477</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -301,7 +352,7 @@
               <div class="category-wrapper col-xl-3">
                 <label for="category-select">Категория</label>
                 <div class="select">
-                  <select name="category" id="category-select">
+                  <select name="category" id="category-test">
                     <option value="" selected disabled hidden>
                       Какво търсиш ?
                     </option>
@@ -616,7 +667,7 @@
         </table>
       </section>
       <section class="similar-properties">
-        <div class="container-wrap">
+        <div class="container-wrap container">
           <h3>Подобни имоти</h3>
           <div class="properties-view">
             <div class="property">
@@ -656,7 +707,7 @@
         </div>
       </section>
       <section class="last-viewed">
-        <div class="container-wrap">
+        <div class="container-wrap container">
           <h3>Последно разгледани</h3>
           <div class="properties-view">
             <div class="property">
@@ -697,7 +748,7 @@
       </section>
     </main>
     <footer>
-      <div class="container-wrap">
+      <div class="container-wrap container">
         <div class="column-1">
           <img class="logo" src="./images/logo.png" alt="KomfortBrokersLogo" />
           <p class="copyright">Copyright &copy; All rights reserved.</p>
@@ -773,24 +824,36 @@
         slidesToScroll: 1,
         fade: true,
         arrows: true,
+        prevArrow: ".previous-arrow",
+        nextArrow: ".next-arrow",
         asNavFor: ".slider-wrapper",
+        infinite: true,
       })
       $(".slider-wrapper").slick({
         slidesToShow: 6,
         slidesToScroll: 1,
-        infitite: true,
         asNavFor: ".building-views",
         centerMode: true,
         focusOnSelect: true,
+        infinite: true,
+        loop: true,
         responsive: [
           {
             breakpoint: 767,
             settings: {
-              slidesToShow: 4,
+              slidesToShow: 1,
               slidesToScroll: 1,
             },
           },
         ],
+      })
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#category-select").select2({
+          theme: "classic",
+          closeOnSelect: false,
+        })
       })
     </script>
   </body>
