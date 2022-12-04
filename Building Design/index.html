@@ -665,6 +665,8 @@
             </tr>
           </tbody>
         </table>
+        <button id="left-button">Left</button>
+        <button id="right-button">Right</button>
       </section>
       <section class="similar-properties">
         <div class="container-wrap container">
@@ -818,16 +820,15 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <!-- SLICK JS SLIDER  -->
     <script type="text/javascript">
       $(".building-views").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: true,
-        arrows: true,
         prevArrow: ".previous-arrow",
         nextArrow: ".next-arrow",
         asNavFor: ".slider-wrapper",
-        infinite: true,
       })
       $(".slider-wrapper").slick({
         slidesToShow: 6,
@@ -835,19 +836,21 @@
         asNavFor: ".building-views",
         centerMode: true,
         focusOnSelect: true,
-        infinite: true,
-        loop: true,
+        arrows: false,
         responsive: [
           {
             breakpoint: 767,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 4,
               slidesToScroll: 1,
             },
           },
         ],
       })
     </script>
+    <!-- SLICK JS SLIDER  -->
+
+    <!-- SELECT 2 NOT WORKING  -->
     <script type="text/javascript">
       $(document).ready(function () {
         $("#category-select").select2({
@@ -856,5 +859,28 @@
         })
       })
     </script>
+    <!-- SELECT 2 NOT WORKING  -->
+    <!-- TABLE SLIDE BUTTON  -->
+    <script type="text/javascript">
+      $("#right-button").click(function () {
+        event.preventDefault()
+        $(".table-responsive").animate(
+          {
+            scrollLeft: "+=80px",
+          },
+          "slow"
+        )
+      })
+      $("#left-button").click(function () {
+        event.preventDefault()
+        $(".table-responsive").animate(
+          {
+            scrollLeft: "-=100px",
+          },
+          "slow"
+        )
+      })
+    </script>
+    <!-- TABLE SLIDE BUTTON  -->
   </body>
 </html>

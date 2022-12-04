@@ -239,6 +239,10 @@ main .main-view {
 .slick-list {
   padding: 0;
 }
+.slick-prev,
+.slick-next {
+  display: none;
+}
 /* SLIDER END */
 
 /* SLIDER VIEW START */
@@ -645,6 +649,7 @@ table {
   table-layout: auto;
   width: 100%;
   display: table;
+  position: relative;
   /* padding-bottom: 80px; */
 }
 table tr {
@@ -699,6 +704,9 @@ table th {
   border: 1px solid #27705f;
   border-radius: 8px;
 }
+#right-button {
+  position: absolute;
+}
 
 /* SECTION TABLE END */
 
@@ -729,8 +737,6 @@ table th {
   color: #585655;
 }
 .img-property-container {
-  /* width: 352px;
-  height: 329px; */
   border-radius: 8px;
   object-fit: contain;
   object-position: center;
@@ -1105,6 +1111,17 @@ header nav .hamburger {
   }
   main {
     padding-bottom: 64px;
+  }
+  .building-details .details-row:nth-of-type(3),
+  .building-details .details-row:nth-of-type(5) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .building-details .details-row:nth-of-type(3) .elem-1:first-child {
+    margin-bottom: 24px;
+  }
+  .building-details .details-row:nth-of-type(5) .cont:first-child {
+    margin-bottom: 8px;
   }
 
   .properties-view {
