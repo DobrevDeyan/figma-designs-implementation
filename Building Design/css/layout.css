@@ -650,8 +650,6 @@ table {
   table-layout: auto;
   width: 100%;
   display: table;
-  /* position: relative; */
-  /* padding-bottom: 80px; */
   white-space: nowrap;
   border-collapse: separate;
   border-spacing: 0;
@@ -738,7 +736,7 @@ table tr th.frozen.bg-2 {
   border: none;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 45.4%;
   z-index: 999999;
 }
 #right-button p {
@@ -754,6 +752,9 @@ table tr th.frozen.bg-2 {
 #right-button img {
   width: 16px;
   height: 16px;
+}
+.table-cont {
+  overflow: auto;
 }
 
 /* SECTION TABLE END */
