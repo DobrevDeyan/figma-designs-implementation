@@ -41,7 +41,24 @@
             <li><a href="#">Кариери</a></li>
             <li><a href="#">Контакти</a></li>
           </ul>
-          <ion-icon class="hamburger" name="menu-outline"></ion-icon>
+          <button
+            class="menu-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+            
+          >
+          <span class="visually-hidden">Menu</span>
+          <div class="hamburger" aria-hidden="true"></div>
+
+          <ul data-state="closed" class="primary-navigation" id="primary-navigation">
+            <li><a href="#">Жилищни обекти</a></li>
+            <li><a href="#">Бизнес обекти</a></li>
+            <li><a href="#">Ресурси</a></li>
+            <li><a href="#">Новини</a></li>
+            <li><a href="#">За нас</a></li>
+            <li><a href="#">Кариери</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -943,5 +960,36 @@
       })
     </script>
     <!-- TABLE SLIDE BUTTON  -->
+    <script type="text/javascript">
+      const menuToggle = document.querySelector(".menu-toggle")
+      const siteNavigation = document.querySelector(".primary-navigation")
+
+      menuToggle.addEventListener("click", () => {
+        const isOpened = menuToggle.getAttribute("aria-expanded") === "true"
+        console.log(isOpened);
+        if (isOpened ? closeMenu() : openMenu());
+      })
+
+      function openMenu() {
+        menuToggle.setAttribute("aria-expanded", "true")
+        siteNavigation.setAttribute("data-state", "opened")
+
+        console.log("opened");
+      }
+      function closeMenu() {
+        menuToggle.setAttribute("aria-expanded", "false")
+        siteNavigation.setAttribute("data-state", "closing")
+
+        console.log("closed");
+
+        siteNavigation.addEventListener(
+          "animationend",
+          () => {
+            siteNavigation.setAttribute("data-state", "closed")
+          },
+          { once: true }
+        )
+      }
+    </script>
   </body>
 </html>
