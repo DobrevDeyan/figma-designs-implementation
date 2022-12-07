@@ -177,7 +177,7 @@
                   </div>
                 </div>
               </div>
-              <div class="current-element-panel container">
+              <div class="current-element-panel container mobile-hidden">
                 <div class="row justify-content-between">
                   <div class="col-sm-3 col-6 d-flex">
                     <div class="image-box">
@@ -221,6 +221,76 @@
                   </div>
                   <div class="col-sm-3 d-flex">
                     <div class="box flex-grow-1"><p>Паркинг 3</p></div>
+                  </div>
+                </div>
+                <div class="links">
+                  <div class="map">
+                    <img src="./images/map.svg" alt="mapsIcon" />
+                    <a href="#">Виж на картата</a>
+                  </div>
+                  <div class="download">
+                    <img
+                      src="./images/download.svg"
+                      alt="downLoadPresentation"
+                    />
+                    <a href="#">Презентация</a>
+                  </div>
+                </div>
+              </div>
+              <div class="current-element-panel container desktop-hidden">
+                <div class="row justify-content-between">
+                  <div class="col-md-3 col-6 d-flex">
+                    <div class="image-box">
+                      <img src="./images/building-3.png" alt="building" />
+                      <div class="play-button-box">
+                        <img
+                          src="./images/play.svg"
+                          alt="playButton class"
+                          class="play"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6 d-flex">
+                    <div class="image-box">
+                      <img src="./images/building-3.png" alt="building" />
+                      <div class="rotate-button-box">
+                        <img
+                          src="./images/rotate.svg"
+                          alt="playButton class"
+                          class="rotate"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 d-flex">
+                    <div class="box flex-grow-1 blue-style">
+                      <p>Ситуация на сградата</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 d-flex vehicle-padding">
+                    <div class="box flex-grow-1">
+                      <img src="./images/car-mobile.svg" alt="carLogo" />
+                      <p>Паркинг 3</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 d-flex vehicle-padding">
+                    <div class="box flex-grow-1">
+                      <img src="./images/car-mobile.svg" alt="carLogo" />
+                      <p>Паркинг 3</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 d-flex vehicle-padding">
+                    <div class="box flex-grow-1">
+                      <img src="./images/car-mobile.svg" alt="carLogo" />
+                      <p>Паркинг 3</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 d-flex vehicle-padding">
+                    <div class="box flex-grow-1">
+                      <img src="./images/car-mobile.svg" alt="carLogo" />
+                      <p>Паркинг 3</p>
+                    </div>
                   </div>
                 </div>
                 <div class="links">
@@ -351,48 +421,41 @@
             <div class="filter-wrapper">
               <div class="category-wrapper col-xl-3">
                 <label for="category-select">Категория</label>
-                <div class="select">
-                  <select name="category" id="category-test">
-                    <option value="" selected disabled hidden>
-                      Какво търсиш ?
-                    </option>
-                    <option value="Апартамент">Апартамент</option>
-                    <option value="Магазин">Магазин</option>
-                    <option value="Студио">Студио</option>
-                    <option value="Мезонет">Мезонет</option>
-                  </select>
-                  <span class="focus"></span>
-                </div>
+                <select name="category" class="category-select">
+                  <option value="" selected disabled hidden>
+                    Какво търсиш ?
+                  </option>
+                  <option value="Апартамент">Апартамент</option>
+                  <option value="Магазин">Магазин</option>
+                  <option value="Студио">Студио</option>
+                  <option value="Мезонет">Мезонет</option>
+                </select>
+                <span class="focus"></span>
               </div>
               <div class="category-wrapper col-xl-3">
                 <label for="category-select">Вид имот</label>
-                <div class="select">
-                  <select name="category" id="category-select">
-                    <option value="" selected disabled hidden>
-                      Какъв вид ?
-                    </option>
-                    <option value="Двустаен">Двустаен</option>
-                    <option value="Тристаен">Тристаен</option>
-                    <option value="Многостаен">Многостаен</option>
-                    <option value="Боксониера">Боксониера</option>
-                  </select>
-                  <span class="focus"></span>
-                </div>
+                <select name="category" class="category-select">
+                  <option value="" selected disabled hidden>Какъв вид ?</option>
+                  <option value="Двустаен">Двустаен</option>
+                  <option value="Тристаен">Тристаен</option>
+                  <option value="Многостаен">Многостаен</option>
+                  <option value="Боксониера">Боксониера</option>
+                </select>
+                <span class="focus"></span>
               </div>
               <div class="category-wrapper col-xl-3">
                 <label for="category-select">Цена</label>
-                <div class="select">
-                  <select name="category" id="category-select">
-                    <option value="" selected disabled hidden>
-                      Какъв е бюджетът ?
-                    </option>
-                    <option value="Апартамент">Апартамент</option>
-                    <option value="Магазин">Магазин</option>
-                    <option value="Студио">Студио</option>
-                    <option value="Мезонет">Мезонет</option>
-                  </select>
-                  <span class="focus"></span>
-                </div>
+
+                <select name="category" class="category-select">
+                  <option value="" selected disabled hidden>
+                    Какъв е бюджетът ?
+                  </option>
+                  <option value="Апартамент">9999999</option>
+                  <option value="Магазин">999999</option>
+                  <option value="Студио">99999</option>
+                  <option value="Мезонет">9999999</option>
+                </select>
+                <span class="focus"></span>
               </div>
             </div>
           </div>
@@ -805,10 +868,6 @@
     </footer>
     <script
       type="text/javascript"
-      src="https://code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
       src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
     <script src="./lightbox2-2.11.3/src/js/lightbox.js"></script>
@@ -853,16 +912,24 @@
       })
     </script>
     <!-- SLICK JS SLIDER  -->
-    <!-- SELECT 2 NOT WORKING  -->
+    <!-- SELECT 2  -->
     <script type="text/javascript">
       $(document).ready(function () {
-        $("#category-select").select2({
-          theme: "classic",
+        $(".category-select").select2({
+          // for styling purposes only, to be removed
           closeOnSelect: false,
         })
       })
+
+      $(".js-select2").select2({
+        closeOnSelect: false,
+        placeholder: "Placeholder",
+        allowHtml: true,
+        allowClear: true,
+        tags: true,
+      })
     </script>
-    <!-- SELECT 2 NOT WORKING  -->
+    <!-- SELECT 2  -->
     <!-- TABLE SLIDE BUTTON  -->
     <script type="text/javascript">
       $("#right-button").click(function () {
