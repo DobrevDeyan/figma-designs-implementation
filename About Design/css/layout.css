@@ -64,7 +64,7 @@ header nav a img.logo {
 main .hero-image {
   min-width: 100%;
   height: 559px;
-  background-image: url("../images/hero-about-page.jpg");
+  background-image: url("../about-page-images/hero-about-page.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
