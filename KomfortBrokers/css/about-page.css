@@ -64,7 +64,7 @@ header nav a img.logo {
 main .hero-image {
   min-width: 100%;
   height: 559px;
-  background-image: url("../about-page-images/hero-about-page.jpg");
+  background-image: url("../images/about-page-images/hero-about-page.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -509,6 +509,7 @@ footer .column-2-2 a {
   font-weight: 600;
   font-size: 18px;
   text-decoration: none;
+  color: #fff !important;
 }
 footer .column-2-1 a:visited,
 footer .column-2-2 a:visited {

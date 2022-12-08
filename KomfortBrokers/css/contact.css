@@ -88,6 +88,7 @@ main .hero-image-button p {
   height: 24px;
   font-family: "Source Sans 3";
   font-weight: 600;
+  margin: 0;
 }
 main .hero-image-title {
   line-height: 88px;
@@ -289,6 +290,7 @@ footer .col-2-2 a {
   font-weight: 600;
   font-size: 18px;
   text-decoration: none;
+  color: #ffffff !important;
 }
 footer .col-2-1 {
   margin-right: 30px;
