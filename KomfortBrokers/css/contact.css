@@ -5,6 +5,7 @@ body {
   background: #000030;
   color: #ffffff;
   font-size: 1em;
+  margin: 0;
 }
 .content-wrapper {
   display: flex;
