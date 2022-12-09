@@ -809,8 +809,14 @@ span.select2:nth-child(3) > span:nth-child(1) > span:nth-child(1) {
   background: #000d58;
   border: 1px solid #000d58;
   border-radius: 2px;
-  padding: 2px;
-  background-image: url("../building-page-images/stroke.svg");
+  /* background-image: url("../images/building-page-images/stroke.svg"); */
+}
+.select2-container--default .select2-results__option--selected::before {
+  font-family: fontAwesome;
+  content: "\f00c";
+  color: #fff;
+  border: 0;
+  display: contents;
 }
 .select2-container--default
   .select2-results__option--highlighted[aria-selected] {
@@ -821,6 +827,7 @@ span.select2:nth-child(3) > span:nth-child(1) > span:nth-child(1) {
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 /* SELECT 2  */
 
 /* SECTION FILTER END */
@@ -1551,6 +1558,7 @@ header nav .hamburger {
   position: relative;
 }
 .slider_wrap .slick-slide {
+  width: 200px;
   height: 500px;
 }
 .banner_slider {
