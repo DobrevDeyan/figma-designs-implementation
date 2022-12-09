@@ -299,8 +299,8 @@ main .main-view {
   position: absolute;
 }
 .slider-wrapper .slick-slide {
-  width: 75px !important;
-  height: 50px;
+  /* width: 75px !important; */
+  /* height: 50px; */
   border: 1px solid #ffffff;
   border-radius: 4px;
   padding: 0;
@@ -330,7 +330,8 @@ main .main-view {
 }
 .slider-img-box img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
+  height: 50px;
   object-fit: cover;
   object-position: center;
   border-radius: 4px;
