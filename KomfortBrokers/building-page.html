@@ -42,6 +42,7 @@
             <li><a href="building-page.html">Кариери</a></li>
             <li><a href="contact-page.html">Контакти</a></li>
           </ul>
+
           <button
             class="menu-toggle"
             aria-controls="primary-navigation"
@@ -50,17 +51,20 @@
           >
           <span class="visually-hidden">Menu</span>
           <div class="hamburger" aria-hidden="true"></div>
-
-          <ul data-state="closed" class="primary-navigation" id="primary-navigation">
-            <li><a href="building-page.html">Жилищни обекти</a></li>
-            <li><a href="building-page.html">Бизнес обекти</a></li>
-            <li><a href="building-page.html">Ресурси</a></li>
-            <li><a href="building-page.html">Новини</a></li>
-            <li><a href="about-page.html">За нас</a></li>
-            <li><a href="building-page.html">Кариери</a></li>
-            <li><a href="contact-page.html">Контакти</a></li>
-          </ul>
+         
+         
         </nav>
+        <ul data-state="closed" class="primary-navigation" id="primary-navigation">
+          <li><a href="building-page.html">Жилищни обекти</a></li>
+          <li><a href="building-page.html">Бизнес обекти</a></li>
+          <li><a href="building-page.html">Ресурси</a></li>
+          <li><a href="building-page.html">Новини</a></li>
+          <li><a href="about-page.html">За нас</a></li>
+          <li><a href="building-page.html">Кариери</a></li>
+          <li><a href="contact-page.html">Контакти</a></li>
+        </ul>
+     
+       
       </div>
     </header>
     <main>
@@ -465,7 +469,6 @@
               </div>
               <div class="category-wrapper col-xl-3">
                 <label for="category-select">Цена</label>
-
                 <select name="category" class="category-select">
                   <option value="" selected disabled hidden>
                     Какъв е бюджетът ?
@@ -477,6 +480,14 @@
                 </select>
                 <span class="focus"></span>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="container container-wrap">
+          <div class="filter-mobile">
+            <div class="categories-wrapper">
+              <h3>Филтър</h3>
+              <img src="./images/building-page-images/down-arrow.svg" alt="arrowDown">
             </div>
           </div>
         </div>
@@ -836,7 +847,7 @@
         </div>
       </section>
       <!-- TEST -->
-      <div class="slider_wrap" style="border: 3px solid gray">
+      <!-- <div class="slider_wrap" style="border: 3px solid gray">
         <div class="banner_slider">
           <img src="./images/building-page-images/building-1.png" alt="building" />
           <img src="./images/building-page-images/building-2.png" alt="building" />
@@ -869,7 +880,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- TEST -->
     </main>
     <footer>
@@ -1030,7 +1041,7 @@
           () => {
             siteNavigation.setAttribute("data-state", "closed")
           },
-          // { once: true }
+          { once: true }
         )
       }
     </script>
@@ -1050,7 +1061,7 @@
     <!-- LIGHTBOX -->
 
     <!-- TEST  -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       $(".banner_slider").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -1065,7 +1076,7 @@
         centerMode: true,
         focusOnSelect: true,
       })
-    </script>
+    </script> -->
     <!-- TEST  -->
   </body>
 </html>
