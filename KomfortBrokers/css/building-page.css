@@ -343,6 +343,10 @@ main .main-view {
   display: flex;
   justify-content: center;
 }
+.slider-wrapper .slick-list.draggable {
+  padding: 0 !important;
+  margin: 0px 50px;
+}
 /* SLIDER END */
 
 /* SLIDER VIEW START */
@@ -810,16 +814,16 @@ span.select2:nth-child(3) > span:nth-child(1) > span:nth-child(1) {
   background: #000d58;
   border: 1px solid #000d58;
   border-radius: 2px;
-  /* background-image: url("../images/building-page-images/stroke.svg"); */
+  background-image: url("../images/building-page-images/stroke.svg");
 }
 .select2-container--default .select2-results__option--selected::before {
-  font-family: fontAwesome;
-  content: "\f00c";
+  /* font-family: fontAwesome; */
+  /* content: "\f00c"; */
   color: #fff;
   border: 0;
   display: contents;
-  /* object-fit: contain;
-  aspect-ratio: 3/2; */
+  /* object-fit: contain; */
+  /* aspect-ratio: 3/2;  */
 }
 .select2-container--default
   .select2-results__option--highlighted[aria-selected] {
