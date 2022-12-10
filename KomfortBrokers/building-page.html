@@ -21,6 +21,7 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="./javascript/index.js"></script>
     <link rel="stylesheet" href="./css/building-page.css" />
     <link
       rel="stylesheet"
@@ -541,48 +542,46 @@
         <div class="container-wrap container">
           <h3>Филтър</h3>
           <div class="row justify-content-start">
-            <div class="filter-wrapper">
-              <div class="category-wrapper col-xl-3">
-                <label for="category-select">Категория</label>
-                <select name="category" class="category-select">
-                  <option value="" selected disabled hidden>
-                    Какво търсиш ?
-                  </option>
-                  <option value="Апартамент">Апартамент</option>
-                  <option value="Магазин">Магазин</option>
-                  <option value="Студио">Студио</option>
-                  <option value="Мезонет">Мезонет</option>
-                </select>
-                <span class="focus"></span>
-              </div>
-              <div class="category-wrapper col-xl-3">
-                <label for="category-select">Вид имот</label>
-                <select name="category" class="category-select">
-                  <option value="" selected disabled hidden>Какъв вид ?</option>
-                  <option value="Двустаен">Двустаен</option>
-                  <option value="Тристаен">Тристаен</option>
-                  <option value="Многостаен">Многостаен</option>
-                  <option value="Боксониера">Боксониера</option>
-                </select>
-                <span class="focus"></span>
-              </div>
-              <div class="category-wrapper col-xl-3">
-                <label for="category-select">Цена</label>
-                <select name="category" class="category-select">
-                  <option value="" selected disabled hidden>
-                    Какъв е бюджетът ?
-                  </option>
-                  <option value="Апартамент">9999999</option>
-                  <option value="Магазин">999999</option>
-                  <option value="Студио">99999</option>
-                  <option value="Мезонет">9999999</option>
-                </select>
-                <span class="focus"></span>
-              </div>
+            <div class="category-wrapper col-lg-3">
+              <label for="category-select">Категория</label>
+              <select name="category" class="category-select">
+                <option value="" selected disabled hidden>
+                  Какво търсиш ?
+                </option>
+                <option value="Апартамент">Апартамент</option>
+                <option value="Магазин">Магазин</option>
+                <option value="Студио">Студио</option>
+                <option value="Мезонет">Мезонет</option>
+              </select>
+              <span class="focus"></span>
+            </div>
+            <div class="category-wrapper col-lg-3">
+              <label for="category-select">Вид имот</label>
+              <select name="category" class="category-select">
+                <option value="" selected disabled hidden>Какъв вид ?</option>
+                <option value="Двустаен">Двустаен</option>
+                <option value="Тристаен">Тристаен</option>
+                <option value="Многостаен">Многостаен</option>
+                <option value="Боксониера">Боксониера</option>
+              </select>
+              <span class="focus"></span>
+            </div>
+            <div class="category-wrapper col-lg-3">
+              <label for="category-select">Цена</label>
+              <select name="category" class="category-select">
+                <option value="" selected disabled hidden>
+                  Какъв е бюджетът ?
+                </option>
+                <option value="Апартамент">9999999</option>
+                <option value="Магазин">999999</option>
+                <option value="Студио">99999</option>
+                <option value="Мезонет">9999999</option>
+              </select>
+              <span class="focus"></span>
             </div>
           </div>
         </div>
-        <div class="container container-wrap">
+        <div class="container-wrap container">
           <div class="row">
             <div class="col-md-3">
               <div class="filter-mobile">
@@ -598,7 +597,7 @@
           </div>
         </div>
       </section>
-      <section class="container-wrap table-responsive">
+      <section class="container-wrap table-responsive container">
         <div class="table-cont">
           <table>
             <thead>
@@ -1169,7 +1168,6 @@
     <script type="text/javascript">
       $(document).ready(function () {
         $(".category-select").select2({
-          // for styling purposes only, to be removed
           closeOnSelect: false,
         })
       })
@@ -1186,14 +1184,9 @@
 
     <!-- TABLE SLIDE BUTTON  -->
     <script type="text/javascript">
-      $("#right-button").click(function () {
+      $("#right-button").click(function (event) {
         event.preventDefault()
-        $(".table-cont").animate(
-          {
-            scrollLeft: "+=220px",
-          },
-          "slow"
-        )
+        $(".table-cont").animate({ scrollLeft: "+=220px" }, "slow")
       })
     </script>
     <!-- TABLE SLIDE BUTTON  -->
