@@ -21,7 +21,6 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script src="./javascript/index.js"></script>
     <link rel="stylesheet" href="./css/building-page.css" />
     <link
       rel="stylesheet"
@@ -49,26 +48,22 @@
             <li><a href="building-page.html">Кариери</a></li>
             <li><a href="contact-page.html">Контакти</a></li>
           </ul>
-          <button
-            class="menu-toggle"
-            aria-controls="primary-navigation"
-            aria-expanded="false"
-          />
-          <span class="visually-hidden">Menu</span>
+
+          <button class="menu-toggle" aria-expanded="false" />
           <div class="hamburger" aria-hidden="true"></div>
         </nav>
-        <ul
-          data-state="closed"
-          class="primary-navigation"
-          id="primary-navigation"
-        >
-          <li><a href="building-page.html">Жилищни обекти</a></li>
-          <li><a href="building-page.html">Бизнес обекти</a></li>
-          <li><a href="building-page.html">Ресурси</a></li>
-          <li><a href="building-page.html">Новини</a></li>
-          <li><a href="about-page.html">За нас</a></li>
-          <li><a href="building-page.html">Кариери</a></li>
-          <li><a href="contact-page.html">Контакти</a></li>
+        <ul class="mobile-menu">
+          <li>
+            <a class="menu-item" href="building-page.html">Жилищни обекти</a>
+          </li>
+          <li>
+            <a class="menu-item" href="building-page.html">Бизнес обекти</a>
+          </li>
+          <li><a class="menu-item" href="building-page.html">Ресурси</a></li>
+          <li><a class="menu-item" href="building-page.html">Новини</a></li>
+          <li><a class="menu-item" href="about-page.html">За нас</a></li>
+          <li><a class="menu-item" href="building-page.html">Кариери</a></li>
+          <li><a class="menu-item" href="contact-page.html">Контакти</a></li>
         </ul>
       </div>
     </header>
@@ -597,7 +592,7 @@
           </div>
         </div>
       </section>
-      <section class="container-wrap table-responsive containergit push -f origin master">
+      <section class="container-wrap table-responsive container">
         <div class="table-cont">
           <table>
             <thead>
@@ -1026,42 +1021,6 @@
           </div>
         </div>
       </section>
-      <!-- TEST -->
-      <!-- <div class="slider_wrap" style="border: 3px solid gray">
-        <div class="banner_slider">
-          <img src="./images/building-page-images/building-1.png" alt="building" />
-          <img src="./images/building-page-images/building-2.png" alt="building" />
-          <img src="./images/building-page-images/building-3.png" alt="building" />
-          <img src="./images/building-page-images/building-4.png" alt="building" />
-          <img src="./images/building-page-images/building-5.png" alt="building" />
-          <img src="./images/building-page-images/building-6.png" alt="building" />
-        </div>
-        <div class="thumbnail_slider_area">
-          <div class="container">
-            <div class="row thumbnail_slider">
-              <div class="col">
-                <img src="./images/building-page-images/building-1.png" alt="building" />
-              </div>
-              <div class="col">
-                <img src="./images/building-page-images/building-2.png" alt="building" />
-              </div>
-              <div class="col">
-                <img src="./images/building-page-images/building-3.png" alt="building" />
-              </div>
-              <div class="col">
-                <img src="./images/building-page-images/building-4.png" alt="building" />
-              </div>
-              <div class="col">
-                <img src="./images/building-page-images/building-5.png" alt="building" />
-              </div>
-              <div class="col">
-                <img src="./images/building-page-images/building-6.png" alt="building" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <!-- TEST -->
     </main>
     <footer>
       <div class="container-wrap container">
@@ -1117,10 +1076,6 @@
         </div>
       </div>
     </footer>
-    <!-- <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script> -->
     <script src="./lightbox2-2.11.3/src/js/lightbox.js"></script>
     <script
       type="text/javascript"
@@ -1134,6 +1089,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
     <!-- SLICK JS SLIDER  -->
     <script type="text/javascript">
       $(".building-views").slick({
@@ -1190,40 +1146,7 @@
       })
     </script>
     <!-- TABLE SLIDE BUTTON  -->
-
-    <!-- HAMBURGER -->
-    <script type="text/javascript">
-      const menuToggle = document.querySelector(".menu-toggle")
-      const siteNavigation = document.querySelector(".primary-navigation")
-
-      menuToggle.addEventListener("click", () => {
-        const isOpened = menuToggle.getAttribute("aria-expanded") === "true"
-        console.log(isOpened)
-        if (isOpened ? closeMenu() : openMenu());
-      })
-
-      function openMenu() {
-        menuToggle.setAttribute("aria-expanded", "true")
-        siteNavigation.setAttribute("data-state", "opened")
-
-        console.log("opened")
-      }
-      function closeMenu() {
-        menuToggle.setAttribute("aria-expanded", "false")
-        siteNavigation.setAttribute("data-state", "closing")
-
-        console.log("closed")
-
-        siteNavigation.addEventListener(
-          "animationend",
-          () => {
-            siteNavigation.setAttribute("data-state", "closed")
-          },
-          { once: true }
-        )
-      }
-    </script>
-    <!-- HAMBURGER -->
+    <script src="./javascript/index.js" type="module"></script>
 
     <!-- LIGHTBOX -->
     <script type="text/javascript">
@@ -1237,24 +1160,5 @@
       })
     </script>
     <!-- LIGHTBOX -->
-
-    <!-- TEST  -->
-    <!-- <script type="text/javascript">
-      $(".banner_slider").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        fade: true,
-        arrows: false,
-        asNavFor: '.thumbnail_slider'
-      })
-      $(".thumbnail_slider").slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        asNavFor: ".banner_slider",
-        centerMode: true,
-        focusOnSelect: true,
-      })
-    </script> -->
-    <!-- TEST  -->
   </body>
 </html>

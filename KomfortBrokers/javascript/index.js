@@ -1,1 +1,3 @@
-// ON INITIALIZATION
+import { toggleMobileMenuButton } from "./hamburger.js"
+
+toggleMobileMenuButton()
