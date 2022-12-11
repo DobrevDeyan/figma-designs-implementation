@@ -623,35 +623,6 @@ section.filter p {
   flex-direction: column;
   margin-right: 16px;
 }
-/* .category-box {
-  display: flex;
-  margin-bottom: 24px;
-} */
-/* .category-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px;
-  padding-right: 0;
-  background: #ffffff;
-  border: 1px solid #050723;
-  border-radius: 4px;
-  margin-bottom: 24px;
-  cursor: pointer;
-}
-.category-box p {
-  font-family: "Source Sans 3";
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 26px;
-  color: #585655;
-  margin-right: 4px;
-}
-.category-box img {
-  width: 10px;
-  height: 5px;
-  margin-right: 16px;
-} */
 
 /* RESET DEFAULT BROWSER APPEARANCE */
 select {
@@ -958,7 +929,7 @@ table tr th.frozen.bg-2 {
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
+  width: 100%;
 }
 .property p {
   margin: 0;
@@ -974,12 +945,12 @@ table tr th.frozen.bg-2 {
 }
 .img-property-container {
   border-radius: 8px;
-  object-fit: contain;
-  object-position: center;
 }
 .img-property-container img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .similar-properties h3,
 .last-viewed h3 {
@@ -1012,6 +983,12 @@ table tr th.frozen.bg-2 {
 }
 .last-viewed .properties-view {
   padding-bottom: 128px;
+}
+.properties-view .property:not(:last-child) {
+  margin-right: 16px;
+}
+.bg-fix {
+  background: #fbfaf8;
 }
 /* SECTION PROPERTIES END */
 

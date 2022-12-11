@@ -17,6 +17,8 @@ export function toggleMobileMenuButton() {
 
   menuItems.forEach(function (menuItem) {
     menuItem.addEventListener("click", toggleMenu)
+    // just in case if slow connectivity and link does not redirect instantly
+    // keeping animation for closing working
     menuToggle.setAttribute("aria-expanded", "false")
   })
 }
