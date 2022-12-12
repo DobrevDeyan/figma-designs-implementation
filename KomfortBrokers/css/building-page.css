@@ -70,7 +70,7 @@ header nav a img.logo {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 99;
+  /* z-index: 99; */
   background: #ffffff;
   color: white;
   list-style: none;
@@ -96,7 +96,7 @@ header nav a img.logo {
   /* animation: clipPathCircleOpen 750ms ease-in-out forwards; */
   display: flex;
   flex-direction: column;
-  min-width: 100vw;
+  min-height: 100vh;
 }
 .menu-toggle {
   padding: 1.1em 0.5em;
@@ -106,6 +106,9 @@ header nav a img.logo {
   cursor: pointer;
   z-index: 10000;
   background: #000d58;
+}
+.select2-container--default.select2-container--below.select2-container--focus.select2-container--open {
+  z-index: 100001;
 }
 .mobile-menu li {
   margin-left: 24px;
@@ -892,7 +895,31 @@ span.select2:nth-child(3) > span:nth-child(1) > span:nth-child(1) {
 }
 
 /* SELECT 2  */
-
+.filter-mobile {
+  cursor: pointer;
+}
+.filter-mobile-open {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  transform: translateY(-100%);
+  transition: transform 1.2s;
+}
+.show-filter {
+  transform: translateY(0);
+  /* animation: clipPathCircleOpen 750ms ease-in-out forwards; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: gray;
+  opacity: 0.5;
+}
+.filter-mobile-open .category-wrapper {
+  margin-bottom: 200px;
+}
 /* SECTION FILTER END */
 
 /* SECTION TABLE START */
@@ -996,7 +1023,7 @@ table tr th.frozen.bg-2 {
   position: absolute;
   right: 0;
   top: 45.4%;
-  z-index: 999999;
+  z-index: 100;
   display: none;
 }
 #right-button p {
