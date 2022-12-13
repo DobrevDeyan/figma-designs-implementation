@@ -637,10 +637,10 @@
                 <option value="" selected disabled hidden>
                   Какъв е бюджетът ?
                 </option>
-                <option value="Апартамент">9999999</option>
-                <option value="Магазин">999999</option>
-                <option value="Студио">99999</option>
-                <option value="Мезонет">9999999</option>
+                <option value="Апартамент">111111</option>
+                <option value="Магазин">222222</option>
+                <option value="Студио">33333</option>
+                <option value="Мезонет">44444</option>
               </select>
               <span class="focus"></span>
             </div>
@@ -648,55 +648,72 @@
         </div>
         <div class="container-wrap container">
           <div class="row">
-            <div class="col-md-3">
-              <div class="filter-mobile">
-                <div class="categories-wrapper">
+            <div class="filter-mobile">
+              <div class="categories-wrapper">
+                <h3>Филтър</h3>
+                <img
+                  src="./images/building-page-images/down-arrow.svg"
+                  alt="arrowDown"
+                />
+              </div>
+            </div>
+            <div class="container filter-mobile-open">
+              <div class="filter-mobile-row">
+                <div class="toggle">
                   <h3>Филтър</h3>
                   <img
                     src="./images/building-page-images/down-arrow.svg"
                     alt="arrowDown"
                   />
                 </div>
+                <a href="#" class="reset-filter">Изчисти</a>
               </div>
-              <div class="filter-mobile-open">
-                <div class="category-wrapper col-lg-3">
-                  <label for="category-select">Категория</label>
-                  <select name="category" class="category-select">
-                    <option value="" selected disabled hidden>
-                      Какво търсиш ?
-                    </option>
-                    <option value="Апартамент">Апартамент</option>
-                    <option value="Магазин">Магазин</option>
-                    <option value="Студио">Студио</option>
-                    <option value="Мезонет">Мезонет</option>
-                  </select>
-                  <span class="focus"></span>
-                </div>
-                <div class="category-wrapper col-lg-3">
-                  <label for="category-select">Вид имот</label>
-                  <select name="category" class="category-select">
-                    <option value="" selected disabled hidden>
-                      Какъв вид ?
-                    </option>
-                    <option value="Двустаен">Двустаен</option>
-                    <option value="Тристаен">Тристаен</option>
-                    <option value="Многостаен">Многостаен</option>
-                    <option value="Боксониера">Боксониера</option>
-                  </select>
-                  <span class="focus"></span>
-                </div>
-                <div class="category-wrapper col-lg-3">
-                  <label for="category-select">Цена</label>
-                  <select name="category" class="category-select">
-                    <option value="" selected disabled hidden>
-                      Какъв е бюджетът ?
-                    </option>
-                    <option value="Апартамент">9999999</option>
-                    <option value="Магазин">999999</option>
-                    <option value="Студио">99999</option>
-                    <option value="Мезонет">9999999</option>
-                  </select>
-                  <span class="focus"></span>
+              <div class="category-wrapper">
+                <label for="category-select">Категория</label>
+                <select name="category" class="category-select-mobile">
+                  <option value="" selected disabled hidden>
+                    Какво търсиш ?
+                  </option>
+                  <option value="Апартамент">Апартамент</option>
+                  <option value="Магазин">Магазин</option>
+                  <option value="Студио">Студио</option>
+                  <option value="Мезонет">Мезонет</option>
+                </select>
+                <span class="focus"></span>
+              </div>
+              <div class="category-wrapper">
+                <label for="category-select">Вид имот</label>
+                <select name="category" class="category-select-mobile">
+                  <option value="" selected disabled hidden>Какъв вид ?</option>
+                  <option value="Двустаен">Двустаен</option>
+                  <option value="Тристаен">Тристаен</option>
+                  <option value="Многостаен">Многостаен</option>
+                  <option value="Боксониера">Боксониера</option>
+                </select>
+                <span class="focus"></span>
+              </div>
+              <div class="category-wrapper">
+                <label for="category-select">Цена</label>
+                <select name="category" class="category-select-mobile">
+                  <option value="" selected disabled hidden>
+                    Какъв е бюджетът ?
+                  </option>
+                  <option value="Апартамент">111111</option>
+                  <option value="Магазин">22222</option>
+                  <option value="Студио">33333</option>
+                  <option value="Мезонет">44444</option>
+                </select>
+                <span class="focus"></span>
+              </div>
+              <div class="filter-mobile-row">
+                <p>Намерени са 43 имота</p>
+                <div>
+                  <button type="button" class="refuse-button">
+                    <a href="#">Отказ</a>
+                  </button>
+                  <button type="button" class="show-button">
+                    <a href="#">Покажи</a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -1194,14 +1211,10 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
+    <!-- <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    ></script> -->
     <script src="./scripts/index.js" type="module"></script>
     <!-- LIGHTBOX -->
     <script type="text/javascript">

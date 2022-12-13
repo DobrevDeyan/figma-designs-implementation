@@ -18,6 +18,7 @@ export function fullScreenSlickSlider() {
     prevArrow: ".overlay-previous-arrow",
     nextArrow: ".overlay-next-arrow",
     asNavFor: ".overlay-wrapper",
+    initialSlide: 4,
   })
   $(".overlay-wrapper").slick({
     slidesToShow: 9,
@@ -25,5 +26,8 @@ export function fullScreenSlickSlider() {
     asNavFor: ".overlay-images",
     centerMode: true,
     focusOnSelect: true,
+    draggable: true,
+    swipeToSlide: true,
+    arrows: false,
   })
 }
