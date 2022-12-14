@@ -30,12 +30,28 @@ export function toggleMobileFilter() {
   const toggleButton2 = document.querySelector(".refuse-button")
   toggleButton2.addEventListener("click", toggleFilter)
 
-  $(document).ready(function () {
-    $(".category-select-mobile").select2({
-      closeOnSelect: true,
-      placeholder: "Избери опция",
-      //   allowClear: true,
-    })
+  $(".category-select-mobile").select2({
+    closeOnSelect: false,
+    placeholder: "Избери опция",
+    //   allowClear: true,
+
+    templateResult: function (option) {
+      var $span = $("<span>")
+        .append('<input type="checkbox">')
+        .append(option.text)
+
+      $span.find("input[type='checkbox']").on("click", function () {
+        $(this).animate(
+          {
+            height: "20px",
+            width: "20px",
+            color: "red",
+          },
+          1000
+        )
+      })
+      return $span
+    },
   })
 
   const reset = document.querySelector(".reset-filter")
@@ -44,25 +60,25 @@ export function toggleMobileFilter() {
   })
 }
 
-export function selectionsBefore() {
-  function formatState(state) {
-    if (!state.id) {
-      return state.text
-    }
-    var baseUrl = "../images/building-page-images"
-    var $state = $('<span><img class="img-before" /> <span></span></span>')
+// export function selectionsBefore() {
+//   function formatState(state) {
+//     if (!state.id) {
+//       return state.text
+//     }
+//     var baseUrl = "../images/building-page-images"
+//     var $state = $('<span><img class="img-before" /> <span></span></span>')
 
-    // Use .text() instead of HTML string concatenation to avoid script injection issues
-    $state.find("span").text(state.text)
-    $state
-      .find("img")
-      .attr("src", baseUrl + "/" + state.element.value.toLowerCase() + ".svg")
+//     // Use .text() instead of HTML string concatenation to avoid script injection issues
+//     $state.find("span").text(state.text)
+//     $state
+//       .find("img")
+//       .attr("src", baseUrl + "/" + state.element.value.toLowerCase() + ".svg")
 
-    return $state
-  }
+//     return $state
+//   }
 
-  $(".category-select-mobile").select2({
-    templateSelection: formatState,
-    dropdownCssClass: "cont-bg-mobile",
-  })
-}
+//   $(".category-select-mobile").select2({
+//     templateSelection: formatState,
+//     dropdownCssClass: "cont-bg-mobile",
+//   })
+// }
