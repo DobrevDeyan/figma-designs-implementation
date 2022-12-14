@@ -888,6 +888,46 @@ span.select2:nth-child(3) > span:nth-child(1) > span:nth-child(1) {
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 } */
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+.checkbox-container .checkmark {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  z-index: 1000000;
+  border: 1px solid #aba9a9;
+  border-radius: 2px;
+  position: relative;
+}
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+/* input:checked ~ .checkmark {
+  background-color: #2196f3;
+} */
+.checkbox-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+input:checked ~ .checkmark:after {
+  display: block;
+}
+.checkbox-container .checkmark:after {
+  left: 4px;
+  top: 1px;
+  width: 6px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 /* SELECT 2  */
 .filter-mobile {
   cursor: pointer;

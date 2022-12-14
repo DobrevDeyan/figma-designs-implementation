@@ -41,13 +41,14 @@ export function toggleMobileFilter() {
         .append(option.text)
 
       $span.find("input[type='checkbox']").on("click", function () {
-        $(this).animate(
-          {
-            height: "20px",
-            width: "20px",
-          },
-          1000
-        )
+        // $(this).animate(
+        //   {
+        //     height: "20px",
+        //     width: "20px",
+        //   },
+        //   1000
+        // )
+        $(this).addClass("checkbox-container")
       })
       return $span
     },
