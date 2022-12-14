@@ -44,25 +44,25 @@ export function toggleMobileFilter() {
   })
 }
 
-function formatState(state) {
-  if (!state.id) {
-    return state.text
+export function selectionsBefore() {
+  function formatState(state) {
+    if (!state.id) {
+      return state.text
+    }
+    var baseUrl = "../images/building-page-images"
+    var $state = $('<span><img class="img-before" /> <span></span></span>')
+
+    // Use .text() instead of HTML string concatenation to avoid script injection issues
+    $state.find("span").text(state.text)
+    $state
+      .find("img")
+      .attr("src", baseUrl + "/" + state.element.value.toLowerCase() + ".svg")
+
+    return $state
   }
 
-  var baseUrl = "../images/building-page-images"
-  var $state = $("arrow-right-slider")
-
-  // Use .text() instead of HTML string concatenation to avoid script injection issues
-  $state.find("span").text(state.text)
-  $state.find("img").attr("src", baseUrl + "/" + "arrow-right-slider.svg")
-  // .attr("src", baseUrl + "/" + state.element.value.toLowerCase() + "arrow-right-slider.svg")
-
-  return $state
+  $(".category-select-mobile").select2({
+    templateSelection: formatState,
+    dropdownCssClass: "cont-bg-mobile",
+  })
 }
-$(".category-select-mobile").select2({
-  //   minimumResultsForSearch: -1,
-  templateResult: formatState,
-  templateSelection: formatState,
-  //   allowClear: false,
-  //   dropdownCssClass: "filter_dropdown",
-})
