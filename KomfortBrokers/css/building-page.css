@@ -350,7 +350,7 @@ main .main-view {
 }
 
 .overlay-slider-block {
-  /* position: relative; */
+  position: relative;
 }
 .overlay-wrapper {
   display: flex;
@@ -358,10 +358,10 @@ main .main-view {
   margin-top: 13px;
 }
 .overlay-wrapper .slick-list {
-  width: 1000px;
+  /* width: 1000px; */
 }
 .overlay-images {
-  width: 984px;
+  max-width: 1000px;
   height: 738px;
   margin-top: 36px;
   position: relative;
@@ -415,8 +415,8 @@ main .main-view {
   position: absolute;
 }
 .overlay-previous-arrow {
-  left: 220px;
-  left: 15%;
+  /* left: 220px; */
+  left: -15%;
 }
 .overlay-next-arrow {
   right: 220px;

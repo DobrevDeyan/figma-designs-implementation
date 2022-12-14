@@ -29,5 +29,14 @@ export function fullScreenSlickSlider() {
     draggable: true,
     swipeToSlide: true,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   })
 }

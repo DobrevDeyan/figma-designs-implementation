@@ -174,9 +174,6 @@ form.contact-form .checkbox {
 .checkbox-container:hover input ~ .checkmark {
   background-color: #ccc;
 }
-/* input:checked ~ .checkmark {
-  background-color: #2196f3;
-} */
 .checkbox-container .checkmark:after {
   content: "";
   position: absolute;
