@@ -45,7 +45,6 @@ export function toggleMobileFilter() {
           {
             height: "20px",
             width: "20px",
-            color: "red",
           },
           1000
         )

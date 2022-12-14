@@ -888,13 +888,6 @@ span.select2:nth-child(3) > span:nth-child(1) > span:nth-child(1) {
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 } */
-/* .cont-bg-mobile {
-  background: red;
-}
-.img-before {
-  display: block;
-} */
-
 /* SELECT 2  */
 .filter-mobile {
   cursor: pointer;
