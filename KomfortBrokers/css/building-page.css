@@ -76,8 +76,6 @@ header nav a img.logo {
     list-style: none;
     padding-top: 4rem;
     z-index: 1001;
-    /* animation: clipPathCircleClose 750ms ease-in-out forwards; */
-    /* transition: clip-path ease-in-out 700ms; */
 }
 .menu-item {
     text-decoration: none;
@@ -94,7 +92,6 @@ header nav a img.logo {
 }
 .showMenu {
     transform: translateY(0);
-    /* animation: clipPathCircleOpen 750ms ease-in-out forwards; */
     display: flex;
     flex-direction: column;
     min-height: 100vh;

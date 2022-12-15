@@ -33,7 +33,6 @@ export function toggleMobileFilter() {
   $(".category-select-mobile").select2({
     closeOnSelect: false,
     placeholder: "Избери опция",
-    //   allowClear: true,
 
     templateResult: function (option) {
       var $span = $("<span>")
@@ -41,13 +40,7 @@ export function toggleMobileFilter() {
         .append(option.text)
 
       $span.find("input[type='checkbox']").on("click", function () {
-        // $(this).animate(
-        //   {
-        //     height: "20px",
-        //     width: "20px",
-        //   },
-        //   1000
-        // )
+
         $(this).addClass("checkbox-container")
       })
       return $span
@@ -60,25 +53,4 @@ export function toggleMobileFilter() {
   })
 }
 
-// export function selectionsBefore() {
-//   function formatState(state) {
-//     if (!state.id) {
-//       return state.text
-//     }
-//     var baseUrl = "../images/building-page-images"
-//     var $state = $('<span><img class="img-before" /> <span></span></span>')
 
-//     // Use .text() instead of HTML string concatenation to avoid script injection issues
-//     $state.find("span").text(state.text)
-//     $state
-//       .find("img")
-//       .attr("src", baseUrl + "/" + state.element.value.toLowerCase() + ".svg")
-
-//     return $state
-//   }
-
-//   $(".category-select-mobile").select2({
-//     templateSelection: formatState,
-//     dropdownCssClass: "cont-bg-mobile",
-//   })
-// }
