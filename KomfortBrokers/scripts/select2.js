@@ -17,10 +17,10 @@ export function toggleMobileFilter() {
   function toggleFilter() {
     if (mobileFilterView.classList.contains("show-filter")) {
       mobileFilterView.classList.remove("show-filter")
-        // document.body.style.overflow = "hidden"
+      document.body.style.overflow = "auto"
     } else {
       mobileFilterView.classList.add("show-filter")
-      //   document.body.style.overflow = "auto"
+      document.body.style.overflow = "hidden"
     }
   }
   filter.addEventListener("click", toggleFilter)
@@ -33,18 +33,6 @@ export function toggleMobileFilter() {
   $(".category-select-mobile").select2({
     closeOnSelect: false,
     placeholder: "Избери опция",
-
-    templateResult: function (option) {
-      var $span = $("<span>")
-        .append('<input type="checkbox">')
-        .append(option.text)
-
-      $span.find("input[type='checkbox']").on("click", function () {
-
-        $(this).addClass("checkbox-container")
-      })
-      return $span
-    },
   })
 
   const reset = document.querySelector(".reset-filter")
@@ -52,5 +40,3 @@ export function toggleMobileFilter() {
     $(".category-select-mobile").val(null).trigger("change")
   })
 }
-
-
