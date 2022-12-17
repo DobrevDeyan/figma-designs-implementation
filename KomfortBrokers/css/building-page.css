@@ -84,11 +84,6 @@ header nav a img.logo {
   line-height: 26px;
   color: #000030;
 }
-/*test*/
-.menu-item:hover {
-  text-decoration: underline;
-  color: red;
-}
 .showMenu {
   transform: translateY(0);
   display: flex;
@@ -134,22 +129,6 @@ header nav a img.logo {
 [aria-expanded="true"] .hamburger::after {
   transform: translateY(-3px) rotate(-90deg);
 }
-/* @keyframes clipPathCircleOpen {
-  0% {
-    clip-path: circle(0% at top right);
-  }
-  100% {
-    clip-path: circle(150% at top right);
-  }
-}
-@keyframes clipPathCircleClose {
-  0% {
-    clip-path: circle(150% at top right);
-  }
-  100% {
-    clip-path: circle(0% at top right);
-  }
-} */
 /* HEADER END*/
 
 /* HERO IMAGE START*/
@@ -315,6 +294,7 @@ main .main-view {
   object-fit: cover;
   object-position: center;
   border-radius: 4px;
+  cursor: pointer;
 }
 .slider-block .slick-slide.slick-current {
   border-color: #000d58;
@@ -355,7 +335,7 @@ main .main-view {
 }
 .overlay-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 13px;
 }
 .full-screen-overlay .inner {
@@ -367,32 +347,55 @@ main .main-view {
 .overlay-images {
   width: 100%;
   margin: 36px auto 0;
+  /* max-height: 738px; */
   height: 738px;
   position: relative;
 }
 .overlay-wrapper .slick-list.draggable {
   padding: 0 !important;
-  margin: 0px 50px;
+  /* margin: 0px 50px; */
 }
 .overlay-image-container {
   height: 738px;
   overflow: hidden;
+  position: relative;
 }
-.overlay-image-container-2 {
-  height: 64px !important;
+.overlay-image-container img {
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  position: absolute;
+  height: 100%;
+  /* height: auto; */
+  width: 100%;
+}
+.overlay-image-container-2 div {
+  display: flex;
+}
+.overlay-image-container-2 div .rotate {
+  position: absolute;
+  object-fit: scale-down;
+}
+.overlay-image-container-2 p {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #f1efef;
+  margin: 0;
+  text-align: center;
+  margin-top: 2px;
 }
 .overlay-image-container-2 img {
+  width: 100%;
+  /* height: 64px; */
   object-fit: cover;
   object-position: center;
   border-radius: 4px;
-  /* height: 64px; */
-}
-.overlay-image-container img,
-.overlay-image-container-2 img {
-  width: 100%;
-  /* height: 100%; */
-  object-fit: cover;
-  object-position: center;
+  height: 64px !important;
+  cursor: pointer;
 }
 .overlay-wrapper .slick-track {
   display: flex;
@@ -402,7 +405,6 @@ main .main-view {
 .overlay-next-arrow,
 .overlay-previous-arrow {
   top: 41%;
-  transform: translateY(-8px);
   position: absolute;
   display: block !important;
   cursor: pointer;
@@ -416,18 +418,19 @@ main .main-view {
 }
 .close-overlay {
   position: absolute;
-  right: -85px;
+  right: -80px;
   cursor: pointer;
 }
 .overlay-slider-block .slick-slide.slick-current div {
   border: 2px solid #ffffff;
 }
-.overlay-slider-block .slick-slide {
+.overlay-slider-block .overlay-wrapper .slick-slide {
   padding: 0 5px;
 }
 .overlay-slider-block .slick-slide div {
   border: 2px solid transparent;
   border-radius: 4px;
+  position: relative;
 }
 /* FULL SCREEN SLIDER END */
 
@@ -1538,7 +1541,15 @@ header nav .hamburger {
   .categories-wrapper {
     display: flex;
     align-items: center;
-    /* width: 290px; */
+  }
+  .overlay-previous-arrow {
+    left: -40px;
+  }
+  .overlay-next-arrow {
+    right: -40px;
+  }
+  .close-overlay {
+    right: -40px;
   }
   .filter-mobile {
     padding: 0 24px;
@@ -1597,7 +1608,6 @@ header nav .hamburger {
     border-radius: 24px;
     padding: 16px 24px;
   }
-
   .card .data-container-2 {
     display: flex;
     margin-bottom: 8px;

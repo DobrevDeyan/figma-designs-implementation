@@ -25,7 +25,6 @@ export function fullScreenSlickSlider() {
     slidesToShow: 9,
     slidesToScroll: 1,
     asNavFor: ".overlay-images",
-    centerMode: true,
     focusOnSelect: true,
     draggable: true,
     infinite: true,
@@ -34,17 +33,8 @@ export function fullScreenSlickSlider() {
       {
         breakpoint: 767,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 1,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 6,
-          slidesToScroll: 1,
-          infinite: true,
         },
       },
     ],

@@ -80,16 +80,13 @@ main a.hero-image-button {
   text-decoration: none;
   color: #000030;
 }
-main .hero-image-button ion-icon {
-  color: #000030;
-  font-size: 24px;
-}
 main .hero-image-button p {
   font-size: 1em;
   height: 24px;
   font-family: "Source Sans 3";
   font-weight: 600;
   margin: 0;
+  margin-left: 8px;
 }
 main .hero-image-title {
   line-height: 88px;

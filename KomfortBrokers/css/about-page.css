@@ -82,11 +82,6 @@ main .hero-image a.hero-image-button {
   text-decoration: none;
   color: #000030;
 }
-main .hero-image .hero-image-button ion-icon {
-  color: #000030;
-  font-size: 24px;
-  margin-right: 4px;
-}
 main .about-us-form-wrapper {
   max-width: 1184px;
   width: 100%;
@@ -118,6 +113,7 @@ main .hero-image .hero-image-button p {
   font-family: "Source Sans 3";
   font-weight: 600;
   margin: 0;
+  margin-left: 8px;
 }
 main .hero-image h3 {
   line-height: 88px;
