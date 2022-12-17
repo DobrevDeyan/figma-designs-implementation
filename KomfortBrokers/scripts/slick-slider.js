@@ -14,6 +14,7 @@ export function slickSlider() {
     centerMode: true,
     focusOnSelect: true,
     arrows: false,
+    infinite: true,
     responsive: [
       {
         breakpoint: 767,
