@@ -13,6 +13,9 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+main {
+  background: #ffffff;
+}
 /* LAYOUT END*/
 
 /* HEADER START*/
@@ -116,12 +119,14 @@ a.dropdown-button p {
   align-items: center;
   margin: 0 auto;
   padding: 1rem 0;
-  transform: translateY(-60px);
   width: 96px;
   height: 32px;
   background: #ffffff;
   backdrop-filter: blur(2px);
   border-radius: 4px;
+  bottom: calc(0% + 16px);
+  left: calc(50% - 46px);
+  position: absolute;
 }
 .dots ul {
   list-style: none;
@@ -175,4 +180,42 @@ a.dropdown-button p {
   text-align: center;
   color: #ffffff;
   text-decoration: none;
+}
+
+/* SERVICES CARDS  */
+
+section.services-cards {
+  margin-top: 56px;
+  /* margin-bottom: 356px; */
+  padding-bottom: 256px;
+}
+section.services-cards .card {
+  background: #ffffff;
+  border: 1px solid #000e4b;
+  border-radius: 4px;
+  padding: 0;
+  width: 199px;
+  min-height: 298px;
+  display: flex;
+  justify-content: space-between;
+}
+section.services-cards .card .card-image-container {
+  height: 230px;
+}
+section.services-cards .card .card-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+section.services-cards .card h4 {
+  background: #050723;
+  border-radius: 0px 0px 2px 2px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 13px;
+  margin: 0;
 }
