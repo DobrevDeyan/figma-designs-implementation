@@ -87,26 +87,61 @@
       </nav>
     </header>
     <main>
-      <section class="hero-image">
-        <div class="container-wrap">
-          <h3>Заглавие</h3>
-          <p>
-            Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt
-            qui esse pariatur duis deserunt mollit dolore cillum minim tempor
-            enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut
-            voluptate aute id deserunt nisi.
-          </p>
-          <button type="button" class="show-more">
-            <a href="#">Виж повече</a>
-          </button>
-          <!-- <a href="#" class="hero-image-button">
-            <img
-              src="./images/building-page-images/arrow-left-slider.svg"
-              alt="left"
-            />
-            <p>Назад</p>
-          </a> -->
+      <section class="hero-images">
+        <div class="slider">
+          <div class="slide">
+            <div class="slide-view">
+              <img src="./images/home-page-images/bottles.png" />
+              <div class="slider-content container container-wrap">
+                <h3>Заглавие</h3>
+                <p>
+                  Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
+                  Sunt qui esse pariatur duis deserunt mollit dolore cillum
+                  minim tempor enim. Elit aute irure tempor cupidatat incididunt
+                  sint deserunt ut voluptate aute id deserunt nisi.
+                </p>
+                <button type="button" class="show-more">
+                  <a href="#">Виж повече</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-view">
+              <img src="./images/home-page-images/bottles.png" />
+              <div class="slider-content container container-wrap">
+                <h3>Заглавие</h3>
+                <p>
+                  Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
+                  Sunt qui esse pariatur duis deserunt mollit dolore cillum
+                  minim tempor enim. Elit aute irure tempor cupidatat incididunt
+                  sint deserunt ut voluptate aute id deserunt nisi.
+                </p>
+                <button type="button" class="show-more">
+                  <a href="#">Виж повече</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-view">
+              <img src="./images/home-page-images/bottles.png" />
+              <div class="slider-content container container-wrap">
+                <h3>Заглавие</h3>
+                <p>
+                  Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
+                  Sunt qui esse pariatur duis deserunt mollit dolore cillum
+                  minim tempor enim. Elit aute irure tempor cupidatat incididunt
+                  sint deserunt ut voluptate aute id deserunt nisi.
+                </p>
+                <button type="button" class="show-more">
+                  <a href="#">Виж повече</a>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="dots"></div>
       </section>
       <section></section>
       <section></section>
@@ -141,6 +176,13 @@
             }
           },
         })
+      })
+    </script>
+    <script>
+      $(".slider").slick({
+        dots: true,
+        arrows: false,
+        appendDots: $(".dots"),
       })
     </script>
   </body>

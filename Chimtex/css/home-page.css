@@ -81,40 +81,94 @@ a.dropdown-button p {
 
 /* SECTION HERO IMAGE */
 
-section.hero-image {
-  min-width: 100%;
+.slide {
   height: 552px;
-  background: linear-gradient(270deg, #000000 32.81%, rgba(0, 0, 0, 0) 54.93%),
-    url("../images/home-page-images/bottles.png"), #000000;
+}
+.slide-view {
+  display: flex;
+  justify-content: space-evenly;
+  max-height: 100%;
   transform: matrix(-1, 0, 0, 1, 0, 1);
-  background-repeat: no-repeat;
+  /* background: linear-gradient(270deg, #000000 32.81%, rgba(0, 0, 0, 0) 54.93%),
+    url("../images/home-page-images/bottles.png"), #000000; */
+  /* background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
+  position: relative; */
 }
-section.hero-image .container-wrap {
+.slide-view img {
+  object-fit: cover;
+  object-position: center;
   transform: matrix(-1, 0, 0, 1, 0, 1);
 }
-section.hero-image h3 {
+.slider-content {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  transform: matrix(-1, 0, 0, 1, 0, 1);
+}
+.hero-images {
+  position: relative;
+}
+.slick-dots {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem 0;
+  transform: translateY(-60px);
+  width: 96px;
+  height: 32px;
+  background: #ffffff;
+  backdrop-filter: blur(2px);
+  border-radius: 4px;
+}
+.dots ul {
+  list-style: none;
+}
+.slick-dots ul {
+  list-style-type: none;
+  list-style: none;
+}
+.slick-dots button {
+  display: block;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: #ffffff;
+  text-indent: -9999px;
+  border: 2px solid #0727b7;
+}
+.slick-dots li.slick-active button {
+  background: #0727b7;
+}
+.slide-view .slider-content h3 {
+  padding-top: 175px;
+  padding-bottom: 4px;
   font-weight: 700;
   font-size: 40px;
   line-height: 46px;
   color: #f2f4f7;
 }
-section.hero-image p {
+.slide-view .slider-content p {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #f2f4f7;
+  max-width: 530px;
+  display: table-cell;
 }
-section.hero-image button.show-more {
+.slide-view .slider-content button.show-more {
+  margin-top: 16px;
   padding: 8px 40px;
   background: #0727b7;
   border-radius: 8px;
   outline: none;
   border: none;
 }
-section.hero-image button.show-more a {
+.slide-view .slider-content button.show-more a {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
