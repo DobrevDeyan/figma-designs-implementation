@@ -1,1 +1,124 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+/* LAYOUT START */
+
+body {
+  /* background: #000e4b; */
+  font-size: 1em;
+  font-family: "Ubuntu";
+  line-height: 16px;
+}
+.container-wrap {
+  max-width: 1314px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* LAYOUT END*/
+
+/* HEADER START*/
+
+header {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+nav ul.navigation-menu {
+  padding: 0;
+  margin: 0;
+  /* padding-left: 63px; */
+}
+nav ul.navigation-menu li:not(:last-child) {
+  margin-right: 24px;
+}
+nav ul.tools-menu {
+  padding: 0;
+  margin: 0;
+  /* padding-right: 63px; */
+}
+nav ul.tools-menu li:not(:last-child) {
+  margin-right: 17px;
+}
+header nav ul li a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #050723;
+  text-decoration: none;
+  padding: 23px 0;
+}
+a.dropdown-button {
+  display: flex;
+}
+a.dropdown-button img:nth-child(2) {
+  margin-left: 6px;
+}
+a.dropdown-button p {
+  margin: 0;
+}
+.select2-selection__arrow {
+  display: none;
+}
+.select2-container {
+  min-width: 287px;
+  width: 100%;
+  border-radius: 4px;
+}
+.select2-selection__placeholder {
+  display: flex;
+  align-items: center;
+}
+
+/* SECTION HERO IMAGE */
+
+section.hero-image {
+  min-width: 100%;
+  height: 552px;
+  background: linear-gradient(270deg, #000000 32.81%, rgba(0, 0, 0, 0) 54.93%),
+    url("../images/home-page-images/bottles.png"), #000000;
+  transform: matrix(-1, 0, 0, 1, 0, 1);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+section.hero-image .container-wrap {
+  transform: matrix(-1, 0, 0, 1, 0, 1);
+}
+section.hero-image h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  color: #f2f4f7;
+}
+section.hero-image p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f2f4f7;
+}
+section.hero-image button.show-more {
+  padding: 8px 40px;
+  background: #0727b7;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+section.hero-image button.show-more a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
