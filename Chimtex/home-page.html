@@ -143,7 +143,9 @@
         </div>
         <div class="dots"></div>
       </section>
-      <section></section>
+      <section>
+        
+      </section>
       <section></section>
       <section></section>
     </main>
@@ -155,16 +157,6 @@
       $(document).ready(function () {
         $("#my-select").select2({
           placeholder: "Търси...",
-          // templateResult: function (option) {
-          //   // add an image before the placeholder
-          //   if (option.element.value === "") {
-          //     return $('<img src="path/to/image.jpg" />').add(
-          //       "<span>" + option.text + "</span>"
-          //     )
-          //   } else {
-          //     return option.text
-          //   }
-          // },
           templateSelection: function (option) {
             // add an image before the selected value
             if (option.id === "") {
