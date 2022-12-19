@@ -230,13 +230,32 @@ section.manufacturers h4 {
   color: #050723;
   margin-bottom: 16px;
 }
-section.manufacturers .manufacturers-slider {
-  width: 100%;
-}
-.manufacturer-img-container {
+.manufacturer-img-container.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 128px;
-  width: 128px;
+  width: 128px !important;
+  margin-right: 24px;
 }
-.manufacturer-img-container img {
-  mix-blend-mode: luminosity;
+.manufacturers-slider .slick-list {
+  mix-blend-mode: luminosity !important;
+  opacity: 0.5;
+}
+.manufacturers-slider:before,
+.manufacturers-slider:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  top: 0;
+  height: 100%;
+}
+.manufacturers-slider:before {
+  left: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+}
+.manufacturers-slider:after {
+  right: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
 }
