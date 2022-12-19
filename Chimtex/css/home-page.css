@@ -186,8 +186,6 @@ a.dropdown-button p {
 
 section.services-cards {
   margin-top: 56px;
-  /* margin-bottom: 356px; */
-  padding-bottom: 256px;
 }
 section.services-cards .card {
   background: #ffffff;
@@ -195,14 +193,13 @@ section.services-cards .card {
   border-radius: 4px;
   padding: 0;
   width: 199px;
-  min-height: 298px;
   display: flex;
   justify-content: space-between;
 }
-section.services-cards .card .card-image-container {
+section.services-cards .card .card-img-container {
   height: 230px;
 }
-section.services-cards .card .card-image-container img {
+section.services-cards .card .card-img-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -218,4 +215,28 @@ section.services-cards .card h4 {
   color: #ffffff;
   padding-bottom: 13px;
   margin: 0;
+}
+
+/* SLIDER MANUFACTURERS */
+
+section.manufacturers {
+  margin-top: 64px;
+}
+section.manufacturers h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #050723;
+  margin-bottom: 16px;
+}
+section.manufacturers .manufacturers-slider {
+  width: 100%;
+}
+.manufacturer-img-container {
+  height: 128px;
+  width: 128px;
+}
+.manufacturer-img-container img {
+  mix-blend-mode: luminosity;
 }
