@@ -186,8 +186,6 @@ a.dropdown-button p {
 
 section.services-cards {
   margin-top: 56px;
-  /* margin-bottom: 356px; */
-  padding-bottom: 256px;
 }
 section.services-cards .card {
   background: #ffffff;
@@ -195,14 +193,13 @@ section.services-cards .card {
   border-radius: 4px;
   padding: 0;
   width: 199px;
-  min-height: 298px;
   display: flex;
   justify-content: space-between;
 }
-section.services-cards .card .card-image-container {
+section.services-cards .card .card-img-container {
   height: 230px;
 }
-section.services-cards .card .card-image-container img {
+section.services-cards .card .card-img-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -218,4 +215,47 @@ section.services-cards .card h4 {
   color: #ffffff;
   padding-bottom: 13px;
   margin: 0;
+}
+
+/* SLIDER MANUFACTURERS */
+
+section.manufacturers {
+  margin-top: 64px;
+}
+section.manufacturers h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #050723;
+  margin-bottom: 16px;
+}
+.manufacturer-img-container.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 128px;
+  width: 128px !important;
+  margin-right: 24px;
+}
+.manufacturers-slider .slick-list {
+  mix-blend-mode: luminosity !important;
+  opacity: 0.5;
+}
+.manufacturers-slider:before,
+.manufacturers-slider:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  top: 0;
+  height: 100%;
+}
+.manufacturers-slider:before {
+  left: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+}
+.manufacturers-slider:after {
+  right: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
 }
