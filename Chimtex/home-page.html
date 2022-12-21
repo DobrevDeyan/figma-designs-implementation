@@ -255,21 +255,127 @@
           </div>
         </div>
       </section>
-      <section></section>
+      <section class="new-products">
+        <h3>Нови продукти</h3>
+        <div class="slider-new-products container container-wrap">
+          <div class="card">
+            <img
+              src="./images/home-page-images/new-products-images/gloves-1.png"
+              alt="Image"
+              class="card-image"
+            />
+            <h3 class="card-title">Card Title</h3>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              euismod velit eget leo blandit, et porttitor purus tempus.
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="./images/home-page-images/new-products-images/gloves-2.png"
+              alt="Image"
+              class="card-image"
+            />
+            <h3 class="card-title">Card Title</h3>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              euismod velit eget leo blandit, et porttitor purus tempus.
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="./images/home-page-images/new-products-images/gloves-3.png"
+              alt="Image"
+              class="card-image"
+            />
+            <h3 class="card-title">Card Title</h3>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              euismod velit eget leo blandit, et porttitor purus tempus.
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="./images/home-page-images/new-products-images/gloves-4.png"
+              alt="Image"
+              class="card-image"
+            />
+            <h3 class="card-title">Card Title</h3>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              euismod velit eget leo blandit, et porttitor purus tempus.
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="./images/home-page-images/new-products-images/gloves-5.png"
+              alt="Image"
+              class="card-image"
+            />
+            <h3 class="card-title">Card Title</h3>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              euismod velit eget leo blandit, et porttitor purus tempus.
+            </p>
+          </div>
+        </div>
+        <img
+          src="./images/home-page-images/new-products-left.svg"
+          alt="arrowLeft"
+          class="slider-arrow-prev"
+        />
+        <img
+          src="./images/home-page-images/new-products-right.svg"
+          alt="arrowRight"
+          class="slider-arrow-next"
+        />
+      </section>
     </main>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script>
+    <script type="text/javascript">
+      // $(document).ready(function () {
+      //   $("#my-select").select2({
+      //     templateResult: function (item) {
+      //       // Create the container element
+      //       var container = $("<div></div>")
+
+      //       // Add the image
+      //       var image = $("<img>")
+      //         .attr("src", item.imageUrl)
+      //         .addClass("option-image")
+      //       container.append(image)
+
+      //       // Add the heading
+      //       var heading = $("<h3></h3>")
+      //         .text(item.text)
+      //         .addClass("option-heading")
+      //       container.append(heading)
+
+      //       // Add the description
+      //       var description = $("<p></p>")
+      //         .text(item.description)
+      //         .addClass("option-description")
+      //       container.append(description)
+
+      //       // Return the container
+      //       return container
+      //     },
+      //     templateSelection: function (item) {
+      //       // Return the selected item's text
+      //       return item.text
+      //     },
+      //   })
+      // })
       $(document).ready(function () {
         $("#my-select").select2({
           placeholder: "Търси...",
           templateSelection: function (option) {
-            // add an image before the selected value
             if (option.id === "") {
               return $(
-                '<img src="../images/home-page-images/search.svg" style="margin-right: 7px;"/>'
+                '<img src="./images/home-page-images/search.svg" style="margin-right: 7px;"/>'
               ).add("<span>" + option.text + "</span>")
             } else {
               return option.text
@@ -278,7 +384,7 @@
         })
       })
     </script>
-    <script>
+    <script type="text/javascript">
       $(".slider").slick({
         dots: true,
         arrows: false,
@@ -288,10 +394,23 @@
         dots: false,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 1000, // 3 seconds
+        autoplaySpeed: 1000,
         centerMode: true,
         infinite: true,
-        slidesToShow: 9,
+        slidesToShow: 10,
+      })
+    </script>
+    <script type="text/javascript">
+      $(".slider-new-products").slick({
+        width: 250,
+        height: 500,
+        infinite: true,
+        slidesToShow: 5,
+        arrows: true,
+        centerMode: true,
+        centerPadding: "50px",
+        prevArrow: ".slider-arrow-prev",
+        nextArrow: ".slider-arrow-next",
       })
     </script>
   </body>

@@ -82,6 +82,20 @@ a.dropdown-button p {
   align-items: center;
 }
 
+.option-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.option-heading {
+  font-size: 16px;
+  font-weight: bold;
+}
+.option-description {
+  font-size: 14px;
+  color: #666;
+}
+
 /* SECTION HERO IMAGE */
 
 .slide {
@@ -258,4 +272,76 @@ section.manufacturers h4 {
 .manufacturers-slider:after {
   right: 0;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+}
+
+/* NEW PRODUCTS SLIDER */
+
+section.new-products {
+  margin-top: 128px;
+  height: 100%;
+  background: #f2f4f7;
+  /* position: relative; */
+}
+section.new-products h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #050723;
+  padding-top: 64px;
+  padding-bottom: 24px;
+}
+section.new-products .slider-new-products {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+/* section.new-products .slider-arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+} */
+/* section.new-products .slider-arrow {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  position: absolute;
+} */
+section.new-products .slider-arrow-prev {
+  left: 0;
+  position: absolute;
+}
+section.new-products .slider-arrow-next {
+  right: 0;
+  position: absolute;
+}
+section.new-products .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  height: 500px;
+  width: 250px;
+}
+section.new-products .card-image {
+  width: 100%;
+  height: auto;
+}
+section.new-products .card-title {
+  margin: 20px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+section.new-products .card-description {
+  margin: 0;
+  font-size: 0.8em;
+  text-align: center;
 }
