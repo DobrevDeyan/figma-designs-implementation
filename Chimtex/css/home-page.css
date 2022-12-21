@@ -19,7 +19,7 @@ main {
 /* LAYOUT END*/
 
 /* HEADER START*/
-/* testdsdsdsdsdsadasdссс */
+
 header {
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
@@ -38,7 +38,6 @@ header nav ul {
 nav ul.navigation-menu {
   padding: 0;
   margin: 0;
-  /* padding-left: 63px; */
 }
 nav ul.navigation-menu li:not(:last-child) {
   margin-right: 24px;
@@ -46,7 +45,6 @@ nav ul.navigation-menu li:not(:last-child) {
 nav ul.tools-menu {
   padding: 0;
   margin: 0;
-  /* padding-right: 63px; */
 }
 nav ul.tools-menu li:not(:last-child) {
   margin-right: 17px;
@@ -104,25 +102,16 @@ a.dropdown-button p {
 .slide-view {
   display: flex;
   justify-content: space-evenly;
-  max-height: 100%;
-  transform: matrix(-1, 0, 0, 1, 0, 1);
-  /* background: linear-gradient(270deg, #000000 32.81%, rgba(0, 0, 0, 0) 54.93%),
-    url("../images/home-page-images/bottles.png"), #000000; */
-  /* background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative; */
 }
 .slide-view img {
   object-fit: cover;
   object-position: center;
-  transform: matrix(-1, 0, 0, 1, 0, 1);
+  z-index: 1;
 }
 .slider-content {
   position: absolute;
   top: 0;
-  z-index: 2;
-  transform: matrix(-1, 0, 0, 1, 0, 1);
+  z-index: 3;
 }
 .hero-images {
   position: relative;
@@ -205,10 +194,7 @@ section.services-cards .card {
   background: #ffffff;
   border: 1px solid #000e4b;
   border-radius: 4px;
-  padding: 0;
-  width: 199px;
   display: flex;
-  justify-content: space-between;
 }
 section.services-cards .card .card-img-container {
   height: 230px;
@@ -267,7 +253,7 @@ section.manufacturers h4 {
 }
 .manufacturers-slider:before {
   left: 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
 }
 .manufacturers-slider:after {
   right: 0;
@@ -297,7 +283,7 @@ section.new-products .slider-new-products {
   justify-content: center;
   position: relative;
 }
-/* section.new-products .slider-arrows {
+section.new-products .slider-arrows {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -306,14 +292,14 @@ section.new-products .slider-new-products {
   top: 0;
   left: 0;
   width: 100%;
-} */
-/* section.new-products .slider-arrow {
+}
+section.new-products .slider-arrow {
   background: transparent;
   border: 0;
   cursor: pointer;
   outline: 0;
   position: absolute;
-} */
+}
 section.new-products .slider-arrow-prev {
   left: 0;
   position: absolute;
