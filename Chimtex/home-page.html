@@ -271,65 +271,77 @@
       <section class="new-products">
         <h3>Нови продукти</h3>
         <div class="slider-new-products container container-wrap">
-          <div class="card">
-            <img
-              src="./images/home-page-images/new-products-images/gloves-1.png"
-              alt="Image"
-              class="card-image"
-            />
-            <h3 class="card-title">Card Title</h3>
-            <p class="card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              euismod velit eget leo blandit, et porttitor purus tempus.
-            </p>
-          </div>
-          <div class="card">
-            <img
-              src="./images/home-page-images/new-products-images/gloves-2.png"
-              alt="Image"
-              class="card-image"
-            />
-            <h3 class="card-title">Card Title</h3>
-            <p class="card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              euismod velit eget leo blandit, et porttitor purus tempus.
-            </p>
-          </div>
-          <div class="card">
-            <img
-              src="./images/home-page-images/new-products-images/gloves-3.png"
-              alt="Image"
-              class="card-image"
-            />
-            <h3 class="card-title">Card Title</h3>
-            <p class="card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              euismod velit eget leo blandit, et porttitor purus tempus.
-            </p>
-          </div>
-          <div class="card">
-            <img
-              src="./images/home-page-images/new-products-images/gloves-4.png"
-              alt="Image"
-              class="card-image"
-            />
-            <h3 class="card-title">Card Title</h3>
-            <p class="card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              euismod velit eget leo blandit, et porttitor purus tempus.
-            </p>
-          </div>
-          <div class="card">
-            <img
-              src="./images/home-page-images/new-products-images/gloves-5.png"
-              alt="Image"
-              class="card-image"
-            />
-            <h3 class="card-title">Card Title</h3>
-            <p class="card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              euismod velit eget leo blandit, et porttitor purus tempus.
-            </p>
+          <div class="row">
+            <div class="col-lg-2 col-sm-6">
+              <div class="card">
+                <img
+                  src="./images/home-page-images/new-products-images/gloves-1.png"
+                  alt="Image"
+                  class="card-image"
+                />
+                <h3 class="card-title">Card Title</h3>
+                <p class="card-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  euismod velit eget leo blandit, et porttitor purus tempus.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+              <div class="card">
+                <img
+                  src="./images/home-page-images/new-products-images/gloves-2.png"
+                  alt="Image"
+                  class="card-image"
+                />
+                <h3 class="card-title">Card Title</h3>
+                <p class="card-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  euismod velit eget leo blandit, et porttitor purus tempus.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+              <div class="card">
+                <img
+                  src="./images/home-page-images/new-products-images/gloves-3.png"
+                  alt="Image"
+                  class="card-image"
+                />
+                <h3 class="card-title">Card Title</h3>
+                <p class="card-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  euismod velit eget leo blandit, et porttitor purus tempus.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+              <div class="card">
+                <img
+                  src="./images/home-page-images/new-products-images/gloves-4.png"
+                  alt="Image"
+                  class="card-image"
+                />
+                <h3 class="card-title">Card Title</h3>
+                <p class="card-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  euismod velit eget leo blandit, et porttitor purus tempus.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+              <div class="card">
+                <img
+                  src="./images/home-page-images/new-products-images/gloves-5.png"
+                  alt="Image"
+                  class="card-image"
+                />
+                <h3 class="card-title">Card Title</h3>
+                <p class="card-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  euismod velit eget leo blandit, et porttitor purus tempus.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <img
@@ -411,17 +423,29 @@
         centerMode: true,
         infinite: true,
         slidesToShow: 10,
+        responsive: [
+          {
+            breakpoint: 1100,
+            settings: {
+              slidesToShow: 6,
+            },
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 3,
+            },
+          },
+        ],
       })
     </script>
     <script type="text/javascript">
       $(".slider-new-products").slick({
-        width: 250,
-        height: 500,
         infinite: true,
         slidesToShow: 5,
         arrows: true,
         centerMode: true,
-        centerPadding: "50px",
+        // centerPadding: "50px",
         prevArrow: ".slider-arrow-prev",
         nextArrow: ".slider-arrow-next",
       })

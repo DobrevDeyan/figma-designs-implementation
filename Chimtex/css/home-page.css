@@ -195,6 +195,7 @@ section.services-cards .card {
   border: 1px solid #000e4b;
   border-radius: 4px;
   display: flex;
+  margin-bottom: 16px;
 }
 section.services-cards .card .card-img-container {
   height: 230px;
@@ -266,7 +267,7 @@ section.new-products {
   margin-top: 128px;
   height: 100%;
   background: #f2f4f7;
-  /* position: relative; */
+  position: relative;
 }
 section.new-products h3 {
   font-weight: 700;
