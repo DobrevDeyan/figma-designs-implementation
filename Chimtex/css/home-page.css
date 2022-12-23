@@ -268,6 +268,8 @@ section.new-products {
 }
 section.new-products .container-wrap.container {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 section.new-products h3 {
   font-weight: 700;
@@ -292,7 +294,7 @@ section.new-products .slider-new-products {
   width: 100%;
   justify-content: center;
   position: relative;
-  margin-bottom: 65px;
+  margin-bottom: 24px;
 }
 section.new-products img.slider-arrow-prev {
   left: 0px;
@@ -312,6 +314,7 @@ section.new-products .card {
   align-items: center;
   height: 100%;
   max-width: 220px;
+  border: none;
 }
 section.new-products .card-image-container {
   width: 220px;
@@ -324,12 +327,48 @@ section.new-products .card-image {
   height: 100%;
 }
 section.new-products .card-title {
-  margin: 20px 0;
-  font-size: 1.2em;
-  font-weight: bold;
+  padding: 8px;
+  padding-bottom: 4px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #050723;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%; /* or use max-width */
 }
 section.new-products .card-description {
   margin: 0;
-  font-size: 0.8em;
+  padding: 8px 8px 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+  text-align: left;
+}
+
+section.new-products button.show-more {
+  padding: 8px 40px;
+  background: #0727b7;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+section.new-products button.show-more a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
   text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* MEDICAL */
+
+section.medical {
+  height: 863px;
+  background: radial-gradient(50% 50% at 50% 50%, #000e4b 0%, #050723 100%);
 }
