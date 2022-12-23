@@ -368,7 +368,142 @@ section.new-products button.show-more a {
 
 /* MEDICAL */
 
-section.medical {
+section.medical-branch {
   height: 863px;
   background: radial-gradient(50% 50% at 50% 50%, #000e4b 0%, #050723 100%);
+  position: relative;
+}
+section.medical-branch img {
+  position: absolute;
+  height: 100%;
+}
+section.medical-branch .medical-content {
+  position: absolute;
+  right: 64px;
+  top: 37%;
+}
+section.medical-branch .medical-content h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  color: #f2f4f7;
+}
+section.medical-branch .medical-content p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f2f4f7;
+  max-width: 530px;
+  display: table-cell;
+  padding-bottom: 24px;
+}
+section.medical-branch button.show-more {
+  padding: 8px 40px;
+  background: #ffffff;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  margin: 0 auto;
+}
+section.medical-branch button.show-more a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #000e4b;
+  text-decoration: none;
+}
+
+/* LABORATORY */
+
+section.laboratory-branch {
+  height: 863px;
+  background: radial-gradient(50% 50% at 50% 50%, #000e4b 0%, #050723 100%);
+  position: relative;
+}
+section.laboratory-branch img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+section.laboratory-branch .laboratory-content {
+  position: absolute;
+  left: 64px;
+  top: 37%;
+}
+section.laboratory-branch .laboratory-content h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  color: #f2f4f7;
+  max-width: 530px;
+}
+section.laboratory-branch .laboratory-content p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f2f4f7;
+  max-width: 530px;
+  display: table-cell;
+  padding-bottom: 24px;
+}
+section.laboratory-branch button.show-more {
+  padding: 8px 40px;
+  background: #ffffff;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  margin: 0 auto;
+}
+section.laboratory-branch button.show-more a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #000e4b;
+  text-decoration: none;
+}
+
+/* WHO ARE WE */
+
+section.who-are-we {
+  margin: 128px 0;
+}
+/* section.who-are-we .who-are-we-content img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: contain;
+  object-position: center;
+} */
+section.who-are-we h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  color: #050723;
+  margin-bottom: 12px;
+}
+section.who-are-we p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #050723;
+  margin-bottom: 19px;
+}
+section.who-are-we button.show-more {
+  padding: 8px 40px;
+  background: #0727b7;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  margin: 0 auto;
+}
+section.who-are-we button.show-more a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
 }
