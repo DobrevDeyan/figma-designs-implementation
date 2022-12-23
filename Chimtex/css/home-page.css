@@ -3,7 +3,6 @@
 /* LAYOUT START */
 
 body {
-  /* background: #000e4b; */
   font-size: 1em;
   font-family: "Ubuntu";
   line-height: 16px;
@@ -265,8 +264,9 @@ section.manufacturers h4 {
 
 section.new-products {
   margin-top: 128px;
-  height: 100%;
   background: #f2f4f7;
+}
+section.new-products .container-wrap.container {
   position: relative;
 }
 section.new-products h3 {
@@ -278,49 +278,50 @@ section.new-products h3 {
   padding-top: 64px;
   padding-bottom: 24px;
 }
+section.new-products .slick-list.draggable {
+  padding: 0 !important;
+  margin: 0px 50px;
+}
+section.new-products .slick-slide {
+  display: block;
+  display: flex;
+  justify-content: center;
+}
 section.new-products .slider-new-products {
   display: flex;
   width: 100%;
   justify-content: center;
   position: relative;
+  margin-bottom: 65px;
 }
-section.new-products .slider-arrows {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
+section.new-products img.slider-arrow-prev {
+  left: 0px;
+  top: 54%;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-section.new-products .slider-arrow {
-  background: transparent;
-  border: 0;
   cursor: pointer;
-  outline: 0;
-  position: absolute;
 }
-section.new-products .slider-arrow-prev {
-  left: 0;
+section.new-products img.slider-arrow-next {
+  right: 0px;
+  top: 54%;
   position: absolute;
-}
-section.new-products .slider-arrow-next {
-  right: 0;
-  position: absolute;
+  cursor: pointer;
 }
 section.new-products .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
-  width: 100%;
-  height: 500px;
-  width: 250px;
+  max-width: 220px;
+}
+section.new-products .card-image-container {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
 }
 section.new-products .card-image {
-  width: 100%;
-  height: auto;
+  min-width: 100%;
+  height: 100%;
 }
 section.new-products .card-title {
   margin: 20px 0;
