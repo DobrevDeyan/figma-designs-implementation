@@ -373,14 +373,17 @@ section.medical-branch {
   background: radial-gradient(50% 50% at 50% 50%, #000e4b 0%, #050723 100%);
   position: relative;
 }
+section.medical-branch .container-wrap.container {
+  position: relative;
+}
 section.medical-branch img {
   position: absolute;
   height: 100%;
 }
 section.medical-branch .medical-content {
   position: absolute;
-  right: 64px;
-  top: 37%;
+  right: 0;
+  top: 30vh;
 }
 section.medical-branch .medical-content h3 {
   font-weight: 700;
@@ -419,18 +422,22 @@ section.medical-branch button.show-more a {
 section.laboratory-branch {
   height: 863px;
   background: radial-gradient(50% 50% at 50% 50%, #000e4b 0%, #050723 100%);
+  /* position: relative; */
+}
+section.laboratory-branch .container-wrap.container {
   position: relative;
 }
 section.laboratory-branch img {
   position: absolute;
-  height: 100%;
+  height: 863px;
   width: 100%;
   transform: matrix(-1, 0, 0, 1, 0, 0);
+  object-fit: cover;
 }
 section.laboratory-branch .laboratory-content {
   position: absolute;
-  left: 64px;
-  top: 37%;
+  left: 0;
+  top: 30vh;
 }
 section.laboratory-branch .laboratory-content h3 {
   font-weight: 700;
@@ -506,4 +513,57 @@ section.who-are-we button.show-more a {
   text-align: center;
   color: #ffffff;
   text-decoration: none;
+}
+
+/* OUR CLIENTS */
+
+section.our-clients {
+  display: grid;
+  grid-gap: 24px;
+  /* grid-template-columns: repeat(auto-fill, 100px ) ; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+}
+h3.our-clients-heading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  color: #050723;
+  text-align: center;
+  margin-bottom: 40px;
+}
+section.our-clients .box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #828282;
+  border-radius: 4px;
+}
+section.our-clients .client-item .banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+section.our-clients .client-item .banner h4 {
+  margin: 0;
+  margin-left: 8px;
+}
+section.our-clients .a {
+}
+section.our-clients .b {
+}
+section.our-clients .c {
+}
+section.our-clients .d {
+}
+section.our-clients .e {
+}
+section.our-clients .f {
+}
+section.our-clients .g {
+}
+section.our-clients .h {
 }
