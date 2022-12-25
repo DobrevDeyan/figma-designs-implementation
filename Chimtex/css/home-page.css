@@ -97,20 +97,27 @@ a.dropdown-button p {
 
 .slide {
   height: 552px;
-}
-.slide-view {
   display: flex;
   justify-content: space-evenly;
+  background: linear-gradient(270deg, #000000 32.81%, rgba(0, 0, 0, 0) 54.93%),
+    url(../images/home-page-images/bottles.png), #000000;
+  background-size: cover;
+  background-position: right center;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
-.slide-view img {
+/* .slide-view {
+} */
+/* .slide-view img {
   object-fit: cover;
   object-position: center;
-  z-index: 1;
-}
+  z-index: 2;
+  display: none;
+} */
 .slider-content {
   position: absolute;
   top: 0;
   z-index: 3;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .hero-images {
   position: relative;
@@ -158,6 +165,7 @@ a.dropdown-button p {
   font-size: 40px;
   line-height: 46px;
   color: #f2f4f7;
+  display: inline-block;
 }
 .slide-view .slider-content p {
   font-weight: 500;
@@ -221,6 +229,8 @@ section.services-cards .card h4 {
 
 section.manufacturers {
   margin-top: 64px;
+  height: 128px;
+  margin-bottom: 168px;
 }
 section.manufacturers h4 {
   font-weight: 700;
@@ -263,7 +273,7 @@ section.manufacturers h4 {
 /* NEW PRODUCTS SLIDER */
 
 section.new-products {
-  margin-top: 128px;
+  /* margin-top: 128px; */
   background: #f2f4f7;
 }
 section.new-products .container-wrap.container {
@@ -285,7 +295,6 @@ section.new-products .slick-list.draggable {
   margin: 0px 50px;
 }
 section.new-products .slick-slide {
-  display: block;
   display: flex;
   justify-content: center;
 }
@@ -688,4 +697,19 @@ footer ul.menu a {
 }
 footer ul.menu li:not(:last-child) {
   margin-bottom: 8px;
+}
+
+section.test {
+  height: 600px;
+  background: linear-gradient(
+      0deg,
+      rgba(7, 39, 183, 0.2),
+      rgba(7, 39, 183, 0.2)
+    ),
+    url(../images/home-page-images/bottles.png);
+  background-size: cover;
+
+  /* background: linear-gradient(270deg, #000000 32.81%, rgba(0, 0, 0, 0) 54.93%),
+    url(pexels-rodolfo-clix-1366942.jpg), #000000;
+  background-size: cover; */
 }
