@@ -53,7 +53,6 @@
           <option value="2">Option 2</option>
           <option value="3">Option 3</option>
         </select> -->
-
         <div class="search-container">
           <input type="text" class="search-field" placeholder="Търси..." />
           <div class="search-box">
@@ -116,7 +115,6 @@
             </div>
           </div>
         </div>
-
         <ul class="tools-menu">
           <ul>
             <li>
@@ -135,8 +133,8 @@
                 />
               </a>
             </li>
-            <li>
-              <a href="#" class="dropdown-button">
+            <li class="language-dropdown">
+              <a href="#">
                 <img
                   src="./images/home-page-images/bg-flag-icon.svg"
                   alt="bulgarianLangIcon"
@@ -147,6 +145,35 @@
                 />
               </a>
             </li>
+            <li class="language-dropdown">
+              <a href="#" class="hidden">
+                <img
+                  src="./images/home-page-images/en-flag-icon.svg"
+                  alt="englishLangIcon"
+                />
+                <img
+                  src="./images/home-page-images/arrow-down.svg"
+                  alt="arrowDown"
+                />
+              </a>
+            </li>
+
+            <div class="dropdown">
+              <div class="language">
+                <img
+                  src="./images/home-page-images/bg-flag-icon.svg"
+                  alt="bulgarianLangIcon"
+                />
+                <p>Български</p>
+              </div>
+              <div class="language">
+                <img
+                  src="./images/home-page-images/en-flag-icon.svg"
+                  alt="englishLangIcon"
+                />
+                <p>English</p>
+              </div>
+            </div>
           </ul>
         </ul>
       </nav>
@@ -929,6 +956,24 @@
       })
       closeSearch.addEventListener("click", function () {
         searchMenu.style.display = "none"
+      })
+
+      // CLOS/OPEN FUNCTIONALITY LANGUAGE DROPDOWN
+
+      const languageMenu = document.querySelector(".dropdown")
+      const openLanguageMenu = document.querySelector(".language-dropdown")
+      const languageItems = document.querySelectorAll(".language")
+
+      openLanguageMenu.addEventListener("click", function () {
+        if (languageMenu.classList.contains("active"))
+          languageMenu.classList.remove("active")
+        else languageMenu.classList.add("active")
+      })
+
+      languageItems.forEach((item) => {
+        item.addEventListener("click", function () {
+          languageMenu.classList.remove("active")
+        })
       })
     </script>
   </body>
