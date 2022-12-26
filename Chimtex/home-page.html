@@ -47,12 +47,76 @@
           <li><a href="#">За нас</a></li>
           <li><a href="#">Контакти</a></li>
         </ul>
-        <select id="my-select" placeholder="Select an option">
+        <!-- <select id="my-select" placeholder="Select an option">
           <option value="">Select an option</option>
           <option value="1">Option 1</option>
           <option value="2">Option 2</option>
           <option value="3">Option 3</option>
-        </select>
+        </select> -->
+
+        <div class="search-container">
+          <input type="text" class="search-field" placeholder="Търси..." />
+          <div class="search-box">
+            <div class="first-row">
+              <h4>Резултати за “колб”</h4>
+              <img
+                src="./images/home-page-images/close-search.svg"
+                alt="closeButton"
+                class="close-search"
+              />
+            </div>
+            <div class="search-items">
+              <div class="search-item">
+                <img
+                  src="./images/home-page-images/search-item.png"
+                  alt="searchItem"
+                />
+                <div class="details">
+                  <div class="content">
+                    <h4>Бюрета кип с колба</h4>
+                    <p>4094.5ВР</p>
+                  </div>
+                  <p class="brand">Simax</p>
+                </div>
+              </div>
+              <div class="search-item">
+                <img
+                  src="./images/home-page-images/image 5.png"
+                  alt="searchItem"
+                />
+                <div class="details">
+                  <div class="content">
+                    <h4>
+                      Филтрувална система за пречистване- шлифована връзка
+                    </h4>
+                    <p>4094.5ВР</p>
+                  </div>
+                  <p class="brand">Simax</p>
+                </div>
+              </div>
+              <div class="search-item">
+                <img
+                  src="./images/home-page-images/search-item.png"
+                  alt="searchItem"
+                />
+                <div class="details">
+                  <div class="content">
+                    <h4>Колба със шлиф, капковидна форма</h4>
+                    <p>4094.5ВР</p>
+                  </div>
+                  <p class="brand">Simax</p>
+                </div>
+              </div>
+            </div>
+            <div class="last-row">
+              <button type="button" class="show-more">
+                <a href="#">Виж всички</a>
+              </button>
+              <p>5 от 13 резултатa</p>
+            </div>
+          </div>
+        </div>
+
         <ul class="tools-menu">
           <ul>
             <li>
@@ -87,7 +151,7 @@
         </ul>
       </nav>
     </header>
-    <aside class="search-box">
+    <!-- <aside class="search-box">
       <div class="first-row">
         <h4>Резултати за “колб”</h4>
         <img
@@ -140,7 +204,7 @@
         </button>
         <p>5 от 13 резултатa</p>
       </div>
-    </aside>
+    </aside> -->
     <main>
       <section class="hero-images">
         <div class="slider">
@@ -732,55 +796,48 @@
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script type="text/javascript">
+      // SEARCH FIELD IN NAV BAR
+
       // $(document).ready(function () {
       //   $("#my-select").select2({
-      //     templateResult: function (item) {
-      //       // Create the container element
-      //       var container = $("<div></div>")
-
-      //       // Add the image
-      //       var image = $("<img>")
-      //         .attr("src", item.imageUrl)
-      //         .addClass("option-image")
-      //       container.append(image)
-
-      //       // Add the heading
-      //       var heading = $("<h3></h3>")
-      //         .text(item.text)
-      //         .addClass("option-heading")
-      //       container.append(heading)
-
-      //       // Add the description
-      //       var description = $("<p></p>")
-      //         .text(item.description)
-      //         .addClass("option-description")
-      //       container.append(description)
-
-      //       // Return the container
-      //       return container
-      //     },
-      //     templateSelection: function (item) {
-      //       // Return the selected item's text
-      //       return item.text
+      //     placeholder: "Търси...",
+      //     templateSelection: function (option) {
+      //       if (option.id === "") {
+      //         return $(
+      //           '<img src="./images/home-page-images/search.svg" style="margin-right: 7px;"/>'
+      //         ).add("<span>" + option.text + "</span>")
+      //       } else {
+      //         return option.text
+      //       }
       //     },
       //   })
+
+      // $("#my-select").prop("disabled", true)
+
+      // $("#my-select").select2({
+      //   placeholder: "Търси...",
+      //   templateResult: function (option) {
+      //     if (option.id === "") {
+      //       return $(
+      //         '<div class="search-item"><img src="./images/home-page-images/image 5.png" alt="searchItem" /><div class="details"><div class="content"><h4>' +
+      //           option.text +
+      //           '</h4><p>4094.5ВР</p></div><p class="brand">Simax</p></div></div>'
+      //       )
+      //     } else {
+      //       return $(
+      //         '<div class="search-item"><img src="./images/home-page-images/image 5.png" alt="searchItem" /><div class="details"><div class="content"><h4>' +
+      //           option.text +
+      //           '</h4><p>4094.5ВР</p></div><p class="brand">Simax</p></div></div>'
+      //       )
+      //       // return option.text
+      //     }
+      //   },
       // })
-      $(document).ready(function () {
-        $("#my-select").select2({
-          placeholder: "Търси...",
-          templateSelection: function (option) {
-            if (option.id === "") {
-              return $(
-                '<img src="./images/home-page-images/search.svg" style="margin-right: 7px;"/>'
-              ).add("<span>" + option.text + "</span>")
-            } else {
-              return option.text
-            }
-          },
-        })
-      })
+      // })
     </script>
     <script type="text/javascript">
+      // MANUFACTURERS SLIDEBAR
+
       $(".slider").slick({
         dots: true,
         arrows: false,
@@ -817,6 +874,8 @@
       })
     </script>
     <script type="text/javascript">
+      // NEW PRODUCTS SLIDEBAR
+
       $(".slider-new-products").slick({
         infinite: true,
         slidesToShow: 5,
@@ -860,8 +919,17 @@
       })
     </script>
     <script type="text/javascript">
-      const closeSearchButton = document.querySelector(".close-search")
+      // CLOS/OPEN FUNCTIONALITY FOR SEARCH BAR (non select2js)
 
+      const openSearch = document.querySelector(".search-field")
+      const closeSearch = document.querySelector(".close-search")
+      const searchMenu = document.querySelector(".search-box")
+      openSearch.addEventListener("click", function () {
+        searchMenu.style.display = "flex"
+      })
+      closeSearch.addEventListener("click", function () {
+        searchMenu.style.display = "none"
+      })
     </script>
   </body>
 </html>

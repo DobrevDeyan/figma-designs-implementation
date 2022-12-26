@@ -66,7 +66,7 @@ a.dropdown-button img:nth-child(2) {
 a.dropdown-button p {
   margin: 0;
 }
-.select2-selection__arrow {
+/* .select2-selection__arrow {
   display: none;
 }
 .select2-container {
@@ -78,7 +78,6 @@ a.dropdown-button p {
   display: flex;
   align-items: center;
 }
-
 .option-image {
   width: 50px;
   height: 50px;
@@ -91,42 +90,59 @@ a.dropdown-button p {
 .option-description {
   font-size: 14px;
   color: #666;
-}
+} */
 
 /* SECTION ASIDE - SEARCH BOx */
 
-aside.search-box {
+.search-field {
+  min-width: 287px;
+  width: 100%;
+  height: 32px;
+  border-radius: 4px;
+}
+/* NEEDS ATTENTION */
+
+.search-field::placeholder {
+  content: url(./images/home-page-images/search.svg) "Търси...";
+}
+.search-container {
+  position: relative;
+}
+.search-box {
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
   padding: 16px;
   position: relative;
   background: #ffffff;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   width: max-content;
-  /* display: none; */
+  display: none;
+  position: absolute;
+  top: 52px;
+  z-index: 1;
+  right: -265px;
 }
-aside.search-box .first-row {
+.search-box .first-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-aside.search-box .first-row h4 {
+.search-box .first-row h4 {
   font-weight: 700;
   font-size: 32px;
   line-height: 37px;
   color: #050723;
   margin: 0;
 }
-aside.search-box .first-row img {
+.search-box .first-row img {
   cursor: pointer;
 }
-aside.search-box .search-items {
+.search-box .search-items {
   margin-bottom: 16px;
   margin-top: 16px;
 }
-aside.search-box .search-item {
+.search-box .search-item {
   display: flex;
   justify-content: start;
   width: 519px;
@@ -135,53 +151,47 @@ aside.search-box .search-item {
   padding: 8px;
   border-radius: 8px;
 }
-aside.search-box .search-item:last-child {
+.search-box .search-item:last-child {
   margin: 0;
 }
-aside.search-box .search-item .details {
+.search-box .search-item .details {
   display: flex;
   flex-direction: column;
   margin-left: 8px;
-  /* justify-content: space-between; */
   width: 100%;
 }
-aside.search-box .search-item .details p {
+.search-box .search-item .details p {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   margin: 0;
   color: #050723;
 }
-aside.search-box .search-item .details .content {
+.search-box .search-item .details .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 8px;
-  /* position: relative; */
 }
-aside.search-box .search-item .details .content h4 {
+.search-box .search-item .details .content h4 {
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
   color: #050723;
   margin: 0;
 }
-aside.search-box .search-item .details .content p {
+.search-box .search-item .details .content p {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: #828282;
   margin: 0;
-  /* position: absolute;
-  top: 0;
-  right: -5px; */
 }
-aside.search-box .last-row {
+.search-box .last-row {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
 }
-aside.search-box .last-row button.show-more {
+.search-box .last-row button.show-more {
   padding: 8px 40px;
   background: #0727b7;
   border-radius: 8px;
@@ -189,7 +199,7 @@ aside.search-box .last-row button.show-more {
   border: none;
   margin-right: 24px;
 }
-aside.search-box .last-row button.show-more a {
+.search-box .last-row button.show-more a {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -197,20 +207,12 @@ aside.search-box .last-row button.show-more a {
   color: #ffffff;
   text-decoration: none;
 }
-aside.search-box .last-row p {
+.search-box .last-row p {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: #050723;
   margin: 0;
-}
-aside.search-box {
-}
-aside.search-box {
-}
-aside.search-box {
-}
-aside.search-box {
 }
 
 /* SECTION HERO IMAGE */
@@ -225,14 +227,6 @@ aside.search-box {
   background-position: right center;
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
-/* .slide-view {
-} */
-/* .slide-view img {
-  object-fit: cover;
-  object-position: center;
-  z-index: 2;
-  display: none;
-} */
 .slider-content {
   position: absolute;
   top: 0;
