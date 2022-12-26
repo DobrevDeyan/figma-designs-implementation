@@ -133,7 +133,7 @@
                 />
               </a>
             </li>
-            <li class="language-dropdown">
+            <li class="language-dropdown bg">
               <a href="#">
                 <img
                   src="./images/home-page-images/bg-flag-icon.svg"
@@ -145,11 +145,12 @@
                 />
               </a>
             </li>
-            <li class="language-dropdown">
-              <a href="#" class="hidden">
+            <li class="language-dropdown en hidden">
+              <a href="#">
                 <img
                   src="./images/home-page-images/en-flag-icon.svg"
                   alt="englishLangIcon"
+                  class="en-flag"
                 />
                 <img
                   src="./images/home-page-images/arrow-down.svg"
@@ -157,16 +158,15 @@
                 />
               </a>
             </li>
-
             <div class="dropdown">
-              <div class="language">
+              <div class="language bg">
                 <img
                   src="./images/home-page-images/bg-flag-icon.svg"
                   alt="bulgarianLangIcon"
                 />
                 <p>Български</p>
               </div>
-              <div class="language">
+              <div class="language en">
                 <img
                   src="./images/home-page-images/en-flag-icon.svg"
                   alt="englishLangIcon"
@@ -961,18 +961,43 @@
       // CLOS/OPEN FUNCTIONALITY LANGUAGE DROPDOWN
 
       const languageMenu = document.querySelector(".dropdown")
-      const openLanguageMenu = document.querySelector(".language-dropdown")
+      const openLanguageMenu = document.querySelectorAll(".language-dropdown")
       const languageItems = document.querySelectorAll(".language")
 
-      openLanguageMenu.addEventListener("click", function () {
-        if (languageMenu.classList.contains("active"))
-          languageMenu.classList.remove("active")
-        else languageMenu.classList.add("active")
+      openLanguageMenu.forEach((item) => {
+        item.addEventListener("click", function () {
+          if (languageMenu.classList.contains("active")) {
+            languageMenu.classList.remove("active")
+          } else {
+            languageMenu.classList.add("active")
+          }
+        })
       })
 
       languageItems.forEach((item) => {
         item.addEventListener("click", function () {
           languageMenu.classList.remove("active")
+
+          if (item.classList.contains("en")) {
+            document
+              .querySelector(".language-dropdown.bg")
+              .classList.add("hidden")
+            document
+              .querySelector(".language-dropdown.en")
+              .classList.remove("hidden")
+          } else if (item.classList.contains("bg")) {
+            document
+              .querySelector(".language-dropdown.en")
+              .classList.add("hidden")
+            document
+              .querySelector(".language-dropdown.bg")
+              .classList.remove("hidden")
+          }
+
+          // if (openLanguageMenu.classList.contains("en")) {
+          //   openLanguageMenu.classList.remove("hidden")
+          // } else {
+          // }
         })
       })
     </script>

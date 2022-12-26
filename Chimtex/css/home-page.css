@@ -27,6 +27,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 70px;
 }
 header nav ul {
   display: flex;
@@ -218,9 +219,9 @@ li.language-dropdown a img:nth-child(2) {
 .tools-menu ul .dropdown {
   position: absolute;
   top: 72px;
-  right: -48px;
+  right: -64px;
   width: 129px;
-  height: 72px;
+  height: 68px;
   background: #ffffff;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -228,6 +229,17 @@ li.language-dropdown a img:nth-child(2) {
   display: none;
   flex-direction: column;
   padding: 8px;
+}
+ul.navigation-menu li a.dropdown-button {
+  display: flex;
+  margin: 0;
+}
+ul.navigation-menu li a.dropdown-button p {
+  margin: 0;
+  margin-right: 5px;
+}
+.tools-menu ul {
+  padding: 0;
 }
 .tools-menu ul .hidden {
   display: none;
@@ -243,8 +255,8 @@ li.language-dropdown a img:nth-child(2) {
   cursor: pointer;
 }
 .tools-menu ul .dropdown .language:hover p {
-  background: #0c27b7;
-  color: white;
+  /* background: #0c27b7;
+  color: white; */
 }
 .tools-menu ul .dropdown .language:first-child {
   margin-bottom: 12px;
@@ -258,7 +270,8 @@ li.language-dropdown a img:nth-child(2) {
   width: 24px;
   margin-right: 9px;
 }
-.tools-menu ul .dropdown .language:nth-child(2) img {
+.tools-menu ul .dropdown .language:nth-child(2) img,
+.tools-menu .en-flag {
   border: 1px solid #828282;
   border-radius: 2px;
 }
@@ -283,9 +296,9 @@ li.language-dropdown a img:nth-child(2) {
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .slider-content {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  z-index: 3;
+  z-index: 3; */
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .hero-images {
