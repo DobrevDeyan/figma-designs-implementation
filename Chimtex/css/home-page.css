@@ -99,10 +99,12 @@ li.language-dropdown a img:nth-child(2) {
   height: 32px;
   border-radius: 4px;
 }
-/* NEEDS ATTENTION */
-
-.search-field::placeholder {
-  content: url(./images/home-page-images/search.svg) "Търси...";
+nav input.search-field::placeholder {
+  background-image: url(../images/home-page-images/search.svg);
+  background-size: 12px 12px;
+  background-position: 4%;
+  background-repeat: no-repeat;
+  padding-left: 11%;
 }
 .search-container {
   position: relative;
@@ -297,8 +299,8 @@ ul.navigation-menu li a.dropdown-button p {
 }
 .slider-content {
   /* position: absolute;
-  top: 0;
-  z-index: 3; */
+    top: 0;
+    z-index: 3; */
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .hero-images {
