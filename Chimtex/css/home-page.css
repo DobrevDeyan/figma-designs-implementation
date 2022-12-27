@@ -28,6 +28,7 @@ header nav {
   justify-content: space-between;
   align-items: center;
   min-height: 70px;
+  position: relative;
 }
 header nav ul {
   display: flex;
@@ -121,7 +122,7 @@ nav input.search-field::placeholder {
   display: none;
   position: absolute;
   top: 52px;
-  z-index: 1;
+  z-index: 2;
   right: -265px;
 }
 .search-box .first-row {
@@ -220,14 +221,14 @@ nav input.search-field::placeholder {
 }
 .tools-menu ul .dropdown {
   position: absolute;
-  top: 72px;
+  top: 71px;
   right: -64px;
   width: 129px;
   height: 68px;
   background: #ffffff;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  z-index: 1;
+  z-index: 2;
   display: none;
   flex-direction: column;
   padding: 8px;
@@ -256,10 +257,6 @@ ul.navigation-menu li a.dropdown-button p {
 .tools-menu ul .dropdown .language:hover {
   cursor: pointer;
 }
-.tools-menu ul .dropdown .language:hover p {
-  /* background: #0c27b7;
-  color: white; */
-}
 .tools-menu ul .dropdown .language:first-child {
   margin-bottom: 12px;
 }
@@ -283,6 +280,49 @@ ul.navigation-menu li a.dropdown-button p {
   line-height: 18px;
   color: #050723;
   margin: 0;
+}
+nav .megamenu {
+  position: absolute;
+  top: 71px;
+  left: 0;
+  z-index: 1;
+  background: #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px 64px;
+  display: none;
+}
+nav .megamenu.active-menu {
+  display: flex;
+}
+nav .megamenu ul.megamenu-row {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: start;
+  align-content: flex-start;
+}
+nav .megamenu ul.megamenu-row h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #050723;
+  margin: 0;
+  margin-bottom: 12px;
+  align-self: flex-start;
+}
+nav .megamenu ul.megamenu-row:nth-child(5) h4:nth-child(6) {
+  margin-top: 24px;
+}
+nav .megamenu ul.megamenu-row li a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #050723;
+  margin: 0;
+  padding: 0;
 }
 
 /* SECTION HERO IMAGE */
@@ -710,11 +750,6 @@ section.who-are-we button.show-more a {
 
 /* OUR CLIENTS */
 
-section.our-clients {
-  display: grid;
-  grid-gap: 24px;
-  padding-bottom: 144px;
-}
 h3.our-clients-heading {
   font-weight: 700;
   font-size: 40px;
@@ -742,8 +777,15 @@ section.our-clients .client-item .banner h4 {
   margin: 0;
   margin-left: 8px;
 }
+section.our-clients {
+  display: grid;
+  grid-gap: 24px;
+  padding-bottom: 144px;
+  grid-template-columns: repeat(4, 1fr);
+}
 section.our-clients .client-item-1 {
   grid-row: 1;
+  grid-column: span 2;
 }
 section.our-clients .client-item-2 {
   grid-row: 1;
@@ -756,6 +798,7 @@ section.our-clients .client-item-4 {
 }
 section.our-clients .client-item-5 {
   grid-row: 2;
+  grid-column: span 2;
 }
 section.our-clients .client-item-6 {
   grid-row: 2;
@@ -765,6 +808,7 @@ section.our-clients .client-item-7 {
 }
 section.our-clients .client-item-8 {
   grid-row: 3;
+  grid-column: span 3;
 }
 
 /* lll */
