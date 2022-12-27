@@ -117,7 +117,7 @@
         </div>
         <ul class="tools-menu">
           <ul>
-            <li>
+            <li class="account-profile">
               <a href="#">
                 <img
                   src="./images/home-page-images/profile.svg"
@@ -125,6 +125,30 @@
                 />
               </a>
             </li>
+            <div class="account-profile-menu">
+              <div class="account-profile-menu-row">
+                <img
+                  src="./images/home-page-images/orders.svg"
+                  alt="bulgarianLangIcon"
+                />
+                <p>История на поръчките</p>
+              </div>
+              <div class="account-profile-menu-row">
+                <img
+                  src="./images/home-page-images/profile.svg"
+                  alt="englishLangIcon"
+                />
+                <p>Профил</p>
+              </div>
+              <hr />
+              <div class="account-profile-menu-row">
+                <img
+                  src="./images/home-page-images/logout.svg"
+                  alt="englishLangIcon"
+                />
+                <p>Изход</p>
+              </div>
+            </div>
             <li>
               <a href="#">
                 <img
@@ -200,7 +224,7 @@
             <h4>Химикали и реактиви</h4>
             <li><a href="#">Стандартни разтвори</a></li>
             <li><a href="#">Хроматография</a></li>
-            <li><a href="#">Техническо качество/a></li>
+            <li><a href="#">Техническо качество</a></li>
             <li><a href="#">Реактиви за лабораторни анализи</a></li>
             <li><a href="#">Буферни разтворипети</a></li>
             <li><a href="#">Хранителни и чисти</a></li>
@@ -246,60 +270,6 @@
         </div>
       </nav>
     </header>
-    <!-- <aside class="search-box">
-      <div class="first-row">
-        <h4>Резултати за “колб”</h4>
-        <img
-          src="./images/home-page-images/close-search.svg"
-          alt="closeButton"
-          class="close-search"
-        />
-      </div>
-      <div class="search-items">
-        <div class="search-item">
-          <img
-            src="./images/home-page-images/search-item.png"
-            alt="searchItem"
-          />
-          <div class="details">
-            <div class="content">
-              <h4>Бюрета кип с колба</h4>
-              <p>4094.5ВР</p>
-            </div>
-            <p class="brand">Simax</p>
-          </div>
-        </div>
-        <div class="search-item">
-          <img src="./images/home-page-images/image 5.png" alt="searchItem" />
-          <div class="details">
-            <div class="content">
-              <h4>Филтрувална система за пречистване- шлифована връзка</h4>
-              <p>4094.5ВР</p>
-            </div>
-            <p class="brand">Simax</p>
-          </div>
-        </div>
-        <div class="search-item">
-          <img
-            src="./images/home-page-images/search-item.png"
-            alt="searchItem"
-          />
-          <div class="details">
-            <div class="content">
-              <h4>Колба със шлиф, капковидна форма</h4>
-              <p>4094.5ВР</p>
-            </div>
-            <p class="brand">Simax</p>
-          </div>
-        </div>
-      </div>
-      <div class="last-row">
-        <button type="button" class="show-more">
-          <a href="#">Виж всички</a>
-        </button>
-        <p>5 от 13 резултатa</p>
-      </div>
-    </aside> -->
     <main>
       <section class="hero-images">
         <div class="slider">
@@ -1067,35 +1037,54 @@
     <script type="text/javascript">
       // CLOS/OPEN FUNCTIONALITY PRODUCTS DROPDOWN
 
-      const productsDropdown = document.querySelector('.dropdown-menu-container')
-      const productsMenu = document.querySelector('.megamenu')
-      let mouseOver
+      const productsDropdown = document.querySelector(
+        ".dropdown-menu-container"
+      )
+      const productsMenu = document.querySelector(".megamenu")
+      let mouseOver = false
 
-      
-      productsMenu.addEventListener('mouseleave', () => {
+      productsDropdown.addEventListener("mouseenter", () => {
+        productsMenu.classList.add("active-menu")
+      })
+      productsMenu.addEventListener("mouseenter", () => {
+        productsMenu.classList.add("active-menu")
+        // mouseOver = true
+      })
+      productsMenu.addEventListener("mouseover", () => {
+        productsMenu.classList.add("active-menu")
+        mouseOver = true
+      })
+      productsMenu.addEventListener("mouseleave", () => {
         setTimeout(() => {
-          productsMenu.classList.remove('active-menu')
+          productsMenu.classList.remove("active-menu")
         }, 500)
-        mouseOver = false
       })
-      productsDropdown.addEventListener('mouseenter', () => {
-        productsMenu.classList.add('active-menu')
-      })
-      productsMenu.addEventListener('mouseenter', () => {
-        productsMenu.classList.add('active-menu')
-        mouseOver = true
-      })
-      productsMenu.addEventListener('mouseover', () => {
-        productsMenu.classList.add('active-menu')
-        console.log(1);
-        mouseOver = true
-      })
-      productsDropdown.addEventListener('mouseleave', () => {
-        // if(mouseOver === false) {
+      productsDropdown.addEventListener("mouseleave", () => {
+        console.log(mouseOver)
+        if (mouseOver === true) {
+          console.log("mouse true")
+          // setTimeout(() => {
+          //   productsMenu.classList.remove("active-menu")
+          // }, 500)
+        } else {
           setTimeout(() => {
-          productsMenu.classList.remove('active-menu')
-        }, 500)
-        // }
+            productsMenu.classList.remove("active-menu")
+          }, 500)
+        }
+      })
+
+      // CLOS/OPEN FUNCTIONALITY PROFILE DROPDOWN
+
+      const toggleProfile = document.querySelector(".account-profile")
+      const profileMenu = document.querySelector(".account-profile-menu")
+
+      profileMenu.style.display = "none";
+      toggleProfile.addEventListener("click", function () {
+        if ((profileMenu.style.display === "none")) {
+          profileMenu.style.display = "block"
+        } else {
+          profileMenu.style.display = "none"
+        }
       })
     </script>
   </body>

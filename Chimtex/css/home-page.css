@@ -243,6 +243,7 @@ ul.navigation-menu li a.dropdown-button p {
 }
 .tools-menu ul {
   padding: 0;
+  position: relative;
 }
 .tools-menu ul .hidden {
   display: none;
@@ -324,7 +325,48 @@ nav .megamenu ul.megamenu-row li a {
   margin: 0;
   padding: 0;
 }
-
+.tools-menu ul .account-profile-menu {
+  position: absolute;
+  top: 71px;
+  left: -216px;
+  padding: 8px;
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  z-index: 1;
+}
+.tools-menu ul .account-profile-menu hr {
+  margin: 0;
+}
+.tools-menu ul .account-profile-menu .account-profile-menu-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+.tools-menu ul .account-profile-menu .account-profile-menu-row:nth-child(4) {
+  margin: 0;
+}
+.tools-menu ul .account-profile-menu .account-profile-menu-row img {
+  margin: 0;
+  margin-right: 11px;
+}
+.tools-menu
+  ul
+  .account-profile-menu
+  .account-profile-menu-row:nth-child(2)
+  img {
+  width: 17px;
+  margin-left: 3px;
+}
+.tools-menu ul .account-profile-menu .account-profile-menu-row p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #050723;
+  margin: 0;
+}
 /* SECTION HERO IMAGE */
 
 .slide {
