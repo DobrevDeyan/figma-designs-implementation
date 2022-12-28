@@ -798,10 +798,9 @@ section.our-clients .client-item .banner h4 {
 }
 section.our-clients {
   display: grid;
-  grid-gap: 24px;
+  grid-gap: 20px;
   padding-bottom: 144px;
   grid-template-columns: repeat(10, 1fr);
-  /* grid-template-rows: repeat(4, 1fr); */
   grid-auto-rows: minmax(100px, auto);
 }
 section.our-clients .client-item-1 {
@@ -836,7 +835,7 @@ section.our-clients .client-item-7 {
 section.our-clients .client-item-8 {
   grid-row: 3;
   grid-column: 4/11;
-  align-self: flex-start;
+  /* align-self: flex-start; */
 }
 
 /* BEFORE FOOTER HEADING */
@@ -1023,6 +1022,10 @@ nav ul.navigation-menu-mobile .navigation-menu-mobile-dropdown li a {
   }
   .search-container-mobile-button {
     display: block;
+  }
+  section.our-clients {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media only screen and (max-width: 767px) {
