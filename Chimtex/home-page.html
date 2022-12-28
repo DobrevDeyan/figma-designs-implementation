@@ -25,6 +25,21 @@
   <body>
     <header>
       <nav class="container-wrap container">
+        <ul class="navigation-menu-mobile">
+          <li class="mobile-menu-handle">
+            <img
+              src="./images/home-page-images/menu-mobile.svg"
+              alt="menu-mobile-button"
+            />
+          </li>
+          <li class="mobile-menu-handle-2">
+            <a href="#">
+              <img
+                src="./images/home-page-images/logo-chimtex.svg"
+                alt="chimtexLogo"
+            /></a>
+          </li>
+        </ul>
         <ul class="navigation-menu">
           <li>
             <a href="#">
@@ -47,12 +62,6 @@
           <li><a href="#">За нас</a></li>
           <li><a href="#">Контакти</a></li>
         </ul>
-        <!-- <select id="my-select" placeholder="Select an option">
-          <option value="">Select an option</option>
-          <option value="1">Option 1</option>
-          <option value="2">Option 2</option>
-          <option value="3">Option 3</option>
-        </select> -->
         <div class="search-container">
           <input type="text" class="search-field" placeholder="Търси..." />
           <div class="search-box">
@@ -115,8 +124,17 @@
             </div>
           </div>
         </div>
+
         <ul class="tools-menu">
           <ul>
+            <li class="search-container-mobile-button">
+              <a href="#">
+                <img
+                  src="./images/home-page-images/search.svg"
+                  alt="profileIcon"
+                />
+              </a>
+            </li>
             <li class="account-profile">
               <a href="#">
                 <img
@@ -329,7 +347,7 @@
       </section>
       <section class="services-cards container container-wrap">
         <div class="row justify-content-between">
-          <div class="col-lg-2 col-sm-6">
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
             <div class="card">
               <div class="card-img-container">
                 <img
@@ -337,10 +355,13 @@
                   alt="service"
                 />
               </div>
-              <h4>Медицински консумативи</h4>
+              <h4>
+                Медицински <br />
+                консумативи
+              </h4>
             </div>
           </div>
-          <div class="col-lg-2 col-sm-6">
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
             <div class="card">
               <div class="card-img-container">
                 <img
@@ -348,10 +369,13 @@
                   alt="service"
                 />
               </div>
-              <h4>Химикали и реактиви</h4>
+              <h4>
+                Химикали и<br />
+                реактиви
+              </h4>
             </div>
           </div>
-          <div class="col-lg-2 col-sm-6">
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
             <div class="card">
               <div class="card-img-container">
                 <img
@@ -359,10 +383,13 @@
                   alt="service"
                 />
               </div>
-              <h4>Лабораторни консумативи</h4>
+              <h4>
+                Лабораторни <br />
+                консумативи
+              </h4>
             </div>
           </div>
-          <div class="col-lg-2 col-sm-6">
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
             <div class="card">
               <div class="card-img-container">
                 <img
@@ -370,10 +397,10 @@
                   alt="service"
                 />
               </div>
-              <h4>Термометри и аерометри</h4>
+              <h4>Термометри и <br />аерометри</h4>
             </div>
           </div>
-          <div class="col-lg-2 col-sm-6">
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
             <div class="card">
               <div class="card-img-container">
                 <img
@@ -387,7 +414,7 @@
               </h4>
             </div>
           </div>
-          <div class="col-lg-2 col-sm-6">
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
             <div class="card">
               <div class="card-img-container">
                 <img
@@ -612,7 +639,16 @@
             </button>
           </div>
         </div>
-        <img src="./images/home-page-images/doctor-side-view.png" alt="doc" />
+        <!-- <img
+          class="medical-branch"
+          src="./images/home-page-images/medical-branch-mobile.png"
+          alt="doc"
+        /> -->
+        <img
+          class="medical-branch-img"
+          src="./images/home-page-images/doctor-side-view.png"
+          alt="doc"
+        />
       </section>
       <section class="laboratory-branch">
         <img src="./images/home-page-images/consumables.png" alt="consums" />
@@ -785,121 +821,86 @@
       </section>
     </main>
     <footer>
-      <ul class="details">
-        <li>
-          <a href="#" class="logo"
-            ><img src="./images/home-page-images/logo-footer.svg" alt="logo" />
-          </a>
-        </li>
-        <li>
-          <a href="#" class="copyright"> 1994-2022 © All right reserved </a>
-        </li>
-        <li>
-          <a href="#" class="socials">
-            <img
-              src="./images/home-page-images/facebook-footer.svg"
-              alt="socialIcon"
-            />
-            <img
-              src="./images/home-page-images/linkedin-footer.svg"
-              alt="socialIcon"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="#" class="address">
-            <img
-              src="./images/home-page-images/check-in-map.svg"
-              alt="checkIn"
-            />
-            Димитровград, ул. "Бузлуджа" 33
-          </a>
-        </li>
-        <li>
-          <a href="#" class="contacts">
-            <img src="./images/home-page-images/phone.svg" alt="phone" />
-            Централа: 0391-60-355; Пласмент: 0391-60-358; Факс: 0391-60-351
-          </a>
-        </li>
-        <li>
-          <a href="#" class="">
-            <img src="./images/home-page-images/mail.svg" alt="mail" />
-            info@chimtex.com
-          </a>
-        </li>
-      </ul>
-      <ul class="menu">
-        <li><h4>Локации</h4></li>
-        <li><a href="#">София</a></li>
-        <li><a href="#">Плевен</a></li>
-        <li><a href="#">Димитровград</a></li>
-        <li><a href="#">Русе</a></li>
-        <li><a href="#">Варна</a></li>
-      </ul>
-      <ul class="menu">
-        <li><h4>Информация</h4></li>
-        <li><a href="#">Сертификати</a></li>
-        <li><a href="#">GDPR и Лични Данни</a></li>
-        <li><a href="#">Правила и условия</a></li>
-        <li><a href="#">Често задавни въпроси</a></li>
-        <li><a href="#">Условия за доставка</a></li>
-        <li><a href="#">Гаранция и връщане</a></li>
-        <li><a href="#">Продукти изискващи сертификат</a></li>
-      </ul>
-      <ul class="menu">
-        <li><h4>Категории</h4></li>
-        <li><a href="#">Медицински консумативи</a></li>
-        <li><a href="#">Химикали и реактиви</a></li>
-        <li><a href="#">Лабораторни консумативи</a></li>
-        <li><a href="#">Ареометри и термометри</a></li>
-        <li><a href="#">Домакинско стъкло SIMAX</a></li>
-        <li><a href="#">Коронавирус КОВИД-19</a></li>
-      </ul>
+      <div class="container container-wrap">
+        <ul class="details">
+          <li>
+            <a href="#" class="logo"
+              ><img
+                src="./images/home-page-images/logo-footer.svg"
+                alt="logo"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="copyright"> 1994-2022 © All right reserved </a>
+          </li>
+          <li>
+            <a href="#" class="socials">
+              <img
+                src="./images/home-page-images/facebook-footer.svg"
+                alt="socialIcon"
+              />
+              <img
+                src="./images/home-page-images/linkedin-footer.svg"
+                alt="socialIcon"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="address">
+              <img
+                src="./images/home-page-images/check-in-map.svg"
+                alt="checkIn"
+              />
+              Димитровград, ул. "Бузлуджа" 33
+            </a>
+          </li>
+          <li>
+            <a href="#" class="contacts">
+              <img src="./images/home-page-images/phone.svg" alt="phone" />
+              Централа: 0391-60-355; Пласмент: 0391-60-358; Факс: 0391-60-351
+            </a>
+          </li>
+          <li>
+            <a href="#" class="">
+              <img src="./images/home-page-images/mail.svg" alt="mail" />
+              info@chimtex.com
+            </a>
+          </li>
+        </ul>
+        <ul class="menu">
+          <li><h4>Локации</h4></li>
+          <li><a href="#">София</a></li>
+          <li><a href="#">Плевен</a></li>
+          <li><a href="#">Димитровград</a></li>
+          <li><a href="#">Русе</a></li>
+          <li><a href="#">Варна</a></li>
+        </ul>
+        <ul class="menu">
+          <li><h4>Информация</h4></li>
+          <li><a href="#">Сертификати</a></li>
+          <li><a href="#">GDPR и Лични Данни</a></li>
+          <li><a href="#">Правила и условия</a></li>
+          <li><a href="#">Често задавни въпроси</a></li>
+          <li><a href="#">Условия за доставка</a></li>
+          <li><a href="#">Гаранция и връщане</a></li>
+          <li><a href="#">Продукти изискващи сертификат</a></li>
+        </ul>
+        <ul class="menu">
+          <li><h4>Категории</h4></li>
+          <li><a href="#">Медицински консумативи</a></li>
+          <li><a href="#">Химикали и реактиви</a></li>
+          <li><a href="#">Лабораторни консумативи</a></li>
+          <li><a href="#">Ареометри и термометри</a></li>
+          <li><a href="#">Домакинско стъкло SIMAX</a></li>
+          <li><a href="#">Коронавирус КОВИД-19</a></li>
+        </ul>
+      </div>
     </footer>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script type="text/javascript">
-      // SEARCH FIELD IN NAV BAR
-
-      // $(document).ready(function () {
-      //   $("#my-select").select2({
-      //     placeholder: "Търси...",
-      //     templateSelection: function (option) {
-      //       if (option.id === "") {
-      //         return $(
-      //           '<img src="./images/home-page-images/search.svg" style="margin-right: 7px;"/>'
-      //         ).add("<span>" + option.text + "</span>")
-      //       } else {
-      //         return option.text
-      //       }
-      //     },
-      //   })
-
-      // $("#my-select").prop("disabled", true)
-
-      // $("#my-select").select2({
-      //   placeholder: "Търси...",
-      //   templateResult: function (option) {
-      //     if (option.id === "") {
-      //       return $(
-      //         '<div class="search-item"><img src="./images/home-page-images/image 5.png" alt="searchItem" /><div class="details"><div class="content"><h4>' +
-      //           option.text +
-      //           '</h4><p>4094.5ВР</p></div><p class="brand">Simax</p></div></div>'
-      //       )
-      //     } else {
-      //       return $(
-      //         '<div class="search-item"><img src="./images/home-page-images/image 5.png" alt="searchItem" /><div class="details"><div class="content"><h4>' +
-      //           option.text +
-      //           '</h4><p>4094.5ВР</p></div><p class="brand">Simax</p></div></div>'
-      //       )
-      //       // return option.text
-      //     }
-      //   },
-      // })
-      // })
-    </script>
     <script type="text/javascript">
       // MANUFACTURERS SLIDEBAR
 
@@ -907,6 +908,14 @@
         dots: true,
         arrows: false,
         appendDots: $(".dots"),
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              dots: false,
+            },
+          },
+        ],
       })
       $(".manufacturers-slider").slick({
         dots: false,
@@ -915,7 +924,7 @@
         autoplaySpeed: 1000,
         centerMode: true,
         infinite: true,
-        slidesToShow: 10,
+        adaptiveHeight: true,
         responsive: [
           {
             breakpoint: 1340,
@@ -933,6 +942,13 @@
             breakpoint: 767,
             settings: {
               slidesToShow: 3,
+            },
+          },
+          {
+            breakpoint: 467,
+            settings: {
+              slidesToScroll: 1,
+              slidesToShow: 1,
             },
           },
         ],
@@ -1078,9 +1094,9 @@
       const toggleProfile = document.querySelector(".account-profile")
       const profileMenu = document.querySelector(".account-profile-menu")
 
-      profileMenu.style.display = "none";
+      profileMenu.style.display = "none"
       toggleProfile.addEventListener("click", function () {
-        if ((profileMenu.style.display === "none")) {
+        if (profileMenu.style.display === "none") {
           profileMenu.style.display = "block"
         } else {
           profileMenu.style.display = "none"
