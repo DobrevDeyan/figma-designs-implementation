@@ -758,7 +758,15 @@ section.who-are-we button.show-more a {
   color: #ffffff;
   text-decoration: none;
 }
-
+section.who-are-we img.bottles-pic {
+  border-radius: 8px;
+  display: block;
+}
+section.who-are-we img.bottles-pic-mobile {
+  display: none;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
 /* OUR CLIENTS */
 
 h3.our-clients-heading {
@@ -1036,7 +1044,6 @@ footer ul.menu li:not(:last-child) {
         left no-repeat,
       linear-gradient(180deg, #000e4b 0%, #050723 100%);
   }
-
   /* section.medical-branch img {
     position: absolute;
     mask: linear-gradient(185deg, transparent, rgb(160, 17, 17));
@@ -1047,7 +1054,7 @@ footer ul.menu li:not(:last-child) {
   section.medical-branch .medical-content,
   section.laboratory-branch .laboratory-content {
     top: 50vh;
-    padding: 20px;
+    padding: 24px;
   }
   section.laboratory-branch button.show-more {
     width: 100%;
@@ -1055,7 +1062,73 @@ footer ul.menu li:not(:last-child) {
   section.medical-branch button.show-more {
     width: 100%;
   }
+  section.new-products {
+    padding: 20px;
+  }
+  section.who-are-we h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #050723;
+    margin-top: 5px;
+    margin-bottom: 16px;
+  }
+  section.who-are-we button.show-more {
+    width: 100%;
+  }
+  section.who-are-we .row {
+    padding: 20px;
+  }
+  section.who-are-we img.bottles-pic {
+    display: none;
+  }
+  section.who-are-we img.bottles-pic-mobile {
+    display: block;
+    margin-bottom: 24px;
+  }
+  section.who-are-we {
+    margin-bottom: 64px;
+  }
+  h3.our-clients-heading {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 24px;
+  }
+  section.background button.show-more {
+    width: 100%;
+  }
+  section.background h3.questions {
+    font-size: 32px;
+    line-height: 37px;
+  }
+  section.background .bg-cont-padding {
+    width: 100%;
+    padding: 0 20px;
+  }
   footer {
     overflow: hidden;
+  }
+  footer .container-wrap.container {
+    display: flex;
+    flex-direction: column;
+    padding: 46px 24px;
+  }
+  footer .container-wrap.container ul.details {
+    margin-bottom: 68px;
+  }
+  footer .container-wrap.container > ul.menu {
+    margin-bottom: 24px;
+  }
+  footer ul.details {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  footer ul li a {
+    word-break: break-word;
   }
 }
