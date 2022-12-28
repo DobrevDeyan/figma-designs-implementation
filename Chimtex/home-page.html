@@ -39,6 +39,41 @@
                 alt="chimtexLogo"
             /></a>
           </li>
+          <div class="navigation-menu-mobile-dropdown">
+            <li><a href="#">Начало</a></li>
+            <li>
+              <a href="#" class="products">
+                <p>Каталог продукти</p>
+                <img
+                  src="./images/home-page-images/arrow-right.svg"
+                  alt="arrowDown"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>Магазин</p>
+                <img
+                  src="./images/home-page-images/arrow-right.svg"
+                  alt="arrowDown"
+                />
+              </a>
+            </li>
+            <li><a href="#">Промоции</a></li>
+            <li><a href="#">За нас</a></li>
+            <li><a href="#">Контакти</a></li>
+            <li><a href="#">Вход</a></li>
+            <li class="languages">
+              <img
+                src="./images/home-page-images/bg-flag-icon.svg"
+                alt="bulgarianLangIcon"
+              />
+              <img
+                src="./images/home-page-images/en-flag-icon.svg"
+                alt="englishLangIcon"
+              />
+            </li>
+          </div>
         </ul>
         <ul class="navigation-menu">
           <li>
@@ -670,14 +705,14 @@
       <section class="who-are-we">
         <div class="container container-wrap">
           <div class="row justify-space-between">
-            <div class="col-xxl-6 d-flex">
+            <div class="col-xl-6 d-flex">
               <img
                 src="./images/home-page-images/chemicals-bottles.png"
                 alt="checmicalBottles"
                 class="bottles-pic"
               />
             </div>
-            <div class="col-xxl-6">
+            <div class="col-xl-6">
               <h3>Кои сме ние?</h3>
               <p>
                 Фирма „Химтекс” ООД е на българския пазар от 1994 год.
@@ -932,6 +967,7 @@
         autoplaySpeed: 1000,
         centerMode: true,
         infinite: true,
+        slidesToShow: 10,
         adaptiveHeight: true,
         responsive: [
           {
@@ -1108,6 +1144,21 @@
           profileMenu.style.display = "block"
         } else {
           profileMenu.style.display = "none"
+        }
+      })
+    </script>
+    <script type="text/javascript">
+      const mobileNavMenuButton = document.querySelector(".mobile-menu-handle")
+      const mobileNavMenu = document.querySelector(
+        ".navigation-menu-mobile-dropdown"
+      )
+
+      mobileNavMenu.style.display = "none"
+      mobileNavMenuButton.addEventListener("click", function () {
+        if (mobileNavMenu.style.display === "none") {
+          mobileNavMenu.style.display = "flex"
+        } else {
+          mobileNavMenu.style.display = "none"
         }
       })
     </script>
