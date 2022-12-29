@@ -159,7 +159,6 @@
             </div>
           </div>
         </div>
-
         <ul class="tools-menu">
           <ul>
             <li class="search-container-mobile-button">
@@ -252,6 +251,65 @@
               </div>
             </div>
           </ul>
+          <div class="search-box-mobile">
+            <div class="first-row">
+              <h4>Резултати за “колб”</h4>
+              <img
+                src="./images/home-page-images/close-search.svg"
+                alt="closeButton"
+                class="close-search"
+              />
+            </div>
+            <div class="search-items">
+              <div class="search-item">
+                <img
+                  src="./images/home-page-images/search-item.png"
+                  alt="searchItem"
+                />
+                <div class="details">
+                  <div class="content">
+                    <h4>Бюрета кип с колба</h4>
+                    <p>4094.5ВР</p>
+                  </div>
+                  <p class="brand">Simax</p>
+                </div>
+              </div>
+              <div class="search-item">
+                <img
+                  src="./images/home-page-images/image 5.png"
+                  alt="searchItem"
+                />
+                <div class="details">
+                  <div class="content">
+                    <h4>
+                      Филтрувална система за пречистване- шлифована връзка
+                    </h4>
+                    <p>4094.5ВР</p>
+                  </div>
+                  <p class="brand">Simax</p>
+                </div>
+              </div>
+              <div class="search-item">
+                <img
+                  src="./images/home-page-images/search-item.png"
+                  alt="searchItem"
+                />
+                <div class="details">
+                  <div class="content">
+                    <h4>Колба със шлиф, капковидна форма</h4>
+                    <p>4094.5ВР</p>
+                  </div>
+                  <p class="brand">Simax</p>
+                </div>
+              </div>
+            </div>
+            <div class="last-row">
+              <button type="button" class="show-more">
+                <a href="#">Виж всички</a>
+              </button>
+              <p>5 от 13 резултатa</p>
+            </div>
+          </div>
         </ul>
         <div class="megamenu">
           <ul class="megamenu-row">
@@ -1044,16 +1102,30 @@
       })
     </script>
     <script type="text/javascript">
-      // CLOS/OPEN FUNCTIONALITY FOR SEARCH BAR (non select2js)
+      // CLOS/OPEN FUNCTIONALITY FOR SEARCH BAR (dekstop and mobile)
 
       const openSearch = document.querySelector(".search-field")
       const closeSearch = document.querySelector(".close-search")
       const searchMenu = document.querySelector(".search-box")
+
       openSearch.addEventListener("click", function () {
         searchMenu.style.display = "flex"
       })
       closeSearch.addEventListener("click", function () {
         searchMenu.style.display = "none"
+      })
+
+      const toggleSearchMobile = document.querySelector(
+        ".search-container-mobile-button"
+      )
+      const searchMenuMobile = document.querySelector(".search-box-mobile")
+      searchMenuMobile.style.display === "none"
+      toggleSearchMobile.addEventListener("click", function () {
+        if (searchMenuMobile.style.display === "none") {
+          searchMenuMobile.style.display = "flex"
+        } else {
+          searchMenuMobile.style.display = "none"
+        }
       })
 
       // CLOS/OPEN FUNCTIONALITY LANGUAGE DROPDOWN
