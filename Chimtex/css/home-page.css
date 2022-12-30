@@ -554,13 +554,16 @@ section.services-cards .card .card-img-container {
   height: 230px;
   position: relative;
 }
+section.services-cards .card .card-img-container:before {
+}
 section.services-cards .card .card-img-container:after {
   content: "";
-  /* top: 0;
-  left: 0; */
+  top: 0;
+  /* left: 0;
+  bottom: 0;
+  right: 0; */
   width: 100%;
   height: 100%;
-
   background: linear-gradient(
     0deg,
     rgba(7, 39, 183, 0.2),
@@ -606,8 +609,7 @@ section.manufacturers h4 {
   justify-content: center;
   align-items: center;
   height: 128px;
-  width: 128px !important;
-  margin-right: 24px;
+  padding-right: 24px;
 }
 .manufacturers-slider .slick-list {
   mix-blend-mode: luminosity !important;
@@ -744,17 +746,28 @@ section.medical-branch {
   position: relative;
 }
 section.medical-branch .container-wrap.container {
-  position: relative;
+  /* position: relative; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: end;
 }
 section.medical-branch img {
   position: absolute;
   height: 100%;
 }
 section.medical-branch .medical-content {
-  position: absolute;
+  /* position: absolute;
   right: 0;
   top: 30vh;
-  z-index: 1;
+  z-index: 1; */
+
+  /* NEW BELOW */
+
+  display: inline-flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 section.medical-branch .medical-content h3 {
   font-weight: 700;
@@ -770,6 +783,7 @@ section.medical-branch .medical-content p {
   max-width: 530px;
   display: table-cell;
   padding-bottom: 24px;
+  text-align: left;
 }
 section.medical-branch button.show-more {
   padding: 8px 40px;
@@ -777,7 +791,7 @@ section.medical-branch button.show-more {
   border-radius: 8px;
   outline: none;
   border: none;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 section.medical-branch button.show-more a {
   font-weight: 500;
@@ -793,10 +807,15 @@ section.medical-branch button.show-more a {
 section.laboratory-branch {
   height: 863px;
   background: radial-gradient(50% 50% at 50% 50%, #000e4b 0%, #050723 100%);
-  /* position: relative; */
+  position: relative;
 }
 section.laboratory-branch .container-wrap.container {
-  position: relative;
+  /* position: relative; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: start;
 }
 section.laboratory-branch img {
   position: absolute;
@@ -806,10 +825,14 @@ section.laboratory-branch img {
   object-fit: cover;
 }
 section.laboratory-branch .laboratory-content {
-  position: absolute;
+  /* position: absolute;
   left: 0;
   top: 30vh;
-  z-index: 1;
+  z-index: 1; */
+
+  display: inline-flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 section.laboratory-branch .laboratory-content h3 {
   font-weight: 700;
@@ -833,7 +856,7 @@ section.laboratory-branch button.show-more {
   border-radius: 8px;
   outline: none;
   border: none;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 section.laboratory-branch button.show-more a {
   font-weight: 500;
