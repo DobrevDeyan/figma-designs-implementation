@@ -453,6 +453,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 main h4.page-title {
   font-weight: 700;
@@ -460,6 +461,23 @@ main h4.page-title {
   line-height: 28px;
   align-items: center;
   color: #050723;
+  margin-bottom: 64px;
+}
+main .left,
+main .right {
+  align-items: center;
+  display: flex;
+  justify-content: start;
+  position: relative;
+}
+main .left::after {
+  content: "";
+  position: absolute;
+  right: 0; /* Position the border on the right side of the container */
+  top: 0; /* Align the border with the top of the container */
+  bottom: 0; /* Align the border with the bottom of the container */
+  width: 5px; /* Set the width of the border */
+  border-right: 12px solid #333; /* Add the border */
 }
 
 /* main .checkbox {
