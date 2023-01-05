@@ -454,6 +454,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  min-height: 100vh;
 }
 main h4.page-title {
   font-weight: 700;
@@ -479,11 +480,6 @@ main .left::after {
   width: 5px; /* Set the width of the border */
   border-right: 12px solid #333; /* Add the border */
 }
-
-/* main .checkbox {
-  display: none;
-} */
-
 main .checkbox + label {
   display: inline-block;
   position: relative;
@@ -527,6 +523,36 @@ main .checkbox + label:after {
 
 main .checkbox:checked + label:after {
   opacity: 1;
+}
+main .container {
+  height: 100vh;
+  position: relative;
+  background-color: yellow;
+}
+main .container .row {
+  height: 100%;
+}
+main .col-12 {
+  padding: 20px;
+  border: solid 2px green;
+}
+main .box {
+  min-width: 240px;
+  min-height: 240px;
+  border: solid 2px red;
+}
+main .container .row .col-sm-6:nth-child(2) .box {
+}
+main .container img {
+  /* content: ""; */
+  /* background: url(../../IMG_Academy_Logo.svg.png); */
+  width: 300px !important;
+  object-fit: contain;
+  object-position: center;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 /* FOOTER */
@@ -669,6 +695,17 @@ nav ul.navigation-menu-mobile .navigation-menu-mobile-dropdown li a {
   nav ul.navigation-menu li:not(:last-child) {
     margin-right: 16px;
   }
+  footer .container-wrap.container {
+    display: flex;
+    flex-direction: column;
+    padding: 46px 24px;
+  }
+  footer .container-wrap.container ul.details {
+    margin-bottom: 68px;
+  }
+  footer .container-wrap.container > ul.menu {
+    margin-bottom: 24px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .search-container {
@@ -676,11 +713,6 @@ nav ul.navigation-menu-mobile .navigation-menu-mobile-dropdown li a {
   }
   .search-container-mobile-button {
     display: block;
-  }
-  footer .container-wrap.container {
-    display: flex;
-    flex-direction: column;
-    padding: 46px 24px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -719,17 +751,7 @@ nav ul.navigation-menu-mobile .navigation-menu-mobile-dropdown li a {
   footer {
     overflow: hidden;
   }
-  /* footer .container-wrap.container {
-    display: flex;
-    flex-direction: column;
-    padding: 46px 24px;
-  } */
-  footer .container-wrap.container ul.details {
-    margin-bottom: 68px;
-  }
-  footer .container-wrap.container > ul.menu {
-    margin-bottom: 24px;
-  }
+
   footer ul.details {
     list-style: none;
     display: flex;
