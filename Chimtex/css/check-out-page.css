@@ -454,6 +454,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  min-height: 100vh;
 }
 main h4.page-title {
   font-weight: 700;
@@ -462,11 +463,6 @@ main h4.page-title {
   align-items: center;
   color: #050723;
 }
-
-/* main .checkbox {
-  display: none;
-} */
-
 main .checkbox + label {
   display: inline-block;
   position: relative;
@@ -511,19 +507,36 @@ main .checkbox + label:after {
 main .checkbox:checked + label:after {
   opacity: 1;
 }
-
+main .container {
+height: 100vh;
+position: relative;
+background-color: yellow;
+}
+main .container .row {
+  height: 100%;
+}
 main .col-12 {
   padding: 20px;
-  background-color: yellow;
   border: solid 2px green;
-  
 }
 main .box {
   min-width: 240px;
   min-height: 240px;
   border: solid 2px red;
 }
-
+main .container .row .col-sm-6:nth-child(2) .box {
+}
+main .container img {
+  /* content: ""; */
+  /* background: url(../../IMG_Academy_Logo.svg.png); */
+  width: 300px !important;
+  object-fit: contain;
+  object-position: center;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 
 /* FOOTER */
 
