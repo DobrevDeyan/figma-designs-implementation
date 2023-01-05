@@ -14,6 +14,7 @@ body {
 }
 main {
   background: #ffffff;
+  /* background: #f5f5f5; */
 }
 /* LAYOUT END*/
 
@@ -21,7 +22,6 @@ main {
 
 header {
   background: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 header nav {
   display: flex;
@@ -29,6 +29,7 @@ header nav {
   align-items: center;
   min-height: 70px;
   position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 header nav ul {
   display: flex;
@@ -452,9 +453,9 @@ nav .megamenu ul.megamenu-row li a {
 main {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
-  min-height: 100vh;
+  height: calc(100vh - 70px);
+  position: relative;
 }
 main h4.page-title {
   font-weight: 700;
@@ -463,22 +464,18 @@ main h4.page-title {
   align-items: center;
   color: #050723;
   margin-bottom: 64px;
+  margin-top: 32px;
+}
+main .left h4.page-title, main .right h4.page-title {
+  margin-top: 0;
 }
 main .left,
 main .right {
   align-items: center;
   display: flex;
-  justify-content: start;
   position: relative;
-}
-main .left::after {
-  content: "";
-  position: absolute;
-  right: 0; /* Position the border on the right side of the container */
-  top: 0; /* Align the border with the top of the container */
-  bottom: 0; /* Align the border with the bottom of the container */
-  width: 5px; /* Set the width of the border */
-  border-right: 12px solid #333; /* Add the border */
+  flex-direction: column;
+  align-self: flex-start;
 }
 main .checkbox + label {
   display: inline-block;
@@ -526,31 +523,87 @@ main .checkbox:checked + label:after {
 }
 main .container {
   height: 100vh;
-  position: relative;
-  background-color: yellow;
+  /* position: relative; */
+  /* background-color: salmon; */
 }
 main .container .row {
   height: 100%;
 }
 main .col-12 {
-  padding: 20px;
-  border: solid 2px green;
+  /* padding: 20px; */
+  /* border: solid 2px green; */
 }
+main .col-sm-6 {
+  position: relative;
+}
+main .col-sm-6:first-child::after {
+  content: "";
+  position: absolute;
+  right: 0; /* Position the border on the right side of the container */
+  top: 0; /* Align the border with the top of the container */
+  bottom: 30%; /* Align the border with the bottom of the container */
+  width: 5px; /* Set the width of the border */
+  border-right: 1px solid #c0c0c0; /* Add the border */
+}
+
 main .box {
-  min-width: 240px;
-  min-height: 240px;
-  border: solid 2px red;
+  /* min-width: 240px;
+  min-height: 240px; */
+  /* border: solid 2px red; */
 }
 main .container img {
-  /* content: ""; */
-  /* background: url(../../IMG_Academy_Logo.svg.png); */
-  width: 300px !important;
+  width: 600px !important;
   object-fit: contain;
   object-position: center;
   z-index: 1;
   position: absolute;
   right: 0;
   bottom: 0;
+  background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 27.23%),
+    linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 12.2%);
+  /* , url(image.png); */
+  /* display: none; */
+}
+form.contact-form {
+  background: #f1efef;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 24px;
+}
+form.contact-form .form-field label {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 14px;
+  color: #000030;
+  font-weight: 400;
+  margin-bottom: 2px;
+  line-height: 20px;
+  display: block;
+}
+form.contact-form .form-field input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 16px;
+  border: 1px solid #050723;
+  background: #ffffff;
+  border-radius: 4px;
+}
+button.show-more {
+  padding: 8px 40px;
+  background: #0727b7;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  margin-right: 24px;
+}
+button.show-more a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /* FOOTER */
