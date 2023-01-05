@@ -512,7 +512,7 @@ main .checkbox:checked + label:after {
   opacity: 1;
 }
 
-main .col-6 {
+main .col-12 {
   padding: 20px;
   background-color: yellow;
   border: solid 2px green;
