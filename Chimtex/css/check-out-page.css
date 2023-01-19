@@ -564,9 +564,8 @@ main .checkbox:checked + label:after {
   opacity: 1;
 }
 main .container {
-  height: 100vh;
+  height: 100%;
   position: relative;
-  /* background-color: salmon; */
 }
 main .container .row {
   height: 100%;
@@ -583,17 +582,41 @@ main .col-sm-6:first-child::after {
   width: 5px; /* Set the width of the border */
   border-right: 1px solid #c0c0c0; /* Add the border */
 }
+main .col-sm-6:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  right: 0;
+  left: -100px;
+  top: 0;
+  /* background-image: url(../images/check-out-page-images/microscope.png); */
+  background-position: left bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* mix-blend-mode: multiply; */
+  background: linear-gradient(
+      90deg,
+      #ffffff 32.81%,
+      rgba(255, 255, 255, 0) 54.93%
+    ),
+    url(../images/check-out-page-images/microscope.png), #ffffff;
+  background-size: cover;
+  background-position: right center;
+  /* background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 27.23%),
+    linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 12.2%),
+    url(../images/check-out-page-images/microscope.png); */
+}
 main .container img {
-  /* width: 600px !important; */
-  /* max-width: 100%; */
-  /* height: auto; */
-  width: 300px;
+  width: 500px;
   object-fit: contain;
   object-position: center;
   z-index: 1;
   position: absolute;
   right: 0;
   bottom: 0;
+  mix-blend-mode: multiply;
+  background-color: transparent;
 }
 form.contact-form {
   border-radius: 8px;
