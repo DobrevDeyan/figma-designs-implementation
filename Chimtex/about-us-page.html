@@ -381,7 +381,6 @@
         </div>
       </nav>
     </header>
-
     <main>
       <h1>За нас</h1>
       <p>Кои сме ние и какво предлагаме</p>
@@ -482,133 +481,133 @@
     <script type="text/javascript">
       // CLOS/OPEN FUNCTIONALITY FOR SEARCH BAR (dekstop and mobile)
 
-      const openSearch = document.querySelector(".search-field");
-      const closeSearch = document.querySelector(".close-search");
-      const searchMenu = document.querySelector(".search-box");
+      const openSearch = document.querySelector(".search-field")
+      const closeSearch = document.querySelector(".close-search")
+      const searchMenu = document.querySelector(".search-box")
 
       openSearch.addEventListener("click", function () {
-        searchMenu.style.display = "flex";
-      });
+        searchMenu.style.display = "flex"
+      })
       closeSearch.addEventListener("click", function () {
-        searchMenu.style.display = "none";
-      });
+        searchMenu.style.display = "none"
+      })
 
       const toggleSearchMobile = document.querySelector(
         ".search-container-mobile-button"
-      );
-      const searchMenuMobile = document.querySelector(".search-box-mobile");
-      searchMenuMobile.style.display === "none";
+      )
+      const searchMenuMobile = document.querySelector(".search-box-mobile")
+      searchMenuMobile.style.display === "none"
       toggleSearchMobile.addEventListener("click", function () {
         if (searchMenuMobile.style.display === "none") {
-          searchMenuMobile.style.display = "flex";
+          searchMenuMobile.style.display = "flex"
         } else {
-          searchMenuMobile.style.display = "none";
+          searchMenuMobile.style.display = "none"
         }
-      });
+      })
 
       // CLOS/OPEN FUNCTIONALITY LANGUAGE DROPDOWN
 
-      const languageMenu = document.querySelector(".dropdown");
-      const openLanguageMenu = document.querySelectorAll(".language-dropdown");
-      const languageItems = document.querySelectorAll(".language");
+      const languageMenu = document.querySelector(".dropdown")
+      const openLanguageMenu = document.querySelectorAll(".language-dropdown")
+      const languageItems = document.querySelectorAll(".language")
 
       openLanguageMenu.forEach((item) => {
         item.addEventListener("click", function () {
           if (languageMenu.classList.contains("active")) {
-            languageMenu.classList.remove("active");
+            languageMenu.classList.remove("active")
           } else {
-            languageMenu.classList.add("active");
+            languageMenu.classList.add("active")
           }
-        });
-      });
+        })
+      })
 
       languageItems.forEach((item) => {
         item.addEventListener("click", function () {
-          languageMenu.classList.remove("active");
+          languageMenu.classList.remove("active")
 
           if (item.classList.contains("en")) {
             document
               .querySelector(".language-dropdown.bg")
-              .classList.add("hidden");
+              .classList.add("hidden")
             document
               .querySelector(".language-dropdown.en")
-              .classList.remove("hidden");
+              .classList.remove("hidden")
           } else if (item.classList.contains("bg")) {
             document
               .querySelector(".language-dropdown.en")
-              .classList.add("hidden");
+              .classList.add("hidden")
             document
               .querySelector(".language-dropdown.bg")
-              .classList.remove("hidden");
+              .classList.remove("hidden")
           }
-        });
-      });
+        })
+      })
 
       // CLOS/OPEN FUNCTIONALITY PRODUCTS DROPDOWN
 
       const productsDropdown = document.querySelector(
         ".dropdown-menu-container"
-      );
-      const productsMenu = document.querySelector(".megamenu");
-      let mouseOver = false;
+      )
+      const productsMenu = document.querySelector(".megamenu")
+      let mouseOver = false
 
       productsDropdown.addEventListener("mouseenter", () => {
-        productsMenu.classList.add("active-menu");
-      });
+        productsMenu.classList.add("active-menu")
+      })
       productsMenu.addEventListener("mouseenter", () => {
-        productsMenu.classList.add("active-menu");
+        productsMenu.classList.add("active-menu")
         // mouseOver = true
-      });
+      })
       productsMenu.addEventListener("mouseover", () => {
-        productsMenu.classList.add("active-menu");
-        mouseOver = true;
-      });
+        productsMenu.classList.add("active-menu")
+        mouseOver = true
+      })
       productsMenu.addEventListener("mouseleave", () => {
         setTimeout(() => {
-          productsMenu.classList.remove("active-menu");
-        }, 500);
-      });
+          productsMenu.classList.remove("active-menu")
+        }, 500)
+      })
       productsDropdown.addEventListener("mouseleave", () => {
-        console.log(mouseOver);
+        console.log(mouseOver)
         if (mouseOver === true) {
-          console.log("mouse true");
+          console.log("mouse true")
           // setTimeout(() => {
           //   productsMenu.classList.remove("active-menu")
           // }, 500)
         } else {
           setTimeout(() => {
-            productsMenu.classList.remove("active-menu");
-          }, 500);
+            productsMenu.classList.remove("active-menu")
+          }, 500)
         }
-      });
+      })
 
       // CLOS/OPEN FUNCTIONALITY PROFILE DROPDOWN
 
-      const toggleProfile = document.querySelector(".account-profile");
-      const profileMenu = document.querySelector(".account-profile-menu");
+      const toggleProfile = document.querySelector(".account-profile")
+      const profileMenu = document.querySelector(".account-profile-menu")
 
-      profileMenu.style.display = "none";
+      profileMenu.style.display = "none"
       toggleProfile.addEventListener("click", function () {
         if (profileMenu.style.display === "none") {
-          profileMenu.style.display = "block";
+          profileMenu.style.display = "block"
         } else {
-          profileMenu.style.display = "none";
+          profileMenu.style.display = "none"
         }
-      });
+      })
 
-      const mobileNavMenuButton = document.querySelector(".mobile-menu-handle");
+      const mobileNavMenuButton = document.querySelector(".mobile-menu-handle")
       const mobileNavMenu = document.querySelector(
         ".navigation-menu-mobile-dropdown"
-      );
+      )
 
-      mobileNavMenu.style.display = "none";
+      mobileNavMenu.style.display = "none"
       mobileNavMenuButton.addEventListener("click", function () {
         if (mobileNavMenu.style.display === "none") {
-          mobileNavMenu.style.display = "flex";
+          mobileNavMenu.style.display = "flex"
         } else {
-          mobileNavMenu.style.display = "none";
+          mobileNavMenu.style.display = "none"
         }
-      });
+      })
     </script>
   </body>
 </html>
