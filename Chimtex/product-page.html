@@ -408,7 +408,7 @@
       </div>
       <div class="container container-wrap product-listing">
         <div class="row">
-          <div class="col-xl-5 d-flex">
+          <div class="col-lg-5 d-flex">
             <div class="product-img-container">
               <img
                 src="./images/product-page-images/product-img.png"
@@ -416,7 +416,7 @@
               />
             </div>
           </div>
-          <div class="col-xl-7">
+          <div class="col-lg-7">
             <h4>Колба със шлиф, капковидна форма</h4>
             <p class="price">4094.5ВР</p>
             <p class="manufacturer">Производител</p>
@@ -459,33 +459,99 @@
                 <button class="bottle-quantity" type="button">60 бр.</button>
               </div>
               <div class="form-field">
-                <p>Количество</p>
-                <div class="quantity-container">
-                  <button class="minus-btn">
-                    <img
-                      src="./images/product-page-images/minus.svg"
-                      alt="minus-symbol"
+                <div>
+                  <p>Количество</p>
+                  <div class="quantity-container">
+                    <button class="minus-btn">
+                      <img
+                        src="./images/product-page-images/minus.svg"
+                        alt="minus-symbol"
+                      />
+                    </button>
+                    <input
+                      type="number"
+                      class="quantity-input"
+                      value="1"
+                      min="1"
+                      max="100"
                     />
-                  </button>
-                  <input
-                    type="number"
-                    class="quantity-input"
-                    value="1"
-                    min="1"
-                    max="100"
-                  />
-                  <button class="plus-btn">
-                    <img
-                      src="./images/product-page-images/plus.svg"
-                      alt="plus-symbol"
-                    />
-                  </button>
+                    <button class="plus-btn">
+                      <img
+                        src="./images/product-page-images/plus.svg"
+                        alt="plus-symbol"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="summary">
+                  <div class="summary-row">
+                    <p>Цена</p>
+                    <div class="prices-container">
+                      <p class="old-price">28.48 лв.</p>
+                      <p class="new-price">24,90 лв.</p>
+                      <p class="discount">-15%</p>
+                      <img
+                        src="./images/product-page-images/alert.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="summary-row">
+                    <p>ДДС</p>
+                    <div class="prices-container">
+                      <p class="new-price">+20%</p>
+                    </div>
+                  </div>
+                  <div class="summary-row">
+                    <p>Общо</p>
+                    <div class="prices-container">
+                      <p class="total-price">29.88 лв.</p>
+                    </div>
+                  </div>
+                  <div class="summary-row">
+                    <p>
+                      При поръчка над 10 броя, единична цена 4.50 лв. без ддс.
+                    </p>
+                  </div>
                 </div>
               </div>
+              <button type="button" class="add-checkout">
+                <a href="#">Добави в количката</a>
+              </button>
             </form>
           </div>
         </div>
       </div>
+      <section class="similar-products container container-wrap">
+        <div class="row justify-content-center">
+          <div class="col-lg-2 col-sm-6">
+            <div class="card-image-container">
+              <img
+                src="./images/product-page-images/image-3.png"
+                alt="Image"
+                class="card-image"
+              />
+            </div>
+            <h4 class="card-title">Ръкавици медицински, латекс без пудра</h4>
+            <p class="card-description">
+              Латексова нестерилна ръкавица без пудра
+            </p>
+          </div>
+          <div class="col-lg-2 col-sm-6">
+            <div class="card-image-container">
+              <img
+                src="./images/product-page-images/image 7.png"
+                alt="Image"
+                class="card-image"
+              />
+            </div>
+            <h4 class="card-title">Ръкавици медицински, латекс без пудра</h4>
+            <p class="card-description">
+              Латексова нестерилна ръкавица без пудра
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="container container-wrap">

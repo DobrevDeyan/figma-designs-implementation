@@ -465,17 +465,18 @@ main .site-navigation-bar a {
   text-decoration: none;
 }
 main .product-listing {
-  display: flex;
   margin-bottom: 20px;
 }
 main .product-img-container {
   border: 1px solid #c0c0c0;
   border-radius: 8px;
+  max-width: 533px;
+  max-height: 507px;
 }
 main .product-img-container img {
   width: 100%;
   height: 100%;
-  /* object-fit: contain; */
+  object-fit: cover;
   object-position: center;
 }
 main .product-listing h4 {
@@ -520,7 +521,6 @@ main .product-labels img {
 main .product-sizes {
   margin-bottom: 24px;
 }
-
 main .product-submission .quantity-container {
   display: inline-flex;
   border: 1px solid #050723;
@@ -557,6 +557,140 @@ main .product-submission .quantity-input {
 main .product-submission .form-field {
   margin-bottom: 24px;
 }
+main .product-submission .form-field:nth-child(3) {
+  margin-bottom: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+main .product-submission .form-field:nth-child(3) .summary {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 54%;
+}
+main .product-submission .form-field:nth-child(3) .summary-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .product-submission .form-field:nth-child(3) .summary-row:nth-child(1),
+main .product-submission .form-field:nth-child(3) .summary-row:nth-child(2) {
+  border-bottom: 1px solid #828282;
+}
+main .product-submission .form-field:nth-child(3) .summary-row:nth-child(1) > p,
+main
+  .product-submission
+  .form-field:nth-child(3)
+  .summary-row:nth-child(2)
+  > p {
+  font-weight: 400;
+}
+main
+  .product-submission
+  .form-field:nth-child(3)
+  .summary-row:nth-child(3)
+  > p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000e4b;
+}
+main
+  .product-submission
+  .form-field:nth-child(3)
+  .summary-row:nth-child(3)
+  .prices-container
+  > p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: right;
+  color: #000e4b;
+  margin-right: 0;
+}
+main
+  .product-submission
+  .form-field:nth-child(3)
+  .summary-row
+  .prices-container {
+  display: flex;
+}
+main
+  .product-submission
+  .form-field:nth-child(3)
+  .summary-row
+  .prices-container
+  p {
+  margin: 0;
+  margin-right: 5px;
+}
+main
+  .product-submission
+  .form-field:nth-child(3)
+  .summary-row
+  .prices-container
+  img {
+  width: 18px;
+  margin-top: -7px;
+}
+main
+  .product-submission
+  .form-field:nth-child(3)
+  .summary-row
+  .prices-container
+  .old-price {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration-line: line-through;
+  color: #828282;
+}
+main
+  .product-submission
+  .form-field:nth-child(3)
+  .summary-row
+  .prices-container
+  .new-price {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: right;
+  color: #000e4b;
+  margin-right: 0;
+}
+main .product-submission .form-field:nth-child(3) .summary-row:nth-child(2),
+main .product-submission .form-field:nth-child(3) .summary-row:nth-child(3) {
+  margin-top: 8px;
+}
+main .product-submission .form-field:nth-child(3) .summary-row:nth-child(3) {
+  margin-bottom: 16px;
+}
+main .product-submission .form-field:nth-child(3) .summary-row:nth-child(4) {
+  background: #f2f4f7;
+  border-radius: 2px;
+  padding: 8px;
+}
+main .product-submission .form-field:nth-child(3) .summary-row:nth-child(4) p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #050723;
+  margin: 0;
+}
+main
+  .product-submission
+  .form-field:nth-child(3)
+  .summary-row
+  .prices-container
+  .discount {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #d71e4a;
+}
 main .product-submission .form-field p {
   font-style: normal;
   font-weight: 500;
@@ -572,12 +706,109 @@ main .product-submission .form-field button.bottle-quantity {
   border-radius: 4px;
   padding: 8px 16px 8px 12px;
 }
+main .product-submission button.add-checkout {
+  padding: 8px 40px;
+  background: #0727b7;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  margin-right: 24px;
+}
+main .product-submission button.add-checkout a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+section.similar-products {
+  margin-top: 80px;
+  margin-bottom: 24px;
+}
+section.similar-products h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-align: center;
+}
 /* main .product-listing .row {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 } */
+section.similar-products {
+  margin-bottom: 100px;
+}
+section.similar-products .container-wrap.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+section.similar-products h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #050723;
+  padding-top: 64px;
+  padding-bottom: 24px;
+}
+section.similar-products .slider-new-products {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 24px;
+}
+section.similar-products .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  max-width: 220px;
+  /* border: 1px solid #c0c0c0; */
+}
+div.col-lg-2.col-sm-6 {
+  margin-right: 24px;
+  padding: 0;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+}
+section.similar-products .card-image-container {
+  width: 217px;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+}
+section.similar-products .card-image {
+  width: 100%;
+  height: 100%;
+}
+section.similar-products .card-title {
+  padding: 8px;
+  padding-bottom: 4px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #050723;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%; /* or use max-width */
+}
+section.similar-products .card-description {
+  margin: 0;
+  padding: 8px 8px 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+  text-align: left;
+}
+
 /* FOOTER */
 
 footer {
