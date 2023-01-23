@@ -733,12 +733,6 @@ section.similar-products h4 {
   color: #000000;
   text-align: center;
 }
-/* main .product-listing .row {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
 section.similar-products {
   margin-bottom: 100px;
 }
@@ -952,6 +946,15 @@ nav ul.navigation-menu-mobile .navigation-menu-mobile-dropdown li a {
   main section.about-us .col-xl-6:nth-child(1) img {
     padding-bottom: 24px;
     border-radius: 8px;
+  }
+  main .product-listing .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .product-img-container {
+    margin-bottom: 30px;
   }
   footer .container-wrap.container {
     display: flex;
