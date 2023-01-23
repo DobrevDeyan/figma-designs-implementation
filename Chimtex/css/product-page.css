@@ -982,6 +982,16 @@ nav ul.navigation-menu-mobile .navigation-menu-mobile-dropdown li a {
   main .product-img-container {
     margin-bottom: 30px;
   }
+  div.col-lg-2.col-sm-6:not(:last-child) {
+    margin-right: 0px;
+  }
+  div.col-lg-7.col-12 {
+    display: flex;
+    flex-direction: column;
+  }
+  main .product-submission button.add-checkout {
+    justify-self: center;
+  }
 }
 @media only screen and (max-width: 767px) {
   header nav {
