@@ -1105,7 +1105,6 @@
     </script>
     <script type="text/javascript">
       // NEW PRODUCTS SLIDEBAR
-
       $(".slider-new-products").slick({
         infinite: true,
         slidesToShow: 5,
@@ -1215,43 +1214,17 @@
     </script>
     <script type="text/javascript">
       // CLOS/OPEN FUNCTIONALITY PRODUCTS DROPDOWN
-
-      const productsDropdown = document.querySelector(
-        ".dropdown-menu-container"
-      )
-      const productsMenu = document.querySelector(".megamenu")
-      let mouseOver = false
-
-      productsDropdown.addEventListener("mouseenter", () => {
-        productsMenu.classList.add("active-menu")
+      $(".dropdown-menu-container").hover(function () {
+        $(".megamenu").stop(true, true).slideDown(1000)
       })
-      productsMenu.addEventListener("mouseenter", () => {
-        productsMenu.classList.add("active-menu")
-        // mouseOver = true
+      $(".megamenu").mouseenter(function () {
+        // $(".megamenu").show()
+        // $(".megamenu").stop(true, true).slideDown(600)
       })
-      productsMenu.addEventListener("mouseover", () => {
-        productsMenu.classList.add("active-menu")
-        mouseOver = true
+      $(".megamenu").mouseleave(function () {
+        // $(this).hide()
+        $(".megamenu").stop(true, true).slideUp(600)
       })
-      productsMenu.addEventListener("mouseleave", () => {
-        setTimeout(() => {
-          productsMenu.classList.remove("active-menu")
-        }, 500)
-      })
-      productsDropdown.addEventListener("mouseleave", () => {
-        console.log(mouseOver)
-        if (mouseOver === true) {
-          console.log("mouse true")
-          // setTimeout(() => {
-          //   productsMenu.classList.remove("active-menu")
-          // }, 500)
-        } else {
-          setTimeout(() => {
-            productsMenu.classList.remove("active-menu")
-          }, 500)
-        }
-      })
-
       // CLOS/OPEN FUNCTIONALITY PROFILE DROPDOWN
 
       const toggleProfile = document.querySelector(".account-profile")

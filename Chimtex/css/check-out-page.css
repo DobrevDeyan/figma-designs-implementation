@@ -583,26 +583,25 @@ main .col-sm-6:first-child::after {
   border-right: 1px solid #c0c0c0; /* Add the border */
 }
 main .col-sm-6:nth-child(2)::before {
-  content: "";
+  /* content: "";
   position: absolute;
   width: 100%;
   bottom: 0px;
   right: 0;
-  left: -100px;
   top: 0;
-  /* background-image: url(../images/check-out-page-images/microscope.png); */
+  background-image: url(../images/check-out-page-images/microscope.png);
   background-position: left bottom;
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   /* mix-blend-mode: multiply; */
-  background: linear-gradient(
+  /* background: linear-gradient(
       90deg,
       #ffffff 32.81%,
       rgba(255, 255, 255, 0) 54.93%
     ),
     url(../images/check-out-page-images/microscope.png), #ffffff;
   background-size: cover;
-  background-position: right center;
+  background-position: right center; */
   /* background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 27.23%),
     linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 12.2%),
     url(../images/check-out-page-images/microscope.png); */
