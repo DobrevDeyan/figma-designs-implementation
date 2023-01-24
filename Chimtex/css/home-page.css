@@ -669,13 +669,13 @@ section.new-products .slider-new-products {
   margin-bottom: 24px;
 }
 section.new-products img.slider-arrow-prev {
-  left: 0px;
+  left: 20px;
   top: 47%;
   position: absolute;
   cursor: pointer;
 }
 section.new-products img.slider-arrow-next {
-  right: 0px;
+  right: 20px;
   top: 47%;
   position: absolute;
   cursor: pointer;
@@ -752,6 +752,7 @@ section.medical-branch .container-wrap.container {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: end;
+  z-index: 1;
 }
 section.medical-branch img {
   position: absolute;
@@ -1243,9 +1244,6 @@ nav ul.navigation-menu-mobile .navigation-menu-mobile-dropdown li a {
   }
   .search-container-mobile-button {
     display: block;
-  }
-  .slide-view {
-    padding: 20px;
   }
   .slide-view .slider-content h3 {
     padding-top: 128px;
