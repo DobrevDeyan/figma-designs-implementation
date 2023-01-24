@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/check-out-page.css" />
   </head>
   <body>
     <header>
@@ -383,49 +383,54 @@
     </header>
     <main>
       <h4 class="page-title">Завърши поръчката</h4>
-      <div class="container">
-        <img src="./images/check-out-page-images/microscope.png" alt="" />
-
-        <div class="row">
-          <div
-            class="col-sm-6 col-12 d-flex align-items-center justify-content-center"
-          >
-            <div class="box left">
-              <h4 class="box-title">Имам акаунт</h4>
-              <form class="contact-form" action="#">
-                <div class="form-field">
-                  <label for="">E-mail aдрес*</label>
-                  <input type="text" value="" />
+      <div class="container-wrapper">
+        <!-- <img
+          src="./images/check-out-page-images/microscope.png"
+          alt="microscope"
+          class="hero-image"
+        /> -->
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-sm-6 col-12 d-flex align-items-center justify-content-center"
+            >
+              <div class="box left">
+                <h4 class="box-title">Имам акаунт</h4>
+                <form class="contact-form" action="#">
+                  <div class="form-field">
+                    <label for="">E-mail aдрес*</label>
+                    <input type="text" value="" />
+                  </div>
+                  <div class="form-field">
+                    <label for="">Парола*</label>
+                    <input type="text" value="" />
+                  </div>
+                </form>
+                <div class="misc">
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="checkbox" class="checkbox" />
+                    <a>Запомни ме</a>
+                  </div>
+                  <a class="forgotten_password" href="#">Забравена парола</a>
                 </div>
-                <div class="form-field">
-                  <label for="">Парола*</label>
-                  <input type="text" value="" />
+                <button type="button" class="show-more">
+                  <a href="#">Вход</a>
+                </button>
+                <div class="misc-2">
+                  <p>Все още нямаш регистрация?</p>
+                  <a class="registration" href="#">Регистрирай се</a>
                 </div>
-              </form>
-              <div class="misc">
-                <div class="checkbox-container">
-                  <input type="checkbox" id="checkbox" class="checkbox" />
-                  <a>Запомни ме</a>
-                </div>
-                <a class="forgotten_password" href="#">Забравена парола</a>
-              </div>
-              <button type="button" class="show-more">
-                <a href="#">Вход</a>
-              </button>
-              <div class="misc-2">
-                <p>Все още нямаш регистрация?</p>
-                <a class="registration" href="#">Регистрирай се</a>
               </div>
             </div>
-          </div>
-          <div
-            class="col-sm-6 col-12 d-flex align-items-center justify-content-center"
-          >
-            <div class="box right">
-              <h4 class="box-title">Продължи като гост</h4>
-              <button type="button" class="show-more">
-                <a href="#">Продължи</a>
-              </button>
+            <div
+              class="col-sm-6 col-12 d-flex align-items-center justify-content-center"
+            >
+              <div class="box right">
+                <h4 class="box-title">Продължи като гост</h4>
+                <button type="button" class="show-more">
+                  <a href="#">Продължи</a>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -511,133 +516,133 @@
     <script type="text/javascript">
       // CLOS/OPEN FUNCTIONALITY FOR SEARCH BAR (dekstop and mobile)
 
-      const openSearch = document.querySelector(".search-field")
-      const closeSearch = document.querySelector(".close-search")
-      const searchMenu = document.querySelector(".search-box")
+      const openSearch = document.querySelector(".search-field");
+      const closeSearch = document.querySelector(".close-search");
+      const searchMenu = document.querySelector(".search-box");
 
       openSearch.addEventListener("click", function () {
-        searchMenu.style.display = "flex"
-      })
+        searchMenu.style.display = "flex";
+      });
       closeSearch.addEventListener("click", function () {
-        searchMenu.style.display = "none"
-      })
+        searchMenu.style.display = "none";
+      });
 
       const toggleSearchMobile = document.querySelector(
         ".search-container-mobile-button"
-      )
-      const searchMenuMobile = document.querySelector(".search-box-mobile")
-      searchMenuMobile.style.display === "none"
+      );
+      const searchMenuMobile = document.querySelector(".search-box-mobile");
+      searchMenuMobile.style.display === "none";
       toggleSearchMobile.addEventListener("click", function () {
         if (searchMenuMobile.style.display === "none") {
-          searchMenuMobile.style.display = "flex"
+          searchMenuMobile.style.display = "flex";
         } else {
-          searchMenuMobile.style.display = "none"
+          searchMenuMobile.style.display = "none";
         }
-      })
+      });
 
       // CLOS/OPEN FUNCTIONALITY LANGUAGE DROPDOWN
 
-      const languageMenu = document.querySelector(".dropdown")
-      const openLanguageMenu = document.querySelectorAll(".language-dropdown")
-      const languageItems = document.querySelectorAll(".language")
+      const languageMenu = document.querySelector(".dropdown");
+      const openLanguageMenu = document.querySelectorAll(".language-dropdown");
+      const languageItems = document.querySelectorAll(".language");
 
       openLanguageMenu.forEach((item) => {
         item.addEventListener("click", function () {
           if (languageMenu.classList.contains("active")) {
-            languageMenu.classList.remove("active")
+            languageMenu.classList.remove("active");
           } else {
-            languageMenu.classList.add("active")
+            languageMenu.classList.add("active");
           }
-        })
-      })
+        });
+      });
 
       languageItems.forEach((item) => {
         item.addEventListener("click", function () {
-          languageMenu.classList.remove("active")
+          languageMenu.classList.remove("active");
 
           if (item.classList.contains("en")) {
             document
               .querySelector(".language-dropdown.bg")
-              .classList.add("hidden")
+              .classList.add("hidden");
             document
               .querySelector(".language-dropdown.en")
-              .classList.remove("hidden")
+              .classList.remove("hidden");
           } else if (item.classList.contains("bg")) {
             document
               .querySelector(".language-dropdown.en")
-              .classList.add("hidden")
+              .classList.add("hidden");
             document
               .querySelector(".language-dropdown.bg")
-              .classList.remove("hidden")
+              .classList.remove("hidden");
           }
-        })
-      })
+        });
+      });
 
       // CLOS/OPEN FUNCTIONALITY PRODUCTS DROPDOWN
 
       const productsDropdown = document.querySelector(
         ".dropdown-menu-container"
-      )
-      const productsMenu = document.querySelector(".megamenu")
-      let mouseOver = false
+      );
+      const productsMenu = document.querySelector(".megamenu");
+      let mouseOver = false;
 
       productsDropdown.addEventListener("mouseenter", () => {
-        productsMenu.classList.add("active-menu")
-      })
+        productsMenu.classList.add("active-menu");
+      });
       productsMenu.addEventListener("mouseenter", () => {
-        productsMenu.classList.add("active-menu")
+        productsMenu.classList.add("active-menu");
         // mouseOver = true
-      })
+      });
       productsMenu.addEventListener("mouseover", () => {
-        productsMenu.classList.add("active-menu")
-        mouseOver = true
-      })
+        productsMenu.classList.add("active-menu");
+        mouseOver = true;
+      });
       productsMenu.addEventListener("mouseleave", () => {
         setTimeout(() => {
-          productsMenu.classList.remove("active-menu")
-        }, 500)
-      })
+          productsMenu.classList.remove("active-menu");
+        }, 500);
+      });
       productsDropdown.addEventListener("mouseleave", () => {
-        console.log(mouseOver)
+        console.log(mouseOver);
         if (mouseOver === true) {
-          console.log("mouse true")
+          console.log("mouse true");
           // setTimeout(() => {
           //   productsMenu.classList.remove("active-menu")
           // }, 500)
         } else {
           setTimeout(() => {
-            productsMenu.classList.remove("active-menu")
-          }, 500)
+            productsMenu.classList.remove("active-menu");
+          }, 500);
         }
-      })
+      });
 
       // CLOS/OPEN FUNCTIONALITY PROFILE DROPDOWN
 
-      const toggleProfile = document.querySelector(".account-profile")
-      const profileMenu = document.querySelector(".account-profile-menu")
+      const toggleProfile = document.querySelector(".account-profile");
+      const profileMenu = document.querySelector(".account-profile-menu");
 
-      profileMenu.style.display = "none"
+      profileMenu.style.display = "none";
       toggleProfile.addEventListener("click", function () {
         if (profileMenu.style.display === "none") {
-          profileMenu.style.display = "block"
+          profileMenu.style.display = "block";
         } else {
-          profileMenu.style.display = "none"
+          profileMenu.style.display = "none";
         }
-      })
+      });
 
-      const mobileNavMenuButton = document.querySelector(".mobile-menu-handle")
+      const mobileNavMenuButton = document.querySelector(".mobile-menu-handle");
       const mobileNavMenu = document.querySelector(
         ".navigation-menu-mobile-dropdown"
-      )
+      );
 
-      mobileNavMenu.style.display = "none"
+      mobileNavMenu.style.display = "none";
       mobileNavMenuButton.addEventListener("click", function () {
         if (mobileNavMenu.style.display === "none") {
-          mobileNavMenu.style.display = "flex"
+          mobileNavMenu.style.display = "flex";
         } else {
-          mobileNavMenu.style.display = "none"
+          mobileNavMenu.style.display = "none";
         }
-      })
+      });
     </script>
   </body>
 </html>

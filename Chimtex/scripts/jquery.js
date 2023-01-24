@@ -12,6 +12,6 @@ $(".dropdown-menu-container").click(function () {
   $(".megamenu").stop(true, true).slideToggle(200);
   $(".megamenu").css("display", "flex");
 });
-$(".dropdown-menu-container").click(function () {
-  $(".dropdown-button p").toggleClass("bordered");
-});
+// $(".dropdown-menu-container").click(function () {
+//   $(".dropdown-button p").toggleClass("bordered");
+// });

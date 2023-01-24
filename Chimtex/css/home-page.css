@@ -374,12 +374,12 @@ nav .megamenu {
   padding: 24px 64px;
   display: none;
 }
-.bordered {
+/* .bordered {
   background-color: #0727b7;
   color: #fff;
   border-radius: 4px;
-  padding: 5px 10px;
-}
+  padding: 10px 3px;
+} */
 nav .megamenu ul.megamenu-row {
   display: flex;
   flex-direction: column;
