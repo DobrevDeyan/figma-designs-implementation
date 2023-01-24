@@ -369,14 +369,16 @@ nav .megamenu {
   z-index: 1;
   background: #ffffff;
   width: 100%;
-  display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding: 24px 64px;
   display: none;
 }
-nav .megamenu.active-menu {
-  display: flex;
+.bordered {
+  background-color: #0727b7;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px 10px;
 }
 nav .megamenu ul.megamenu-row {
   display: flex;
