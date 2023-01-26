@@ -448,13 +448,9 @@
         <div class="p-container">
           <p>
             На българския пазар предлагаме голямо разнообразие от химически и
-            <br />
             лабораторни консумативи, като се стремим да поддържаме високи
-            складови
-            <br />
-            наличности с оглед бързото задоволяване нуждите на нашите клиенти.
-            Постоянни <br />
-            клиенти на фирмата ни са:
+            складови наличности с оглед бързото задоволяване нуждите на нашите
+            клиенти. Постоянни клиенти на фирмата ни са:
           </p>
         </div>
         <div class="logos">
@@ -515,19 +511,15 @@
         <div class="p-container">
           <p>
             Химтекс ООД разполага със собствена складова база в Димитровград,
-            лаборатория <br />
-            за разфасовка и собствен автопарк за големи тонажи и малки товари.
-            Фирмата ни <br />има открити клонове в градовете София, Плевен, Русе
-            и Варна за удобство на<br />
-            нашите клиенти. <br />
-            <br />
-            Ръководителите на фирмата са специалисти в областта на медицината
-            и<br />
-            химията и предлагат висок професионализъм и гъвкавост в търговските
-            взаимоотношения. <br />Във фирмата ни работят 28 служители, като по
-            този начин ви гарантираме бързо и <br />компетентно обслужване на
-            клиентите. Екипът на Химтекс ООД гарантира честност<br />
-            и лоялност към сегашни и бъдещи партньори!
+            лаборатория за разфасовка и собствен автопарк за големи тонажи и
+            малки товари. Фирмата ни има открити клонове в градовете София,
+            Плевен, Русе и Варна за удобство На нашите клиенти. Ръководителите
+            на фирмата са специалисти в областта на медицината и химията и
+            предлагат висок професионализъм и гъвкавост в търговските
+            взаимоотношения. Във фирмата ни работят 28 служители, като по този
+            начин ви гарантираме бързо и компетентно обслужване на клиентите.
+            Екипът на Химтекс ООД гарантира честност и лоялност към сегашни и
+            бъдещи партньори!
           </p>
         </div>
       </section>
@@ -619,95 +611,67 @@
     <script type="text/javascript">
       // CLOS/OPEN FUNCTIONALITY FOR SEARCH BAR (dekstop and mobile)
 
-      const openSearch = document.querySelector(".search-field")
-      const closeSearch = document.querySelector(".close-search")
-      const searchMenu = document.querySelector(".search-box")
+      const openSearch = document.querySelector(".search-field");
+      const closeSearch = document.querySelector(".close-search");
+      const searchMenu = document.querySelector(".search-box");
 
       openSearch.addEventListener("click", function () {
-        searchMenu.style.display = "flex"
-      })
+        searchMenu.style.display = "flex";
+      });
       closeSearch.addEventListener("click", function () {
-        searchMenu.style.display = "none"
-      })
+        searchMenu.style.display = "none";
+      });
 
       const toggleSearchMobile = document.querySelector(
         ".search-container-mobile-button"
-      )
-      const searchMenuMobile = document.querySelector(".search-box-mobile")
-      searchMenuMobile.style.display === "none"
+      );
+      const searchMenuMobile = document.querySelector(".search-box-mobile");
+      searchMenuMobile.style.display === "none";
       toggleSearchMobile.addEventListener("click", function () {
         if (searchMenuMobile.style.display === "none") {
-          searchMenuMobile.style.display = "flex"
+          searchMenuMobile.style.display = "flex";
         } else {
-          searchMenuMobile.style.display = "none"
+          searchMenuMobile.style.display = "none";
         }
-      })
+      });
 
       // CLOS/OPEN FUNCTIONALITY LANGUAGE DROPDOWN
 
-      const languageMenu = document.querySelector(".dropdown")
-      const openLanguageMenu = document.querySelectorAll(".language-dropdown")
-      const languageItems = document.querySelectorAll(".language")
+      const languageMenu = document.querySelector(".dropdown");
+      const openLanguageMenu = document.querySelectorAll(".language-dropdown");
+      const languageItems = document.querySelectorAll(".language");
 
       openLanguageMenu.forEach((item) => {
         item.addEventListener("click", function () {
           if (languageMenu.classList.contains("active")) {
-            languageMenu.classList.remove("active")
+            languageMenu.classList.remove("active");
           } else {
-            languageMenu.classList.add("active")
+            languageMenu.classList.add("active");
           }
-        })
-      })
+        });
+      });
 
       languageItems.forEach((item) => {
         item.addEventListener("click", function () {
-          languageMenu.classList.remove("active")
+          languageMenu.classList.remove("active");
 
           if (item.classList.contains("en")) {
             document
               .querySelector(".language-dropdown.bg")
-              .classList.add("hidden")
+              .classList.add("hidden");
             document
               .querySelector(".language-dropdown.en")
-              .classList.remove("hidden")
+              .classList.remove("hidden");
           } else if (item.classList.contains("bg")) {
             document
               .querySelector(".language-dropdown.en")
-              .classList.add("hidden")
+              .classList.add("hidden");
             document
               .querySelector(".language-dropdown.bg")
-              .classList.remove("hidden")
+              .classList.remove("hidden");
           }
-        })
-      })
-
-      // CLOS/OPEN FUNCTIONALITY PROFILE DROPDOWN
-
-      const toggleProfile = document.querySelector(".account-profile")
-      const profileMenu = document.querySelector(".account-profile-menu")
-
-      profileMenu.style.display = "none"
-      toggleProfile.addEventListener("click", function () {
-        if (profileMenu.style.display === "none") {
-          profileMenu.style.display = "block"
-        } else {
-          profileMenu.style.display = "none"
-        }
-      })
-
-      const mobileNavMenuButton = document.querySelector(".mobile-menu-handle")
-      const mobileNavMenu = document.querySelector(
-        ".navigation-menu-mobile-dropdown"
-      )
-
-      mobileNavMenu.style.display = "none"
-      mobileNavMenuButton.addEventListener("click", function () {
-        if (mobileNavMenu.style.display === "none") {
-          mobileNavMenu.style.display = "flex"
-        } else {
-          mobileNavMenu.style.display = "none"
-        }
-      })
+        });
+      });
     </script>
     <script src="./scripts/jquery.js"></script>
   </body>

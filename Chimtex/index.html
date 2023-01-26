@@ -1212,35 +1212,6 @@
         });
       });
     </script>
-    <script type="text/javascript">
-      // CLOS/OPEN FUNCTIONALITY PROFILE DROPDOWN
-
-      const toggleProfile = document.querySelector(".account-profile");
-      const profileMenu = document.querySelector(".account-profile-menu");
-
-      profileMenu.style.display = "none";
-      toggleProfile.addEventListener("click", function () {
-        if (profileMenu.style.display === "none") {
-          profileMenu.style.display = "block";
-        } else {
-          profileMenu.style.display = "none";
-        }
-      });
-
-      const mobileNavMenuButton = document.querySelector(".mobile-menu-handle");
-      const mobileNavMenu = document.querySelector(
-        ".navigation-menu-mobile-dropdown"
-      );
-
-      mobileNavMenu.style.display = "none";
-      mobileNavMenuButton.addEventListener("click", function () {
-        if (mobileNavMenu.style.display === "none") {
-          mobileNavMenu.style.display = "flex";
-        } else {
-          mobileNavMenu.style.display = "none";
-        }
-      });
-    </script>
     <script src="./scripts/jquery.js"></script>
   </body>
 </html>
