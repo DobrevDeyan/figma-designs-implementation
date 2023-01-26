@@ -16,7 +16,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  background: linear-gradient(-270deg, #ffffff 32.81%, rgba(0, 0, 0, 0) 54.93%),
+  background: linear-gradient(90deg, #ffffff 32.81%, rgba(0, 0, 0, 0) 54.93%),
     url(../images/check-out-page-images/microscope.png), #ffffff;
   background-size: cover;
   background-position: center;
@@ -659,7 +659,7 @@ button.show-more {
   border: none;
   margin-bottom: 24px;
 }
-.box.left button.show-more a,
+/* .box.left button.show-more a,
 .box.right button.show-more a {
   font-weight: 500;
   font-size: 16px;
@@ -667,6 +667,16 @@ button.show-more {
   text-align: center;
   color: #ffffff;
   text-decoration: none;
+} */
+.box.left button.show-more p,
+.box.right button.show-more p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0;
 }
 .misc-2 p {
   font-weight: 400;
@@ -844,6 +854,10 @@ nav ul.navigation-menu-mobile .navigation-menu-mobile-dropdown li a {
   .search-container-mobile-button {
     display: block;
   }
+  main .right,
+  main .left {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 767px) {
   header nav {
@@ -877,6 +891,9 @@ nav ul.navigation-menu-mobile .navigation-menu-mobile-dropdown li a {
   }
   .search-container-mobile-button {
     display: block;
+  }
+  button.show-more {
+    width: 100%;
   }
   footer {
     overflow: hidden;
