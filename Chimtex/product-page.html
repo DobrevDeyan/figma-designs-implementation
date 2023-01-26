@@ -685,43 +685,57 @@
 
       // CLOS/OPEN FUNCTIONALITY LANGUAGE DROPDOWN
 
-      const languageMenu = document.querySelector(".dropdown");
-      const openLanguageMenu = document.querySelectorAll(".language-dropdown");
-      const languageItems = document.querySelectorAll(".language");
+      // $(document).ready(function () {
+      //   $(".language-dropdown").click(function () {
+      //     $(".dropdown").toggleClass("active");
+      //   });
+      //   $(".language").click(function () {
+      //     $(".dropdown").removeClass("active");
+      //     if ($(this).hasClass("en")) {
+      //       $(".language-dropdown.bg").addClass("hidden");
+      //       $(".language-dropdown.en").removeClass("hidden");
+      //     } else if ($(this).hasClass("bg")) {
+      //       $(".language-dropdown.en").addClass("hidden");
+      //       $(".language-dropdown.bg").removeClass("hidden");
+      //     }
+      //   });
+      // });
 
-      openLanguageMenu.forEach((item) => {
-        item.addEventListener("click", function () {
-          if (languageMenu.classList.contains("active")) {
-            languageMenu.classList.remove("active");
-          } else {
-            languageMenu.classList.add("active");
-          }
-        });
-      });
+      // const languageMenu = document.querySelector(".dropdown");
+      // const openLanguageMenu = document.querySelectorAll(".language-dropdown");
+      // const languageItems = document.querySelectorAll(".language");
 
-      languageItems.forEach((item) => {
-        item.addEventListener("click", function () {
-          languageMenu.classList.remove("active");
+      // openLanguageMenu.forEach((item) => {
+      //   item.addEventListener("click", function () {
+      //     if (languageMenu.classList.contains("active")) {
+      //       languageMenu.classList.remove("active");
+      //     } else {
+      //       languageMenu.classList.add("active");
+      //     }
+      //   });
+      // });
 
-          if (item.classList.contains("en")) {
-            document
-              .querySelector(".language-dropdown.bg")
-              .classList.add("hidden");
-            document
-              .querySelector(".language-dropdown.en")
-              .classList.remove("hidden");
-          } else if (item.classList.contains("bg")) {
-            document
-              .querySelector(".language-dropdown.en")
-              .classList.add("hidden");
-            document
-              .querySelector(".language-dropdown.bg")
-              .classList.remove("hidden");
-          }
-        });
-      });
+      // languageItems.forEach((item) => {
+      //   item.addEventListener("click", function () {
+      //     languageMenu.classList.remove("active");
 
-      // CLOS/OPEN FUNCTIONALITY PROFILE DROPDOWN
+      //     if (item.classList.contains("en")) {
+      //       document
+      //         .querySelector(".language-dropdown.bg")
+      //         .classList.add("hidden");
+      //       document
+      //         .querySelector(".language-dropdown.en")
+      //         .classList.remove("hidden");
+      //     } else if (item.classList.contains("bg")) {
+      //       document
+      //         .querySelector(".language-dropdown.en")
+      //         .classList.add("hidden");
+      //       document
+      //         .querySelector(".language-dropdown.bg")
+      //         .classList.remove("hidden");
+      //     }
+      //   });
+      // });
 
       // QUANTITY COUNTER
 

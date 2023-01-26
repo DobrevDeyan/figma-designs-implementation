@@ -28,3 +28,20 @@ $(document).ready(function () {
     $(".navigation-menu-mobile-dropdown").slideToggle().css("display", "flex");
   });
 });
+// CLOS/OPEN FUNCTIONALITY LANGUAGE DROPDOWN
+
+$(document).ready(function () {
+  $(".language-dropdown").click(function () {
+    $(".dropdown").toggleClass("active");
+  });
+  $(".language").click(function () {
+    $(".dropdown").removeClass("active");
+    if ($(this).hasClass("en")) {
+      $(".language-dropdown.bg").addClass("hidden");
+      $(".language-dropdown.en").removeClass("hidden");
+    } else if ($(this).hasClass("bg")) {
+      $(".language-dropdown.en").addClass("hidden");
+      $(".language-dropdown.bg").removeClass("hidden");
+    }
+  });
+});
