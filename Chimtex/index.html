@@ -1064,7 +1064,7 @@
             },
           },
         ],
-      });
+      })
       $(".manufacturers-slider").slick({
         dots: false,
         arrows: false,
@@ -1101,7 +1101,7 @@
             },
           },
         ],
-      });
+      })
     </script>
     <script type="text/javascript">
       // NEW PRODUCTS SLIDEBAR
@@ -1145,72 +1145,7 @@
             },
           },
         ],
-      });
-    </script>
-    <script type="text/javascript">
-      // CLOS/OPEN FUNCTIONALITY FOR SEARCH BAR (dekstop and mobile)
-
-      const openSearch = document.querySelector(".search-field");
-      const closeSearch = document.querySelector(".close-search");
-      const searchMenu = document.querySelector(".search-box");
-
-      openSearch.addEventListener("click", function () {
-        searchMenu.style.display = "flex";
-      });
-      closeSearch.addEventListener("click", function () {
-        searchMenu.style.display = "none";
-      });
-
-      const toggleSearchMobile = document.querySelector(
-        ".search-container-mobile-button"
-      );
-      const searchMenuMobile = document.querySelector(".search-box-mobile");
-      searchMenuMobile.style.display === "none";
-      toggleSearchMobile.addEventListener("click", function () {
-        if (searchMenuMobile.style.display === "none") {
-          searchMenuMobile.style.display = "flex";
-        } else {
-          searchMenuMobile.style.display = "none";
-        }
-      });
-
-      // CLOS/OPEN FUNCTIONALITY LANGUAGE DROPDOWN
-
-      // const languageMenu = document.querySelector(".dropdown");
-      // const openLanguageMenu = document.querySelectorAll(".language-dropdown");
-      // const languageItems = document.querySelectorAll(".language");
-
-      // openLanguageMenu.forEach((item) => {
-      //   item.addEventListener("click", function () {
-      //     if (languageMenu.classList.contains("active")) {
-      //       languageMenu.classList.remove("active");
-      //     } else {
-      //       languageMenu.classList.add("active");
-      //     }
-      //   });
-      // });
-
-      // languageItems.forEach((item) => {
-      //   item.addEventListener("click", function () {
-      //     languageMenu.classList.remove("active");
-
-      //     if (item.classList.contains("en")) {
-      //       document
-      //         .querySelector(".language-dropdown.bg")
-      //         .classList.add("hidden");
-      //       document
-      //         .querySelector(".language-dropdown.en")
-      //         .classList.remove("hidden");
-      //     } else if (item.classList.contains("bg")) {
-      //       document
-      //         .querySelector(".language-dropdown.en")
-      //         .classList.add("hidden");
-      //       document
-      //         .querySelector(".language-dropdown.bg")
-      //         .classList.remove("hidden");
-      //     }
-      //   });
-      // });
+      })
     </script>
     <script src="./scripts/jquery.js"></script>
   </body>

@@ -608,33 +608,6 @@
         </ul>
       </div>
     </footer>
-    <script type="text/javascript">
-      // CLOS/OPEN FUNCTIONALITY FOR SEARCH BAR (dekstop and mobile)
-
-      const openSearch = document.querySelector(".search-field");
-      const closeSearch = document.querySelector(".close-search");
-      const searchMenu = document.querySelector(".search-box");
-
-      openSearch.addEventListener("click", function () {
-        searchMenu.style.display = "flex";
-      });
-      closeSearch.addEventListener("click", function () {
-        searchMenu.style.display = "none";
-      });
-
-      const toggleSearchMobile = document.querySelector(
-        ".search-container-mobile-button"
-      );
-      const searchMenuMobile = document.querySelector(".search-box-mobile");
-      searchMenuMobile.style.display === "none";
-      toggleSearchMobile.addEventListener("click", function () {
-        if (searchMenuMobile.style.display === "none") {
-          searchMenuMobile.style.display = "flex";
-        } else {
-          searchMenuMobile.style.display = "none";
-        }
-      });
-    </script>
     <script src="./scripts/jquery.js"></script>
   </body>
 </html>
