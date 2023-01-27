@@ -68,7 +68,17 @@ li.language-dropdown a {
 li.language-dropdown a img:nth-child(2) {
   margin-left: 6px;
 }
-
+.arrow-up {
+  transform: rotate(180deg);
+}
+.arrow-down {
+  transform: rotate(0deg);
+}
+.arrow-svg {
+  width: 15px;
+  transition: transform 0.3s ease-in-out;
+  margin-top: 5px;
+}
 /* SECTION ASIDE - SEARCH BOX */
 
 .search-field {
@@ -453,17 +463,28 @@ nav .megamenu ul.megamenu-row li a {
 }
 
 /* MAIN  */
-main .site-navigation-bar {
+main .breadcrumbs {
   margin-top: 17px;
   margin-bottom: 30px;
 }
-main .site-navigation-bar a {
+main .breadcrumbs > * {
+  margin-right: 4px;
+}
+main .breadcrumbs > img {
+  margin-bottom: 2px;
+}
+main .breadcrumbs a,
+main .breadcrumbs p {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: #050723;
   text-decoration: none;
+  display: inline-block;
+}
+main .breadcrumbs p {
+  margin: 0;
 }
 main .product-listing {
   margin-bottom: 20px;
@@ -701,13 +722,30 @@ main .product-submission .form-field p {
   color: #050723;
   margin-bottom: 8px;
 }
-main .product-submission .form-field button.bottle-size,
-main .product-submission .form-field button.bottle-quantity {
+/* main .product-submission .form-field input.bottle-size,
+main .product-submission .form-field input.bottle-quantity {
   background: #f2f4f7;
   border: 1px solid #c0c0c0;
   border-radius: 4px;
   padding: 8px 16px 8px 12px;
+} */
+input[type="radio"] {
+  display: none;
 }
+
+input[type="radio"] + label {
+  display: inline-block;
+  background-color: #f2f4f7;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+  padding: 8px 16px 8px 12px;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #0727b7;
+  color: #fff;
+}
+
 main .product-submission button.add-checkout {
   padding: 8px 40px;
   background: #0727b7;
@@ -1007,6 +1045,10 @@ nav ul.navigation-menu-mobile .navigation-menu-mobile-dropdown li a {
     list-style: none;
     padding: 0;
     margin: 0;
+  }
+  main .breadcrumbs > a,
+  main .breadcrumbs > p {
+    padding: 8px 0px;
   }
   li.mobile-menu-handle-2 img {
     width: 87px;

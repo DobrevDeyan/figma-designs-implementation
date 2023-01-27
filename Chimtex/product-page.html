@@ -84,12 +84,13 @@
             /></a>
           </li>
           <li><a href="./index.html">Начало</a></li>
-          <li class="dropdown-menu-container">
+          <li class="dropdown-menu-container products">
             <a href="#" class="dropdown-button">
               <p>Продукти</p>
               <img
                 src="./images/home-page-images/arrow-down.svg"
                 alt="arrowDown"
+                class="arrow-svg"
               />
             </a>
           </li>
@@ -382,7 +383,7 @@
       </nav>
     </header>
     <main>
-      <div class="site-navigation-bar container container-wrap">
+      <div class="breadcrumbs container container-wrap">
         <img src="./images/product-page-images/home-icon.svg" alt="home-icon" />
         <img
           src="./images/product-page-images/arrow-right.svg"
@@ -403,7 +404,7 @@
           src="./images/product-page-images/arrow-right.svg"
           alt="arrow-right"
         />
-        <a href="#">Колба със шлиф, капковидна форма</a>
+        <p>Колба със шлиф, капковидна форма</p>
       </div>
       <div class="container container-wrap product-listing">
         <div class="row">
@@ -445,18 +446,78 @@
             <form action="#" method="#" class="product-submission">
               <div class="form-field">
                 <p>Размер</p>
-                <button class="bottle-size" type="button">10 мл.</button>
-                <button class="bottle-size" type="button">25 мл.</button>
-                <button class="bottle-size" type="button">50 мл.</button>
-                <button class="bottle-size" type="button">100 мл.</button>
-                <button class="bottle-size" type="button">250 мл.</button>
+                <input
+                  type="radio"
+                  name="bottle-size"
+                  value="10 мл."
+                  id="size-10"
+                  class="bottle-size"
+                  checked
+                />
+                <label for="size-10">10 мл.</label>
+                <input
+                  type="radio"
+                  name="bottle-size"
+                  value="25 мл."
+                  id="size-25"
+                  class="bottle-size"
+                />
+                <label for="size-25">25 мл.</label>
+                <input
+                  type="radio"
+                  name="bottle-size"
+                  value="50 мл."
+                  id="size-50"
+                  class="bottle-size"
+                />
+                <label for="size-50">50 мл.</label>
+                <input
+                  type="radio"
+                  name="bottle-size"
+                  value="100 мл."
+                  id="size-100"
+                  class="bottle-size"
+                />
+                <label for="size-100">100 мл.</label>
+                <input
+                  type="radio"
+                  name="bottle-size"
+                  value="250 мл."
+                  id="size-250"
+                  class="bottle-size"
+                />
+                <label for="size-250">250 мл.</label>
               </div>
+
               <div class="form-field">
                 <p>Брой в опаковка</p>
-                <button class="bottle-quantity" type="button">7 бр.</button>
-                <button class="bottle-quantity" type="button">10 бр.</button>
-                <button class="bottle-quantity" type="button">60 бр.</button>
+                <input
+                  type="radio"
+                  name="bottle-quantity"
+                  value="7 бр."
+                  id="quantity-7"
+                  class="bottle-quantity"
+                  checked
+                />
+                <label for="quantity-7">7 бр.</label>
+                <input
+                  type="radio"
+                  name="bottle-quantity"
+                  value="10 бр."
+                  id="quantity-10"
+                  class="bottle-quantity"
+                />
+                <label for="quantity-10">10 бр.</label>
+                <input
+                  type="radio"
+                  name="bottle-quantity"
+                  value="60 бр."
+                  id="quantity-60"
+                  class="bottle-quantity"
+                />
+                <label for="quantity-60">60 бр.</label>
               </div>
+
               <div class="form-field">
                 <div>
                   <p>Количество</p>

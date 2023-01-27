@@ -68,7 +68,17 @@ li.language-dropdown a {
 li.language-dropdown a img:nth-child(2) {
   margin-left: 6px;
 }
-
+.arrow-up {
+  transform: rotate(180deg);
+}
+.arrow-down {
+  transform: rotate(0deg);
+}
+.arrow-svg {
+  width: 15px;
+  transition: transform 0.3s ease-in-out;
+  margin-top: 5px;
+}
 /* SECTION ASIDE - SEARCH BOX */
 
 .search-field {
