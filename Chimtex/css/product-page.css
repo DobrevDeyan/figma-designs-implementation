@@ -1086,6 +1086,11 @@ nav ul.navigation-menu-mobile .navigation-menu-mobile-dropdown li a {
   section.similar-products .col-sm-6 {
     margin: 10px;
   }
+  /* negating bootstrap row>* padding only for the cards */
+  section.similar-products .row > * {
+    padding-right: calc(var(--bs-gutter-x) * 0);
+    padding-left: calc(var(--bs-gutter-x) * 0);
+  }
   .my-2 {
     margin-top: 1rem;
     margin-bottom: 1rem;
