@@ -90,12 +90,24 @@ $(document).ready(function () {
 })
 // PASSWORD INPUT VISIBILITY SWITCHER
 
-$(".toggle-password-visibility").on("click", function () {
+$(".first-input").on("click", function () {
   if ($(".old-password").attr("type") === "password") {
     $(".old-password").attr("type", "text")
-    $(this).find("path").attr("fill", "red")
   } else {
     $(".old-password").attr("type", "password")
-    $(this).find("path").attr("fill", "black")
+  }
+})
+$(".second-input").on("click", function () {
+  if ($(".new-password").attr("type") === "password") {
+    $(".new-password").attr("type", "text")
+  } else {
+    $(".new-password").attr("type", "password")
+  }
+})
+$(".third-input").on("click", function () {
+  if ($(".retype-password").attr("type") === "password") {
+    $(".retype-password").attr("type", "text")
+  } else {
+    $(".retype-password").attr("type", "password")
   }
 })

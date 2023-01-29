@@ -506,7 +506,7 @@ main section.information article.user-info {
   background: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-bottom: 24px;
+  margin-bottom: 64px;
 }
 main section.information article.user-info .article-intro {
   display: flex;
@@ -659,6 +659,64 @@ section.information form input:focus {
   background-size: 25px 15px;
   background-position: 99%;
   background-repeat: no-repeat;
+  cursor: pointer;
+}
+main .orders-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  color: #050723;
+  margin-bottom: 24px;
+}
+/* SECTION TABLE START */
+.table-container {
+  overflow-x: scroll;
+}
+table {
+  width: 100%;
+  border: 1px solid #d7d7d7;
+  border-radius: 8px;
+  margin-bottom: 128px;
+  white-space: nowrap;
+  /* display: table; */
+  /* border-collapse: separate; */
+  /* border-spacing: 0; */
+  /* overflow: auto; */
+  /* table-layout: auto; */
+}
+table tr {
+  border-bottom: 1px solid #d7d7d7;
+}
+table thead tr th:first-child p,
+table thead tr th:first-child img {
+  display: inline-flex;
+}
+table thead tr th p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #050723;
+  margin: 0;
+  padding: 16px 16px;
+}
+table tbody tr th p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #050723;
+  padding: 16px 16px;
+  margin: 0;
+}
+table tbody tr th a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: underline;
+  color: #0727b7;
+}
+table tbody th:has(a) {
   cursor: pointer;
 }
 /* FOOTER */
@@ -864,6 +922,15 @@ nav ul.navigation-menu-mobile .navigation-menu-mobile-dropdown li a {
   }
   main h3 {
     font-size: 24px !important;
+  }
+  section.information form input {
+    width: 100%;
+  }
+  section.information .password-container img {
+    position: absolute;
+    top: 22%;
+    right: 1%;
+    color: white;
   }
   footer {
     overflow: hidden;
