@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Lora-Regular";
+  src: url("../fonts/lora/Lora-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lora-Bold";
+  src: url("../fonts/lora/Lora-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lora-Italic";
+  src: url("../fonts/lora/Lora-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lora-BoldItalic";
+  src: url("../fonts/lora/Lora-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Verdana-Regular";
+  src: url("../fonts/Verdana/verdana.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Verdana-Bold";
+  src: url("../fonts/Verdana/verdanab.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Verdana-Italic";
+  src: url("../fonts/Verdana/verdanai.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Verdana-BoldItalic";
+  src: url("../fonts/Verdana/verdanaz.ttf") format("truetype");
+}

@@ -1,0 +1,110 @@
+/* MESSAGE SUCCESS UP MODAL STYLES */
+
+body .modal-message-container {
+  width: 895px;
+  height: 863px;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px #333;
+  z-index: 2;
+}
+body .modal-message-container .modal-message {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .modal-message-container .modal-message button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 8px;
+  border: 1px solid var(--shade-1);
+  border-radius: 2px;
+  width: 199px;
+  height: 46px;
+  cursor: pointer;
+  background: transparent;
+}
+body .modal-message-container .modal-message button p {
+  font-family: "Verdana-Bold", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.011em;
+  color: var(--shade-1);
+  margin: 0;
+}
+body .modal-message-container .modal-message p {
+  font-family: "Verdana-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+  margin-bottom: 14px;
+}
+body .modal-message-container .modal-message p + p {
+  font-family: "Verdana-Regular", sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--shade-2);
+  margin-bottom: 32px;
+}
+body .modal-message-container .modal-message img {
+  width: 376px;
+  margin-bottom: 56px;
+}
+body .modal-message-container .modal-message img:first-child {
+  width: 19px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+#modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  body .modal-message-container {
+    width: 327px;
+    height: 578px;
+  }
+  body .modal-message-container .modal-message img {
+    margin-bottom: 25px;
+  }
+  body .modal-message-container .modal-message p {
+    font-family: "Verdana-Regular", sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+  body .modal-message-container .modal-message p + p {
+    font-family: "Verdana-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--shade-2);
+    margin-bottom: 24px;
+  }
+  body .modal-message-container .modal-message button {
+    width: 100%;
+  }
+}
