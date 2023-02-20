@@ -4,6 +4,47 @@ import $ from "jquery"
 import React, { useEffect } from "react"
 import "slick-carousel"
 import "slick-carousel/slick/slick.css"
+import checmical_bottles from "../../assets/home-page-images/chemicals-bottles.png"
+import client_1 from "../../assets/home-page-images/client-1.svg"
+import client_2 from "../../assets/home-page-images/client-2.svg"
+import client_3 from "../../assets/home-page-images/client-3.svg"
+import client_4 from "../../assets/home-page-images/client-4.svg"
+import client_5 from "../../assets/home-page-images/client-5.svg"
+import client_6 from "../../assets/home-page-images/client-6.svg"
+import client_7 from "../../assets/home-page-images/client-7.svg"
+import client_8 from "../../assets/home-page-images/client-8.svg"
+import consumables from "../../assets/home-page-images/consumables.png"
+import doctor from "../../assets/home-page-images/doctor-side-view.png"
+import logo_1 from "../../assets/home-page-images/logos/logo-1.png"
+import logo_10 from "../../assets/home-page-images/logos/logo-10.png"
+import logo_11 from "../../assets/home-page-images/logos/logo-11.png"
+import logo_12 from "../../assets/home-page-images/logos/logo-12.png"
+import logo_13 from "../../assets/home-page-images/logos/logo-13.png"
+import logo_14 from "../../assets/home-page-images/logos/logo-14.png"
+import logo_15 from "../../assets/home-page-images/logos/logo-15.png"
+import logo_16 from "../../assets/home-page-images/logos/logo-16.png"
+import logo_2 from "../../assets/home-page-images/logos/logo-2.png"
+import logo_3 from "../../assets/home-page-images/logos/logo-3.png"
+import logo_4 from "../../assets/home-page-images/logos/logo-4.png"
+import logo_5 from "../../assets/home-page-images/logos/logo-5.png"
+import logo_6 from "../../assets/home-page-images/logos/logo-6.png"
+import logo_7 from "../../assets/home-page-images/logos/logo-7.png"
+import logo_8 from "../../assets/home-page-images/logos/logo-8.png"
+import logo_9 from "../../assets/home-page-images/logos/logo-9.png"
+import gloves_1 from "../../assets/home-page-images/new-products-images/gloves-1.png"
+import gloves_2 from "../../assets/home-page-images/new-products-images/gloves-2.png"
+import gloves_3 from "../../assets/home-page-images/new-products-images/gloves-3.png"
+import gloves_4 from "../../assets/home-page-images/new-products-images/gloves-4.png"
+import gloves_5 from "../../assets/home-page-images/new-products-images/gloves-5.png"
+import slider_left from "../../assets/home-page-images/new-products-left.svg"
+import slider_right from "../../assets/home-page-images/new-products-right.svg"
+import service_1 from "../../assets/home-page-images/slider-services-1.png"
+import service_2 from "../../assets/home-page-images/slider-services-2.png"
+import service_3 from "../../assets/home-page-images/slider-services-3.png"
+import service_4 from "../../assets/home-page-images/slider-services-4.png"
+import service_5 from "../../assets/home-page-images/slider-services-5.png"
+import service_6 from "../../assets/home-page-images/slider-services-6.png"
+
 import "./home.css"
 
 function Home() {
@@ -165,10 +206,7 @@ function Home() {
           <div className="col-lg-2 col-md-4 col-6">
             <div className="card">
               <div className="card-img-container">
-                <img
-                  src="./images/home-page-images/slider-services-1.png"
-                  alt="service"
-                />
+                <img src={service_1} alt="service-1" />
               </div>
               <h4>
                 Медицински <br />
@@ -179,10 +217,7 @@ function Home() {
           <div className="col-lg-2 col-md-4 col-6">
             <div className="card">
               <div className="card-img-container">
-                <img
-                  src="./images/home-page-images/slider-services-2.png"
-                  alt="service"
-                />
+                <img src={service_2} alt="service-2" />
               </div>
               <h4>
                 Химикали и<br />
@@ -193,10 +228,7 @@ function Home() {
           <div className="col-lg-2 col-md-4 col-6">
             <div className="card">
               <div className="card-img-container">
-                <img
-                  src="./images/home-page-images/slider-services-3.png"
-                  alt="service"
-                />
+                <img src={service_3} alt="service-3" />
               </div>
               <h4>
                 Лабораторни <br />
@@ -207,10 +239,7 @@ function Home() {
           <div className="col-lg-2 col-md-4 col-6">
             <div className="card">
               <div className="card-img-container">
-                <img
-                  src="./images/home-page-images/slider-services-4.png"
-                  alt="service"
-                />
+                <img src={service_4} alt="service-4" />
               </div>
               <h4>
                 Термометри и <br />
@@ -221,10 +250,7 @@ function Home() {
           <div className="col-lg-2 col-md-4 col-sm-6 col-xs-6 col-6">
             <div className="card">
               <div className="card-img-container">
-                <img
-                  src="./images/home-page-images/slider-services-5.png"
-                  alt="service"
-                />
+                <img src={service_5} alt="service-5" />
               </div>
               <h4>
                 Домакинско <br />
@@ -235,10 +261,7 @@ function Home() {
           <div className="col-lg-2 col-md-4 col-6">
             <div className="card">
               <div className="card-img-container">
-                <img
-                  src="./images/home-page-images/slider-services-6.png"
-                  alt="service"
-                />
+                <img src={service_6} alt="service-6" />
               </div>
               <h4>
                 Коронавирус <br />
@@ -252,52 +275,52 @@ function Home() {
         <h4>Производители</h4>
         <div className="manufacturers-slider">
           <div className="manufacturer-img-container">
-            <img src="./images/home-page-images/logos/logo-1.png" alt="logo" />
+            <img src={logo_1} alt="logo-1" />
           </div>
           <div className="manufacturer-img-container">
-            <img src="./images/home-page-images/logos/logo-2.png" alt="logo" />
+            <img src={logo_2} alt="logo-2" />
           </div>
           <div className="manufacturer-img-container">
-            <img src="./images/home-page-images/logos/logo-3.png" alt="logo" />
+            <img src={logo_3} alt="logo-3" />
           </div>
           <div className="manufacturer-img-container">
-            <img src="./images/home-page-images/logos/logo-4.png" alt="logo" />
+            <img src={logo_4} alt="logo-4" />
           </div>
           <div className="manufacturer-img-container">
-            <img src="./images/home-page-images/logos/logo-5.png" alt="logo" />
+            <img src={logo_5} alt="logo-5" />
           </div>
           <div className="manufacturer-img-container">
-            <img src="./images/home-page-images/logos/logo-6.png" alt="logo" />
+            <img src={logo_6} alt="logo-6" />
           </div>
           <div className="manufacturer-img-container">
-            <img src="./images/home-page-images/logos/logo-7.png" alt="logo" />
+            <img src={logo_7} alt="logo-7" />
           </div>
           <div className="manufacturer-img-container">
-            <img src="./images/home-page-images/logos/logo-8.png" alt="logo" />
+            <img src={logo_8} alt="logo-8" />
           </div>
           <div className="manufacturer-img-container">
-            <img src="./images/home-page-images/logos/logo-9.png" alt="logo" />
+            <img src={logo_9} alt="logo-9" />
           </div>
           <div className="manufacturer-img-container">
-            <img src="./images/home-page-images/logos/logo-10.png" alt="logo" />
+            <img src={logo_10} alt="logo-10" />
           </div>
           <div className="manufacturer-img-container">
-            <img src="./images/home-page-images/logos/logo-11.png" alt="logo" />
+            <img src={logo_11} alt="logo-11" />
           </div>
           <div className="manufacturer-img-container">
-            <img src="./images/home-page-images/logos/logo-12.png" alt="logo" />
+            <img src={logo_12} alt="logo-12" />
           </div>
           <div className="manufacturer-img-container">
-            <img src="./images/home-page-images/logos/logo-13.png" alt="logo" />
+            <img src={logo_13} alt="logo-13" />
           </div>
           <div className="manufacturer-img-container">
-            <img src="./images/home-page-images/logos/logo-14.png" alt="logo" />
+            <img src={logo_14} alt="logo-14" />
           </div>
           <div className="manufacturer-img-container">
-            <img src="./images/home-page-images/logos/logo-15.png" alt="logo" />
+            <img src={logo_15} alt="logo-15" />
           </div>
           <div className="manufacturer-img-container">
-            <img src="./images/home-page-images/logos/logo-16.png" alt="logo" />
+            <img src={logo_16} alt="logo-16" />
           </div>
         </div>
       </section>
@@ -309,11 +332,7 @@ function Home() {
               <div className="col-lg-2 col-sm-6">
                 <div className="card">
                   <div className="card-image-container">
-                    <img
-                      src="./images/home-page-images/new-products-images/gloves-5.png"
-                      alt="1"
-                      className="card-image"
-                    />
+                    <img src={gloves_1} alt="gloves" className="card-image" />
                   </div>
                   <h4 className="card-title">
                     Ръкавици медицински, латекс без пудра
@@ -326,11 +345,7 @@ function Home() {
               <div className="col-lg-2 col-sm-6">
                 <div className="card">
                   <div className="card-image-container">
-                    <img
-                      src="./images/home-page-images/new-products-images/gloves-1.png"
-                      alt="1"
-                      className="card-image"
-                    />
+                    <img src={gloves_2} alt="gloves" className="card-image" />
                   </div>
                   <h4 className="card-title">
                     Ръкавици медицински, латекс без пудра
@@ -343,11 +358,7 @@ function Home() {
               <div className="col-lg-2 col-sm-6">
                 <div className="card">
                   <div className="card-image-container">
-                    <img
-                      src="./images/home-page-images/new-products-images/gloves-2.png"
-                      alt="5"
-                      className="card-image"
-                    />
+                    <img src={gloves_3} alt="gloves" className="card-image" />
                   </div>
                   <h4 className="card-title">
                     Ръкавици медицински, латекс без пудра
@@ -360,11 +371,7 @@ function Home() {
               <div className="col-lg-2 col-sm-6">
                 <div className="card">
                   <div className="card-image-container">
-                    <img
-                      src="./images/home-page-images/new-products-images/gloves-3.png"
-                      alt="4"
-                      className="card-image"
-                    />
+                    <img src={gloves_4} alt="gloves" className="card-image" />
                   </div>
                   <h4 className="card-title">
                     Ръкавици медицински, латекс без пудра
@@ -377,11 +384,7 @@ function Home() {
               <div className="col-lg-2 col-sm-6">
                 <div className="card">
                   <div className="card-image-container">
-                    <img
-                      src="./images/home-page-images/new-products-images/gloves-4.png"
-                      alt="3"
-                      className="card-image"
-                    />
+                    <img src={gloves_5} alt="gloves" className="card-image" />
                   </div>
                   <h4 className="card-title">
                     Ръкавици медицински, латекс без пудра
@@ -394,11 +397,7 @@ function Home() {
               <div className="col-lg-2 col-sm-6">
                 <div className="card">
                   <div className="card-image-container">
-                    <img
-                      src="./images/home-page-images/new-products-images/gloves-5.png"
-                      alt="2"
-                      className="card-image"
-                    />
+                    <img src={gloves_1} alt="gloves" className="card-image" />
                   </div>
                   <h4 className="card-title">
                     Ръкавици медицински, латекс без пудра
@@ -411,11 +410,7 @@ function Home() {
               <div className="col-lg-2 col-sm-6">
                 <div className="card">
                   <div className="card-image-container">
-                    <img
-                      src="./images/home-page-images/new-products-images/gloves-1.png"
-                      alt="1"
-                      className="card-image"
-                    />
+                    <img src={gloves_2} alt="gloves" className="card-image" />
                   </div>
                   <h4 className="card-title">
                     Ръкавици медицински, латекс без пудра
@@ -428,12 +423,12 @@ function Home() {
             </div>
           </div>
           <img
-            src="./images/home-page-images/new-products-left.svg"
+            src={slider_left}
             alt="arrowLeft"
             className="slider-arrow-prev"
           />
           <img
-            src="./images/home-page-images/new-products-right.svg"
+            src={slider_right}
             alt="arrowRight"
             className="slider-arrow-next"
           />
@@ -458,14 +453,10 @@ function Home() {
             </button>
           </div>
         </div>
-        <img
-          className="medical-branch-img"
-          src="./images/home-page-images/doctor-side-view.png"
-          alt="doc"
-        />
+        <img className="medical-branch-img" src={doctor} alt="doc" />
       </section>
       <section className="laboratory-branch">
-        <img src="./images/home-page-images/consumables.png" alt="consums" />
+        <img src={consumables} alt="consumables" />
         <div className="container container-wrap">
           <div className="laboratory-content">
             <h3>Лабораторна стъклария и консумативи</h3>
@@ -486,7 +477,7 @@ function Home() {
           <div className="row justify-space-between">
             <div className="col-xl-6 d-flex">
               <img
-                src="./images/home-page-images/chemicals-bottles.png"
+                src={checmical_bottles}
                 alt="checmicalBottles"
                 className="bottles-pic"
               />
@@ -506,7 +497,7 @@ function Home() {
                 нашите клиенти. <br />
                 <br />
                 <img
-                  src="./images/home-page-images/chemicals-bottles.png"
+                  src={checmical_bottles}
                   alt="checmicalBottles"
                   className="bottles-pic-mobile"
                 />
@@ -534,10 +525,7 @@ function Home() {
       <section className="our-clients container container-wrap">
         <div className="client-item box client-item-1 a">
           <div className="banner">
-            <img
-              src="./images/home-page-images/client-1.svg"
-              alt="clientLogo"
-            />
+            <img src={client_1} alt="clientLogo" />
             <h4>УМБАЛ Свети Георги ЕАД</h4>
           </div>
           <div className="description">
@@ -552,10 +540,7 @@ function Home() {
         </div>
         <div className="client-item box client-item-2 a">
           <div className="banner">
-            <img
-              src="./images/home-page-images/client-2.svg"
-              alt="clientLogo"
-            />
+            <img src={client_2} alt="clientLogo" />
             <h4>Топлофикация София ЕАД</h4>
           </div>
           <div className="description">
@@ -565,10 +550,7 @@ function Home() {
         </div>
         <div className="client-item box client-item-3 a">
           <div className="banner">
-            <img
-              src="./images/home-page-images/client-3.svg"
-              alt="clientLogo"
-            />
+            <img src={client_3} alt="clientLogo" />
             <h4>Александровска болница</h4>
           </div>
           <div className="description">
@@ -579,10 +561,7 @@ function Home() {
         </div>
         <div className="client-item box client-item-4 b">
           <div className="banner">
-            <img
-              src="./images/home-page-images/client-4.svg"
-              alt="clientLogo"
-            />
+            <img src={client_4} alt="clientLogo" />
             <h4>УМБАЛ Света Екатерина</h4>
           </div>
           <div className="description">
@@ -593,10 +572,7 @@ function Home() {
         </div>
         <div className="client-item box client-item-5 b">
           <div className="banner">
-            <img
-              src="./images/home-page-images/client-5.svg"
-              alt="clientLogo"
-            />
+            <img src={client_5} alt="clientLogo" />
             <h4>Университетска болница “Лозенец”</h4>
           </div>
           <div className="description">
@@ -611,10 +587,7 @@ function Home() {
         </div>
         <div className="client-item box client-item-6 b">
           <div className="banner">
-            <img
-              src="./images/home-page-images/client-6.svg"
-              alt="clientLogo"
-            />
+            <img src={client_6} alt="clientLogo" />
             <h4>СБАЛББ Света София ЕАД</h4>
           </div>
           <div className="description">
@@ -625,10 +598,7 @@ function Home() {
         </div>
         <div className="client-item box client-item-7 c">
           <div className="banner">
-            <img
-              src="./images/home-page-images/client-7.svg"
-              alt="clientLogo"
-            />
+            <img src={client_7} alt="clientLogo" />
             <h4>Военнамедицинска Академия</h4>
           </div>
           <div className="description">
@@ -642,10 +612,7 @@ function Home() {
         </div>
         <div className="client-item box client-item-8 c">
           <div className="banner">
-            <img
-              src="./images/home-page-images/client-8.svg"
-              alt="clientLogo"
-            />
+            <img src={client_8} alt="clientLogo" />
             <h4>Брикел ЕАД</h4>
           </div>
           <div className="description">
