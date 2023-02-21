@@ -398,6 +398,22 @@ nav .megamenu ul.megamenu-row li a {
   margin: 0;
   padding: 0;
 }
+/* classes for react css group  */
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 800ms ease-in;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 800ms ease-out;
+}
+
 .tools-menu ul .account-profile-menu {
   position: absolute;
   top: 71px;

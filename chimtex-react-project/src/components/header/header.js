@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react"
+import { CSSTransition, TransitionGroup } from "react-transition-group"
 import arrow_down from "../../assets/home-page-images/arrow-down.svg"
 import arrow_right from "../../assets/home-page-images/arrow-right.svg"
 import arrow_up from "../../assets/home-page-images/arrow-up.svg"
@@ -15,12 +16,16 @@ import search_item from "../../assets/home-page-images/search-item.png"
 import search from "../../assets/home-page-images/search.svg"
 import shopping_cart from "../../assets/home-page-images/shopping-cart.svg"
 import "./header.css"
+
 function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const handleDropdownClick = () => {
     setIsOpen(!isOpen)
   }
   const handleArrowClick = () => {
+    setIsOpen(!isOpen)
+  }
+  function handleToggle() {
     setIsOpen(!isOpen)
   }
 
@@ -421,7 +426,181 @@ function Header() {
             <h4>Коронавирус КОВИД-19</h4>
           </ul>
         </div> */}
-        {isOpen && (
+        <TransitionGroup>
+          {isOpen && (
+            <CSSTransition classNames="fade" timeout={800}>
+              <div className="megamenu" key="megamenu">
+                <ul className="megamenu-row">
+                  <h4>Медицински консумативи</h4>
+                  <li>
+                    <a href="#">Кръвни изследвания и инвитро</a>
+                  </li>
+                  <li>
+                    <a href="#">Контейнери </a>
+                  </li>
+                  <li>
+                    <a href="#">Тампони</a>
+                  </li>
+                  <li>
+                    <a href="#">Епруветки и микроепруветки</a>
+                  </li>
+                  <li>
+                    <a href="#">Пипети</a>
+                  </li>
+                  <li>
+                    <a href="#">Автоматични пипети</a>
+                  </li>
+                  <li>
+                    <a href="#">Ръкавици</a>
+                  </li>
+                  <li>
+                    <a href="#">Транспортиране на проби</a>
+                  </li>
+                  <li>
+                    <a href="#">Архиватори, стативи и кутии за съхранение</a>
+                  </li>
+                  <li>
+                    <a href="#">Връхчета</a>
+                  </li>
+                  <li>
+                    <a href="#">Предметни и покривни стъкла</a>
+                  </li>
+                  <li>
+                    <a href="#">Общ болничен консуматив</a>
+                  </li>
+                  <li>
+                    <a href="#">Ветеринарна медицина</a>
+                  </li>
+                  <li>
+                    <a href="#">Йозета</a>
+                  </li>
+                  <li>
+                    <a href="#">Стоматология</a>
+                  </li>
+                  <li>
+                    <a href="#">Блюда петри</a>
+                  </li>
+                </ul>
+                <ul className="megamenu-row">
+                  <h4>Химикали и реактиви</h4>
+                  <li>
+                    <a href="#">Стандартни разтвори</a>
+                  </li>
+                  <li>
+                    <a href="#">Хроматография</a>
+                  </li>
+                  <li>
+                    <a href="#">Техническо качество</a>
+                  </li>
+                  <li>
+                    <a href="#">Реактиви за лабораторни анализи</a>
+                  </li>
+                  <li>
+                    <a href="#">Буферни разтворипети</a>
+                  </li>
+                  <li>
+                    <a href="#">Хранителни и чисти</a>
+                  </li>
+                  <li>
+                    <a href="#">Индикатори</a>
+                  </li>
+                  <li>
+                    <a href="#">Фармацевтично качество</a>
+                  </li>
+                  <li>
+                    <a href="#">Тестове</a>
+                  </li>
+                </ul>
+                <ul className="megamenu-row">
+                  <h4>Лабораторни консумативи</h4>
+                  <li>
+                    <a href="#">Колби</a>
+                  </li>
+                  <li>
+                    <a href="#">Филтърна и индикаторна хартия</a>
+                  </li>
+                  <li>
+                    <a href="#">Лабораторни уреди</a>
+                  </li>
+                  <li>
+                    <a href="#">Пипети стъклени</a>
+                  </li>
+                  <li>
+                    <a href="#">Адаптери и преходници</a>
+                  </li>
+                  <li>
+                    <a href="#">Банки и шишета</a>
+                  </li>
+                  <li>
+                    <a href="#">Метални</a>
+                  </li>
+                  <li>
+                    <a href="#">Общ лабораторен консуматив</a>
+                  </li>
+                  <li>
+                    <a href="#">Порцелан</a>
+                  </li>
+                  <li>
+                    <a href="#">Бюрети</a>
+                  </li>
+                  <li>
+                    <a href="#">Везни</a>
+                  </li>
+                  <li>
+                    <a href="#">Тръби</a>
+                  </li>
+                  <li>
+                    <a href="#">Фунии</a>
+                  </li>
+                  <li>
+                    <a href="#">Пластмасови изделия</a>
+                  </li>
+                </ul>
+                <ul className="megamenu-row">
+                  <h4>Ареометри и термометри</h4>
+                  <li>
+                    <a href="#">Ареометри</a>
+                  </li>
+                  <li>
+                    <a href="#">Термометри контактни</a>
+                  </li>
+                  <li>
+                    <a href="#">Термометри индустриални</a>
+                  </li>
+                  <li>
+                    <a href="#">Термометри дигитални</a>
+                  </li>
+                  <li>
+                    <a href="#">Термометри лабораторниби</a>
+                  </li>
+                  <li>
+                    <a href="#">Вискозиметри</a>
+                  </li>
+                  <li>
+                    <a href="#">Влагомери</a>
+                  </li>
+                </ul>
+                <ul className="megamenu-row">
+                  <h4>Домакинско стъкло SIMAX</h4>
+                  <li>
+                    <a href="#">Съдове за печене</a>
+                  </li>
+                  <li>
+                    <a href="#">Съдове за готвене</a>
+                  </li>
+                  <li>
+                    <a href="#">Съдове за сервиране</a>
+                  </li>
+                  <li>
+                    <a href="#">Съдове за съхранение</a>
+                  </li>
+                  <h4>Коронавирус КОВИД-19</h4>
+                </ul>
+              </div>
+            </CSSTransition>
+          )}
+        </TransitionGroup>
+        {/* {isOpen && (
           <div className="megamenu">
             <ul className="megamenu-row">
               <h4>Медицински консумативи</h4>
@@ -590,7 +769,7 @@ function Header() {
               <h4>Коронавирус КОВИД-19</h4>
             </ul>
           </div>
-        )}
+        )} */}
       </nav>
     </header>
   )
