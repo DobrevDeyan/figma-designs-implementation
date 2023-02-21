@@ -14,17 +14,17 @@ import "./profile.css"
 function Profile() {
   return (
     <main>
-      <div class="breadcrumbs container container-wrap">
+      <div className="breadcrumbs container container-wrap">
         <img src={home_icon} alt="home-icon" />
         <img src={arrow_right} alt="arrow-right" />
         <p>Профил</p>
       </div>
-      <section class="container-wrap information">
-        <h4 class="section-title">Информация</h4>
-        <article class="user-info col-xl-7">
-          <div class="article-intro">
-            <h4 class="article-heading">Информация за потребителя</h4>
-            <div class="change-button">
+      <section className="container-wrap information">
+        <h4 className="section-title">Информация</h4>
+        <article className="user-info col-xl-7">
+          <div className="article-intro">
+            <h4 className="article-heading">Информация за потребителя</h4>
+            <div className="change-button">
               <img src={pen} alt="pencil-edit-button" />
               <p>Промени</p>
             </div>
@@ -35,89 +35,93 @@ function Profile() {
           <p>Частно лице</p>
         </article>
 
-        <article class="user-info col-xl-7">
-          <div class="article-intro">
-            <h4 class="article-heading">Адреси</h4>
+        <article className="user-info col-xl-7">
+          <div className="article-intro">
+            <h4 className="article-heading">Адреси</h4>
           </div>
-          <div class="article-row">
+          <div className="article-row">
             <div>
-              <input type="radio" name="adress" class="address" />
+              <input type="radio" name="adress" className="address" />
               <p>ул. „Марагидик“ №10, 12, 1185 Оборище, София</p>
             </div>
             <div>
-              <a href="#" class="edit">
+              <a href="#" className="edit">
                 Редактирай
               </a>
-              <a href="#" class="delete">
+              <a href="#" className="delete">
                 Изтрий
               </a>
             </div>
           </div>
-          <div class="article-row">
+          <div className="article-row">
             <div>
-              <input type="radio" name="adress" class="address" />
+              <input type="radio" name="adress" className="address" />
               <p>ул. „Марагидик“ №10, 12, 1185 Оборище, София</p>
             </div>
             <div>
-              <a href="#" class="edit">
+              <a href="#" className="edit">
                 Редактирай
               </a>
-              <a href="#" class="delete">
+              <a href="#" className="delete">
                 Изтрий
               </a>
             </div>
           </div>
-          <button type="button" class="add-address">
+          <button type="button" className="add-address">
             <p>Добави нов адрес</p>
           </button>
         </article>
 
-        <article class="user-info col-xl-7">
-          <div class="article-intro">
-            <h4 class="article-heading">Смяна на парола</h4>
+        <article className="user-info col-xl-7">
+          <div className="article-intro">
+            <h4 className="article-heading">Смяна на парола</h4>
           </div>
           <form method="post" action="">
             <label for="old-password">Текуща Парола</label>
-            <div class="password-container">
-              <input type="password" class="old-password" placeholder=" " />
+            <div className="password-container">
+              <input type="password" className="old-password" placeholder=" " />
               <img
                 src={password}
                 alt="visibility"
-                class="toggle-password-visibility first-input"
+                className="toggle-password-visibility first-input"
               />
             </div>
             <p>Паролата трябва да съдържа поне 8 символа и 1 цифра</p>
             <label for="new-password">Нова Парола</label>
-            <div class="password-container">
-              <input type="password" class="new-password" placeholder=" " />
+            <div className="password-container">
+              <input type="password" className="new-password" placeholder=" " />
               <img
                 src={password}
                 alt="visibility"
-                class="toggle-password-visibility first-input"
+                className="toggle-password-visibility first-input"
               />
             </div>
             <p>Паролата трябва да съдържа поне 8 символа и 1 цифра</p>
             <label for="retype-new-password">Повтори паролата</label>
-            <div class="password-container">
-              <input type="password" class="retype-password" placeholder=" " />
+            <div className="password-container">
+              <input
+                type="password"
+                className="retype-password"
+                placeholder=" "
+              />
               <img
                 src={password}
                 alt="visibility"
-                class="toggle-password-visibility first-input"
+                className="toggle-password-visibility first-input"
               />
             </div>
             <p>Паролата трябва да съдържа поне 8 символа и 1 цифра</p>
-            <button type="button" class="add-address">
+            <button type="button" className="add-address">
               <p>Запази промените</p>
             </button>
           </form>
         </article>
       </section>
-      <div class="container-wrap">
-        <h4 class="orders-title">История на поръчките</h4>
+      <div className="container-wrap">
+        <h4 className="orders-title">История на поръчките</h4>
       </div>
-      <section class="container-wrap">
-        <div class="table-container">
+      <section className="container-wrap">
+        <div className="table-container">
           <table>
             <thead>
               <tr>

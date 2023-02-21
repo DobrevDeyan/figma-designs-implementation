@@ -6,7 +6,6 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 70px;
   position: relative;
 }
 header nav ul {
@@ -370,7 +369,7 @@ nav .megamenu {
   justify-content: space-between;
   align-items: flex-start;
   padding: 24px 64px;
-  display: none;
+  display: flex;
 }
 nav .megamenu ul.megamenu-row {
   display: flex;
