@@ -69,6 +69,7 @@ li.language-dropdown a img:nth-child(2) {
   height: 32px;
   border-radius: 4px;
   outline: none;
+  padding: 0 10px;
 }
 nav input.search-field::placeholder {
   background-image: url(../../assets/home-page-images/search.svg);

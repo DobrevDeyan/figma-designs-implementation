@@ -4,7 +4,7 @@ import $ from "jquery"
 import React, { useEffect } from "react"
 import "slick-carousel"
 import "slick-carousel/slick/slick.css"
-import checmical_bottles from "../../assets/home-page-images/chemicals-bottles.png"
+import chemical_bottles from "../../assets/home-page-images/chemicals-bottles.png"
 import client_1 from "../../assets/home-page-images/client-1.svg"
 import client_2 from "../../assets/home-page-images/client-2.svg"
 import client_3 from "../../assets/home-page-images/client-3.svg"
@@ -477,7 +477,7 @@ function Home() {
           <div className="row justify-space-between">
             <div className="col-xl-6 d-flex">
               <img
-                src={checmical_bottles}
+                src={chemical_bottles}
                 alt="checmicalBottles"
                 className="bottles-pic"
               />
@@ -497,7 +497,7 @@ function Home() {
                 нашите клиенти. <br />
                 <br />
                 <img
-                  src={checmical_bottles}
+                  src={chemical_bottles}
                   alt="checmicalBottles"
                   className="bottles-pic-mobile"
                 />

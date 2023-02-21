@@ -24,13 +24,13 @@ function Header() {
             <img src="" alt="menu-mobile-button" />
           </li>
           <li className="mobile-menu-handle-2">
-            <a href="./index.html">
+            <a href="/">
               <img src={site_logo} alt="chimtexLogo" />
             </a>
           </li>
           <div className="navigation-menu-mobile-dropdown">
             <li>
-              <a href="./index.html">Начало</a>
+              <a href="./">Начало</a>
             </li>
             <li>
               <a href="#" className="products">
@@ -48,7 +48,7 @@ function Header() {
               <a href="#">Промоции</a>
             </li>
             <li>
-              <a href="./about-us-page.html">За нас</a>
+              <a href="/about">За нас</a>
             </li>
             <li>
               <a href="#">Контакти</a>
@@ -64,12 +64,12 @@ function Header() {
         </ul>
         <ul className="navigation-menu">
           <li>
-            <a href="./index.html">
+            <a href="/">
               <img src={site_logo} alt="chimtexLogo" />
             </a>
           </li>
           <li>
-            <a href="./index.html">Начало</a>
+            <a href="/">Начало</a>
           </li>
           <li className="dropdown-menu-container products">
             <a href="#" className="dropdown-button">
@@ -81,7 +81,7 @@ function Header() {
             <a href="#">Промоции</a>
           </li>
           <li>
-            <a href="./about-us-page.html">За нас</a>
+            <a href="./about">За нас</a>
           </li>
           <li>
             <a href="#">Контакти</a>
