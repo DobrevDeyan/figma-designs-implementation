@@ -1119,52 +1119,6 @@ footer ul.menu li:not(:last-child) {
   margin-bottom: 8px;
 }
 
-/* HIDDEN ITEMS CLASSES */
-.navigation-menu-mobile {
-  position: relative;
-}
-.search-container-mobile-button,
-.navigation-menu-mobile {
-  display: none;
-}
-nav.container-wrap.container {
-  /* FIXED HEIGHT IN ORDER NEXT RULE WITH CALC TO WORK */
-  height: 48px;
-}
-.navigation-menu-mobile-dropdown {
-  background: #ffffff;
-  /* height: max-content; */
-  /* height: 100vh; */
-  height: calc(100vh - 48px);
-  position: absolute;
-  top: 41px;
-  left: -12px;
-  z-index: 1;
-  padding: 16px;
-  width: 264px;
-  flex-direction: column;
-  overflow: hidden;
-}
-.navigation-menu-mobile-dropdown li:last-child {
-  margin-top: auto;
-}
-nav ul.navigation-menu-mobile .navigation-menu-mobile-dropdown li p {
-  margin: 0;
-}
-nav ul.navigation-menu-mobile .navigation-menu-mobile-dropdown li a {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0;
-  padding-bottom: 24px;
-  cursor: pointer;
-}
-.navigation-menu-mobile-dropdown li.languages {
-  display: flex;
-}
-.navigation-menu-mobile-dropdown li.languages img:first-child {
-  margin-right: 18px;
-}
 @media only screen and (max-width: 1200px) {
   .search-container-mobile-button a img {
     width: 18px;

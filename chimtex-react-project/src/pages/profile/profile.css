@@ -1,0 +1,284 @@
+/* MAIN  */
+main .breadcrumbs {
+  margin-top: 17px;
+  margin-bottom: 25px;
+}
+main .breadcrumbs > * {
+  margin-right: 4px;
+}
+main .breadcrumbs > img {
+  margin-bottom: 2px;
+}
+main .breadcrumbs a,
+main .breadcrumbs p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #050723;
+  text-decoration: none;
+  display: inline-block;
+}
+main .breadcrumbs p {
+  margin: 0;
+}
+main section.information .section-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  color: #050723;
+  margin-bottom: 8px;
+}
+main section.information .article-intro .article-heading {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #050723;
+}
+main section.information article.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-bottom: 64px;
+}
+main section.information article.user-info .article-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  width: 100%;
+}
+main section.information article.user-info .article-intro ~ p {
+  margin-bottom: 8px;
+}
+main section.information article.user-info > p:last-child {
+  margin-bottom: 0;
+}
+main section.information article.user-info .article-intro .change-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+main section.information article.user-info .article-intro .change-button img {
+  width: 14px;
+  margin-right: 6px;
+  margin-top: -4px;
+}
+main section.information article.user-info .article-intro .change-button p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #050723;
+}
+main section.information article.user-info .article-row {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #828282;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+main section.information article.user-info .article-row:nth-child(3) {
+  margin-bottom: 24px;
+}
+main section.information article.user-info .article-row,
+main section.information article.user-info .article-row div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main section.information article.user-info .article-row input[type="radio"] {
+  margin-right: 10px;
+  width: 12px;
+  height: 12px;
+  position: relative;
+}
+main
+  section.information
+  article.user-info
+  .article-row
+  input[type="radio"]:checked {
+  background: #0727b7;
+}
+main section.information article.user-info .article-row a:visited {
+  color: #d71e4a;
+}
+main section.information article.user-info .article-row a.edit {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #050723;
+}
+main section.information article.user-info .article-row a.delete {
+  margin-left: 24px;
+}
+main section.information article.user-info .article-row p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #050723;
+}
+main section.information article.user-info .article-row p:last-child {
+  margin-left: 24px;
+}
+section.information button.add-address {
+  padding: 8px 40px;
+  background: #0727b7;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  align-self: flex-end;
+}
+section.information button.add-address p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0;
+}
+main section.information article.user-info form {
+  width: 100%;
+}
+section.information label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #050723;
+  margin-bottom: 4px;
+}
+section.information input[type="password"],
+section.information input[type="text"] {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 4px 8px;
+  border: 1px solid #050723;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+section.information .password-container + p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+section.information .password-container {
+  position: relative;
+}
+section.information .password-container img {
+  position: absolute;
+  top: 22%;
+  right: 41%;
+  color: white;
+}
+
+section.information form button.add-address {
+  float: right;
+}
+section.information form input {
+  width: 60%;
+  outline: none;
+}
+section.information form input,
+section.information form input:active,
+section.information form input:focus {
+  /* background-image: url(../images/profile-page-images/password-icon.svg); */
+  background-size: 25px 15px;
+  background-position: 99%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+main .orders-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  color: #050723;
+  margin-bottom: 24px;
+}
+/* SECTION TABLE START */
+.table-container {
+  overflow-x: scroll;
+}
+table {
+  width: 100%;
+  border: 1px solid #d7d7d7;
+  border-radius: 8px;
+  margin-bottom: 128px;
+  white-space: nowrap;
+  /* display: table; */
+  /* border-collapse: separate; */
+  /* border-spacing: 0; */
+  /* overflow: auto; */
+  /* table-layout: auto; */
+}
+table tr {
+  border-bottom: 1px solid #d7d7d7;
+}
+table thead tr th:first-child p,
+table thead tr th:first-child img {
+  display: inline-flex;
+}
+table thead tr th p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #050723;
+  margin: 0;
+  padding: 16px 16px;
+}
+table tbody tr th p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #050723;
+  padding: 16px 16px;
+  margin: 0;
+}
+table tbody tr th a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: underline;
+  color: #0727b7;
+}
+table tbody th:has(a) {
+  cursor: pointer;
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 767px) {
+  main .breadcrumbs > a,
+  main .breadcrumbs > p {
+    padding: 6px 0px;
+    font-size: 12px;
+  }
+  main p {
+    font-size: 16px;
+  }
+  main h3 {
+    font-size: 24px !important;
+  }
+  section.information form input {
+    width: 100%;
+  }
+  section.information .password-container img {
+    position: absolute;
+    top: 22%;
+    right: 1%;
+    color: white;
+  }
+}
