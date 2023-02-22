@@ -40,7 +40,7 @@ header nav ul li a {
   text-align: center;
   color: #050723;
   text-decoration: none;
-  padding: 23px 0;
+  padding: 20px 0;
 }
 li.language-dropdown a {
   display: flex;
@@ -318,6 +318,9 @@ ul.navigation-menu li a.dropdown-button p {
   margin: 0;
   margin-right: 5px;
 }
+ul.navigation-menu li a.dropdown-button img {
+  margin-bottom: -5px;
+}
 .tools-menu ul {
   padding: 0;
   position: relative;
@@ -361,7 +364,7 @@ ul.navigation-menu li a.dropdown-button p {
 }
 nav .megamenu {
   position: absolute;
-  top: 71px;
+  top: 64px;
   left: 0;
   z-index: 1;
   background: #ffffff;
@@ -466,7 +469,7 @@ nav .megamenu ul.megamenu-row li a {
 }
 nav.container-wrap.container {
   /* FIXED HEIGHT IN ORDER NEXT RULE WITH CALC TO WORK */
-  height: 48px;
+  /* height: 48px; */
 }
 .navigation-menu-mobile-dropdown {
   background: #ffffff;

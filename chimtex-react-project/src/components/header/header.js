@@ -15,6 +15,7 @@ import profile from "../../assets/home-page-images/profile.svg"
 import search_item from "../../assets/home-page-images/search-item.png"
 import search from "../../assets/home-page-images/search.svg"
 import shopping_cart from "../../assets/home-page-images/shopping-cart.svg"
+import menu_mobile from "../../assets/home-page-images/menu-mobile.svg"
 import "./header.css"
 
 function Header() {
@@ -31,7 +32,7 @@ function Header() {
       <nav className="container-wrap container">
         <ul className="navigation-menu-mobile">
           <li className="mobile-menu-handle">
-            <img src="" alt="menu-mobile-button" />
+            <img src={menu_mobile} alt="menu-mobile-button" />
           </li>
           <li className="mobile-menu-handle-2">
             <a href="/">
