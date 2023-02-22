@@ -10,21 +10,40 @@ import close_search from "../../assets/home-page-images/close-search.svg"
 import en_flag_icon from "../../assets/home-page-images/en-flag-icon.svg"
 import site_logo from "../../assets/home-page-images/logo-chimtex.svg"
 import logout from "../../assets/home-page-images/logout.svg"
+import menu_mobile from "../../assets/home-page-images/menu-mobile.svg"
 import orders from "../../assets/home-page-images/orders.svg"
 import profile from "../../assets/home-page-images/profile.svg"
 import search_item from "../../assets/home-page-images/search-item.png"
 import search from "../../assets/home-page-images/search.svg"
 import shopping_cart from "../../assets/home-page-images/shopping-cart.svg"
-import menu_mobile from "../../assets/home-page-images/menu-mobile.svg"
 import "./header.css"
 
 function Header() {
+  const [showMenu, setShowMenu] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
+
   const handleDropdownClick = () => {
     setIsOpen(!isOpen)
   }
-  const handleArrowClick = () => {
-    setIsOpen(!isOpen)
+  const toggleMenu = () => {
+    setShowMenu(!showMenu)
+  }
+  const [isOpenLang, setIsOpenLang] = useState(false)
+  const [selectedLanguage, setSelectedLanguage] = useState("")
+  const [flagIcon, setFlagIcon] = useState(bg_flag_icon)
+
+  const handleLanguageClick = (e) => {
+    setSelectedLanguage(e.currentTarget.querySelector("p").textContent)
+    setIsOpenLang(false)
+
+    if (e.currentTarget.className === "language en") {
+      setFlagIcon(en_flag_icon)
+    } else if (e.currentTarget.className === "language bg") {
+      setFlagIcon(bg_flag_icon)
+    }
+  }
+  const handleLangDropdownClick = () => {
+    setIsOpenLang(!isOpenLang)
   }
 
   return (
@@ -91,7 +110,7 @@ function Header() {
               <img
                 src={isOpen ? arrow_up : arrow_down}
                 alt="arrowDown"
-                onClick={handleArrowClick}
+                className={isOpen ? "arrow-up" : "arrow-down"}
               />
             </a>
           </li>
@@ -161,53 +180,49 @@ function Header() {
                 <img src={search} alt="search" />
               </a>
             </li>
-            <li className="account-profile">
+            <li className="account-profile" onClick={toggleMenu}>
               <a href="#">
                 <img src={profile} alt="profileIcon" />
               </a>
             </li>
-            <div className="account-profile-menu">
-              <div className="account-profile-menu-row">
-                <img src={orders} alt="orders" />
-                <p>История на поръчките</p>
+            {showMenu && (
+              <div className="account-profile-menu">
+                <div className="account-profile-menu-row">
+                  <img src={orders} alt="orders" />
+                  <p>История на поръчките</p>
+                </div>
+                <div className="account-profile-menu-row">
+                  <img src={profile} alt="profileIcon" />
+                  <p>Профил</p>
+                </div>
+                <hr />
+                <div className="account-profile-menu-row">
+                  <img src={logout} alt="logout" />
+                  <p>Изход</p>
+                </div>
               </div>
-              <div className="account-profile-menu-row">
-                <img src={profile} alt="profileIcon" />
-                <p>Профил</p>
-              </div>
-              <hr />
-              <div className="account-profile-menu-row">
-                <img src={logout} alt="logout" />
-                <p>Изход</p>
-              </div>
-            </div>
-            <li>
+            )}
+            <li className="shopping-cart">
               <a href="#">
                 <img src={shopping_cart} alt="shoppingCartIcon" />
               </a>
             </li>
-            <li className="language-dropdown bg">
-              <a href="#">
-                <img src={bg_flag_icon} alt="bulgarianLangIcon" />
+            <li className="language-dropdown">
+              <a href="#" onClick={handleLangDropdownClick}>
+                <img src={flagIcon} alt="languageIcon" />
                 <img src={arrow_down} alt="arrowDown" />
               </a>
-            </li>
-            <li className="language-dropdown en hidden">
-              <a href="#">
-                <img src={en_flag_icon} alt="englishLangIcon" />
-                <img src={arrow_down} alt="arrowDown" />
-              </a>
-            </li>
-            <div className="dropdown">
-              <div className="language bg">
-                <img src={bg_flag_icon} alt="bulgarianLangIcon" />
-                <p>Български</p>
+              <div className={`dropdown ${isOpenLang ? "active" : ""}`}>
+                <span className="language en" onClick={handleLanguageClick}>
+                  <img src={en_flag_icon} alt="englishLangIcon" />
+                  <p>English</p>
+                </span>
+                <span className="language bg" onClick={handleLanguageClick}>
+                  <img src={bg_flag_icon} alt="bulgarianLangIcon" />
+                  <p>Български</p>
+                </span>
               </div>
-              <div className="language en">
-                <img src={en_flag_icon} alt="englishLangIcon" />
-                <p>English</p>
-              </div>
-            </div>
+            </li>
           </ul>
           <div className="search-box-mobile">
             <div className="first-row">

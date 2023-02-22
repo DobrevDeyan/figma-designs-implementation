@@ -17,47 +17,48 @@ header nav ul {
 nav ul.navigation-menu {
   padding: 0;
   margin: 0;
-}
-.navigation-menu-mobile,
-.account-profile-menu,
-.account-profile-menu {
-  display: none;
+  margin-right: auto;
 }
 nav ul.navigation-menu li:not(:last-child) {
   margin-right: 24px;
+}
+nav ul.navigation-menu li:first-child {
+  margin-right: 29px;
 }
 nav ul.tools-menu {
   padding: 0;
   margin: 0;
 }
-nav ul.tools-menu li:not(:last-child) {
+nav ul.tools-menu li.account-profile,
+nav ul.tools-menu li.shopping-cart {
   margin-right: 17px;
 }
-header nav ul li a {
+header nav ul.navigation-menu li a {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   text-align: center;
   color: #050723;
   text-decoration: none;
-  padding: 20px 0;
+  padding: 23px 0;
+}
+header nav ul.navigation-menu li a:hover {
+  color: #0727b7;
 }
 li.language-dropdown a {
   display: flex;
 }
 li.language-dropdown a img:nth-child(2) {
-  margin-left: 6px;
+  margin-left: 8px;
+}
+.dropdown-button img {
+  transition: all 0.8s ease;
 }
 .arrow-up {
-  transform: rotate(180deg);
+  transform: rotate(360deg);
 }
 .arrow-down {
   transform: rotate(0deg);
-}
-.arrow-svg {
-  width: 15px;
-  transition: transform 0.3s ease-in-out;
-  margin-top: 5px;
 }
 
 /* SECTION ASIDE - SEARCH BOX */
@@ -68,18 +69,18 @@ li.language-dropdown a img:nth-child(2) {
   height: 32px;
   border-radius: 4px;
   outline: none;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 nav input.search-field::placeholder {
   background-image: url(../../assets/home-page-images/search.svg);
   background-size: 12px 12px;
-  background-position: 4%;
+  background-position: 0px 4px;
   background-repeat: no-repeat;
-  padding-left: 11%;
+  padding-left: 8%;
 }
 .search-container {
   position: relative;
-  /* display: none; */
+  margin-right: auto;
 }
 .search-box {
   display: flex;
@@ -298,12 +299,12 @@ nav input.search-field::placeholder {
 }
 .tools-menu ul .dropdown {
   position: absolute;
-  top: 71px;
-  right: 14px;
+  top: 44px;
+  right: -2px;
   width: 129px;
-  height: 68px;
+  height: 72px;
   background: #ffffff;
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 16px rgb(0 0 0 / 15%);
   border-radius: 4px;
   z-index: 2;
   display: none;
@@ -319,7 +320,7 @@ ul.navigation-menu li a.dropdown-button p {
   margin-right: 5px;
 }
 ul.navigation-menu li a.dropdown-button img {
-  margin-bottom: -5px;
+  margin-bottom: -3px;
 }
 .tools-menu ul {
   padding: 0;
@@ -352,8 +353,8 @@ ul.navigation-menu li a.dropdown-button img {
 }
 .tools-menu ul .dropdown .language:nth-child(2) img,
 .tools-menu .en-flag {
-  border: 1px solid #828282;
-  border-radius: 2px;
+  /* border: 1px solid #828282; */
+  /* border-radius: 2px; */
 }
 .tools-menu ul .dropdown .language p {
   font-weight: 500;
@@ -379,7 +380,7 @@ nav .megamenu ul.megamenu-row {
   flex-direction: column;
   padding: 0;
   align-items: flex-start;
-  align-content: flex-start;
+  margin: 0;
 }
 nav .megamenu ul.megamenu-row h4 {
   font-weight: 500;
@@ -393,14 +394,27 @@ nav .megamenu ul.megamenu-row h4 {
 nav .megamenu ul.megamenu-row:nth-child(5) h4:nth-child(6) {
   margin-top: 24px;
 }
-nav .megamenu ul.megamenu-row li a {
+nav div:nth-child(5) .megamenu ul.megamenu-row {
+  line-height: 14px;
+}
+nav div:nth-child(5) .megamenu ul.megamenu-row li {
+  margin-bottom: 2px;
+  line-height: 14px;
+}
+nav div:nth-child(5) .megamenu ul.megamenu-row li a {
+  font-family: "Ubuntu";
+  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
+  text-decoration: none;
   color: #050723;
-  margin: 0;
-  padding: 0;
+  cursor: pointer;
 }
+nav div:nth-child(5) .megamenu ul.megamenu-row li a:hover {
+  color: #0727b7;
+}
+
 /* classes for react css group  */
 .fade-enter {
   opacity: 0;
@@ -416,10 +430,9 @@ nav .megamenu ul.megamenu-row li a {
   opacity: 0;
   transition: opacity 800ms ease-out;
 }
-
 .tools-menu ul .account-profile-menu {
   position: absolute;
-  top: 71px;
+  top: 44px;
   left: -216px;
   padding: 8px;
   background: #ffffff;
@@ -437,12 +450,18 @@ nav .megamenu ul.megamenu-row li a {
   padding: 8px;
   cursor: pointer;
 }
+.tools-menu ul .account-profile-menu .account-profile-menu-row:hover p {
+  color: #0727b7;
+}
 .tools-menu ul .account-profile-menu .account-profile-menu-row:nth-child(4) {
   margin: 0;
 }
 .tools-menu ul .account-profile-menu .account-profile-menu-row img {
   margin: 0;
   margin-right: 11px;
+}
+.tools-menu ul .account-profile-menu .account-profile-menu-row:last-child img {
+  margin-right: 8px;
 }
 .tools-menu
   ul
@@ -466,10 +485,6 @@ nav .megamenu ul.megamenu-row li a {
 .search-container-mobile-button,
 .navigation-menu-mobile {
   display: none;
-}
-nav.container-wrap.container {
-  /* FIXED HEIGHT IN ORDER NEXT RULE WITH CALC TO WORK */
-  /* height: 48px; */
 }
 .navigation-menu-mobile-dropdown {
   background: #ffffff;

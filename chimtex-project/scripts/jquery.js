@@ -33,14 +33,6 @@ $(document).ready(function () {
   })
 })
 
-// CLOS/OPEN FUNCTIONALITY MENU_MOBILE DROPDOWN
-$(document).ready(function () {
-  $(".navigation-menu-mobile-dropdown").css("display", "none")
-  $(".mobile-menu-handle").click(function () {
-    $(".navigation-menu-mobile-dropdown").slideToggle().css("display", "flex")
-  })
-})
-
 // CLOS/OPEN FUNCTIONALITY LANGUAGE DROPDOWN
 $(document).ready(function () {
   $(".language-dropdown").click(function () {
@@ -69,6 +61,14 @@ $(document).ready(function () {
 
   $(".search-container-mobile-button").click(function () {
     $(".search-box-mobile").toggle()
+  })
+})
+
+// CLOS/OPEN FUNCTIONALITY MENU_MOBILE DROPDOWN
+$(document).ready(function () {
+  $(".navigation-menu-mobile-dropdown").css("display", "none")
+  $(".mobile-menu-handle").click(function () {
+    $(".navigation-menu-mobile-dropdown").slideToggle().css("display", "flex")
   })
 })
 
