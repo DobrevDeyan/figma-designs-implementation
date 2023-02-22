@@ -380,12 +380,12 @@ section.similar-products .card {
   max-width: 220px;
   /* border: 1px solid #c0c0c0; */
 }
-div.col-lg-2.col-sm-6 {
+main#product div.col-lg-2.col-sm-6 {
   padding: 0;
   border: 1px solid #c0c0c0;
   border-radius: 4px;
 }
-div.col-lg-2.col-sm-6:not(:last-child) {
+main#product div.col-lg-2.col-sm-6:not(:last-child) {
   margin-right: 24px;
 }
 section.similar-products .row > * {
