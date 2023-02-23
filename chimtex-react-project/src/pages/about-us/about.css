@@ -1,5 +1,5 @@
 /* MAIN  */
-main h3 {
+main#about h3 {
   font-weight: 700;
   font-size: 40px;
   line-height: 46px;

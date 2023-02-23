@@ -57,15 +57,6 @@ function Header() {
     setIsMobileMenuOpen(!isMobileMenuOpen)
   }
 
-  //  const mobileMenuHandle = document.getElementById("mobile-menu-handle")
-  //  const mobileMenuDropdown = document.getElementById(
-  //    "navigation-menu-mobile-dropdown"
-  //  )
-
-  //  mobileMenuHandle.addEventListener("click", function () {
-  //    mobileMenuDropdown.classList.toggle("open")
-  //  })
-
   return (
     <header>
       <nav className="container-wrap container">

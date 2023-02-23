@@ -342,9 +342,9 @@ ul.navigation-menu li a.dropdown-button img {
 .tools-menu ul .dropdown .language:first-child {
   margin-bottom: 12px;
 }
-img.selected {
+/* img.selected {
   box-shadow: 0px 0px 0px 1px #ffffff, 0px 0px 0px 2px #0727b7;
-}
+} */
 
 .tools-menu ul .dropdown .language img {
   width: 24px;
@@ -362,7 +362,7 @@ ul.tools-menu > ul > li.language-dropdown > a > div {
 }
 ul.tools-menu > ul > li.language-dropdown > a > div > img:nth-child(1) {
   border-radius: 2px;
-  border: 1px solid #828282;
+  /* border: 1px solid #828282; */
 }
 .tools-menu ul .dropdown .language p {
   font-weight: 500;
@@ -443,7 +443,7 @@ nav div:nth-child(5) .megamenu ul.megamenu-row li a:hover {
 }
 .tools-menu ul .account-profile-menu {
   position: absolute;
-  top: 44px;
+  top: 41px;
   left: -216px;
   padding: 8px;
   background: #ffffff;
@@ -519,22 +519,6 @@ nav div:nth-child(5) .megamenu ul.megamenu-row li a:hover {
 }
 nav ul.navigation-menu-mobile .navigation-menu-mobile-dropdown li p {
   margin: 0;
-}
-nav ul.navigation-menu-mobile .navigation-menu-mobile-dropdown li a {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0;
-  padding-bottom: 24px;
-  cursor: pointer;
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-  text-decoration: none;
-  color: #050723;
 }
 nav ul.navigation-menu-mobile .navigation-menu-mobile-dropdown li a {
   display: flex;

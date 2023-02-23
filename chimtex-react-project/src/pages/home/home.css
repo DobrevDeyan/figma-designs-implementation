@@ -3,13 +3,10 @@ main {
   height: unset;
 }
 .slide {
-  height: 552px;
-  display: flex;
-  justify-content: space-evenly;
   background: linear-gradient(270deg, #000000 32.81%, rgba(0, 0, 0, 0) 54.93%),
     url(../../assets/home-page-images/bottles.png), #000000;
   background-size: contain;
-  background-position: center;
+  background-position: center left;
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .slider-content {
@@ -57,14 +54,18 @@ main {
 .slick-dots li.slick-active button {
   background: #0727b7;
 }
-.slide-view .slider-content h3 {
+.slide-view .slider-content {
   padding-top: 175px;
-  padding-bottom: 4px;
+  padding-bottom: 175px;
+}
+.slide-view .slider-content h3 {
+  font-family: "Ubuntu";
   font-weight: 700;
   font-size: 40px;
   line-height: 46px;
   color: #f2f4f7;
   display: inline-block;
+  margin-bottom: 4px;
 }
 .slide-view .slider-content p {
   font-weight: 500;
@@ -76,12 +77,15 @@ main {
   text-align: left;
 }
 .slide-view .slider-content button.show-more {
-  margin-top: 16px;
-  padding: 8px 40px;
-  background: #0727b7;
-  border-radius: 8px;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f2f4f7;
   outline: none;
   border: none;
+  margin: 0;
+  margin-top: 16px;
 }
 .slide-view .slider-content button.show-more a {
   font-weight: 500;
@@ -633,21 +637,33 @@ section.background button.show-more a {
 }
 @media only screen and (max-width: 767px) {
   .slide-view .slider-content h3 {
-    padding-top: 128px;
     font-size: 32px;
     line-height: 37px;
   }
   .slide-view .slider-content p {
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 22px;
     color: #f2f4f7;
-    max-width: 530px;
-    display: table-cell;
   }
   .slide-view .slider-content button.show-more {
     margin-top: 24px;
     width: 100%;
+  }
+  .slide {
+    background: linear-gradient(
+        267.49deg,
+        #000000 2.1%,
+        rgba(0, 0, 0, 0) 43.87%
+      ),
+      url(../../assets/home-page-images/hero-mobile.svg), #000000;
+    background-size: cover;
+    background-position: center left;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+  .slide-view .slider-content {
+    padding-top: 196px;
+    padding-bottom: 141px;
   }
   section.new-products button.show-more {
     width: 100%;
@@ -672,6 +688,7 @@ section.background button.show-more a {
     position: absolute;
     mask: linear-gradient(185deg, transparent, rgb(160, 17, 17));
   } */
+
   section.laboratory-branch {
     height: 742px;
   }

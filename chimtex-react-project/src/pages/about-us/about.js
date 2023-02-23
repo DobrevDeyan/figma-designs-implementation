@@ -21,7 +21,7 @@ import "./about.css"
 
 function About() {
   return (
-    <main>
+    <main id="about">
       <h3>За нас</h3>
       <p>Кои сме ние и какво предлагаме</p>
       <section className="container about-us">
