@@ -342,11 +342,10 @@ ul.navigation-menu li a.dropdown-button img {
 .tools-menu ul .dropdown .language:first-child {
   margin-bottom: 12px;
 }
-.tools-menu ul .dropdown .language.selected {
-  border: 1px solid #828282;
+img.selected {
   box-shadow: 0px 0px 0px 1px #ffffff, 0px 0px 0px 2px #0727b7;
-  border-radius: 2px;
 }
+
 .tools-menu ul .dropdown .language img {
   width: 24px;
   margin-right: 9px;
@@ -363,6 +362,7 @@ ul.tools-menu > ul > li.language-dropdown > a > div {
 }
 ul.tools-menu > ul > li.language-dropdown > a > div > img:nth-child(1) {
   border-radius: 2px;
+  border: 1px solid #828282;
 }
 .tools-menu ul .dropdown .language p {
   font-weight: 500;
@@ -489,7 +489,6 @@ nav div:nth-child(5) .megamenu ul.megamenu-row li a:hover {
   color: #050723;
   margin: 0;
 }
-
 .navigation-menu-mobile {
   position: relative;
 }
@@ -499,17 +498,21 @@ nav div:nth-child(5) .megamenu ul.megamenu-row li a:hover {
 }
 .navigation-menu-mobile-dropdown {
   background: #ffffff;
-  /* height: max-content; */
-  /* height: 100vh; */
   height: calc(100vh - 48px);
-  position: absolute;
-  top: 41px;
-  left: -12px;
+  position: fixed;
+  top: 48px;
+  left: 0px;
   z-index: 1;
   padding: 16px;
   width: 264px;
   flex-direction: column;
-  overflow: hidden;
+  /* display: flex; */
+}
+.navigation-menu-mobile-dropdown {
+  display: none;
+}
+.navigation-menu-mobile-dropdown.open {
+  display: flex;
 }
 .navigation-menu-mobile-dropdown li:last-child {
   margin-top: auto;
@@ -524,13 +527,47 @@ nav ul.navigation-menu-mobile .navigation-menu-mobile-dropdown li a {
   padding: 0;
   padding-bottom: 24px;
   cursor: pointer;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #050723;
+}
+nav ul.navigation-menu-mobile .navigation-menu-mobile-dropdown li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  padding-bottom: 24px;
+  cursor: pointer;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #050723;
+}
+nav ul.navigation-menu-mobile .navigation-menu-mobile-dropdown li:hover a {
+  color: #0727b7;
+}
+header > nav > ul.navigation-menu-mobile > div > li:nth-child(2) > a > img,
+header > nav > ul.navigation-menu-mobile > div > li:nth-child(3) > a > img {
+  margin-right: 9px;
 }
 .navigation-menu-mobile-dropdown li.languages {
   display: flex;
 }
 .navigation-menu-mobile-dropdown li.languages img:first-child {
-  margin-right: 18px;
+  margin-right: 19px;
 }
+
+/* RESPONSIVE */
+
 @media only screen and (max-width: 1200px) {
   .search-container-mobile-button a img {
     width: 18px;
@@ -548,12 +585,16 @@ nav ul.navigation-menu-mobile .navigation-menu-mobile-dropdown li a {
   }
   .search-container-mobile-button {
     display: block;
-    margin-right: 17px;
+    margin-right: 20px;
   }
 }
 @media only screen and (max-width: 767px) {
   header nav {
     min-height: 48px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background: #fff;
   }
   .navigation-menu-mobile {
     display: block;
@@ -563,14 +604,20 @@ nav ul.navigation-menu-mobile .navigation-menu-mobile-dropdown li a {
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-right: auto;
+  }
+  nav ul.tools-menu li.shopping-cart {
+    margin-right: 22px;
   }
   li.mobile-menu-handle-2 img {
     width: 87px;
+    height: 36px;
   }
   li.mobile-menu-handle img {
     width: 24px;
     margin-right: 17px;
-    margin-left: 17px;
+    margin-left: 12px;
+    cursor: pointer;
   }
   .language-dropdown,
   .account-profile {

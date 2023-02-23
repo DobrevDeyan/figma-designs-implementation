@@ -21,36 +21,60 @@ import "./header.css"
 function Header() {
   const [showMenu, setShowMenu] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
-
   const handleDropdownClick = () => {
     setIsOpen(!isOpen)
   }
   const toggleMenu = () => {
     setShowMenu(!showMenu)
   }
+
   const [isOpenLang, setIsOpenLang] = useState(false)
   const [selectedLanguage, setSelectedLanguage] = useState("")
   const [flagIcon, setFlagIcon] = useState(bg_flag_icon)
-
+  const handleLangDropdownClick = () => {
+    setIsOpenLang(!isOpenLang)
+  }
   const handleLanguageClick = (e) => {
+    // Remove the `selected` class from all language elements
+    const languages = document.querySelectorAll(".language > div > img")
+    languages.forEach((language) => {
+      language.classList.remove("selected")
+    })
+    // Add the `selected` class to the clicked element
+    e.currentTarget.querySelector("div > img").classList.add("selected")
     setSelectedLanguage(e.currentTarget.querySelector("p").textContent)
     setIsOpenLang(false)
-
     if (e.currentTarget.className === "language en") {
       setFlagIcon(en_flag_icon)
     } else if (e.currentTarget.className === "language bg") {
       setFlagIcon(bg_flag_icon)
     }
   }
-  const handleLangDropdownClick = () => {
-    setIsOpenLang(!isOpenLang)
+
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+  function handleMobileMenuClick() {
+    setIsMobileMenuOpen(!isMobileMenuOpen)
   }
+
+  //  const mobileMenuHandle = document.getElementById("mobile-menu-handle")
+  //  const mobileMenuDropdown = document.getElementById(
+  //    "navigation-menu-mobile-dropdown"
+  //  )
+
+  //  mobileMenuHandle.addEventListener("click", function () {
+  //    mobileMenuDropdown.classList.toggle("open")
+  //  })
 
   return (
     <header>
       <nav className="container-wrap container">
         <ul className="navigation-menu-mobile">
-          <li className="mobile-menu-handle">
+          <li
+            className="mobile-menu-handle"
+            id="mobile-menu-handle"
+            onClick={handleMobileMenuClick}
+          >
             <img src={menu_mobile} alt="menu-mobile-button" />
           </li>
           <li className="mobile-menu-handle-2">
@@ -58,7 +82,12 @@ function Header() {
               <img src={site_logo} alt="chimtexLogo" />
             </a>
           </li>
-          <div className="navigation-menu-mobile-dropdown">
+          <div
+            className={`navigation-menu-mobile-dropdown ${
+              isMobileMenuOpen ? "open" : ""
+            }`}
+            id="navigation-menu-mobile-dropdown"
+          >
             <li>
               <a href="./">Начало</a>
             </li>
@@ -216,11 +245,15 @@ function Header() {
               </a>
               <div className={`dropdown ${isOpenLang ? "active" : ""}`}>
                 <span className="language en" onClick={handleLanguageClick}>
-                  <img src={en_flag_icon} alt="englishLangIcon" />
+                  <div>
+                    <img src={en_flag_icon} alt="englishLangIcon" />
+                  </div>
                   <p>English</p>
                 </span>
                 <span className="language bg" onClick={handleLanguageClick}>
-                  <img src={bg_flag_icon} alt="bulgarianLangIcon" />
+                  <div>
+                    <img src={bg_flag_icon} alt="bulgarianLangIcon" />
+                  </div>
                   <p>Български</p>
                 </span>
               </div>
