@@ -209,7 +209,9 @@ function Header() {
             </li>
             <li className="language-dropdown">
               <a href="#" onClick={handleLangDropdownClick}>
-                <img src={flagIcon} alt="languageIcon" />
+                <div>
+                  <img src={flagIcon} alt="languageIcon" />
+                </div>
                 <img src={arrow_down} alt="arrowDown" />
               </a>
               <div className={`dropdown ${isOpenLang ? "active" : ""}`}>

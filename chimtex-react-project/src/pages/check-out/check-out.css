@@ -123,7 +123,7 @@ main .container .row {
 main .col-sm-6 {
   position: relative;
 }
-main .col-sm-6:first-child::after {
+main#checkout .col-sm-6:first-child::after {
   content: "";
   position: absolute;
   right: 0; /* Position the border on the right side of the container */

@@ -8,8 +8,8 @@ main {
   justify-content: space-evenly;
   background: linear-gradient(270deg, #000000 32.81%, rgba(0, 0, 0, 0) 54.93%),
     url(../../assets/home-page-images/bottles.png), #000000;
-  background-size: cover;
-  background-position: right center;
+  background-size: contain;
+  background-position: center;
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .slider-content {
@@ -73,6 +73,7 @@ main {
   color: #f2f4f7;
   max-width: 530px;
   display: table-cell;
+  text-align: left;
 }
 .slide-view .slider-content button.show-more {
   margin-top: 16px;
@@ -163,8 +164,17 @@ section.manufacturers h4 {
   padding-right: 24px;
 }
 .manufacturers-slider .slick-list {
-  mix-blend-mode: luminosity !important;
-  opacity: 0.5;
+  mix-blend-mode: luminosity;
+  /* opacity: 0.5; */
+}
+#root > main > section.manufacturers > div > div > .slick-track {
+  display: flex;
+  opacity: 1;
+  justify-content: center;
+  align-items: center;
+}
+#root > main > section.manufacturers > div > div > .slick-track .slick-slide {
+  padding-right: 16px;
 }
 .manufacturers-slider:before,
 .manufacturers-slider:after {
