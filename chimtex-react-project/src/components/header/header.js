@@ -16,6 +16,7 @@ import profile from "../../assets/home-page-images/profile.svg"
 import search_item from "../../assets/home-page-images/search-item.png"
 import search from "../../assets/home-page-images/search.svg"
 import shopping_cart from "../../assets/home-page-images/shopping-cart.svg"
+import stroke from "../../assets/home-page-images/stroke.svg"
 import "./header.css"
 
 function Header() {
@@ -40,13 +41,23 @@ function Header() {
     languages.forEach((language) => {
       language.classList.remove("selected")
     })
+    const languages_mobile = document.querySelectorAll(".language > img")
+    languages.forEach((language) => {
+      language.classList.remove("selected")
+    })
     // Add the `selected` class to the clicked element
     e.currentTarget.querySelector("div > img").classList.add("selected")
     setSelectedLanguage(e.currentTarget.querySelector("p").textContent)
     setIsOpenLang(false)
     if (e.currentTarget.className === "language en") {
       setFlagIcon(en_flag_icon)
+      document
+        .querySelector(".language-dropdown a div img")
+        .classList.add("english-icon-border")
     } else if (e.currentTarget.className === "language bg") {
+      document
+        .querySelector(".language-dropdown a div img")
+        .classList.remove("english-icon-border")
       setFlagIcon(bg_flag_icon)
     }
   }
@@ -237,7 +248,11 @@ function Header() {
               <div className={`dropdown ${isOpenLang ? "active" : ""}`}>
                 <span className="language en" onClick={handleLanguageClick}>
                   <div>
-                    <img src={en_flag_icon} alt="englishLangIcon" />
+                    <img
+                      src={en_flag_icon}
+                      alt="englishLangIcon"
+                      className="english-icon-border"
+                    />
                   </div>
                   <p>English</p>
                 </span>
