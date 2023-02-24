@@ -344,6 +344,7 @@ ul.navigation-menu li a.dropdown-button img {
 }
 img.selected {
   box-shadow: 0px 0px 0px 1px #ffffff, 0px 0px 0px 2px #0727b7;
+  border-radius: 2px;
 }
 
 .tools-menu ul .dropdown .language img {
@@ -357,7 +358,6 @@ img.selected {
 }
 ul.tools-menu > ul > li.language-dropdown > a > div {
   border-radius: 2px;
-
   width: 24px;
 }
 ul.tools-menu

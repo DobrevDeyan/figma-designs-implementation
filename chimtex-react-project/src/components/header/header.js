@@ -16,7 +16,6 @@ import profile from "../../assets/home-page-images/profile.svg"
 import search_item from "../../assets/home-page-images/search-item.png"
 import search from "../../assets/home-page-images/search.svg"
 import shopping_cart from "../../assets/home-page-images/shopping-cart.svg"
-import stroke from "../../assets/home-page-images/stroke.svg"
 import "./header.css"
 
 function Header() {
@@ -35,30 +34,38 @@ function Header() {
   const handleLangDropdownClick = () => {
     setIsOpenLang(!isOpenLang)
   }
+
   const handleLanguageClick = (e) => {
     // Remove the `selected` class from all language elements
-    const languages = document.querySelectorAll(".language > div > img")
-    languages.forEach((language) => {
+    const languages_desktop = document.querySelectorAll(".language > div > img")
+    languages_desktop.forEach((language) => {
       language.classList.remove("selected")
     })
-    const languages_mobile = document.querySelectorAll(".language > img")
-    languages.forEach((language) => {
+
+    const languages_mobile = document.querySelectorAll(".languages > div > img")
+    languages_mobile.forEach((language) => {
       language.classList.remove("selected")
     })
+
     // Add the `selected` class to the clicked element
     e.currentTarget.querySelector("div > img").classList.add("selected")
     setSelectedLanguage(e.currentTarget.querySelector("p").textContent)
     setIsOpenLang(false)
+
     if (e.currentTarget.className === "language en") {
       setFlagIcon(en_flag_icon)
       document
         .querySelector(".language-dropdown a div img")
         .classList.add("english-icon-border")
     } else if (e.currentTarget.className === "language bg") {
-      document
-        .querySelector(".language-dropdown a div img")
-        .classList.remove("english-icon-border")
       setFlagIcon(bg_flag_icon)
+    }
+
+    // Set the corresponding language icon as selected in the mobile section
+    if (e.currentTarget.classList.contains("en")) {
+      languages_mobile[1].classList.add("selected")
+    } else if (e.currentTarget.classList.contains("bg")) {
+      languages_mobile[0].classList.add("selected")
     }
   }
 
@@ -118,8 +125,20 @@ function Header() {
               <a href="#">Вход</a>
             </li>
             <li className="languages">
-              <img src={bg_flag_icon} alt="bulgarianLangIcon" />
-              <img src={en_flag_icon} alt="englishLangIcon" />
+              <div class="bulgarian-mob-container">
+                <img
+                  src={bg_flag_icon}
+                  alt="bulgarianLangIcon"
+                  className="bulgarian-mob"
+                />
+              </div>
+              <div>
+                <img
+                  src={en_flag_icon}
+                  alt="englishLangIcon"
+                  className="english-mob"
+                />
+              </div>
             </li>
           </div>
         </ul>
