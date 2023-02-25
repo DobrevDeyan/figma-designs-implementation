@@ -166,7 +166,7 @@ section.our-facilities ~ img {
   object-fit: cover;
   object-position: center;
 }
-main h3.questions {
+main#about h3.questions {
   font-weight: 700;
   font-size: 40px;
   line-height: 46px;
@@ -179,14 +179,14 @@ main .cont-pad {
   justify-content: center;
   margin-bottom: 54px;
 }
-main button.show-more {
+main#about button.show-more {
   padding: 8px 40px;
   background: #0727b7;
   border-radius: 8px;
   outline: none;
   border: none;
 }
-main button.show-more a {
+main#about button.show-more a {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;

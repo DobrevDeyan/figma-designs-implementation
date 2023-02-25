@@ -291,7 +291,7 @@ table tbody th:has(img) img {
   main p {
     font-size: 16px;
   }
-  main h3 {
+  main#profile h3 {
     font-size: 24px !important;
   }
   section.information form input {

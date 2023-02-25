@@ -10,9 +10,9 @@ main {
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .slider-content {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  z-index: 3;
+  z-index: 3; */
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .hero-images {
@@ -86,14 +86,19 @@ main {
   border: none;
   margin: 0;
   margin-top: 16px;
+  padding: 8px 40px;
+  background: #0727b7;
+  border-radius: 8px;
 }
-.slide-view .slider-content button.show-more a {
+.slide-view .slider-content button.show-more p {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   text-align: center;
   color: #ffffff;
   text-decoration: none;
+  text-align: center;
+  margin: 0;
 }
 
 /* SERVICES CARDS  */
@@ -294,24 +299,28 @@ section.new-products button.show-more {
   margin: 0 auto;
   margin-bottom: 64px;
 }
-section.new-products button.show-more a {
+section.new-products button.show-more p {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   text-align: center;
   color: #ffffff;
   text-decoration: none;
+  margin: 0;
 }
 
 /* MEDICAL */
 
 section.medical-branch {
-  height: 863px;
-  background: radial-gradient(50% 50% at 50% 50%, #000e4b 0%, #050723 100%);
+  min-height: 863px;
+  background: url("../../assets/home-page-images/doctor-side-view.png") center
+      left / 53% no-repeat,
+    radial-gradient(50% 50% at 50% 50%, #000e4b 0%, #050723 100%) center center /
+      cover no-repeat;
   position: relative;
+  overflow: hidden;
 }
 section.medical-branch .container-wrap.container {
-  /* position: relative; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -324,22 +333,18 @@ section.medical-branch img {
   height: 100%;
 }
 section.medical-branch .medical-content {
-  /* position: absolute;
-  right: 0;
-  top: 30vh;
-  z-index: 1; */
-
-  /* NEW BELOW */
-
   display: inline-flex;
   align-items: flex-start;
   flex-direction: column;
+  /* padding: 323px 0px 322px 0px; */
 }
 section.medical-branch .medical-content h3 {
+  font-family: "Ubuntu";
   font-weight: 700;
   font-size: 40px;
   line-height: 46px;
   color: #f2f4f7;
+  margin: 0;
 }
 section.medical-branch .medical-content p {
   font-weight: 500;
@@ -348,8 +353,9 @@ section.medical-branch .medical-content p {
   color: #f2f4f7;
   max-width: 530px;
   display: table-cell;
-  padding-bottom: 24px;
+  padding: 12px 0px 24px 0px;
   text-align: left;
+  margin: 0;
 }
 section.medical-branch button.show-more {
   padding: 8px 40px;
@@ -357,54 +363,45 @@ section.medical-branch button.show-more {
   border-radius: 8px;
   outline: none;
   border: none;
-  /* margin: 0 auto; */
+  margin: 0;
 }
-section.medical-branch button.show-more a {
+section.medical-branch button.show-more p {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   text-align: center;
   color: #000e4b;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* LABORATORY */
 
 section.laboratory-branch {
-  height: 863px;
-  background: radial-gradient(50% 50% at 50% 50%, #000e4b 0%, #050723 100%);
+  min-height: 863px;
+  background: url("../../assets/home-page-images/consumables.png") center left /
+    cover no-repeat;
   position: relative;
+  overflow: hidden;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 section.laboratory-branch .container-wrap.container {
-  /* position: relative; */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: start;
 }
-section.laboratory-branch img {
-  position: absolute;
-  height: 863px;
-  width: 100%;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-  object-fit: cover;
-}
 section.laboratory-branch .laboratory-content {
-  /* position: absolute;
-  left: 0;
-  top: 30vh;
-  z-index: 1; */
-
-  display: inline-flex;
-  align-items: flex-start;
-  flex-direction: column;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 section.laboratory-branch .laboratory-content h3 {
   font-weight: 700;
   font-size: 40px;
   line-height: 46px;
   color: #f2f4f7;
+  margin: 0;
   max-width: 530px;
 }
 section.laboratory-branch .laboratory-content p {
@@ -414,7 +411,7 @@ section.laboratory-branch .laboratory-content p {
   color: #f2f4f7;
   max-width: 530px;
   display: table-cell;
-  padding-bottom: 24px;
+  padding: 12px 0 24px 0;
 }
 section.laboratory-branch button.show-more {
   padding: 8px 40px;
@@ -422,21 +419,28 @@ section.laboratory-branch button.show-more {
   border-radius: 8px;
   outline: none;
   border: none;
-  /* margin: 0 auto; */
+  margin: 0;
 }
-section.laboratory-branch button.show-more a {
+section.laboratory-branch button.show-more p {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   text-align: center;
   color: #000e4b;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* WHO ARE WE */
 
 section.who-are-we {
   margin: 128px 0;
+}
+#home > section.who-are-we > div > div > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 section.who-are-we h3 {
   font-weight: 700;
@@ -450,7 +454,7 @@ section.who-are-we p {
   font-size: 16px;
   line-height: 24px;
   color: #050723;
-  margin-bottom: 19px;
+  margin-bottom: 24px;
 }
 section.who-are-we button.show-more {
   padding: 8px 40px;
@@ -458,19 +462,32 @@ section.who-are-we button.show-more {
   border-radius: 8px;
   outline: none;
   border: none;
-  margin: 0 auto;
+  width: max-content;
 }
-section.who-are-we button.show-more a {
+section.who-are-we button.show-more p {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   text-align: center;
   color: #ffffff;
   text-decoration: none;
+  margin: 0;
 }
-section.who-are-we img.bottles-pic {
+section.who-are-we .col-xl-6.d-flex.center-pic {
+  justify-content: center;
+  align-items: center;
+}
+section.who-are-we .bottles-container {
+  width: 644px !important;
+  height: 578px !important;
+}
+section.who-are-we .bottles-container img.bottles-pic {
   border-radius: 8px;
   display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 section.who-are-we img.bottles-pic-mobile {
   display: none;
@@ -517,7 +534,7 @@ section.our-clients .client-item .banner h4 {
 }
 section.our-clients {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 24px;
   padding-bottom: 64px;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -571,14 +588,13 @@ section.background {
   justify-content: center;
   align-items: center;
 }
-section.background h3.questions {
+main#home section.background h3.questions {
   font-weight: 700;
   font-size: 40px;
   line-height: 46px;
   text-align: center;
   color: #050723;
-  padding-top: 54px;
-  margin-bottom: 24px;
+  margin: 54px 0px 24px 0px;
 }
 section.background button.show-more {
   padding: 8px 40px;
@@ -590,13 +606,14 @@ section.background button.show-more {
   margin-bottom: 54px;
   display: block;
 }
-section.background button.show-more a {
+section.background button.show-more p {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   text-align: center;
   color: #ffffff;
   text-decoration: none;
+  margin: 0;
 }
 @media only screen and (max-width: 992px) {
   section.our-clients {
@@ -636,9 +653,13 @@ section.background button.show-more a {
   }
 }
 @media only screen and (max-width: 767px) {
+  .container-wrap {
+    padding: 0px 24px;
+  }
   .slide-view .slider-content h3 {
     font-size: 32px;
     line-height: 37px;
+    margin-bottom: 16px;
   }
   .slide-view .slider-content p {
     font-weight: 500;
@@ -650,6 +671,10 @@ section.background button.show-more a {
     margin-top: 24px;
     width: 100%;
   }
+  .slide-view .slider-content button.show-more p {
+    text-align: center;
+    display: block;
+  }
   .slide {
     background: linear-gradient(
         267.49deg,
@@ -659,11 +684,33 @@ section.background button.show-more a {
       url(../../assets/home-page-images/hero-mobile.svg), #000000;
     background-size: cover;
     background-position: center left;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
+    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
   }
   .slide-view .slider-content {
     padding-top: 196px;
     padding-bottom: 141px;
+  }
+  section.services-cards {
+    margin-top: 16px;
+  }
+  section.services-cards .card {
+    margin-bottom: 16px;
+    height: unset;
+  }
+  section.services-cards .card h4 {
+    padding: 8px 0px 12px 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+  }
+  section.services-cards .card .card-img-container {
+    height: 164px;
+  }
+  section.manufacturers {
+    margin-top: 24px;
+    margin-bottom: 68px;
   }
   section.new-products button.show-more {
     width: 100%;

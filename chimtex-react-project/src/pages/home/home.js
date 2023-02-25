@@ -147,7 +147,7 @@ function Home() {
   }, [])
 
   return (
-    <main>
+    <main id="home">
       <section className="hero-images">
         <div className="slider">
           <div className="slide">
@@ -161,7 +161,7 @@ function Home() {
                   sint deserunt ut voluptate aute id deserunt nisi.
                 </p>
                 <button type="button" className="show-more">
-                  <a href="#">Виж повече</a>
+                  <p>Виж повече</p>
                 </button>
               </div>
             </div>
@@ -177,7 +177,7 @@ function Home() {
                   sint deserunt ut voluptate aute id deserunt nisi.
                 </p>
                 <button type="button" className="show-more">
-                  <a href="#">Виж повече</a>
+                  <p>Виж повече</p>
                 </button>
               </div>
             </div>
@@ -193,7 +193,7 @@ function Home() {
                   sint deserunt ut voluptate aute id deserunt nisi.
                 </p>
                 <button type="button" className="show-more">
-                  <a href="#">Виж повече</a>
+                  <p>Виж повече</p>
                 </button>
               </div>
             </div>
@@ -247,7 +247,7 @@ function Home() {
               </h4>
             </div>
           </div>
-          <div className="col-lg-2 col-md-4 col-sm-6 col-xs-6 col-6">
+          <div className="col-lg-2 col-md-4 col-6">
             <div className="card">
               <div className="card-img-container">
                 <img src={service_5} alt="service-5" />
@@ -433,7 +433,7 @@ function Home() {
             className="slider-arrow-next"
           />
           <button type="button" className="show-more">
-            <a href="#">Виж още</a>
+            <p>Виж още</p>
           </button>
         </div>
       </section>
@@ -445,18 +445,15 @@ function Home() {
               Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt
               qui esse pariatur duis deserunt mollit dolore cillum minim tempor
               enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut
-              Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt
-              qui esse pariatur duis deserunt mollit dolore cillum minim tempor
+              voluptate aute id deserunt nisi.
             </p>
             <button type="button" className="show-more">
-              <a href="#">Научи повече</a>
+              <p>Научи повече</p>
             </button>
           </div>
         </div>
-        <img className="medical-branch-img" src={doctor} alt="doc" />
       </section>
       <section className="laboratory-branch">
-        <img src={consumables} alt="consumables" />
         <div className="container container-wrap">
           <div className="laboratory-content">
             <h3>Лабораторна стъклария и консумативи</h3>
@@ -467,7 +464,7 @@ function Home() {
               voluptate aute id deserunt nisi.
             </p>
             <button type="button" className="show-more">
-              <a href="#">Научи повече</a>
+              <p>Научи повече</p>
             </button>
           </div>
         </div>
@@ -475,47 +472,47 @@ function Home() {
       <section className="who-are-we">
         <div className="container container-wrap">
           <div className="row justify-space-between">
-            <div className="col-xl-6 d-flex">
-              <img
-                src={chemical_bottles}
-                alt="checmicalBottles"
-                className="bottles-pic"
-              />
-            </div>
-            <div className="col-xl-6">
-              <h3>Кои сме ние?</h3>
-              <p>
-                Фирма „Химтекс” ООД е на българския пазар от 1994 год.
-                Специализирана е в търговията с лабораторни и медицински
-                консумативи, ареометри и термометри, технически химикали и
-                лабораторни реактиви, филтърни и индикаторни хартии, апаратура,
-                уреди за пробовземане и помпи. <br />
-                <br />
-                На българския пазар предлагаме голямо разнообразие от химически
-                и лабораторни консумативи, като се стремим да поддържаме високи
-                складови наличности с оглед бързото задоволяване нуждите на
-                нашите клиенти. <br />
-                <br />
+            <div className="col-xl-6 d-flex center-pic">
+              <div className="bottles-container">
                 <img
                   src={chemical_bottles}
                   alt="checmicalBottles"
-                  className="bottles-pic-mobile"
+                  className="bottles-pic"
                 />
-                Химтекс ООД разполага със собствена складова база в
-                Димитровград, лаборатория за разфасовка и собствен автопарк за
-                големи тонажи и малки товари. Фирмата ни има открити клонове в
-                градовете София, Плевен, Русе и Варна за удобство на нашите
-                клиенти. <br />
-                <br />
-                Ръководителите на фирмата са специалисти в областта на
-                медицината и химията и предлагат висок професионализъм и
-                гъвкавост в търговските взаимоотношения. Във фирмата ни работят
-                28 служители, като по този начин ви гарантираме бързо и
-                компетентно обслужване на клиентите. Екипът на Химтекс ООД
-                гарантира честност и лоялност към сегашни и бъдещи партньори!
-              </p>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div>
+                <h3>Кои сме ние?</h3>
+                <p>
+                  Фирма „Химтекс” ООД е на българския пазар от 1994 год.
+                  Специализирана е в търговията с лабораторни и медицински
+                  консумативи, ареометри и термометри, технически химикали и
+                  лабораторни реактиви, филтърни и индикаторни хартии,
+                  апаратура, уреди за пробовземане и помпи На българския пазар
+                  предлагаме голямо разнообразие от химически и лабораторни
+                  консумативи, като се стремим да поддържаме високи складови
+                  наличности с оглед бързото задоволяване нуждите на нашите
+                  клиенти.
+                  <img
+                    src={chemical_bottles}
+                    alt="checmicalBottles"
+                    className="bottles-pic-mobile"
+                  />
+                  Химтекс ООД разполага със собствена складова база в
+                  Димитровград, лаборатория за разфасовка и собствен автопарк за
+                  големи тонажи и малки товари. Фирмата ни има открити клонове в
+                  градовете София, Плевен, Русе и Варна за удобство на нашите
+                  клиенти. Ръководителите на фирмата са специалисти в областта
+                  на медицината и химията и предлагат висок професионализъм и
+                  гъвкавост в търговските взаимоотношения. Във фирмата ни
+                  работят 28 служители, като по този начин ви гарантираме бързо
+                  и компетентно обслужване на клиентите. Екипът на Химтекс ООД
+                  гарантира честност и лоялност към сегашни и бъдещи партньори!
+                </p>
+              </div>
               <button type="button" className="show-more">
-                <a href="#">Научи повече</a>
+                <p>Научи повече</p>
               </button>
             </div>
           </div>
@@ -631,7 +628,7 @@ function Home() {
         <div className="bg-cont-padding">
           <h3 className="questions">Имате ли въпроси?</h3>
           <button type="button" className="show-more">
-            <a href="#">Свържете се с нас</a>
+            <p>Свържете се с нас</p>
           </button>
         </div>
       </section>
