@@ -96,7 +96,7 @@ function Home() {
             breakpoint: 467,
             settings: {
               slidesToScroll: 1,
-              slidesToShow: 1,
+              slidesToShow: 2,
             },
           },
         ],
