@@ -54,9 +54,6 @@ function Header() {
 
     if (e.currentTarget.className === "language en") {
       setFlagIcon(en_flag_icon)
-      document
-        .querySelector(".language-dropdown a div img")
-        .classList.add("english-icon-border")
     } else if (e.currentTarget.className === "language bg") {
       setFlagIcon(bg_flag_icon)
     }
@@ -125,7 +122,7 @@ function Header() {
               <a href="#">Вход</a>
             </li>
             <li className="languages">
-              <div class="bulgarian-mob-container">
+              <div className="bulgarian-mob-container">
                 <img
                   src={bg_flag_icon}
                   alt="bulgarianLangIcon"
@@ -267,11 +264,7 @@ function Header() {
               <div className={`dropdown ${isOpenLang ? "active" : ""}`}>
                 <span className="language en" onClick={handleLanguageClick}>
                   <div>
-                    <img
-                      src={en_flag_icon}
-                      alt="englishLangIcon"
-                      className="english-icon-border"
-                    />
+                    <img src={en_flag_icon} alt="englishLangIcon" />
                   </div>
                   <p>English</p>
                 </span>

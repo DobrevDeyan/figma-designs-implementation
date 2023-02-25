@@ -106,11 +106,16 @@ section.services-cards .card {
   border: 1px solid #000e4b;
   border-radius: 4px;
   display: flex;
-  margin-bottom: 16px;
+  /* width: 199px; */
+  height: 298px;
 }
 section.services-cards .card .card-img-container {
-  height: 230px;
+  height: 238px;
   position: relative;
+  /* background: url("../../assets/home-page-images/slider-services-1.png");
+  background-size: cover;
+  background-position: 0px 0px;
+  background-repeat: no-repeat; */
 }
 section.services-cards .card .card-img-container:after {
   content: "";
@@ -131,7 +136,7 @@ section.services-cards .card .card-img-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center left;
 }
 section.services-cards .card h4 {
   background: #050723;
@@ -141,7 +146,7 @@ section.services-cards .card h4 {
   line-height: 23px;
   text-align: center;
   color: #ffffff;
-  padding-bottom: 13px;
+  padding: 0px 13px 13px 13px;
   margin: 0;
 }
 
@@ -149,8 +154,7 @@ section.services-cards .card h4 {
 
 section.manufacturers {
   margin-top: 64px;
-  height: 128px;
-  margin-bottom: 168px;
+  margin-bottom: 128px;
 }
 section.manufacturers h4 {
   font-weight: 700;
@@ -160,25 +164,24 @@ section.manufacturers h4 {
   color: #050723;
   margin-bottom: 16px;
 }
-.manufacturer-img-container.slick-slide {
+section.manufacturers .manufacturers-slider {
+  opacity: 0.5;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+section.manufacturers > div > div > .slick-track {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+section.manufacturers > div > div > .slick-track .slick-slide {
+  margin-right: 24px;
+  min-width: 128px;
   height: 128px;
-  padding-right: 24px;
-}
-.manufacturers-slider .slick-list {
-  mix-blend-mode: luminosity;
-  /* opacity: 0.5; */
-}
-#root > main > section.manufacturers > div > div > .slick-track {
   display: flex;
-  opacity: 1;
   justify-content: center;
   align-items: center;
-}
-#root > main > section.manufacturers > div > div > .slick-track .slick-slide {
-  padding-right: 16px;
+  background: none;
 }
 .manufacturers-slider:before,
 .manufacturers-slider:after {
@@ -201,7 +204,6 @@ section.manufacturers h4 {
 /* NEW PRODUCTS SLIDER */
 
 section.new-products {
-  /* margin-top: 128px; */
   background: #f2f4f7;
 }
 section.new-products .container-wrap.container {
@@ -218,19 +220,16 @@ section.new-products h3 {
   padding-top: 64px;
   padding-bottom: 24px;
 }
-section.new-products .slick-list.draggable {
+section.new-products .slick-list {
   padding: 0 !important;
   margin: 0px 50px;
 }
-section.new-products .slick-slide {
+section.new-products .slick-list .slick-slide {
   display: flex;
   justify-content: center;
+  /* margin-right: 24px; */
 }
 section.new-products .slider-new-products {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  position: relative;
   margin-bottom: 24px;
 }
 section.new-products img.slider-arrow-prev {
@@ -250,7 +249,7 @@ section.new-products .card {
   flex-direction: column;
   align-items: center;
   height: 100%;
-  max-width: 220px;
+  width: 220px;
   border: none;
 }
 section.new-products .card-image-container {
@@ -277,7 +276,8 @@ section.new-products .card-title {
 }
 section.new-products .card-description {
   margin: 0;
-  padding: 8px 8px 30px;
+  margin-top: 4px;
+  padding: 0px 8px 30px 8px;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
