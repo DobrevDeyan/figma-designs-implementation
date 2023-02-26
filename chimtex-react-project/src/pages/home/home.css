@@ -224,6 +224,7 @@ section.new-products h3 {
   color: #050723;
   padding-top: 64px;
   padding-bottom: 24px;
+  margin: 0;
 }
 section.new-products .slick-list {
   padding: 0 !important;
@@ -255,7 +256,12 @@ section.new-products .card {
   align-items: center;
   height: 100%;
   width: 220px;
+  height: 344px;
   border: none;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #d5d5d5;
+  border-radius: 2px;
 }
 section.new-products .card-image-container {
   width: 220px;
@@ -270,18 +276,20 @@ section.new-products .card-image {
 section.new-products .card-title {
   padding: 8px;
   padding-bottom: 4px;
+  margin: 0;
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
   color: #050723;
-  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* start showing ellipsis when 3rd line is reached */
+  white-space: pre-wrap; /* let the text wrap preserving spaces */
   width: 100%; /* or use max-width */
 }
 section.new-products .card-description {
   margin: 0;
-  margin-top: 4px;
   padding: 0px 8px 30px 8px;
   font-weight: 400;
   font-size: 14px;
@@ -307,6 +315,9 @@ section.new-products button.show-more p {
   color: #ffffff;
   text-decoration: none;
   margin: 0;
+}
+section.new-products .hidden-card {
+  display: none;
 }
 
 /* MEDICAL */
@@ -615,6 +626,7 @@ section.background button.show-more p {
   text-decoration: none;
   margin: 0;
 }
+
 @media only screen and (max-width: 992px) {
   section.our-clients {
     display: flex;
@@ -721,15 +733,55 @@ section.background button.show-more p {
     width: 83px !important;
     height: 83px !important;
   }
-
+  section.new-products .slider-new-products,
+  section.new-products img.slider-arrow-prev,
+  section.new-products img.slider-arrow-next {
+    display: none !important;
+  }
+  section.new-products h3 {
+    padding-top: 40px;
+    padding-bottom: 24px;
+  }
+  section.new-products .hidden-card {
+    display: block;
+  }
+  section.new-products .card {
+    /* justify-content: space-between; */
+    margin: 0 auto;
+    width: 156px;
+    height: 238px;
+    margin-bottom: 16px;
+  }
+  section.new-products .card .card-image-container {
+    width: 156px;
+    height: 156px;
+  }
+  section.new-products .card .card-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  section.new-products .card-title {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #050723;
+    padding: 8px 8px 4px 8px;
+    margin: 0;
+  }
+  section.new-products .card-description {
+    padding: 0px 8px 8px 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #828282;
+  }
   section.new-products button.show-more {
     width: 100%;
-  }
-  section.new-products img.slider-arrow-prev {
-    left: 40px;
-  }
-  section.new-products img.slider-arrow-next {
-    right: 40px;
+    
   }
   .medical-branch-img {
     display: none;
@@ -741,11 +793,6 @@ section.background button.show-more p {
         top left no-repeat,
       linear-gradient(180deg, #000e4b 0%, #050723 100%);
   }
-  /* section.medical-branch img {
-    position: absolute;
-    mask: linear-gradient(185deg, transparent, rgb(160, 17, 17));
-  } */
-
   section.laboratory-branch {
     height: 742px;
   }
@@ -759,9 +806,6 @@ section.background button.show-more p {
   }
   section.medical-branch button.show-more {
     width: 100%;
-  }
-  section.new-products {
-    padding: 20px;
   }
   section.who-are-we h3 {
     font-weight: 700;

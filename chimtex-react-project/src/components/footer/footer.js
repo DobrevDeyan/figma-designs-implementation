@@ -2,8 +2,8 @@
 
 import check_in from "../../assets/home-page-images/check-in-map.svg"
 import facebook_logo from "../../assets/home-page-images/facebook-footer.svg"
+import footer_logo from "../../assets/home-page-images/footer-logo.svg"
 import linkedin_logo from "../../assets/home-page-images/linkedin-footer.svg"
-import site_logo from "../../assets/home-page-images/logo-footer.svg"
 import mail from "../../assets/home-page-images/mail.svg"
 import phone from "../../assets/home-page-images/phone.svg"
 import "./footer.css"
@@ -15,7 +15,7 @@ function Footer() {
         <ul className="details">
           <li>
             <a href="#" className="logo">
-              <img src={site_logo} alt="logo" />
+              <img src={footer_logo} alt="logo" className="logo" />
             </a>
           </li>
           <li>
@@ -36,8 +36,8 @@ function Footer() {
               Димитровград, ул. "Бузлуджа" 33
             </a>
           </li>
-          <li>
-            <a href="#" className="contacts">
+          <li className="contacts">
+            <a href="#">
               <img src={phone} alt="phone" />
               Централа: 0391-60-355; Пласмент: 0391-60-358; Факс: 0391-60-351
             </a>

@@ -13,8 +13,6 @@ import client_5 from "../../assets/home-page-images/client-5.svg"
 import client_6 from "../../assets/home-page-images/client-6.svg"
 import client_7 from "../../assets/home-page-images/client-7.svg"
 import client_8 from "../../assets/home-page-images/client-8.svg"
-import consumables from "../../assets/home-page-images/consumables.png"
-import doctor from "../../assets/home-page-images/doctor-side-view.png"
 import logo_1 from "../../assets/home-page-images/logos/logo-1.png"
 import logo_10 from "../../assets/home-page-images/logos/logo-10.png"
 import logo_11 from "../../assets/home-page-images/logos/logo-11.png"
@@ -135,7 +133,7 @@ function Home() {
             },
           },
           {
-            breakpoint: 667,
+            breakpoint: 767,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
@@ -328,6 +326,82 @@ function Home() {
         <div className="container container-wrap">
           <h3>Нови продукти</h3>
           <div className="row justify-content-between">
+            <div className="col-lg-2 col-6 hidden-card">
+              <div className="card">
+                <div className="card-image-container">
+                  <img src={gloves_1} alt="gloves" className="card-image" />
+                </div>
+                <h4 className="card-title">Ръкавици медицински</h4>
+                <p className="card-description">
+                  Латексова нестерилна ръкавица без пудра
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-2 col-6 hidden-card">
+              <div className="card">
+                <div className="card-image-container">
+                  <img src={gloves_2} alt="gloves" className="card-image" />
+                </div>
+                <h4 className="card-title">
+                  Ръкавици медицински, латекс без пудра
+                </h4>
+                <p className="card-description">
+                  Латексова нестерилна ръкавица без пудра
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-2 col-6 hidden-card">
+              <div className="card">
+                <div className="card-image-container">
+                  <img src={gloves_3} alt="gloves" className="card-image" />
+                </div>
+                <h4 className="card-title">
+                  Ръкавици медицински, латекс без пудра
+                </h4>
+                <p className="card-description">
+                  Латексова нестерилна ръкавица без пудра
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-2 col-6 hidden-card">
+              <div className="card">
+                <div className="card-image-container">
+                  <img src={gloves_4} alt="gloves" className="card-image" />
+                </div>
+                <h4 className="card-title">
+                  Ръкавици медицински, латекс без пудра
+                </h4>
+                <p className="card-description">
+                  Латексова нестерилна ръкавица без пудра
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-2 col-6 hidden-card">
+              <div className="card">
+                <div className="card-image-container">
+                  <img src={gloves_1} alt="gloves" className="card-image" />
+                </div>
+                <h4 className="card-title">
+                  Ръкавици медицински, латекс без пудра
+                </h4>
+                <p className="card-description">
+                  Латексова нестерилна ръкавица без пудра
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-2 col-6 hidden-card">
+              <div className="card">
+                <div className="card-image-container">
+                  <img src={gloves_2} alt="gloves" className="card-image" />
+                </div>
+                <h4 className="card-title">
+                  Ръкавици медицински, латекс без пудра
+                </h4>
+                <p className="card-description">
+                  Латексова нестерилна ръкавица без пудра
+                </p>
+              </div>
+            </div>
             <div className="slider-new-products">
               <div className="col-lg-2 col-sm-6">
                 <div className="card">
