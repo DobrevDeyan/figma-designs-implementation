@@ -1,21 +1,36 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-
+import React, { useEffect, useState } from "react"
 import check_in from "../../assets/home-page-images/check-in-map.svg"
 import facebook_logo from "../../assets/home-page-images/facebook-footer.svg"
-import footer_logo from "../../assets/home-page-images/footer-logo.svg"
+import footer_logo_2 from "../../assets/home-page-images/footer-logo.svg"
 import linkedin_logo from "../../assets/home-page-images/linkedin-footer.svg"
+import footer_logo from "../../assets/home-page-images/logo-footer.svg"
 import mail from "../../assets/home-page-images/mail.svg"
 import phone from "../../assets/home-page-images/phone.svg"
 import "./footer.css"
 
 function Footer() {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768)
+    handleResize()
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
+
   return (
     <footer>
       <div className="container container-wrap">
         <ul className="details">
           <li>
             <a href="#" className="logo">
-              <img src={footer_logo} alt="logo" className="logo" />
+              {/* <img src={footer_logo_2} alt="logo" className="logo" /> */}
+              <img
+                src={isMobile ? footer_logo_2 : footer_logo}
+                alt="logo"
+                className="logo"
+              />
             </a>
           </li>
           <li>

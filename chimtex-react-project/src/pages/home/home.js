@@ -201,7 +201,7 @@ function Home() {
       </section>
       <section className="services-cards container container-wrap">
         <div className="row justify-content-between">
-          <div className="col-lg-2 col-md-4 col-6">
+          <div className="col-xl-2 col-md-4 col-6">
             <div className="card">
               <div className="card-img-container">
                 <img src={service_1} alt="service-1" />
@@ -212,7 +212,7 @@ function Home() {
               </h4>
             </div>
           </div>
-          <div className="col-lg-2 col-md-4 col-6">
+          <div className="col-xl-2 col-md-4 col-6">
             <div className="card">
               <div className="card-img-container">
                 <img src={service_2} alt="service-2" />
@@ -223,7 +223,7 @@ function Home() {
               </h4>
             </div>
           </div>
-          <div className="col-lg-2 col-md-4 col-6">
+          <div className="col-xl-2 col-md-4 col-6">
             <div className="card">
               <div className="card-img-container">
                 <img src={service_3} alt="service-3" />
@@ -234,7 +234,7 @@ function Home() {
               </h4>
             </div>
           </div>
-          <div className="col-lg-2 col-md-4 col-6">
+          <div className="col-xl-2 col-md-4 col-6">
             <div className="card">
               <div className="card-img-container">
                 <img src={service_4} alt="service-4" />
@@ -245,7 +245,7 @@ function Home() {
               </h4>
             </div>
           </div>
-          <div className="col-lg-2 col-md-4 col-6">
+          <div className="col-xl-2 col-md-4 col-6">
             <div className="card">
               <div className="card-img-container">
                 <img src={service_5} alt="service-5" />
@@ -256,7 +256,7 @@ function Home() {
               </h4>
             </div>
           </div>
-          <div className="col-lg-2 col-md-4 col-6">
+          <div className="col-xl-2 col-md-4 col-6">
             <div className="card">
               <div className="card-img-container">
                 <img src={service_6} alt="service-6" />
@@ -567,12 +567,14 @@ function Home() {
                   предлагаме голямо разнообразие от химически и лабораторни
                   консумативи, като се стремим да поддържаме високи складови
                   наличности с оглед бързото задоволяване нуждите на нашите
-                  клиенти.
-                  <img
-                    src={chemical_bottles}
-                    alt="checmicalBottles"
-                    className="bottles-pic-mobile"
-                  />
+                  клиенти.{" "}
+                </p>
+                <img
+                  src={chemical_bottles}
+                  alt="checmicalBottles"
+                  className="bottles-pic-mobile"
+                />
+                <p>
                   Химтекс ООД разполага със собствена складова база в
                   Димитровград, лаборатория за разфасовка и собствен автопарк за
                   големи тонажи и малки товари. Фирмата ни има открити клонове в
