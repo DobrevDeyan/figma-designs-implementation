@@ -336,18 +336,21 @@ section.medical-branch .container-wrap.container {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: end;
   z-index: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 section.medical-branch img {
   position: absolute;
   height: 100%;
 }
 section.medical-branch .medical-content {
-  display: inline-flex;
-  align-items: flex-start;
-  flex-direction: column;
-  /* padding: 323px 0px 322px 0px; */
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: center;
+  align-items: center; */
+  /* width: 100%; */
+  max-width: 530px;
 }
 section.medical-branch .medical-content h3 {
   font-family: "Ubuntu";
@@ -362,7 +365,7 @@ section.medical-branch .medical-content p {
   font-size: 16px;
   line-height: 24px;
   color: #f2f4f7;
-  max-width: 530px;
+  /* max-width: 530px; */
   display: table-cell;
   padding: 12px 0px 24px 0px;
   text-align: left;
@@ -391,7 +394,7 @@ section.medical-branch button.show-more p {
 
 section.laboratory-branch {
   min-height: 863px;
-  background: url("../../assets/home-page-images/consumables.png") center left /
+  background: url("../../assets/home-page-images/consumables.png") center right /
     cover no-repeat;
   position: relative;
   overflow: hidden;
@@ -403,9 +406,13 @@ section.laboratory-branch .container-wrap.container {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: start;
+  display: flex;
+  justify-content: flex-end;
 }
 section.laboratory-branch .laboratory-content {
   transform: matrix(-1, 0, 0, 1, 0, 0);
+  width: 100%;
+  max-width: 530px;
 }
 section.laboratory-branch .laboratory-content h3 {
   font-weight: 700;
@@ -413,14 +420,14 @@ section.laboratory-branch .laboratory-content h3 {
   line-height: 46px;
   color: #f2f4f7;
   margin: 0;
-  max-width: 530px;
+  /* max-width: 530px; */
 }
 section.laboratory-branch .laboratory-content p {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #f2f4f7;
-  max-width: 530px;
+  /* max-width: 530px; */
   display: table-cell;
   padding: 12px 0 24px 0;
 }
@@ -631,6 +638,30 @@ section.background button.show-more p {
   section.services-cards .card {
     margin-bottom: 16px;
     height: unset;
+  }
+  section.who-are-we .bottles-container {
+    display: none;
+  }
+  section.who-are-we img.bottles-pic {
+    display: none;
+  }
+  section.who-are-we img.bottles-pic-mobile {
+    display: block;
+    margin-bottom: 24px;
+  }
+  section.our-clients .client-item-7 {
+    top: -150px;
+  }
+  section.our-clients .client-item-8 {
+    top: -150px;
+  }
+}
+@media only screen and (max-width: 1156px) {
+  section.our-clients .client-item-7 {
+    top: -180px;
+  }
+  section.our-clients .client-item-8 {
+    top: -180px;
   }
 }
 
@@ -866,23 +897,21 @@ section.background button.show-more p {
     text-align: center;
     color: #000e4b;
   }
-
   section.laboratory-branch {
     min-height: 742px;
-    background: url(../../assets/home-page-images/consumables.png),
-      linear-gradient(
+    background: linear-gradient(
         to bottom,
-        rgba(44, 57, 157, 0.5) 0%,
-        #3240b4 56.38%,
-        #3240b4 100%
-      );
-    background-size: 130%;
-    background-position: left top;
+        rgba(44, 57, 157, 0.2) 0%,
+        #3240b4 46.38%,
+        #3240b4 80%
+      ),
+      url(../../assets/home-page-images/consumables.png);
+    background-size: 140%;
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
   }
-  section.laboratory-branch::before {
+  /* section.laboratory-branch::before {
     content: "";
     position: absolute;
     top: 30%;
@@ -890,7 +919,7 @@ section.background button.show-more p {
     width: 100%;
     height: 50%;
     background: linear-gradient(180deg, rgba(5, 7, 35, 0) 0%, #3240b4 100%);
-  }
+  } */
 
   section.laboratory-branch .laboratory-content {
     padding: 24px 0 64px 0;

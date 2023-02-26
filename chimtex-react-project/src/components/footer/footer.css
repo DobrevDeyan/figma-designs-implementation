@@ -83,19 +83,12 @@ footer ul.menu a {
 footer ul.menu li:not(:last-child) {
   margin-bottom: 8px;
 }
-
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1140px) {
   footer .container-wrap.container {
     display: flex;
     flex-direction: column;
     padding: 46px 24px;
   }
-
-  /* footer .container-wrap.container {
-    display: flex;
-    flex-direction: column;
-    padding: 46px 24px;
-  } */
   footer .container-wrap.container ul.details {
     margin-bottom: 68px;
   }
@@ -114,30 +107,7 @@ footer ul.menu li:not(:last-child) {
     word-break: break-word;
   }
 }
+@media only screen and (max-width: 992px) {
+}
 @media only screen and (max-width: 767px) {
-  footer {
-    overflow: hidden;
-  }
-  footer .container-wrap.container {
-    display: flex;
-    flex-direction: column;
-    padding: 46px 24px;
-  }
-  /* footer .container-wrap.container ul.details {
-    margin-bottom: 68px;
-  }
-  footer .container-wrap.container > ul.menu {
-    margin-bottom: 24px;
-  }
-  footer ul.details {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-  }
-  footer ul li a {
-    word-break: break-word;
-  } */
 }
