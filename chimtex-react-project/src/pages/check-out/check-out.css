@@ -123,7 +123,7 @@ main#checkout .container .row {
 main#checkout .col-sm-6 {
   position: relative;
 }
-main#checkout#checkout .col-sm-6:first-child::after {
+main#checkout .col-sm-6:first-child::after {
   content: "";
   position: absolute;
   right: 0; /* Position the border on the right side of the container */
@@ -143,14 +143,14 @@ main#checkout#checkout .col-sm-6:first-child::after {
   mix-blend-mode: multiply;
   background-color: transparent;
 } */
-form.contact-form {
+main#checkout form.contact-form {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
 }
-form.contact-form .form-field label {
+main#checkout form.contact-form .form-field label {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -158,7 +158,7 @@ form.contact-form .form-field label {
   display: block;
   margin-bottom: 4px;
 }
-form.contact-form .form-field input {
+main#checkout form.contact-form .form-field input {
   width: 100%;
   min-width: 422px;
   padding: 5px;
@@ -185,8 +185,8 @@ main#checkout button.show-more {
   color: #ffffff;
   text-decoration: none;
 } */
-.box.left button.show-more p,
-.box.right button.show-more p {
+main#checkout .box.left button.show-more p,
+main#checkout .box.right button.show-more p {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -195,7 +195,7 @@ main#checkout button.show-more {
   text-decoration: none;
   margin: 0;
 }
-.misc-2 p {
+main#checkout .misc-2 p {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -203,7 +203,7 @@ main#checkout button.show-more {
   color: #000000;
   display: inline-block;
 }
-.misc-2 a {
+main#checkout .misc-2 a {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;

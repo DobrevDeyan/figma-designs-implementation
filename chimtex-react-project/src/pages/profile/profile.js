@@ -13,7 +13,7 @@ import "./profile.css"
 
 function Profile() {
   return (
-    <main>
+    <main id="profile">
       <div className="breadcrumbs container container-wrap">
         <img src={home_icon} alt="home-icon" />
         <img src={arrow_right} alt="arrow-right" />

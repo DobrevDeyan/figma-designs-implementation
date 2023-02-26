@@ -344,7 +344,8 @@ ul.navigation-menu li a.dropdown-button img {
 }
 img.selected {
   box-shadow: 0px 0px 0px 1px #ffffff, 0px 0px 0px 2px #0727b7;
-  border-radius: 2px;
+  /* border-radius: 2px; */
+  border-radius: 23px;
 }
 
 .tools-menu ul .dropdown .language img {

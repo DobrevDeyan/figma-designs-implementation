@@ -5,8 +5,9 @@ main {
 .slide {
   background: linear-gradient(270deg, #000000 32.81%, rgba(0, 0, 0, 0) 54.93%),
     url(../../assets/home-page-images/bottles.png), #000000;
-  background-size: contain;
-  background-position: center left;
+  background-size: cover;
+  background-position: center right;
+  /* background-repeat: no-repeat; */
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .slider-content {
@@ -847,7 +848,7 @@ section.background button.show-more p {
   section.medical-branch::before {
     content: "";
     position: absolute;
-    top: 30%;
+    top: 10%;
     left: 0;
     width: 100%;
     height: 50%;
