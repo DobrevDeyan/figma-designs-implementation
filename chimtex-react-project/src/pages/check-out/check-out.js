@@ -8,7 +8,7 @@ function CheckOut() {
         <h4 class="page-title">Завърши поръчката</h4>
         <div class="container">
           <div class="row">
-            <div class="col-sm-6 col-12 d-flex align-items-center justify-content-center">
+            <div class="col-lg-6 col-12 ">
               <div class="box left">
                 <h4 class="box-title">Имам акаунт</h4>
                 <form class="contact-form" action="#">
@@ -41,7 +41,7 @@ function CheckOut() {
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-12 d-flex align-items-center justify-content-center">
+            <div class="col-lg-6 col-12 ">
               <div class="box right">
                 <h4 class="box-title">Продължи като гост</h4>
                 <button type="button" class="show-more">

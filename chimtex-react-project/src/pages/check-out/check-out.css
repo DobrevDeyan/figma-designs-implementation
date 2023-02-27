@@ -3,20 +3,29 @@ main#checkout {
   align-items: center;
   flex-direction: column;
   position: relative; */
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 64px);
   background: url(../../assets/check-out-page-images/new-micr.png);
   background-repeat: no-repeat;
   background-position: bottom 0px right 0px;
+  margin-top: 32px;
 }
 main#checkout h4.page-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  align-items: center;
   color: #050723;
   margin-bottom: 64px;
-  margin-top: 32px;
   text-align: center;
+}
+#checkout > div > div > div > div:nth-child(1),
+#checkout > div > div > div > div:nth-child(2) {
+  border: 1px solid red;
+}
+#checkout > div > div > div > div:nth-child(1) {
+  padding-right: 124px;
+}
+#checkout > div > div > div > div:nth-child(2) {
+  padding-left: 124px;
 }
 main#checkout h4.box-title {
   font-weight: 700;
