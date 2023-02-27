@@ -3,7 +3,7 @@ main#checkout {
   background: url(../../assets/check-out-page-images/new-micr.png);
   background-repeat: no-repeat;
   background-position: bottom 0px right 0px;
-  margin-top: 32px;
+  padding-top: 32px;
 }
 main#checkout h4.page-title {
   font-weight: 700;
@@ -16,7 +16,7 @@ main#checkout h4.page-title {
 main#checkout > div > div > div:nth-child(1) {
   padding-right: 124px;
   position: relative;
-  padding-left: 60px;
+  padding-left: 112px;
 }
 main#checkout > div > div > div:nth-child(2) {
   padding-left: 124px;
@@ -121,9 +121,9 @@ main#checkout .container {
   height: 100%;
   position: relative;
 }
-main#checkout .container .row {
+/* main#checkout .container .row {
   height: 100%;
-}
+} */
 main#checkout .col-sm-6 {
   position: relative;
 }
@@ -136,17 +136,6 @@ main#checkout > div > div > div:nth-child(1)::after {
   width: 5px; /* Set the width of the border */
   border-right: 1px solid #c0c0c0; /* Add the border */
 }
-/* main#checkout .container img {
-  width: 500px;
-  object-fit: contain;
-  object-position: center;
-  z-index: 1;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  mix-blend-mode: multiply;
-  background-color: transparent;
-} */
 main#checkout form.contact-form {
   border-radius: 8px;
   display: flex;
@@ -180,15 +169,6 @@ main#checkout button.show-more {
   border: none;
   margin-bottom: 24px;
 }
-/* .box.left button.show-more a,
-.box.right button.show-more a {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  text-align: center;
-  color: #ffffff;
-  text-decoration: none;
-} */
 main#checkout .box.left button.show-more p,
 main#checkout .box.right button.show-more p {
   font-weight: 500;
@@ -206,6 +186,7 @@ main#checkout .misc-2 p {
   text-align: center;
   color: #000000;
   display: inline-block;
+  margin: 0;
 }
 main#checkout .misc-2 a {
   font-weight: 400;
@@ -214,4 +195,65 @@ main#checkout .misc-2 a {
   text-align: center;
   letter-spacing: -0.022em;
   color: #000000;
+}
+@media only screen and (max-width: 992px) {
+  main#checkout {
+    height: calc(100vh - 48px);
+    padding-top: 32px;
+    background-repeat: no-repeat;
+    background-position: bottom 0px right -150px;
+    background-size: contain;
+  }
+  main#checkout > div > div > div:nth-child(1) {
+    padding: 0;
+  }
+  main#checkout > div > div > div:nth-child(2) {
+    padding: 0;
+    margin-top: 54px;
+  }
+  main#checkout > div > div > div:nth-child(1)::after {
+    content: none;
+  }
+  main#checkout .left,
+  main#checkout .right {
+    width: max-content;
+    margin: 0 auto;
+  }
+  main#checkout form.contact-form {
+    min-width: 327px;
+  }
+  main#checkout button.show-more {
+    margin: 0 auto;
+    margin-bottom: 12px;
+  }
+  main#checkout .misc-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  main#checkout .misc-2 p {
+    margin-bottom: 0px;
+  }
+  main#checkout h4.page-title {
+    margin-bottom: 32px;
+  }
+  main#checkout h4.box-title {
+    margin: 0 auto;
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  main#checkout .box.left a {
+    align-self: unset;
+  }
+}
+@media only screen and (max-width: 767px) {
+  main#checkout {
+    background-position: bottom 0px right -50px;
+  }
+  main#checkout {
+    margin-top: 48px;
+  }
 }
