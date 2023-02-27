@@ -1,8 +1,4 @@
 main#checkout {
-  /* display: flex;
-  align-items: center;
-  flex-direction: column;
-  position: relative; */
   min-height: calc(100vh - 64px);
   background: url(../../assets/check-out-page-images/new-micr.png);
   background-repeat: no-repeat;
@@ -17,15 +13,14 @@ main#checkout h4.page-title {
   margin-bottom: 64px;
   text-align: center;
 }
-#checkout > div > div > div > div:nth-child(1),
-#checkout > div > div > div > div:nth-child(2) {
-  border: 1px solid red;
-}
-#checkout > div > div > div > div:nth-child(1) {
+main#checkout > div > div > div:nth-child(1) {
   padding-right: 124px;
+  position: relative;
+  padding-left: 60px;
 }
-#checkout > div > div > div > div:nth-child(2) {
+main#checkout > div > div > div:nth-child(2) {
   padding-left: 124px;
+  padding-right: 60px;
 }
 main#checkout h4.box-title {
   font-weight: 700;
@@ -132,7 +127,7 @@ main#checkout .container .row {
 main#checkout .col-sm-6 {
   position: relative;
 }
-main#checkout .col-sm-6:first-child::after {
+main#checkout > div > div > div:nth-child(1)::after {
   content: "";
   position: absolute;
   right: 0; /* Position the border on the right side of the container */
@@ -169,7 +164,7 @@ main#checkout form.contact-form .form-field label {
 }
 main#checkout form.contact-form .form-field input {
   width: 100%;
-  min-width: 422px;
+  max-width: 422px;
   padding: 5px;
   margin-bottom: 4px;
   border: 1px solid #050723;
