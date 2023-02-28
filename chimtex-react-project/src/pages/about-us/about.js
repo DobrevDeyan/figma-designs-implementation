@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import lab_mob from "../../assets/about-page-images/lab-mob.png"
 import lab from "../../assets/about-page-images/lab.png"
 import store from "../../assets/about-page-images/store.png"
 import logo_1 from "../../assets/home-page-images/logos/logo-1.png"
@@ -21,13 +22,13 @@ import "./about.css"
 
 function About() {
   return (
-    <main id="about">
+    <main id="about" className="container-wrap">
       <h3>За нас</h3>
       <p>Кои сме ние и какво предлагаме</p>
       <section className="container about-us">
         <div className="row">
           <div className="col-xl-6">
-            <img src={lab} alt="labPicture" />
+            <img src={lab} alt="labPicture" className="desktop-lab-pic" />
           </div>
           <div className="col-xl-6">
             <p>
@@ -35,15 +36,17 @@ function About() {
               Специализирана е в търговията с лабораторни и медицински
               консумативи, ареометри и термометри, технически химикали и
               лабораторни реактиви, филтърни и индикаторни хартии, апаратура,
-              уреди за пробовземане и помпи. Екслузивни представители за
-              България сме на Glaswarenfabrik Karl Hecht Co.Kg Германия,Buerkle
-              GmbH Германия, KAVALIERGLASS a.s.Чехия, Panreac Quimika
-              S.A.&Applichem GmbH, filtraTECH Франция, DELTALAB S.L Испания,
-              Normax - Fábrica de Vidros Científicos, Lda Португалия, SOCOREX
-              ISBA SA Швейцария, Duran Group Германия Наши партньори в Европа са
-              още фирмите - Amarell GmbH Германия, Kern&Sohn GmbH Германия,
-              VITLAB GmbH Германия, GAMA Group a.s. Чехия, Vacutest KIMA Италия,
-              BOURNAS MEDICALS Гърция, SENTINEL CH. SpA Италия и др.
+              уреди за пробовземане и помпи.
+              <img src={lab_mob} alt="labPicture" className="mob-lab-pic" />
+              Екслузивни представители за България сме на Glaswarenfabrik Karl
+              Hecht Co.Kg Германия,Buerkle GmbH Германия, KAVALIERGLASS
+              a.s.Чехия, Panreac Quimika S.A.&Applichem GmbH, filtraTECH
+              Франция, DELTALAB S.L Испания, Normax - Fábrica de Vidros
+              Científicos, Lda Португалия, SOCOREX ISBA SA Швейцария, Duran
+              Group Германия Наши партньори в Европа са още фирмите - Amarell
+              GmbH Германия, Kern&Sohn GmbH Германия, VITLAB GmbH Германия, GAMA
+              Group a.s. Чехия, Vacutest KIMA Италия, BOURNAS MEDICALS Гърция,
+              SENTINEL CH. SpA Италия и др.
             </p>
           </div>
         </div>
@@ -51,7 +54,7 @@ function About() {
       <h4>Сертификати</h4>
       <section className="container certificates">
         <div className="row justify-content-around">
-          <div className="col-xl-3">
+          <div className="col-lg-3">
             <div className="iso-container">
               <p>Сертифициран</p>
               <p>9001:2022</p>
@@ -60,7 +63,7 @@ function About() {
               <span className="stroke-2"></span>
             </div>
           </div>
-          <div className="col-xl-3">
+          <div className="col-lg-3">
             <div className="iso-container">
               <p>Сертифициран</p>
               <p>45001:2022</p>
@@ -69,7 +72,7 @@ function About() {
               <span className="stroke-2"></span>
             </div>
           </div>
-          <div className="col-xl-3">
+          <div className="col-lg-3">
             <div className="iso-container">
               <p>Сертифициран</p>
               <p>14001:2022</p>
@@ -164,7 +167,7 @@ function About() {
       <h3 className="questions">Имате ли въпроси?</h3>
       <div className="cont-pad">
         <button type="button" className="show-more">
-          <a href="#">Свържете се с нас</a>
+          <p>Свържете се с нас</p>
         </button>
       </div>
     </main>

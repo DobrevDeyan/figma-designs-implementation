@@ -601,7 +601,6 @@ header > nav > ul.navigation-menu-mobile > div > li:nth-child(3) > a > img {
   li.mobile-menu-handle img {
     width: 24px;
     margin-right: 17px;
-    margin-left: 12px;
     cursor: pointer;
   }
   .language-dropdown,
