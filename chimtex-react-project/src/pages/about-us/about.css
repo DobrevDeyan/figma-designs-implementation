@@ -237,10 +237,11 @@ main#about button.show-more p {
   main#about section.about-us .mob-lab-pic {
     display: block;
     margin: 24px 0px;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 767px) {
-  .container {
+  main > *.container {
     padding-right: 0px !important;
     padding-left: 0px !important;
   }
