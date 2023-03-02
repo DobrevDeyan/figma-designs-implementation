@@ -42,14 +42,19 @@ function Header() {
       language.classList.remove("selected")
     })
 
-    const languages_mobile = document.querySelectorAll(".languages > div > img")
+    const languages_mobile = document.querySelectorAll(
+      ".languages > span > div > img"
+    )
     languages_mobile.forEach((language) => {
       language.classList.remove("selected")
     })
 
     // Add the `selected` class to the clicked element
-    e.currentTarget.querySelector("div > img").classList.add("selected")
-    setSelectedLanguage(e.currentTarget.querySelector("p").textContent)
+    const textContent = e.currentTarget.querySelector("p")?.textContent
+    if (textContent) {
+      setSelectedLanguage(textContent)
+    }
+    e.currentTarget.querySelector("div > img")?.classList.add("selected")
     setIsOpenLang(false)
 
     if (e.currentTarget.className === "language en") {
@@ -60,9 +65,9 @@ function Header() {
 
     // Set the corresponding language icon as selected in the mobile section
     if (e.currentTarget.classList.contains("en")) {
-      languages_mobile[1].classList.add("selected")
+      languages_mobile[1]?.classList.add("selected")
     } else if (e.currentTarget.classList.contains("bg")) {
-      languages_mobile[0].classList.add("selected")
+      languages_mobile[0]?.classList.add("selected")
     }
   }
 
@@ -122,20 +127,18 @@ function Header() {
               <a href="#">Вход</a>
             </li>
             <li className="languages">
-              <div className="bulgarian-mob-container">
-                <img
-                  src={bg_flag_icon}
-                  alt="bulgarianLangIcon"
-                  className="bulgarian-mob"
-                />
-              </div>
-              <div>
-                <img
-                  src={en_flag_icon}
-                  alt="englishLangIcon"
-                  className="english-mob"
-                />
-              </div>
+              <span className="language en" onClick={handleLanguageClick}>
+                <div>
+                  <img src={en_flag_icon} alt="englishLangIcon" />
+                </div>
+                <p>English</p>
+              </span>
+              <span className="language bg" onClick={handleLanguageClick}>
+                <div>
+                  <img src={bg_flag_icon} alt="bulgarianLangIcon" />
+                </div>
+                <p>Български</p>
+              </span>
             </li>
           </div>
         </ul>

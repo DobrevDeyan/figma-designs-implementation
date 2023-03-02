@@ -233,7 +233,7 @@ main#about button.show-more p {
 @media only screen and (max-width: 992px) {
   main#about section.about-us .desktop-lab-pic {
     display: none;
-  }
+  }   
   main#about section.about-us .mob-lab-pic {
     display: block;
     margin: 24px 0px;
