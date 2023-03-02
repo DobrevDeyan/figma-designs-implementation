@@ -21,61 +21,134 @@ import "./header.css"
 function Header() {
   const [showMenu, setShowMenu] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
   const handleDropdownClick = () => {
     setIsOpen(!isOpen)
   }
   const toggleMenu = () => {
     setShowMenu(!showMenu)
   }
+  function handleMobileMenuClick() {
+    setIsMobileMenuOpen(!isMobileMenuOpen)
+  }
 
   const [isOpenLang, setIsOpenLang] = useState(false)
   const [selectedLanguage, setSelectedLanguage] = useState("")
+  const [selectedLangClass, setSelectedLangClass] = useState("")
   const [flagIcon, setFlagIcon] = useState(bg_flag_icon)
+
   const handleLangDropdownClick = () => {
     setIsOpenLang(!isOpenLang)
   }
 
   const handleLanguageClick = (e) => {
-    // Remove the `selected` class from all language elements
-    const languages_desktop = document.querySelectorAll(".language > div > img")
-    languages_desktop.forEach((language) => {
-      language.classList.remove("selected")
-    })
+    const languageIcons = document.querySelectorAll(".language > div > img")
+    const clickedLangClass = e.currentTarget.classList[1]
 
-    const languages_mobile = document.querySelectorAll(
-      ".languages > span > div > img"
-    )
-    languages_mobile.forEach((language) => {
-      language.classList.remove("selected")
+    // Remove the `selected` class from all language icons
+    languageIcons.forEach((icon) => {
+      icon.classList.remove("selected")
     })
 
     // Add the `selected` class to the clicked element
-    const textContent = e.currentTarget.querySelector("p")?.textContent
-    if (textContent) {
-      setSelectedLanguage(textContent)
-    }
-    e.currentTarget.querySelector("div > img")?.classList.add("selected")
-    setIsOpenLang(false)
+    e.currentTarget.querySelector("div > img").classList.add("selected")
 
-    if (e.currentTarget.className === "language en") {
+    if (e.currentTarget.classList.contains("en")) {
       setFlagIcon(en_flag_icon)
-    } else if (e.currentTarget.className === "language bg") {
+      setSelectedLanguage("English")
+      setSelectedLangClass("en")
+    } else if (e.currentTarget.classList.contains("bg")) {
       setFlagIcon(bg_flag_icon)
+      setSelectedLanguage("Български")
+      setSelectedLangClass("bg")
     }
 
     // Set the corresponding language icon as selected in the mobile section
-    if (e.currentTarget.classList.contains("en")) {
-      languages_mobile[1]?.classList.add("selected")
-    } else if (e.currentTarget.classList.contains("bg")) {
-      languages_mobile[0]?.classList.add("selected")
+    const mobileLanguageIcons = document.querySelectorAll(
+      ".language-mobile > div > img"
+    )
+    if (clickedLangClass === "en") {
+      mobileLanguageIcons[1]?.classList.add("selected")
+      mobileLanguageIcons[0]?.classList.remove("selected")
+    } else if (clickedLangClass === "bg") {
+      mobileLanguageIcons[0]?.classList.add("selected")
+      mobileLanguageIcons[1]?.classList.remove("selected")
     }
+
+    setIsOpenLang(false)
   }
 
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  // const [isOpenLang, setIsOpenLang] = useState(false)
+  // const [selectedLanguage, setSelectedLanguage] = useState("")
+  // const [flagIcon, setFlagIcon] = useState(bg_flag_icon)
 
-  function handleMobileMenuClick() {
-    setIsMobileMenuOpen(!isMobileMenuOpen)
-  }
+  // const handleLangDropdownClick = () => {
+  //   setIsOpenLang(!isOpenLang)
+  // }
+  // const handleLanguageClick = (e) => {
+  //   const languageIcons = document.querySelectorAll(".language > div > img")
+  //   languageIcons.forEach((icon) => {
+  //     icon.classList.remove("selected")
+  //   })
+
+  //   // Add the `selected` class to the clicked element
+  //   const languageCode = e.currentTarget.classList[1]
+  //   console.log(languageCode)
+  //   e.currentTarget.querySelector("img").classList.add("selected")
+  //   setSelectedLanguage(languageCode)
+
+  //   setIsOpenLang(false)
+
+  //   // Set the corresponding language icon as selected in the desktop dropdown
+  //   if (languageCode === "en") {
+  //     setFlagIcon(en_flag_icon)
+  //     languageIcons[1]?.classList.add("selected")
+  //   } else if (languageCode === "bg") {
+  //     setFlagIcon(bg_flag_icon)
+  //     languageIcons[0]?.classList.add("selected")
+  //   }
+
+  //   // Set the corresponding language icon as selected in the mobile dropdown
+  //   const mobileLanguageIcons = document.querySelectorAll(
+  //     ".language-dropdown-mobile > .language > div > img"
+  //   )
+  //   mobileLanguageIcons.forEach((icon) => {
+  //     icon.classList.remove("selected")
+  //   })
+  //   if (languageCode === "en") {
+  //     mobileLanguageIcons[1]?.classList.add("selected")
+  //   } else if (languageCode === "bg") {
+  //     mobileLanguageIcons[0]?.classList.add("selected")
+  //   }
+  // }
+  // const handleLanguageClick = (e) => {
+  //   const language_icons = document.querySelectorAll(".language > div > img")
+  //   language_icons.forEach((icon) => {
+  //     icon.classList.remove("selected")
+  //   })
+
+  //   // Add the `selected` class to the clicked element
+  //   const textContent = e.currentTarget.querySelector("p")?.textContent
+  //   if (textContent) {
+  //     setSelectedLanguage(textContent)
+  //   }
+  //   e.currentTarget
+  //     .querySelector(".language > div > img")
+  //     .classList.add("selected")
+
+  //   setIsOpenLang(false)
+
+  //   if (e.currentTarget.className === "language en") {
+  //     setFlagIcon(en_flag_icon)
+  //     language_icons[0]?.classList.add("selected")
+  //     language_icons[1]?.classList.add("selected")
+  //   } else if (e.currentTarget.className === "language bg") {
+  //     setFlagIcon(bg_flag_icon)
+  //     language_icons[0]?.classList.remove("selected")
+  //     language_icons[1]?.classList.remove("selected")
+  //   }
+  // }
 
   return (
     <header>
@@ -131,13 +204,11 @@ function Header() {
                 <div>
                   <img src={en_flag_icon} alt="englishLangIcon" />
                 </div>
-                <p>English</p>
               </span>
               <span className="language bg" onClick={handleLanguageClick}>
                 <div>
                   <img src={bg_flag_icon} alt="bulgarianLangIcon" />
                 </div>
-                <p>Български</p>
               </span>
             </li>
           </div>
