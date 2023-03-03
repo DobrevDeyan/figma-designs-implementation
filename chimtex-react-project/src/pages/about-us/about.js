@@ -24,36 +24,39 @@ import "./about.css"
 
 function About() {
   useEffect(() => {
-    $(".manufacturers-slide").slick({
-      dots: false,
-      arrows: false,
-      autoplay: true,
-      autoplaySpeed: 1000,
-      centerMode: true,
-      infinite: true,
-      slidesToShow: 10,
-      adaptiveHeight: true,
-      responsive: [
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 6,
+    $(function () {
+      // Handler for .ready() called. Put the Slick Slider etc. init code here.
+      $(".manufacturers-slider").slick({
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        centerMode: true,
+        infinite: true,
+        slidesToShow: 10,
+        adaptiveHeight: true,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 6,
+            },
           },
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 3,
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 3,
+            },
           },
-        },
-        {
-          breakpoint: 467,
-          settings: {
-            slidesToScroll: 1,
-            slidesToShow: 2,
+          {
+            breakpoint: 467,
+            settings: {
+              slidesToScroll: 1,
+              slidesToShow: 2,
+            },
           },
-        },
-      ],
+        ],
+      })
     })
   }, [])
 
@@ -186,7 +189,6 @@ function About() {
         </div>
       </section>
       <section className="manufacturers">
-        <h4>Производители</h4>
         <div className="manufacturers-slider">
           <div className="manufacturer-img-container">
             <img src={logo_1} alt="logo-1" />
@@ -257,7 +259,7 @@ function About() {
         </div>
       </section>
       <img src={store} alt="store" className="desktop" />
-      <div className="q-container container-wrap">
+      <div className="q-container">
         <h3 className="questions">Имате ли въпроси?</h3>
         <button type="button" className="show-more">
           <p>Свържете се с нас</p>

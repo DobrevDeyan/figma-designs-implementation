@@ -27,6 +27,7 @@ main#about section.container .col-xl-6 p {
   color: #050723;
   margin: 0;
   text-align: left;
+  margin-top: 24px;
 }
 main#about section.about-us .col-xl-6:nth-child(1) img {
   width: 100%;
@@ -37,6 +38,7 @@ main#about section.about-us .col-xl-6:nth-child(1) img {
 main#about section.about-us .mob-lab-pic {
   display: none;
 }
+
 main#about h4 {
   font-weight: 700;
   font-size: 40px;
@@ -148,7 +150,7 @@ main#about section.our-facilities p {
   font-size: 16px;
   line-height: 140%;
   color: #050723;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
 }
 main#about section.our-partners .logos {
   mix-blend-mode: luminosity !important;
@@ -231,6 +233,8 @@ main#about button.show-more {
   border-radius: 8px;
   outline: none;
   border: none;
+  width: max-content;
+  margin: 0 auto;
 }
 main#about button.show-more p {
   font-weight: 500;
@@ -289,14 +293,14 @@ main#about section.manufacturers {
     display: flex;
     justify-content: center;
   }
-  main#about section.our-partners {
+  /*  */
+  main#about section.our-partners .logos {
     display: none;
   }
-  /*  */
-  /* main#about section.manufacturers {
+  main#about section.manufacturers {
     margin-top: 16px;
     margin-bottom: 40px;
-    display: none;
+    display: block;
   }
   section.manufacturers h4 {
     font-weight: 700;
@@ -354,7 +358,7 @@ main#about section.manufacturers {
     margin-right: 16px;
     width: 83px !important;
     height: 83px !important;
-  } */
+  }
   /*  */
 }
 @media only screen and (max-width: 767px) {
@@ -424,7 +428,7 @@ main#about section.manufacturers {
     left: 30px;
   }
   main#about section.our-partners h3 {
-    margin: 0px 0 16px 0;
+    margin: 0px 0 0px 0;
   }
   main#about section.our-partners p {
     margin-bottom: 0px;
@@ -457,5 +461,9 @@ main#about section.manufacturers {
   }
   main#about section.certificates .col-xl-3:nth-of-type(3) .iso-container p {
     margin: 0;
+  }
+  main#about button.show-more {
+    width: auto;
+    margin: 0px 24px;
   }
 }
