@@ -432,6 +432,7 @@ main#about section.manufacturers {
   }
   main#about section.our-partners p {
     margin-bottom: 0px;
+    margin-top: 16px;
   }
   main#about section.our-partners .p-container {
     margin-bottom: 16px;
