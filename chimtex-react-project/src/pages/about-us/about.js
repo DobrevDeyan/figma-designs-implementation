@@ -1,4 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import $ from "jquery"
+import React, { useEffect } from "react"
 import lab_mob from "../../assets/about-page-images/lab-mob.png"
 import lab from "../../assets/about-page-images/lab.png"
 import store from "../../assets/about-page-images/store.png"
@@ -21,11 +23,45 @@ import logo_9 from "../../assets/home-page-images/logos/logo-9.png"
 import "./about.css"
 
 function About() {
+  useEffect(() => {
+    $(".manufacturers-slide").slick({
+      dots: false,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 1000,
+      centerMode: true,
+      infinite: true,
+      slidesToShow: 10,
+      adaptiveHeight: true,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 6,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 467,
+          settings: {
+            slidesToScroll: 1,
+            slidesToShow: 2,
+          },
+        },
+      ],
+    })
+  }, [])
+
   return (
-    <main id="about" className="container-wrap">
+    <main id="about">
       <h3>За нас</h3>
       <p>Кои сме ние и какво предлагаме</p>
-      <section className="container about-us">
+      <section className="container about-us container-wrap">
         <div className="row">
           <div className="col-xl-6">
             <img src={lab} alt="labPicture" className="desktop-lab-pic" />
@@ -52,9 +88,9 @@ function About() {
         </div>
       </section>
       <h4>Сертификати</h4>
-      <section className="container certificates">
+      <section className="container certificates container-wrap">
         <div className="row justify-content-around">
-          <div className="col-lg-3">
+          <div className="col-xl-3">
             <div className="iso-container">
               <p>Сертифициран</p>
               <p>9001:2022</p>
@@ -62,8 +98,9 @@ function About() {
               <span className="stroke-1"></span>
               <span className="stroke-2"></span>
             </div>
+            <p>Lorem ipsum dolor sit amet</p>
           </div>
-          <div className="col-lg-3">
+          <div className="col-xl-3">
             <div className="iso-container">
               <p>Сертифициран</p>
               <p>45001:2022</p>
@@ -71,8 +108,9 @@ function About() {
               <span className="stroke-1"></span>
               <span className="stroke-2"></span>
             </div>
+            <p>Lorem ipsum dolor sit amet</p>
           </div>
-          <div className="col-lg-3">
+          <div className="col-xl-3">
             <div className="iso-container">
               <p>Сертифициран</p>
               <p>14001:2022</p>
@@ -80,10 +118,11 @@ function About() {
               <span className="stroke-1"></span>
               <span className="stroke-2"></span>
             </div>
+            <p>Lorem ipsum dolor sit amet</p>
           </div>
         </div>
       </section>
-      <section className="container our-partners">
+      <section className="container our-partners container-wrap">
         <h3>Нашите партньори</h3>
         <div className="p-container">
           <p>
@@ -146,8 +185,62 @@ function About() {
           </div>
         </div>
       </section>
-      <section className="container our-facilities">
+      <section className="manufacturers">
+        <h4>Производители</h4>
+        <div className="manufacturers-slider">
+          <div className="manufacturer-img-container">
+            <img src={logo_1} alt="logo-1" />
+          </div>
+          <div className="manufacturer-img-container">
+            <img src={logo_2} alt="logo-2" />
+          </div>
+          <div className="manufacturer-img-container">
+            <img src={logo_3} alt="logo-3" />
+          </div>
+          <div className="manufacturer-img-container">
+            <img src={logo_4} alt="logo-4" />
+          </div>
+          <div className="manufacturer-img-container">
+            <img src={logo_5} alt="logo-5" />
+          </div>
+          <div className="manufacturer-img-container">
+            <img src={logo_6} alt="logo-6" />
+          </div>
+          <div className="manufacturer-img-container">
+            <img src={logo_7} alt="logo-7" />
+          </div>
+          <div className="manufacturer-img-container">
+            <img src={logo_8} alt="logo-8" />
+          </div>
+          <div className="manufacturer-img-container">
+            <img src={logo_9} alt="logo-9" />
+          </div>
+          <div className="manufacturer-img-container">
+            <img src={logo_10} alt="logo-10" />
+          </div>
+          <div className="manufacturer-img-container">
+            <img src={logo_11} alt="logo-11" />
+          </div>
+          <div className="manufacturer-img-container">
+            <img src={logo_12} alt="logo-12" />
+          </div>
+          <div className="manufacturer-img-container">
+            <img src={logo_13} alt="logo-13" />
+          </div>
+          <div className="manufacturer-img-container">
+            <img src={logo_14} alt="logo-14" />
+          </div>
+          <div className="manufacturer-img-container">
+            <img src={logo_15} alt="logo-15" />
+          </div>
+          <div className="manufacturer-img-container">
+            <img src={logo_16} alt="logo-16" />
+          </div>
+        </div>
+      </section>
+      <section className="container our-facilities container-wrap">
         <h3>Нашата база</h3>
+        <img src={store} alt="store" className="mobile" />
         <div className="p-container">
           <p>
             Химтекс ООД разполага със собствена складова база в Димитровград,
@@ -163,9 +256,9 @@ function About() {
           </p>
         </div>
       </section>
-      <img src={store} alt="store" />
-      <h3 className="questions">Имате ли въпроси?</h3>
-      <div className="cont-pad">
+      <img src={store} alt="store" className="desktop" />
+      <div className="q-container container-wrap">
+        <h3 className="questions">Имате ли въпроси?</h3>
         <button type="button" className="show-more">
           <p>Свържете се с нас</p>
         </button>

@@ -22,7 +22,6 @@ function Header() {
   const [showMenu, setShowMenu] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-
   const handleDropdownClick = () => {
     setIsOpen(!isOpen)
   }
@@ -37,43 +36,55 @@ function Header() {
   const [selectedLanguage, setSelectedLanguage] = useState("")
   const [selectedLangClass, setSelectedLangClass] = useState("")
   const [flagIcon, setFlagIcon] = useState(bg_flag_icon)
-
   const handleLangDropdownClick = () => {
     setIsOpenLang(!isOpenLang)
   }
-
   const handleLanguageClick = (e) => {
-    const languageIcons = document.querySelectorAll(".language > div > img")
     const clickedLangClass = e.currentTarget.classList[1]
-
+    const languageIcons = document.querySelectorAll(
+      `.${clickedLangClass} > div > img`
+    )
     // Remove the `selected` class from all language icons
     languageIcons.forEach((icon) => {
       icon.classList.remove("selected")
     })
 
     // Add the `selected` class to the clicked element
-    e.currentTarget.querySelector("div > img").classList.add("selected")
+    const selectedIcon = e.currentTarget.querySelector("div > img")
+    selectedIcon.classList.add("selected")
 
-    if (e.currentTarget.classList.contains("en")) {
+    if (clickedLangClass === "en") {
       setFlagIcon(en_flag_icon)
       setSelectedLanguage("English")
       setSelectedLangClass("en")
-    } else if (e.currentTarget.classList.contains("bg")) {
+
+      const mobileLanguageIcons = document.querySelectorAll(
+        ".languages > .language > div > img"
+      )
+      const desktopLanguageIcons = document.querySelectorAll(
+        ".dropdown > .language > div > img"
+      )
+
+      mobileLanguageIcons[1]?.classList.remove("selected")
+      mobileLanguageIcons[0]?.classList.add("selected")
+      desktopLanguageIcons[1]?.classList.remove("selected")
+      desktopLanguageIcons[0]?.classList.add("selected")
+    } else if (clickedLangClass === "bg") {
       setFlagIcon(bg_flag_icon)
       setSelectedLanguage("Български")
       setSelectedLangClass("bg")
-    }
 
-    // Set the corresponding language icon as selected in the mobile section
-    const mobileLanguageIcons = document.querySelectorAll(
-      ".language-mobile > div > img"
-    )
-    if (clickedLangClass === "en") {
+      const mobileLanguageIcons = document.querySelectorAll(
+        ".languages > .language > div > img"
+      )
+      const desktopLanguageIcons = document.querySelectorAll(
+        ".dropdown > .language > div > img"
+      )
+
       mobileLanguageIcons[1]?.classList.add("selected")
       mobileLanguageIcons[0]?.classList.remove("selected")
-    } else if (clickedLangClass === "bg") {
-      mobileLanguageIcons[0]?.classList.add("selected")
-      mobileLanguageIcons[1]?.classList.remove("selected")
+      desktopLanguageIcons[1]?.classList.add("selected")
+      desktopLanguageIcons[0]?.classList.remove("selected")
     }
 
     setIsOpenLang(false)
