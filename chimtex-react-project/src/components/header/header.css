@@ -462,6 +462,13 @@ nav div:nth-child(5) .megamenu ul.megamenu-row li a:hover {
   padding: 8px;
   cursor: pointer;
 }
+.tools-menu ul .account-profile-menu .account-profile-menu-row a {
+  text-decoration: none;
+  display: flex;
+}
+.tools-menu ul .account-profile-menu .account-profile-menu-row a:hover p {
+  color: #0727b7;
+}
 .tools-menu ul .account-profile-menu .account-profile-menu-row:hover p {
   color: #0727b7;
 }

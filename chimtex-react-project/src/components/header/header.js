@@ -253,8 +253,10 @@ function Header() {
                   <p>История на поръчките</p>
                 </div>
                 <div className="account-profile-menu-row">
-                  <img src={profile} alt="profileIcon" />
-                  <p>Профил</p>
+                  <a href="/profile">
+                    <img src={profile} alt="profileIcon" />
+                    <p>Профил</p>
+                  </a>
                 </div>
                 <hr />
                 <div className="account-profile-menu-row">
