@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import "bootstrap/dist/css/bootstrap.css"
+import React, { useState } from "react"
 // import $ from "jquery"
 import alert from "../../assets/product-page-images/alert.svg"
 import arrow_right from "../../assets/product-page-images/arrow-right.svg"
@@ -14,6 +15,21 @@ import product from "../../assets/product-page-images/product-img.png"
 import "./product.css"
 
 function Product() {
+  const [quantity, setQuantity] = useState(1)
+
+  const handleMinusClick = (e) => {
+    e.preventDefault()
+    if (quantity > 1) {
+      setQuantity(quantity - 1)
+    }
+  }
+  const handlePlusClick = (e) => {
+    e.preventDefault()
+    if (quantity < 100) {
+      setQuantity(quantity + 1)
+    }
+  }
+
   return (
     <main id="product">
       <div className="breadcrumbs container container-wrap">
@@ -127,17 +143,18 @@ function Product() {
                 <div>
                   <p>Количество</p>
                   <div className="quantity-container">
-                    <button className="minus-btn">
+                    <button className="minus-btn" onClick={handleMinusClick}>
                       <img src={minus} alt="minus-symbol" />
                     </button>
                     <input
                       type="number"
                       className="quantity-input"
-                      value="1"
+                      value={quantity}
                       min="1"
                       max="100"
+                      readOnly
                     />
-                    <button className="plus-btn">
+                    <button className="plus-btn" onClick={handlePlusClick}>
                       <img src={plus} alt="plus-symbol" />
                     </button>
                   </div>

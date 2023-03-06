@@ -292,9 +292,14 @@ main#profile table tbody tr th a {
 }
 main#profile table tbody th:has(a) {
   cursor: pointer;
+  min-width: 170px;
+}
+main#profile table tbody th:has(img) {
+  min-width: 120px;
 }
 main#profile table tbody th:has(img) img {
   display: inline;
+  margin-right: 10px;
 }
 @media only screen and (max-width: 1200px) {
 }
