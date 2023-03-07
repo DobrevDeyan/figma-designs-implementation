@@ -121,7 +121,6 @@ function Product() {
                   value="7 бр."
                   id="quantity-7"
                   className="bottle-quantity"
-                  checked
                 />
                 <label for="quantity-7">7 бр.</label>
                 <input

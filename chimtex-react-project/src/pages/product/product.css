@@ -416,13 +416,10 @@ main#product section.similar-products .card-image-container {
   object-position: center;
 }
 main#product section.similar-products .card-image {
+  object-fit: cover;
+  object-position: center;
   width: 100%;
   height: 100%;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
 }
 main#product section.similar-products .card-title {
   padding: 8px;
@@ -574,6 +571,7 @@ main#product section.similar-products .card-description {
     margin: 0;
   }
   main#product input[type="radio"] + label {
-    padding: 8px 16px 8px 12px;
+    padding: 4px 4px 4px 4px;
+    font-size: 13.5px;
   }
 }
