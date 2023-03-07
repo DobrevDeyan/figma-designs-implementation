@@ -48,6 +48,9 @@ function Product() {
           <div className="col-lg-5 d-flex col-12 justify-content-center">
             <div className="product-img-container">
               <img src={product} alt="product-img" />
+              <div className="availability-message">
+                <p>Налично на склад</p>
+              </div>
             </div>
           </div>
           <div className="col-lg-7 col-12 justify-content-center">
