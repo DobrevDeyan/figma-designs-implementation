@@ -1,4 +1,5 @@
 import store_items from "../../data/store.json"
+import ProductCard from "../../components/product-card/product-card.js"
 
 function Promotions() {
   return (
