@@ -2,7 +2,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import "bootstrap/dist/css/bootstrap.css"
 import React, { useState } from "react"
-// import $ from "jquery"
 import alert from "../../assets/product-page-images/alert.svg"
 import arrow_right from "../../assets/product-page-images/arrow-right.svg"
 import home_icon from "../../assets/product-page-images/home-icon.svg"
@@ -76,7 +75,6 @@ function Product() {
                   value="10 мл."
                   id="size-10"
                   className="bottle-size"
-                  //   checked
                 />
                 <label for="size-10">10 мл.</label>
                 <input

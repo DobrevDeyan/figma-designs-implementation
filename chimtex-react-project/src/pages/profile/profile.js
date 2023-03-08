@@ -1,8 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React, { useState } from "react"
-// import $ from "jquery"
 import "bootstrap/dist/css/bootstrap.css"
+import React, { useState } from "react"
 import arrow_right from "../../assets/product-page-images/arrow-right.svg"
 import home_icon from "../../assets/product-page-images/home-icon.svg"
 import order from "../../assets/profile-page-images/copy-order.svg"
