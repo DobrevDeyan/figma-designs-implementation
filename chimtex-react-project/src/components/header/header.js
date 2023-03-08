@@ -128,7 +128,7 @@ function Header() {
               </a>
             </li>
             <li>
-              <a href="#">Промоции</a>
+              <a href="/promotions">Промоции</a>
             </li>
             <li>
               <a href="/about">За нас</a>
@@ -176,7 +176,7 @@ function Header() {
             </a>
           </li>
           <li>
-            <a href="#">Промоции</a>
+            <a href="/promotions">Промоции</a>
           </li>
           <li>
             <a href="./about">За нас</a>
