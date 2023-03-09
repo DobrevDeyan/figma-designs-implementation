@@ -1,22 +1,33 @@
+import "bootstrap/dist/css/bootstrap.css"
 import "./product-card.css"
 
-function ProductCard({ id, name, price, imageUrl }) {
-  console.log("imageUrl:", imageUrl)
+function ProductCard({
+  id,
+  name,
+  price,
+  imageUrl,
+  discount,
+  regular_price,
+  discounted_price,
+  description,
+}) {
   return (
-    <>
-      <div className="col-lg-2 col-6 hidden-card">
-        <div className="card">
-          <div className="card-image-container">
-            <img src={imageUrl} alt="gloves" className="card-image" />
+    <div className="col-xl-2 col-md-4 col-sm-6">
+      <div className="card">
+        <div className="card-image-container">
+          <img src={imageUrl} alt="gloves" className="card-image" />
+          <div className="discount-amount">
+            <p>{-discount}%</p>
           </div>
-          <h4 className="card-title">{name}</h4>
-          <p className="card-description">
-            Латексова нестерилна ръкавица без пудра с номер {id}
-          </p>
-          <p>{price}</p>
+        </div>
+        <h4 className="card-title">{name}</h4>
+        <p className="card-description">{description}</p>
+        <div className="pricing">
+          <p>{regular_price} лв.</p>
+          <p>{discounted_price} лв.</p>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 export default ProductCard

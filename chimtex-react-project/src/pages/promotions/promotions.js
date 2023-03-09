@@ -1,21 +1,40 @@
+import arrow_right from "../../assets/product-page-images/arrow-right.svg"
+import home_icon from "../../assets/product-page-images/home-icon.svg"
 import ProductCard from "../../components/product-card/product-card.js"
 import store_items from "../../data/store.json"
+import "./promotions.css"
 
 function Promotions() {
+  const items = store_items.map((item) => (
+    <ProductCard
+      key={item.id}
+      id={item.id}
+      name={item.name}
+      price={item.price}
+      imageUrl={item.imageUrl}
+      discount={item.discount}
+      regular_price={item.regular_price}
+      discounted_price={item.discounted_price}
+      description={item.description}
+    />
+  ))
+
+  const rows = []
+  for (let i = 0; i < items.length; i += 5) {
+    const rowItems = items.slice(i, i + 5)
+    const row = <div className="row justify-content-between">{rowItems}</div>
+    rows.push(row)
+  }
+
   return (
     <main id="promotions" className="container container-wrap">
-      <h1>Store</h1>
-      <div className="row justify-content-between">
-        {store_items.map((item) => (
-          <ProductCard
-            key={item.id}
-            id={item.id}
-            name={item.name}
-            price={item.price}
-            imageUrl={item.imageUrl}
-          />
-        ))}
+      <div className="breadcrumbs">
+        <img src={home_icon} alt="home-icon" />
+        <img src={arrow_right} alt="arrow-right" />
+        <p>Профил</p>
       </div>
+      <h3 className="promotions-title">Промоции</h3>
+      {rows}
     </main>
   )
 }

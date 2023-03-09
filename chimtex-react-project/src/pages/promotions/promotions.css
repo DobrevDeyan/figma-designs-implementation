@@ -1,0 +1,47 @@
+main#promotions {
+  padding-bottom: 128px;
+}
+main#promotions h3.promotions-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  text-align: center;
+  color: #050723;
+  margin: 33px 0px 53px 0px;
+}
+main#promotions .breadcrumbs {
+  margin-top: 17px;
+  display: flex;
+}
+main#promotions .breadcrumbs > * {
+  margin-right: 4px;
+}
+main#promotions .breadcrumbs > img {
+  margin-bottom: 2px;
+}
+main#promotions .breadcrumbs a,
+main#promotions .breadcrumbs p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #050723;
+  text-decoration: none;
+  display: inline-block;
+}
+main#promotions .breadcrumbs a:visited,
+main#promotions .breadcrumbs p:visited {
+  color: #050723;
+}
+main#promotions .breadcrumbs a:hover,
+main#promotions .breadcrumbs p:hover {
+  color: #0727b7;
+}
+main#promotions .breadcrumbs p {
+  margin: 0;
+}
+main#promotions .row > .col-xl-2 {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
