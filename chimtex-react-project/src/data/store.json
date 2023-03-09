@@ -3,42 +3,42 @@
     "id": 1,
     "name": "Chemical-item-1",
     "price": 10.99,
-    "image-url": "/store-images/image-1.svg"
+    "imageUrl": "../store-images/image-1.svg"
   },
   {
     "id": 2,
     "name": "Chemical-item-2",
     "price": 11.99,
-    "image-url": "/store-images/image-2.svg"
+    "imageUrl": "../store-images/image-2.svg"
   },
   {
     "id": 3,
     "name": "Chemical-item-3",
     "price": 12.99,
-    "image-url": "/store-images/image-3.svg"
+    "imageUrl": "../store-images/image-3.svg"
   },
   {
     "id": 4,
     "name": "Chemical-item-4",
     "price": 13.99,
-    "image-url": "/store-images/image-4.svg"
+    "imageUrl": "../store-images/image-4.svg"
   },
   {
     "id": 5,
     "name": "Chemical-item-5",
     "price": 14.99,
-    "image-url": "/store-images/image-5.svg"
+    "imageUrl": "../store-images/image-5.svg"
   },
   {
     "id": 6,
     "name": "Chemical-item-6",
     "price": 15.99,
-    "image-url": "/store-images/image-6.svg"
+    "imageUrl": "../store-images/image-6.svg"
   },
   {
     "id": 7,
     "name": "Chemical-item-7",
     "price": 16.99,
-    "image-url": "/store-images/image-7.svg"
+    "imageUrl": "../store-images/image-7.svg"
   }
 ]

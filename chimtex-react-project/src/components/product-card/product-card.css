@@ -1,1 +1,47 @@
-
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  /* width: 220px; */
+  /* height: 344px; */
+  border: none;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #d5d5d5;
+  border-radius: 2px;
+}
+.card-image-container {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+}
+.card-image {
+  min-width: 100%;
+  height: 100%;
+}
+.card-title {
+  padding: 8px;
+  padding-bottom: 4px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #050723;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* start showing ellipsis when 3rd line is reached */
+  white-space: pre-wrap; /* let the text wrap preserving spaces */
+  width: 100%; /* or use max-width */
+}
+.card-description {
+  margin: 0;
+  padding: 0px 8px 30px 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+  text-align: left;
+}
