@@ -45,3 +45,32 @@ main#promotions .row > .col-xl-2 {
   display: flex;
   justify-content: center;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(220px, 1fr));
+  /* grid-gap: 46px; */
+  grid-row-gap: 46px;
+  justify-content: space-between;
+}
+.item {
+  background-color: #ddd;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+@media screen and (max-width: 1199px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+#promotions > div.grid-container > div {
+  display: flex;
+  justify-content: center;
+}

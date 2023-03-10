@@ -12,7 +12,7 @@ function ProductCard({
   description,
 }) {
   return (
-    <div className="col-xl-2 col-md-4 col-sm-6">
+    <div className="product-card">
       <div className="card">
         <div className="card-image-container">
           <img src={imageUrl} alt="gloves" className="card-image" />

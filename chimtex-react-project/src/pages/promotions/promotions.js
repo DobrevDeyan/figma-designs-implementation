@@ -19,13 +19,6 @@ function Promotions() {
     />
   ))
 
-  const rows = []
-  for (let i = 0; i < items.length; i += 5) {
-    const rowItems = items.slice(i, i + 5)
-    const row = <div className="row justify-content-between">{rowItems}</div>
-    rows.push(row)
-  }
-
   return (
     <main id="promotions" className="container container-wrap">
       <div className="breadcrumbs">
@@ -34,7 +27,7 @@ function Promotions() {
         <p>Профил</p>
       </div>
       <h3 className="promotions-title">Промоции</h3>
-      {rows}
+      <div className="grid-container">{items}</div>
     </main>
   )
 }

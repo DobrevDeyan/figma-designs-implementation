@@ -134,7 +134,7 @@ function Header() {
               <a href="/about">За нас</a>
             </li>
             <li>
-              <a href="#">Контакти</a>
+              <a href="/contacts">Контакти</a>
             </li>
             <li>
               <a href="#">Вход</a>
@@ -182,7 +182,7 @@ function Header() {
             <a href="./about">За нас</a>
           </li>
           <li>
-            <a href="#">Контакти</a>
+            <a href="/contacts">Контакти</a>
           </li>
         </ul>
         <div className="search-container">

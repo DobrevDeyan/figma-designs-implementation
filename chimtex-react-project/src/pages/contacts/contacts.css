@@ -1,0 +1,38 @@
+main#contacts {
+  position: relative;
+  height: 800px;
+  background: url(../../assets/contacts-page-images/bg-map.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+main#contacts h3.contacts-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  text-align: center;
+  color: #050723;
+  margin: 33px 0px 53px 0px;
+  color: red;
+  font-size: 100px;
+}
+main#contacts .row .address-box ul.details {
+  list-style: none;
+}
+main#contacts .row .address-box ul.details button.show-more {
+  padding: 8px 40px;
+  background: #ffffff;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  margin: 0;
+}
+main#contacts .row .address-box ul.details button.show-more p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #000e4b;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}

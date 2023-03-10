@@ -70,7 +70,107 @@
     "description": "Латексова нестерилна ръкавица без пудра"
   },
   {
-    "id": 7,
+    "id": 8,
+    "name": "Ръкавици медицински, латекс без пудра",
+    "price": 16.99,
+    "imageUrl": "../store-images/image-7.svg",
+    "discount": 15,
+    "regular_price": 4.99,
+    "discounted_price": 3.99,
+    "description": "Латексова нестерилна ръкавица без пудра"
+  },
+  {
+    "id": 9,
+    "name": "Ръкавици медицински, латекс без пудра",
+    "price": 16.99,
+    "imageUrl": "../store-images/image-7.svg",
+    "discount": 15,
+    "regular_price": 4.99,
+    "discounted_price": 3.99,
+    "description": "Латексова нестерилна ръкавица без пудра"
+  },
+  {
+    "id": 10,
+    "name": "Ръкавици медицински, латекс без пудра",
+    "price": 16.99,
+    "imageUrl": "../store-images/image-7.svg",
+    "discount": 15,
+    "regular_price": 4.99,
+    "discounted_price": 3.99,
+    "description": "Латексова нестерилна ръкавица без пудра"
+  },
+  {
+    "id": 11,
+    "name": "Ръкавици медицински, латекс без пудра",
+    "price": 16.99,
+    "imageUrl": "../store-images/image-7.svg",
+    "discount": 15,
+    "regular_price": 4.99,
+    "discounted_price": 3.99,
+    "description": "Латексова нестерилна ръкавица без пудра"
+  },
+  {
+    "id": 12,
+    "name": "Ръкавици медицински, латекс без пудра",
+    "price": 16.99,
+    "imageUrl": "../store-images/image-7.svg",
+    "discount": 15,
+    "regular_price": 4.99,
+    "discounted_price": 3.99,
+    "description": "Латексова нестерилна ръкавица без пудра"
+  },
+  {
+    "id": 13,
+    "name": "Ръкавици медицински, латекс без пудра",
+    "price": 16.99,
+    "imageUrl": "../store-images/image-7.svg",
+    "discount": 15,
+    "regular_price": 4.99,
+    "discounted_price": 3.99,
+    "description": "Латексова нестерилна ръкавица без пудра"
+  },
+  {
+    "id": 14,
+    "name": "Ръкавици медицински, латекс без пудра",
+    "price": 16.99,
+    "imageUrl": "../store-images/image-7.svg",
+    "discount": 15,
+    "regular_price": 4.99,
+    "discounted_price": 3.99,
+    "description": "Латексова нестерилна ръкавица без пудра"
+  },
+  {
+    "id": 15,
+    "name": "Ръкавици медицински, латекс без пудра",
+    "price": 16.99,
+    "imageUrl": "../store-images/image-7.svg",
+    "discount": 15,
+    "regular_price": 4.99,
+    "discounted_price": 3.99,
+    "description": "Латексова нестерилна ръкавица без пудра"
+  },
+  {
+    "id": 16,
+    "name": "Ръкавици медицински, латекс без пудра",
+    "price": 16.99,
+    "imageUrl": "../store-images/image-7.svg",
+    "discount": 15,
+    "regular_price": 4.99,
+    "discounted_price": 3.99,
+    "description": "Латексова нестерилна ръкавица без пудра"
+  },
+  {
+    "id": 17,
+    "name": "Ръкавици медицински, латекс без пудра",
+    "price": 16.99,
+    "imageUrl": "../store-images/image-7.svg",
+    "discount": 15,
+    "regular_price": 4.99,
+    "discounted_price": 3.99,
+    "description": "Латексова нестерилна ръкавица без пудра"
+  },
+  {
+    "id": 18,
     "name": "Ръкавици медицински, латекс без пудра",
     "price": 16.99,
     "imageUrl": "../store-images/image-7.svg",
