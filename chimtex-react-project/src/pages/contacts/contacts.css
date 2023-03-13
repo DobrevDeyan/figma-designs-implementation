@@ -1,6 +1,9 @@
 main#contacts {
+  margin-top: 10px;
+}
+main#contacts section.contact-cards-container {
   position: relative;
-  height: 800px;
+  height: 788px;
   background: url(../../assets/contacts-page-images/bg-map.svg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -11,28 +14,231 @@ main#contacts h3.contacts-title {
   line-height: 46px;
   text-align: center;
   color: #050723;
-  margin: 33px 0px 53px 0px;
-  color: red;
-  font-size: 100px;
+  margin: 0px 0px 40px 0px;
+  padding-top: 14px;
 }
-main#contacts .row .address-box ul.details {
+main#contacts section.contact-cards-container > .row {
+  margin-bottom: 24px;
+}
+#contacts
+  > section.contact-cards-container
+  > div:nth-child(2)
+  > div:nth-child(2) {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+#contacts
+  > section.contact-cards-container
+  > div.row.justify-content-center
+  > div:nth-child(1) {
+  margin-right: 12px;
+}
+#contacts
+  > section.contact-cards-container
+  > div.row.justify-content-center
+  > div:nth-child(2) {
+  margin-left: 12px;
+}
+main#contacts > section.contact-cards-container > .row:nth-child(2) {
+  justify-content: center;
+}
+main#contacts .address-box {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  max-width: 416px;
+  width: 100%;
+  height: 254px;
+  padding: 24px;
+  z-index: 1;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+main#contacts .address-box h4.city_name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #050723;
+  text-align: left;
+}
+main#contacts .address-box ul.details {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-main#contacts .row .address-box ul.details button.show-more {
-  padding: 8px 40px;
+main#contacts .address-box ul.details li {
+  margin-bottom: 16px;
+}
+main#contacts .address-box ul.details li a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #050723;
+  cursor: pointer;
+}
+main#contacts .address-box ul.details li:nth-child(2) a img {
+  margin-right: 11px;
+}
+main#contacts .address-box ul.details li:nth-child(3) a img {
+  margin-right: 10px;
+}
+main#contacts .address-box ul.details li:nth-child(4) a img {
+  margin-left: 3px;
+  margin-right: 13px;
+}
+main#contacts .address-box ul.details li a:hover {
+  color: #0727b7;
+}
+main#contacts .address-box ul.details button.show-more {
+  padding: 8px 30px;
   background: #ffffff;
   border-radius: 8px;
   outline: none;
   border: none;
   margin: 0;
+  background: #0727b7;
+  width: max-content;
 }
-main#contacts .row .address-box ul.details button.show-more p {
+main#contacts .address-box ul.details button.show-more p {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   text-align: center;
-  color: #000e4b;
-  text-decoration: none;
+  color: #ffffff;
   margin: 0;
   padding: 0;
+}
+main#contacts section.contact-from {
+  position: relative;
+  margin-top: -154px;
+  z-index: 1;
+}
+main#contacts .contact-form-wrapper {
+  width: 100%;
+  position: relative;
+  /* height: 702px; */
+  /* margin-top: -220px; */
+  /* box-shadow: 0px -64px 64px rgba(19, 38, 99, 0.15);
+  border-radius: 64px 64px 0px 0px; */
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main#contacts .contact-form-wrapper h4 {
+  margin: 64px 0 46px 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  text-align: center;
+  color: #050723;
+  z-index: 3;
+}
+main#contacts .contact-form-wrapper form.contact-form {
+  width: 384px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main#contacts .contact-form-wrapper form.contact-form .form-field label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #050723;
+  margin-bottom: 4px;
+}
+main#contacts .contact-form-wrapper form.contact-form .form-field input {
+  width: 100%;
+  padding: 3px;
+  margin-bottom: 8px;
+  border: 1px solid #050723;
+  background: #ffffff;
+  border-radius: 4px;
+}
+main#contacts
+  .contact-form-wrapper
+  form.contact-form
+  .form-field:has(textarea) {
+  display: flex;
+  flex-direction: column;
+}
+main#contacts .contact-form-wrapper form.contact-form .form-field textarea {
+  height: 120px;
+}
+main#contacts
+  .contact-form-wrapper
+  form.contact-form
+  .form-field:nth-of-type(4)
+  input {
+  margin-bottom: 8px;
+}
+main#contacts form.contact-form button.show-more {
+  padding: 8px 30px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  margin: 0;
+  background: #0727b7;
+  margin-top: 24px;
+  margin-bottom: 128px;
+}
+main#contacts form.contact-form button.show-more p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (max-width: 1199px) {
+  main#contacts section.contact-cards-container {
+    background: unset;
+    height: unset;
+  }
+  main#contacts section.contact-from {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 767px) {
+  main#contacts h3.contacts-title {
+    padding-top: 52px;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+  main#contacts.container {
+    padding: 0;
+  }
+  main#contacts .contact-form-wrapper form.contact-form {
+    width: 100%;
+  }
+  #contacts
+    > section.contact-cards-container
+    > div.row.justify-content-center
+    > div:nth-child(2),
+  #contacts
+    > section.contact-cards-container
+    > div.row.justify-content-center
+    > div:nth-child(1),
+  #contacts
+    > section.contact-cards-container
+    > div:nth-child(2)
+    > div:nth-child(2) {
+    margin: 0px;
+  }
+  main#contacts .address-box {
+    margin-bottom: 24px;
+  }
 }
