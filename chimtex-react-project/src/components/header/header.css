@@ -362,7 +362,7 @@ ul.tools-menu > ul > li.language-dropdown > a > div {
   > a
   > div
   > img:nth-child(1).english-icon-border {
-  border-radius: 2px;
+  border-radius: 2px; 
   border: 1px solid #828282;
 } */
 .tools-menu ul .dropdown .language p {
@@ -450,7 +450,7 @@ nav div:nth-child(5) .megamenu ul.megamenu-row li a:hover {
   background: #ffffff;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  z-index: 1;
+  z-index: 4;
 }
 .tools-menu ul .account-profile-menu hr {
   margin: 0;

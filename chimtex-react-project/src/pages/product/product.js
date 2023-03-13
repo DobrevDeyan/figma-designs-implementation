@@ -196,6 +196,7 @@ function Product() {
         </div>
       </div>
       <section className="similar-products container container-wrap">
+        <h4 className="new-products">Подобни продукти</h4>
         <div className="row justify-content-center">
           <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 card my-2 mx-2">
             <div className="card-image-container">
