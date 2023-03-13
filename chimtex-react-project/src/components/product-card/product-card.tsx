@@ -1,16 +1,15 @@
 import "bootstrap/dist/css/bootstrap.css"
 import "./product-card.css"
+import { ProductCardProps } from "../../assets/interfaces/product-card-promotion"
 
 function ProductCard({
-  id,
   name,
-  price,
   imageUrl,
   discount,
   regular_price,
   discounted_price,
   description,
-}) {
+}: ProductCardProps) {
   return (
     <div className="product-card">
       <div className="card">

@@ -16,13 +16,13 @@ import "./product.css"
 function Product() {
   const [quantity, setQuantity] = useState(1)
 
-  const handleMinusClick = (e) => {
+  const handleMinusClick = (e: { preventDefault: () => void }) => {
     e.preventDefault()
     if (quantity > 1) {
       setQuantity(quantity - 1)
     }
   }
-  const handlePlusClick = (e) => {
+  const handlePlusClick = (e: { preventDefault: () => void }) => {
     e.preventDefault()
     if (quantity < 100) {
       setQuantity(quantity + 1)
@@ -76,7 +76,7 @@ function Product() {
                   id="size-10"
                   className="bottle-size"
                 />
-                <label for="size-10">10 мл.</label>
+                <label htmlFor="size-10">10 мл.</label>
                 <input
                   type="radio"
                   name="bottle-size"
@@ -84,7 +84,7 @@ function Product() {
                   id="size-25"
                   className="bottle-size"
                 />
-                <label for="size-25">25 мл.</label>
+                <label htmlFor="size-25">25 мл.</label>
                 <input
                   type="radio"
                   name="bottle-size"
@@ -92,7 +92,7 @@ function Product() {
                   id="size-50"
                   className="bottle-size"
                 />
-                <label for="size-50">50 мл.</label>
+                <label htmlFor="size-50">50 мл.</label>
                 <input
                   type="radio"
                   name="bottle-size"
@@ -100,7 +100,7 @@ function Product() {
                   id="size-100"
                   className="bottle-size"
                 />
-                <label for="size-100">100 мл.</label>
+                <label htmlFor="size-100">100 мл.</label>
                 <input
                   type="radio"
                   name="bottle-size"
@@ -108,7 +108,7 @@ function Product() {
                   id="size-250"
                   className="bottle-size"
                 />
-                <label for="size-250">250 мл.</label>
+                <label htmlFor="size-250">250 мл.</label>
               </div>
 
               <div className="form-field">
@@ -120,7 +120,7 @@ function Product() {
                   id="quantity-7"
                   className="bottle-quantity"
                 />
-                <label for="quantity-7">7 бр.</label>
+                <label htmlFor="quantity-7">7 бр.</label>
                 <input
                   type="radio"
                   name="bottle-quantity"
@@ -128,7 +128,7 @@ function Product() {
                   id="quantity-10"
                   className="bottle-quantity"
                 />
-                <label for="quantity-10">10 бр.</label>
+                <label htmlFor="quantity-10">10 бр.</label>
                 <input
                   type="radio"
                   name="bottle-quantity"
@@ -136,7 +136,7 @@ function Product() {
                   id="quantity-60"
                   className="bottle-quantity"
                 />
-                <label for="quantity-60">60 бр.</label>
+                <label htmlFor="quantity-60">60 бр.</label>
               </div>
 
               <div className="form-field">

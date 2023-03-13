@@ -15,7 +15,7 @@ function Profile() {
   const [showNewPassword, setShowNewPassword] = useState(false)
   const [showRetypePassword, setShowRetypePassword] = useState(false)
 
-  const toggleShowPassword = (inputName) => {
+  const toggleShowPassword = (inputName: string) => {
     switch (inputName) {
       case "old":
         setShowOldPassword(!showOldPassword)

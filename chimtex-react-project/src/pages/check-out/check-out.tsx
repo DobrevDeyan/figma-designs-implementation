@@ -14,11 +14,11 @@ function CheckOut() {
               <h4 className="box-title">Имам акаунт</h4>
               <form className="contact-form" action="#">
                 <div className="form-field">
-                  <label for="">E-mail aдрес*</label>
+                  <label htmlFor="">E-mail aдрес*</label>
                   <input type="text" value="" />
                 </div>
                 <div className="form-field">
-                  <label for="">Парола*</label>
+                  <label htmlFor="">Парола*</label>
                   <input type="text" value="" />
                 </div>
               </form>

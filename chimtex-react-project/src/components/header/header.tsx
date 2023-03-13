@@ -39,7 +39,7 @@ function Header() {
   const handleLangDropdownClick = () => {
     setIsOpenLang(!isOpenLang)
   }
-  const handleLanguageClick = (e) => {
+  const handleLanguageClick = (e: React.MouseEvent<HTMLSpanElement>) => {
     const clickedLangClass = e.currentTarget.classList[1]
     const languageIcons = document.querySelectorAll(
       `.${clickedLangClass} > div > img`
@@ -51,7 +51,9 @@ function Header() {
 
     // Add the `selected` class to the clicked element
     const selectedIcon = e.currentTarget.querySelector("div > img")
-    selectedIcon.classList.add("selected")
+    if (selectedIcon) {
+      selectedIcon.classList.add("selected")
+    }
 
     if (clickedLangClass === "en") {
       setFlagIcon(en_flag_icon)

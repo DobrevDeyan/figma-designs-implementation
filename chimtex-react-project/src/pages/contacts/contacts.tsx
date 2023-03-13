@@ -179,7 +179,7 @@ function Contacts() {
             </div>
             <div className="form-field">
               <label htmlFor="">Съобщение</label>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <textarea name="" id=""></textarea>
             </div>
             <button type="submit" className="show-more">
               <p>Изпрати</p>

@@ -105,7 +105,8 @@ function Home() {
         slidesToShow: 5,
         slidesToScroll: 1,
         arrows: true,
-        loop: true,
+        // * LOOP CAUSES TS PROBLEM //
+        // loop: true,
         centerMode: true,
         centerPadding: "50px",
         prevArrow: ".slider-arrow-prev",
