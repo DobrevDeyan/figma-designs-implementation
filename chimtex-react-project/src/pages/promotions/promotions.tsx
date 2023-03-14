@@ -1,13 +1,12 @@
 import arrow_right from "../../assets/product-page-images/arrow-right.svg"
 import home_icon from "../../assets/product-page-images/home-icon.svg"
-import ProductCard from "../../components/product-card/product-card.js"
+import ProductCard from "../../components/product-card/product-card"
 import store_items from "../../data/store.json"
 import "./promotions.css"
 
 function Promotions() {
   const items = store_items.map((item) => (
     <ProductCard
-      key={item.id}
       id={item.id}
       name={item.name}
       price={item.price}

@@ -1,8 +1,10 @@
 import "bootstrap/dist/css/bootstrap.css"
-import "./product-card.css"
 import { ProductCardProps } from "../../assets/interfaces/product-card-promotion"
+import "./product-card.css"
 
 function ProductCard({
+  id,
+  price,
   name,
   imageUrl,
   discount,
