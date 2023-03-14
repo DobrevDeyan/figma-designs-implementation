@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.css"
-import { ProductCardProps } from "../../assets/interfaces/product-card-promotion"
+import { ProductCardProps } from "../../interfaces/product-card-promotion"
 import "./product-card.css"
 
 function ProductCard({

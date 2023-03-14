@@ -17,7 +17,7 @@ main#promotions .breadcrumbs > * {
   margin-right: 4px;
 }
 main#promotions .breadcrumbs > img {
-  margin-bottom: 2px;
+  margin-bottom: -2px;
 }
 main#promotions .breadcrumbs a,
 main#promotions .breadcrumbs p {

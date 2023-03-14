@@ -1,4 +1,3 @@
-// import { Container } from "react-bootstrap"
 import { Route, Routes } from "react-router-dom"
 import "./App.css"
 import Footer from "./components/footer/footer"
@@ -10,6 +9,8 @@ import Product from "./pages/product/product"
 import Profile from "./pages/profile/profile"
 import Promotions from "./pages/promotions/promotions"
 import Contacts from "./pages/contacts/contacts"
+import ProductSearch from "./pages/product-search/product-search"
+import categories from "./data/store-categories.json"
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/promotions" element={<Promotions />} />
         <Route path="/contacts" element={<Contacts />} />
+        <Route
+          path="/product-search"
+          element={<ProductSearch categories={categories} />}
+        />
       </Routes>
       <Footer></Footer>
     </>

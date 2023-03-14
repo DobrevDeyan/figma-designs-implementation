@@ -118,7 +118,7 @@ function Header() {
               <a href="./">Начало</a>
             </li>
             <li>
-              <a href="#" className="products">
+              <a href="/product-search" className="products">
                 <p>Каталог продукти</p>
                 <img src={arrow_right} alt="arrowRight" />
               </a>
@@ -168,7 +168,7 @@ function Header() {
             className="dropdown-menu-container products "
             onClick={handleDropdownClick}
           >
-            <a href="#" className="dropdown-button">
+            <a href="/product-search" className="dropdown-button">
               <p>Продукти</p>
               <img
                 src={isOpen ? arrow_up : arrow_down}
