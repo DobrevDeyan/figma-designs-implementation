@@ -11,6 +11,7 @@ import Promotions from "./pages/promotions/promotions"
 import Contacts from "./pages/contacts/contacts"
 import ProductSearch from "./pages/product-search/product-search"
 import categories from "./data/store-categories.json"
+// import categories from "./data/store-categories.json"
 
 function App() {
   return (
