@@ -6,9 +6,6 @@ main#product-search .breadcrumbs {
 main#product-search .breadcrumbs > * {
   margin-right: 4px;
 }
-main#product-search .breadcrumbs > img {
-  margin-bottom: -2px;
-}
 main#product-search .breadcrumbs a,
 main#product-search .breadcrumbs p {
   font-style: normal;
@@ -23,8 +20,10 @@ main#product-search .breadcrumbs p {
   margin: 0;
 }
 main#product-search aside.aside-menu {
-  background-color: #ddd;
-  width: 300px;
+  width: 310px;
+  background: #f9f9fd;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
   margin-bottom: 128px;
 }
 .sidebar {
@@ -39,16 +38,21 @@ main#product-search aside.aside-menu {
 .category-list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 12px;
 }
 .category-list li button {
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #050723;
+  margin-bottom: 12px;
 }
-
+.category-list li:last-child button {
+  margin-bottom: 0px;
+}
 .category {
   display: block;
   width: 100%;
-  padding: 10px;
   border: none;
   background-color: transparent;
   text-align: left;
@@ -59,22 +63,30 @@ main#product-search aside.aside-menu {
   margin: 0;
   padding: 0;
 }
+.subcategory-list li.subcategory:last-child {
+  margin-bottom: 12px;
+}
 li.subcategory {
-  padding: 10px 30px;
-  border-top: 1px solid #ddd;
+  padding: 0px 8px;
   text-align: left;
+  line-height: 0px;
+  margin-bottom: 4px;
 }
 .active-category {
-  color: blue;
+  color: #0727b7 !important;
+  margin-bottom: 8px !important;
 }
 li.subcategory:hover a {
-  color: blue;
+  color: #0727b7;
 }
 li.subcategory a {
-  font-size: 14px;
-  color: black;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #050723;
   text-decoration: none;
 }
+
 /* TRANSITIONS EFFECT  */
 .subcategories-enter {
   opacity: 0;
