@@ -24,7 +24,7 @@ main#product-search aside.aside-menu {
   background: #f9f9fd;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  margin-bottom: 128px;
+  margin-right: 24px;
 }
 .sidebar {
   position: fixed;
@@ -106,6 +106,10 @@ li.subcategory a {
   transform: translateY(-10px);
   transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
 }
-
-/* main#product-search section.search-list {
-} */
+main#product-search .search-menu {
+  margin-bottom: 128px;
+  display: flex;
+}
+main#product-search .search-menu .search-list {
+  flex-grow: 1;
+}
