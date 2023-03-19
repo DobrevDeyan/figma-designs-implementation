@@ -1,4 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import Select, { components } from "react-select"
+import filters from "../../assets/product-search-images/filters.svg"
+import bottles from "../../assets/product-search-images/plastic-bottles.svg"
 import { ReactComponent as ArrowIcon } from "../../assets/product-search-images/select-arrow.svg"
 import "./search-view.css"
 
@@ -116,7 +119,47 @@ function Search() {
         />
       </div>
       <div className="filter-results">
-        <div className="filter-item"></div>
+        <div className="filter-item">
+          <div className="container-image">
+            <img src={filters} alt="productImage" />
+            <div className="stock">
+              <p>Налично на склад</p>
+            </div>
+          </div>
+          <div className="filter-item-description">
+            <div>
+              <h4 className="item-title">
+                Мембранен филтър МCЕ (микс целулозни естери)
+              </h4>
+              <p>4094.5ВР</p>
+            </div>
+            <p className="item-brand">filtratech</p>
+            <p className="item-information">
+              Мембраните MCE са направени от влакна от целулозен ацетат и
+              целулозен нитрат, те са естествено хидрофилни, механично стабилни
+              и имат висока товароносимост. Подходящи са за микробиологичен
+              анализ, за преброяване на колонии или за предварително филтриране
+              и избистряне на проби. Предлага се в кутия от 100 единици (с
+              изключение на диаметър 13 mm в кутия от 200 единици).
+            </p>
+          </div>
+        </div>
+        <div className="filter-item">
+          <div className="container-image">
+            <img src={bottles} alt="productImage" />
+            <div className="stock">
+              <p>Налично на склад</p>
+            </div>
+          </div>
+          <div className="filter-item-description">
+            <div>
+              <h4 className="item-title">Колба със шлиф, капковидна форма</h4>
+              <p>4094.5ВР</p>
+            </div>
+            <p className="item-brand">Simax</p>
+            <p className="item-information"></p>
+          </div>
+        </div>
       </div>
     </>
   )
