@@ -114,3 +114,25 @@ main#product-search .search-menu {
 main#product-search .search-menu .search-list {
   flex-grow: 1;
 }
+@media screen and (max-width: 1199px) {
+  main#product-search aside.aside-menu {
+    min-width: 250px;
+  }
+}
+@media screen and (max-width: 992px) {
+  main#product-search aside.aside-menu {
+    display: none;
+  }        
+}
+@media screen and (max-width: 767px) {
+  main#product-search .breadcrumbs > a,
+  main#product-search .breadcrumbs > p {
+    padding: 2px 0px;
+  }
+  main#product-search .breadcrumbs {
+    margin-top: 65px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+}
