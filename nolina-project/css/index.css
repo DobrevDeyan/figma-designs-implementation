@@ -1,4 +1,153 @@
 @import url(./reset.css);
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
 
+/*  LAYOUT  */
 
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+.container-wrapper {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*  LAYOUT  */
+
+/* HEADER  */
+
+header nav.socials {
+  margin: 17px 0px 12px 0px;
+  display: flex;
+  align-items: center;
+}
+header nav.socials > img {
+  margin-right: 83px;
+  display: inline-block;
+}
+header nav.socials input {
+  min-width: 475px;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 12.27px 24.72px 11.73px 18px;
+  background: #f2f2f2;
+  box-sizing: border-box;
+}
+header nav.socials input::placeholder {
+  font-weight: 300;
+  font-size: 13.3333px;
+  line-height: 16px;
+  color: #0094da;
+}
+header nav.socials input + .search-icon {
+  width: 15px;
+  height: 15px;
+  margin-left: -40px;
+  margin-right: 106.84px;
+}
+header nav.socials input:focus + .search-icon {
+  /* background-color: #ccc; */
+  /* Add background color when input is focused */
+}
+header nav.socials ul.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+header nav.socials ul.social-icons li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 11.75px;
+}
+header nav.socials ul.social-icons li a {
+  text-decoration: none;
+}
+header nav.socials ul.social-icons li.company-phone a {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+}
+header nav.socials ul.social-icons li.lang-bg a,
+header nav.socials ul.social-icons li.lang-en a {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+}
+header nav.socials ul.social-icons li.lang-bg a:hover,
+header nav.socials ul.social-icons li.lang-en a:hover,
+header nav.socials ul.social-icons li.company-phone a:hover {
+  color: #1d8bc5;
+}
+header nav.socials ul.social-icons li.company-phone {
+  margin-right: 24px;
+}
+header nav.socials ul.social-icons li.facebook {
+  margin-right: 20.75px;
+}
+header nav.socials ul.social-icons li.lang-bg {
+  margin-right: 9px;
+}
+header nav.socials ul.social-icons li.lang-en {
+  margin: 0;
+}
+header nav.menu {
+  width: 806px;
+  min-height: 38px;
+  margin: 0 auto;
+  margin-bottom: 17px;
+}
+header nav.menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+header nav.menu ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 27px;
+  color: #000000;
+}
+header nav.menu ul li.logo:hover {
+  border-bottom: 1px solid #1d8bc5;
+}
+header nav.menu ul li a:hover {
+  border-bottom: 1px solid#1d8bc5;
+}
+
+/* HEADER  */
+
+/* MAIN */
+
+section.hero-section {
+}
+
+/* MAIN */
+
+/* FOOTER */
+
+footer {
+}
+
+/* FOOTER */
+
+/* MEDIA QUERIES  */
+
+@media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 767px) {
+}
+
+/* MEDIA QUERIES  */
