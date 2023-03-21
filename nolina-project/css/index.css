@@ -154,7 +154,6 @@ section.hero-section {
   padding: 50px 0px;
   width: 100%;
   background: #ddf3ff;
-  margin-bottom: 75px;
 }
 section.hero-section .hero-container {
   display: flex;
@@ -243,6 +242,7 @@ section.hero-section .percentage {
 section.item-listing {
   width: 100%;
   margin-bottom: 70px;
+  margin-top: 70px;
 }
 section.item-listing .item {
   position: relative;
@@ -450,6 +450,65 @@ section.item-listing .item .label p {
 }
 
 /* LISTINGS SECTION  */
+
+/* PROMOTIONS SLIDER SECTION  */
+
+section.promotions-slider {
+  height: 559px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  padding: 50px 0px;
+  height: 559px;
+  background: #ddf3ff;
+}
+section.promotions-slider h4.slider-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 40px;
+}
+section.promotions-slider > img.percentage {
+  position: absolute;
+  left: 5px;
+  top: 0px;
+}
+section.promotions-slider .slider-container {
+  width: 100%;
+  height: 380px;
+  border: 1px solid red;
+  position: relative;
+}
+section.promotions-slider .slider-container .slider {
+  width: 972px;
+  height: 380px;
+  margin: 0 auto;
+}
+section.promotions-slider .slider-container .slider .slide {
+  width: 972px;
+  height: 380px;
+  border: 1px solid red;
+}
+section.promotions-slider .slider-container .slider .slide h2 {
+  width: inline-block;
+}
+section.promotions-slider .slider-container img.slider-arrow-prev {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+}
+section.promotions-slider .slider-container img.slider-arrow-next {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+}
+
+/* PROMOTIONS SLIDER SECTION  */
 
 /* MAIN */
 
