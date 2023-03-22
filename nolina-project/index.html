@@ -438,10 +438,20 @@
       <section class="promotions-slider">
         <h4 class="slider-title">Промоции на седмицата</h4>
         <img src="./images/1.svg" alt="percentage-image" class="percentage" />
+        <img
+          src="./images/nolina-slider.svg"
+          alt="nolina-logo"
+          class="layer-logo-1"
+        />
+        <img
+          src="./images/noline-slider-2.svg"
+          alt="nolina-outlet"
+          class="layer-logo-2"
+        />
         <div class="slider-container container-wrapper">
           <div class="slider">
-            <!-- <div class="slider-item">
-              <img src="./images/tile-big.svg" alt="item-logo" />
+            <div class="slider-item">
+              <img src="./images/tiles-promo.svg" alt="item-logo" />
               <div class="description">
                 <div class="head-container">
                   <h4>Dark 70x42см</h4>
@@ -452,18 +462,10 @@
                   се доставя по предварителна заявка с минимално количество 1
                   пакет.
                 </p>
-                <div class="item-images-container">
-                  <div class="container-image">
-                    <img src="./images/tile-big.svg" alt="tile-img" />
-                  </div>
-                  <div class="container-image">
-                    <img src="./images/tiles.svg" alt="tiles" />
-                  </div>
-                </div>
                 <div class="prices">
                   <p class="regular-price">123.39</p>
                   <p class="discounted-price">83.39 <span>лв/бр</span></p>
-                  <img src="./images/price-stroke.svg" alt="stroke" />
+                  <img src="./images/slider-price-stroke.svg" alt="stroke" />
                 </div>
                 <div class="buttons">
                   <button><p>Изпрати запитване</p></button>
@@ -473,15 +475,32 @@
               <div class="label">
                 <p>-30%</p>
               </div>
-            </div> -->
-            <div class="slide">
-              <h2>111111</h2>
             </div>
-            <div class="slide">
-              <h2>222222</h2>
-            </div>
-            <div class="slide">
-              <h2>333333</h2>
+            <div class="slider-item">
+              <img src="./images/tiles-promo.svg" alt="item-logo" />
+              <div class="description">
+                <div class="head-container">
+                  <h4>Dark 70x42см</h4>
+                  <a href="#" class="inspiro"> Панели Inspiro </a>
+                </div>
+                <p class="item-info">
+                  Стенни плочки за бързо обновяване на всеки интериор. Продуктът
+                  се доставя по предварителна заявка с минимално количество 1
+                  пакет.
+                </p>
+                <div class="prices">
+                  <p class="regular-price">123.39</p>
+                  <p class="discounted-price">83.39 <span>лв/бр</span></p>
+                  <img src="./images/slider-price-stroke.svg" alt="stroke" />
+                </div>
+                <div class="buttons">
+                  <button><p>Изпрати запитване</p></button>
+                  <button><p>Виж Повече</p></button>
+                </div>
+              </div>
+              <div class="label">
+                <p>-30%</p>
+              </div>
             </div>
           </div>
           <img
@@ -490,10 +509,11 @@
             class="slider-arrow-prev"
           />
           <img
-            src="./images/slider-arrow-right.svg"
+            src="./images/arrow-right.svg"
             alt="arrowRight"
             class="slider-arrow-next"
           />
+          <div class="arrow"></div>
         </div>
       </section>
       <section class="item-listing container-wrapper">
@@ -618,8 +638,8 @@
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: true,
-          autoplay: true,
           loop: true,
+          autoplay: true,
           prevArrow: ".slider-arrow-prev",
           nextArrow: ".slider-arrow-next",
           // responsive: [
