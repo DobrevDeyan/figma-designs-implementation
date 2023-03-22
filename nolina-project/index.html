@@ -533,6 +533,11 @@
         <h4 class="slider-title">Промоции на седмицата</h4>
         <img src="./images/1.svg" alt="percentage-image" class="percentage" />
         <img
+          src="./images/percentage-slider-mobile.svg"
+          alt="percentage-image"
+          class="percentage mobile"
+        />
+        <img
           src="./images/nolina-slider.svg"
           alt="nolina-logo"
           class="layer-logo-1"
@@ -541,6 +546,16 @@
           src="./images/noline-slider-2.svg"
           alt="nolina-outlet"
           class="layer-logo-2"
+        />
+        <img
+          src="./images/outlet-mobile-slider.svg"
+          alt="nolina-logo"
+          class="mobile-layer-logo-1"
+        />
+        <img
+          src="./images/nolina-mobile-slider.svg"
+          alt="nolina-outlet"
+          class="mobile-layer-logo-2"
         />
         <div class="slider-container container-wrapper">
           <div class="slider">
@@ -597,6 +612,68 @@
               </div>
             </div>
           </div>
+          <div class="slider-mobile">
+            <div class="slider-item-mobile">
+              <div>
+                <div class="img-container">
+                  <img src="./images/tile-big.svg" alt="item-logo" />
+                </div>
+                <div class="description">
+                  <div class="head-container">
+                    <h4>Dark 70x42см</h4>
+                  </div>
+                  <p class="item-info">
+                    Стенни плочки за бързо обновяване на всеки интериор.
+                    Продуктът се доставя по предварителна заявка с минимално
+                    количество 1 пакет.
+                  </p>
+                  <div class="prices">
+                    <p class="regular-price">123.39</p>
+                    <p class="discounted-price">83.39 <span>лв/бр</span></p>
+                    <img src="./images/price-stroke.svg" alt="stroke" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="buttons mobile">
+                <button><p>Изпрати запитване</p></button>
+                <button><p>Виж Повече</p></button>
+              </div>
+              <div class="label">
+                <p>-30%</p>
+              </div>
+            </div>
+            <div class="slider-item-mobile">
+              <div>
+                <div class="img-container">
+                  <img src="./images/tile-big.svg" alt="item-logo" />
+                </div>
+                <div class="description">
+                  <div class="head-container">
+                    <h4>Dark 70x42см</h4>
+                  </div>
+                  <p class="item-info">
+                    Стенни плочки за бързо обновяване на всеки интериор.
+                    Продуктът се доставя по предварителна заявка с минимално
+                    количество 1 пакет.
+                  </p>
+                  <div class="prices">
+                    <p class="regular-price">123.39</p>
+                    <p class="discounted-price">83.39 <span>лв/бр</span></p>
+                    <img src="./images/price-stroke.svg" alt="stroke" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="buttons mobile">
+                <button><p>Изпрати запитване</p></button>
+                <button><p>Виж Повече</p></button>
+              </div>
+              <div class="label">
+                <p>-30%</p>
+              </div>
+            </div>
+          </div>
           <img
             src="./images/slider-arrow-left.svg"
             alt="arrowLeft"
@@ -607,7 +684,16 @@
             alt="arrowRight"
             class="slider-arrow-next"
           />
-          <div class="arrow"></div>
+          <img
+            src="./images/slider-mobile-prev.svg"
+            alt="arrowLeft"
+            class="slider-mobile-arrow-prev"
+          />
+          <img
+            src="./images/slider-mobile-next.svg"
+            alt="arrowRight"
+            class="slider-mobile-arrow-next"
+          />
         </div>
       </section>
       <section class="item-listing container-wrapper">
@@ -891,18 +977,19 @@
           slidesToScroll: 1,
           arrows: true,
           loop: true,
-          autoplay: true,
+          // autoplay: true,
           prevArrow: ".slider-arrow-prev",
           nextArrow: ".slider-arrow-next",
-          // responsive: [
-          //   {
-          //     breakpoint: 1240,
-          //     settings: {
-          //       slidesToShow: 4,
-          //       slidesToScroll: 1,
-          //     },
-          //   },
-          // ],
+        })
+        $(".slider-mobile").slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          loop: true,
+          // autoplay: true,
+          prevArrow: ".slider-mobile-arrow-prev",
+          nextArrow: ".slider-mobile-arrow-next",
         })
       })
     </script>
