@@ -500,6 +500,7 @@ section.item-listing .item-mobile .img-container img {
 }
 section.item-listing .item-mobile img {
   margin-right: 15px;
+  cursor: pointer;
 }
 section.item-listing .item-mobile .description {
   display: flex;
@@ -623,6 +624,7 @@ section.item-listing .item-mobile .buttons button:first-child {
   background: #1d8bc5;
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 section.item-listing .item-mobile .buttons button:first-child p {
   font-weight: 600;
@@ -644,6 +646,7 @@ section.item-listing .item-mobile .buttons button:nth-child(2) {
   width: 157.5px;
   height: 25px;
   border: 2px solid #1d8bc5;
+  cursor: pointer;
 }
 section.item-listing .item-mobile .buttons button:nth-child(2) p {
   font-weight: 600;
@@ -726,12 +729,14 @@ section.promotions-slider .slider-container img.slider-arrow-prev {
   left: 0px;
   top: 50%;
   transform: translate(0, -50%);
+  cursor: pointer;
 }
 section.promotions-slider .slider-container img.slider-arrow-next {
   position: absolute;
   right: 0px;
   top: 50%;
   transform: translate(0, -50%);
+  cursor: pointer;
 }
 section.promotions-slider .slider-container .slider-item {
   position: relative;
@@ -873,6 +878,7 @@ section.promotions-slider
   /* height: 42px; */
   background: #1d8bc5;
   border: none;
+  cursor: pointer;
 }
 section.promotions-slider
   .slider-container
@@ -905,6 +911,7 @@ section.promotions-slider
   width: 100%;
   /* height: 42px; */
   border: 2px solid #1d8bc5;
+  cursor: pointer;
 }
 section.promotions-slider
   .slider-container
@@ -1005,6 +1012,7 @@ section.promotions-slider
   img {
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 section.promotions-slider
   .slider-container
@@ -1234,6 +1242,7 @@ section.promotions-slider
   width: 157.5px;
   height: 25px;
   border: 2px solid #1d8bc5;
+  cursor: pointer;
 }
 section.promotions-slider
   .slider-container
@@ -1251,6 +1260,7 @@ section.promotions-slider
   text-transform: uppercase;
   color: #1d8bc5;
   margin: 0;
+  cursor: pointer;
 }
 section.promotions-slider
   .slider-container
@@ -1684,6 +1694,7 @@ header nav.socials .img-container img:nth-child(2) {
   section.promotions-slider .slider-container > img.slider-mobile-arrow-prev,
   section.promotions-slider .slider-container > img.slider-mobile-arrow-next {
     display: block !important;
+    cursor: pointer;
   }
   section.promotions-slider .slider-container > img.slider-mobile-arrow-prev {
     position: absolute;
