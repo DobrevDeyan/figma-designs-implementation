@@ -742,6 +742,7 @@ section.promotions-slider .slider-container .slider-item {
   position: relative;
   display: flex;
   overflow: hidden;
+  padding: 0 14px;
 }
 section.promotions-slider .slider-container .slider-item .description {
   display: flex;
@@ -2089,5 +2090,118 @@ body .modal-message-container .close-button-bg {
   }
   body .modal-message-container form.contact-form button p {
     font-size: 12px;
+  }
+}
+
+/* FULL SCREEN SLIDER START */
+.full-screen-overlay {
+  background: rgba(0, 0, 0, 0.8);
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 12;
+  opacity: 0;
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.full-screen-overlay.open {
+  pointer-events: initial;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+}
+.overlay-slider-block {
+  display: flex;
+  flex-direction: column;
+}
+.overlay-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.full-screen-overlay .inner {
+  width: 100%;
+  padding: 0 20px;
+}
+.overlay-images {
+  width: 100%;
+  height: 360px;
+  width: 360px;
+  position: relative;
+  margin: 0 auto;
+}
+.overlay-wrapper .slick-list.draggable {
+  padding: 0 !important;
+}
+.overlay-image-container {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+.overlay-image-container img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.overlay-image-container-2 div .rotate {
+  position: absolute;
+  object-fit: scale-down;
+}
+.overlay-image-container-2 img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  /* max-height: 60px !important;
+  max-width: 60px !important; */
+  cursor: pointer;
+}
+.overlay-wrapper .slick-track {
+  display: flex;
+  justify-content: center;
+}
+.overlay-next-arrow,
+.overlay-previous-arrow {
+  position: absolute;
+  display: block !important;
+  top: 47%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+}
+.overlay-previous-arrow {
+  left: 20px;
+}
+.overlay-next-arrow {
+  right: 20px;
+}
+.close-overlay {
+  position: absolute;
+  right: 20px;
+  top: 35.2%;
+  cursor: pointer;
+}
+.overlay-slider-block .slick-slide.slick-current div {
+  outline: 2px solid #1d8bc5;
+  outline-offset: -4px;
+}
+.overlay-slider-block .overlay-wrapper .slick-slide {
+  padding: 0 5px;
+}
+.overlay-slider-block .slick-slide div {
+  border: 2px solid transparent;
+  position: relative;
+}
+/* FULL SCREEN SLIDER END */
+@media screen and (max-width: 500px) {
+  .overlay-images {
+    height: 260px;
+    width: 260px;
   }
 }
