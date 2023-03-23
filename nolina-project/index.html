@@ -364,7 +364,7 @@
               <img src="./images/price-stroke.svg" alt="stroke" />
             </div>
             <div class="buttons">
-              <button><p>Изпрати запитване</p></button>
+              <button class="query"><p>Изпрати запитване</p></button>
               <button><p>Виж Повече</p></button>
             </div>
           </div>
@@ -397,7 +397,7 @@
               <img src="./images/price-stroke.svg" alt="stroke" />
             </div>
             <div class="buttons">
-              <button><p>Изпрати запитване</p></button>
+              <button class="query"><p>Изпрати запитване</p></button>
               <button><p>Виж Повече</p></button>
             </div>
           </div>
@@ -430,7 +430,7 @@
               <img src="./images/price-stroke.svg" alt="stroke" />
             </div>
             <div class="buttons">
-              <button><p>Изпрати запитване</p></button>
+              <button class="query"><p>Изпрати запитване</p></button>
               <button><p>Виж Повече</p></button>
             </div>
           </div>
@@ -461,7 +461,7 @@
           </div>
 
           <div class="buttons mobile">
-            <button><p>Изпрати запитване</p></button>
+            <button class="query"><p>Изпрати запитване</p></button>
             <button><p>Виж Повече</p></button>
           </div>
           <div class="label">
@@ -491,7 +491,7 @@
           </div>
 
           <div class="buttons mobile">
-            <button><p>Изпрати запитване</p></button>
+            <button class="query"><p>Изпрати запитване</p></button>
             <button><p>Виж Повече</p></button>
           </div>
           <div class="label">
@@ -521,7 +521,7 @@
           </div>
 
           <div class="buttons mobile">
-            <button><p>Изпрати запитване</p></button>
+            <button class="query"><p>Изпрати запитване</p></button>
             <button><p>Виж Повече</p></button>
           </div>
           <div class="label">
@@ -577,7 +577,7 @@
                   <img src="./images/slider-price-stroke.svg" alt="stroke" />
                 </div>
                 <div class="buttons">
-                  <button><p>Изпрати запитване</p></button>
+                  <button class="query"><p>Изпрати запитване</p></button>
                   <button><p>Виж Повече</p></button>
                 </div>
               </div>
@@ -603,7 +603,7 @@
                   <img src="./images/slider-price-stroke.svg" alt="stroke" />
                 </div>
                 <div class="buttons">
-                  <button><p>Изпрати запитване</p></button>
+                  <button class="query"><p>Изпрати запитване</p></button>
                   <button><p>Виж Повече</p></button>
                 </div>
               </div>
@@ -636,7 +636,7 @@
               </div>
 
               <div class="buttons mobile">
-                <button><p>Изпрати запитване</p></button>
+                <button class="query"><p>Изпрати запитване</p></button>
                 <button><p>Виж Повече</p></button>
               </div>
               <div class="label">
@@ -666,7 +666,7 @@
               </div>
 
               <div class="buttons mobile">
-                <button><p>Изпрати запитване</p></button>
+                <button class="query"><p>Изпрати запитване</p></button>
                 <button><p>Виж Повече</p></button>
               </div>
               <div class="label">
@@ -722,7 +722,7 @@
               <img src="./images/price-stroke.svg" alt="stroke" />
             </div>
             <div class="buttons">
-              <button><p>Изпрати запитване</p></button>
+              <button class="query"><p>Изпрати запитване</p></button>
               <button><p>Виж Повече</p></button>
             </div>
           </div>
@@ -755,7 +755,7 @@
               <img src="./images/price-stroke.svg" alt="stroke" />
             </div>
             <div class="buttons">
-              <button><p>Изпрати запитване</p></button>
+              <button class="query"><p>Изпрати запитване</p></button>
               <button><p>Виж Повече</p></button>
             </div>
           </div>
@@ -788,7 +788,7 @@
               <img src="./images/price-stroke.svg" alt="stroke" />
             </div>
             <div class="buttons">
-              <button><p>Изпрати запитване</p></button>
+              <button class="query"><p>Изпрати запитване</p></button>
               <button><p>Виж Повече</p></button>
             </div>
           </div>
@@ -819,7 +819,7 @@
           </div>
 
           <div class="buttons mobile">
-            <button><p>Изпрати запитване</p></button>
+            <button class="query"><p>Изпрати запитване</p></button>
             <button><p>Виж Повече</p></button>
           </div>
           <div class="label">
@@ -849,7 +849,7 @@
           </div>
 
           <div class="buttons mobile">
-            <button><p>Изпрати запитване</p></button>
+            <button class="query"><p>Изпрати запитване</p></button>
             <button><p>Виж Повече</p></button>
           </div>
           <div class="label">
@@ -879,7 +879,7 @@
           </div>
 
           <div class="buttons mobile">
-            <button><p>Изпрати запитване</p></button>
+            <button class="query"><p>Изпрати запитване</p></button>
             <button><p>Виж Повече</p></button>
           </div>
           <div class="label">
@@ -959,6 +959,35 @@
         </div>
       </footer>
     </main>
+    <!-- MODAL POP UP  -->
+    <div class="modal-message-container" id="message-modal">
+      <div class="contact-panel">
+        <h4 class="contact-panel-title">Направи запитване</h4>
+        <form class="contact-form" action="#">
+          <input type="text" placeholder="Вашите имена" />
+          <input type="text" placeholder="Фирма:" />
+          <input type="text" placeholder="Телефон за контакт * :" />
+          <input type="text" placeholder="E- mail * :" />
+          <textarea
+            name="client-message"
+            id=""
+            placeholder="Детайли на запитването:"
+          ></textarea>
+          <button type="submit" class="button" id="message-sent">
+            <p>Изпрати</p>
+          </button>
+        </form>
+      </div>
+      <div class="close-button-bg">
+        <img
+          src="./images/close-query.svg"
+          alt="close-button"
+          class="close-modal"
+        />
+      </div>
+    </div>
+    <div id="modal-overlay"></div>
+    <!-- MODAL POP UP  -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
       integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
@@ -995,5 +1024,6 @@
         })
       })
     </script>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

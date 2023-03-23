@@ -186,9 +186,12 @@ section.hero-section .categories .category-box {
   z-index: 1;
 }
 section.hero-section .categories .category-box:hover img {
-  outline: 2px solid #1d8bc5;
-  outline-offset: -2px;
+  outline: 4px solid #1d8bc5;
+  outline-offset: -4px;
   border-radius: 50%;
+}
+section.hero-section .categories .category-box:hover p.category-name {
+  color: #1d8bc5;
 }
 section.hero-section .categories .category-box img {
   display: inline-block;
@@ -608,6 +611,7 @@ section.item-listing .item-mobile .buttons button:first-child {
   height: 25px;
   background: #1d8bc5;
   border: none;
+  padding: 0;
 }
 section.item-listing .item-mobile .buttons button:first-child p {
   font-weight: 600;
@@ -1186,6 +1190,7 @@ section.promotions-slider
   height: 25px;
   background: #1d8bc5;
   border: none;
+  padding: 0;
 }
 section.promotions-slider
   .slider-container
@@ -1663,7 +1668,7 @@ header nav.socials .img-container img:nth-child(2) {
   }
   section.promotions-slider .slider-container img.slider-arrow-next,
   section.promotions-slider .slider-container img.slider-arrow-prev {
-    display: none;
+    display: none !important;
   }
   section.promotions-slider .slider-container > img.slider-mobile-arrow-prev,
   section.promotions-slider .slider-container > img.slider-mobile-arrow-next {
@@ -1671,13 +1676,13 @@ header nav.socials .img-container img:nth-child(2) {
   }
   section.promotions-slider .slider-container > img.slider-mobile-arrow-prev {
     position: absolute;
-    left: 0px;
+    left: 20px;
     top: 50%;
     transform: translate(0, -50%);
   }
   section.promotions-slider .slider-container > img.slider-mobile-arrow-next {
     position: absolute;
-    right: 0px;
+    right: 20px;
     top: 50%;
     transform: translate(0, -50%);
   }
@@ -1686,7 +1691,8 @@ header nav.socials .img-container img:nth-child(2) {
   }
   section.promotions-slider h4.slider-title {
     margin-bottom: 30px;
-    /* font-size: 24px; */
+    text-align: center;
+    z-index: 1;
   }
   section.promotions-slider
     .slider-container
@@ -1844,6 +1850,9 @@ header nav.socials .img-container img:nth-child(2) {
     padding-bottom: 70px;
     border: none;
   }
+  section.promotions-slider .slider-container .slider-mobile {
+    max-width: 560px;
+  }
   footer .footer-logo-container {
     margin-top: 0px;
     margin-bottom: 30px;
@@ -1862,6 +1871,15 @@ header nav.socials .img-container img:nth-child(2) {
   }
   footer .menu-container ul:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  section.promotions-slider .slider-container > img.slider-mobile-arrow-prev {
+    left: 0;
+  }
+  section.promotions-slider .slider-container > img.slider-mobile-arrow-next {
+    right: 0;
   }
 }
 @media screen and (max-width: 590px) {
@@ -1889,3 +1907,165 @@ header nav.socials .img-container img:nth-child(2) {
 }
 
 /* MEDIA QUERIES  */
+
+/* MESSAGE SUCCESS UP MODAL STYLES */
+
+body .modal-message-container {
+  width: 580px;
+  height: 613px;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 50px;
+  z-index: 2;
+}
+body .modal-message-container .contact-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+body .modal-message-container h4.contact-panel-title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 35px;
+  color: #1d8bc5;
+  margin-bottom: 16px;
+}
+body .modal-message-container .contact-panel form.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+
+body .modal-message-container .contact-panel form.contact-form input {
+  max-width: 480px;
+  width: 100%;
+  max-height: 47px;
+  height: 100%;
+  margin-bottom: 16px;
+  padding: 15.91px 22px 15.09px 22px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.09);
+  border-radius: 3px;
+  outline: none !important;
+  border: none;
+  font-weight: 500;
+  font-size: 13.3333px;
+  line-height: 16px;
+  color: #000000;
+}
+body
+  .modal-message-container
+  .contact-panel
+  form.contact-form
+  input::placeholder,
+body
+  .modal-message-container
+  .contact-panel
+  form.contact-form
+  textarea::placeholder {
+  font-weight: 500;
+  font-size: 13.3333px;
+  line-height: 16px;
+  color: #000000;
+}
+body .modal-message-container .contact-panel form.contact-form textarea {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  outline: none;
+  margin-bottom: 16px;
+  height: 162px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.09);
+  border-radius: 3px;
+  padding: 15.91px 22px 15.09px 22px;
+  border: none;
+  font-weight: 500;
+  font-size: 13.3333px;
+  line-height: 16px;
+  color: #000000;
+}
+
+body .modal-message-container .contact-panel form.contact-form button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  padding: 12px 8px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 174px;
+  height: 40px;
+  background: #1d8bc5;
+  border: none;
+}
+body .modal-message-container form.contact-form button p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+body .modal-message-container .close-button-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  right: 20px;
+  top: 20px;
+  background: #ddf3ff;
+  cursor: pointer;
+}
+
+#modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  body .modal-message-container {
+    width: 340px;
+    height: 576px;
+    padding: 30px 20px;
+  }
+  body .modal-message-container .close-button-bg {
+    top: 30px;
+  }
+  body .modal-message-container h4.contact-panel-title {
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  body .modal-message-container .contact-panel form.contact-form input {
+    max-height: 46px;
+    margin-bottom: 10px;
+    padding: 15px 22px 15px 22px;
+  }
+  body .modal-message-container .contact-panel form.contact-form textarea {
+    height: 160px;
+    margin-bottom: 30px;
+    padding: 16px 22px 16px 22px;
+  }
+  body .modal-message-container form.contact-form button p {
+    font-size: 12px;
+  }
+}
