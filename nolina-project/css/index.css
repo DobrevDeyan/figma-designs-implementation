@@ -592,6 +592,7 @@ section.item-listing .item-mobile .prices p.regular-price {
   color: #000000;
   margin: 0;
   margin-right: 15px;
+  margin-bottom: 3px;
 }
 section.item-listing .item-mobile .prices p.discounted-price {
   font-weight: 700;
@@ -607,7 +608,7 @@ section.item-listing .item-mobile .prices p.discounted-price span {
 }
 section.item-listing .item-mobile .prices > img {
   position: absolute;
-  left: -3px;
+  left: -1.2px;
   margin: 0;
 }
 section.item-listing .item-mobile .buttons {
@@ -1185,7 +1186,7 @@ section.promotions-slider
   .prices
   > img {
   position: absolute;
-  left: -3px;
+  left: -1.2px;
   margin: 0;
 }
 section.promotions-slider
