@@ -433,6 +433,7 @@ section.item-listing .item .buttons button:nth-child(2) {
   /* height: 42px; */
   border: 2px solid #1d8bc5;
   cursor: pointer;
+  background: transparent;
 }
 section.item-listing .item .buttons button:nth-child(2) p {
   font-weight: 600;
@@ -610,6 +611,8 @@ section.item-listing .item-mobile .prices > img {
   position: absolute;
   left: -1.2px;
   margin: 0;
+  width: 26px;
+  margin-bottom: 3px;
 }
 section.item-listing .item-mobile .buttons {
   display: flex;
@@ -648,6 +651,7 @@ section.item-listing .item-mobile .buttons button:nth-child(2) {
   height: 25px;
   border: 2px solid #1d8bc5;
   cursor: pointer;
+  background: transparent;
 }
 section.item-listing .item-mobile .buttons button:nth-child(2) p {
   font-weight: 600;
@@ -914,6 +918,7 @@ section.promotions-slider
   /* height: 42px; */
   border: 2px solid #1d8bc5;
   cursor: pointer;
+  background: transparent;
 }
 section.promotions-slider
   .slider-container
@@ -1188,6 +1193,7 @@ section.promotions-slider
   position: absolute;
   left: -1.2px;
   margin: 0;
+  width: 26px;
 }
 section.promotions-slider
   .slider-container
@@ -1245,6 +1251,7 @@ section.promotions-slider
   height: 25px;
   border: 2px solid #1d8bc5;
   cursor: pointer;
+  background: transparent;
 }
 section.promotions-slider
   .slider-container
