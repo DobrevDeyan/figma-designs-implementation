@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import "bootstrap/dist/css/bootstrap.css"
+import React from "react"
 import "./check-out.css"
 
 function CheckOut() {

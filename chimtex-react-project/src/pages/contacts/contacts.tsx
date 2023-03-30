@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import "bootstrap/dist/css/bootstrap.css"
+import React from "react"
 import aaa from "../../assets/contacts-page-images/aaaa.svg"
 import bg_flag from "../../assets/contacts-page-images/bg-map.svg"
 import phone from "../../assets/contacts-page-images/phone.svg"

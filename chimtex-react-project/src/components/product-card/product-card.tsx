@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.css"
+import React from "react"
 import { ProductCardProps } from "../../interfaces/product-card-promotion"
 import "./product-card.css"
 

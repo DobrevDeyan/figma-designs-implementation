@@ -1,3 +1,4 @@
+import React from "react"
 import arrow_right from "../../assets/product-page-images/arrow-right.svg"
 import home_icon from "../../assets/product-page-images/home-icon.svg"
 import ProductCard from "../../components/product-card/product-card"
