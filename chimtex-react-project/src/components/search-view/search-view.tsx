@@ -4,6 +4,8 @@ import filters from "../../assets/product-search-images/filters.svg"
 import bottles from "../../assets/product-search-images/plastic-bottles.svg"
 import { ReactComponent as ArrowIcon } from "../../assets/product-search-images/select-arrow.svg"
 import "./search-view.css"
+import React from 'react';
+
 
 const DropdownIndicator = (props: any) => {
   return (
