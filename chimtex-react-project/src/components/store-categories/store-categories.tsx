@@ -1,1 +1,0 @@
-import "./store-categories.css"
